@@ -1,0 +1,22 @@
+.container {
+   width: 1440px;
+   background-color: darkgreen;
+   margin: 0 auto;
+}
+
+.navigationBar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navigation {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    color: #fff;
+    margin-right: 60px;
+}
