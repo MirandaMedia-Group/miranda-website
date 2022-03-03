@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
+import Reference from '../components/Reference/Reference'
+import Zamereni from '../components/Zamereni/Zamereni'
 
 export default function Home() {
   return (
@@ -6,7 +9,15 @@ export default function Home() {
       <Head>
         
       </Head>
-      <h1>Home</h1>
+      <section>
+        <HeroCarousel></HeroCarousel>
+      </section>
+      <section className="container">
+        <Reference></Reference>
+      </section>
+      <section>
+        <Zamereni></Zamereni>
+      </section>
     </>
   )
 }
