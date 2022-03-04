@@ -1,6 +1,6 @@
 @function em( $size, $context: 16 ) {
-    @return ( $size / $context ) * 1em;
+    @return ( calc($size / $context) ) * 1em;
 }
 @function rem( $size, $context: 16 ) {
-    @return ( $size / $context ) * 1rem;
+    @return ( calc($size / $context) ) * 1rem;
 }
