@@ -1,0 +1,63 @@
+.item {
+  line-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  filter: grayscale(1);
+  transition: all .3s ease-in;
+}
+
+.item:nth-of-type(3), .item:nth-of-type(4) {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.item:nth-of-type(3) .link a, .item:nth-of-type(4) .link a {
+  padding: em(30) em(30) em(30) em(60);
+}
+
+.item .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease-in;
+}
+
+.item .link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(100%, 100%);
+  transition: all .3s ease-in;
+}
+
+.item .link a {
+  background-color: #59DC8E;
+  color: #FFF;
+  padding: em(15) em(15) em(15) em(30);
+  display: flex;
+  align-items: center;
+}
+
+.item .link a::after {
+  content: url(/img/icon/arrow-right.svg);
+  display: inline-block;
+  margin-left: em(30);
+  line-height: 0;
+}
+
+.item:hover img, .item:focus img {
+  filter: none;
+}
+
+.item:hover .logo, .item:focus .logo {
+  opacity: 0;
+}
+
+.item:hover .link, .item:focus .link {
+  transform: none;
+}
+/*# sourceMappingURL=ReferenceItem.module.css.map */

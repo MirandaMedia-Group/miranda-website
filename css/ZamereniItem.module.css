@@ -1,0 +1,19 @@
+.zamereniItem {
+  max-width: 480px;
+  background-color: #F2F2F2;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 42px;
+  color: #59DC8E;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.zamereniInnerText {
+  padding: 20px;
+}
+/*# sourceMappingURL=ZamereniItem.module.css.map */

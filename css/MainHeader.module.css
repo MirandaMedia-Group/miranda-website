@@ -1,0 +1,37 @@
+.navLink:not(:last-of-type) {
+  margin-right: rem(60);
+}
+
+.mainHeader {
+  color: #fff;
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul li:not(:last-of-type) {
+  margin-right: rem(60);
+}
+
+.logo {
+  line-height: 0;
+}
+
+.logo span {
+  cursor: pointer;
+}
+/*# sourceMappingURL=MainHeader.module.css.map */

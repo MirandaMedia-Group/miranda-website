@@ -3,9 +3,11 @@ import Link from "next/link"
 
 import styles from './ReferenceItem.module.scss'
 
+
 const ReferenceItem = (props) => {
+    console.log(props)
     const tmb = props.data.attributes.thumbnail.data.attributes,
-        logo = props.data.attributes.logo.data.attributes
+      logo = props.data.attributes.logo.data.attributes
 
     return (
         <div className={styles.item}>
@@ -19,6 +21,7 @@ const ReferenceItem = (props) => {
                 </Link>
             </div>
         </div>
+        
     )
 }
 

@@ -2,6 +2,8 @@ import Head from 'next/head'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import Reference from '../components/Reference/Reference'
 import Zamereni from '../components/Zamereni/Zamereni'
+import Cesta from '../components/Cesta/Cesta'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 
 export default function Home() {
   return (
@@ -17,6 +19,12 @@ export default function Home() {
       </section>
       <section>
         <Zamereni></Zamereni>
+      </section>
+      <section>
+        <Cesta></Cesta>
+      </section>
+      <section>
+        <CoONasRikaji></CoONasRikaji>
       </section>
     </>
   )

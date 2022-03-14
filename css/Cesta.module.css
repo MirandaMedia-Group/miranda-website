@@ -1,0 +1,30 @@
+.cestaTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cestaTop h2 {
+  max-width: 30%;
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 72px;
+}
+
+.cestaTop p {
+  max-width: 55%;
+  margin: 0;
+}
+
+.cestaBottom {
+  background-image: url("../../public/img/cesta.svg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.cestaBottom h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Cesta.module.css.map */

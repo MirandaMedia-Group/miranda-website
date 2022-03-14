@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACjB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../components/CoONasRikaji/CoONasRikaji.module.scss"
+    ],
+    "names": [],
+    "file": "CoONasRikaji.module.css"
+}

@@ -1,3 +1,7 @@
+$color-white: #FFF;
+$color-font: #000;
+$color-primary: #59DC8E;
+
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins Medium'), local('Poppins-Medium'),
@@ -226,6 +230,11 @@ h1 {
 h2 {
   font-size: 48px;
 }
+
+h4 {
+  font-size: 32px;
+  line-height: 42px;
+}
 section {
   margin-bottom: 100px;
 }
@@ -250,13 +259,14 @@ section {
   display: inline-block;
   line-height: 1em;
   padding: em(20);
+  padding: 20px;
 }
 .btn.btn-primary {
-  background-color: $color-primary;
+  background-color: #59DC8E;
   color: $color-font;
 }
 .btn.btn-secondary {
-  border: 1px solid $color-primary;
+  border: 1px solid #59DC8E;
   color: $color-font;
 }
 .text-center {
