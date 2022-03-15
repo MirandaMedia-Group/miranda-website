@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import ProjektBanner from '../components/ProjektBanner/ProjektBanner'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        
-      </Head>
       <h1>Kariéra</h1>
+      <section>
+        <ProjektBanner />
+      </section>
+      
     </>
   )
 }
