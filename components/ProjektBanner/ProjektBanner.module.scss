@@ -1,0 +1,31 @@
+.projektBanner {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -150px;
+    background-image: url('/img/projekt-background.jpg');
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.15);
+
+    div {
+        max-width: 50%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #fff;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    a {
+        background-color: #fff;
+        color: #000;
+        margin-top: 5px;
+    }
+}

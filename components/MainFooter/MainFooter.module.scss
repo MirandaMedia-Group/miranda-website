@@ -1,3 +1,99 @@
 .footer {
     background-color: #59DC8E;
+    color: #fff;
+    padding-bottom: 45px;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 30px;
+        margin-top: 0;
+
+        li {
+            line-height: 28px;
+        }
+
+        &:first-of-type {
+            margin-top: 30px;
+        }
+    }
+
+    &>span {
+        margin-top:  -200px !important;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &>div:not(.sluzby)  {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    h4 {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .sluzby {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 1 35%;
+        justify-content: space-between;
+    }
+
+    .footerBottom {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+
+.phone, .mail {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 12px;
+    position: relative;
+    margin-left: 14px;
+    padding-left: 27px;
+
+    &:before {
+        position: absolute;
+        left: - 14px;
+        bottom: -3px;
+    }
+}
+
+.phone:before {
+    content: url('../../public/img/icon/icon-phone.svg');
+}
+
+.mail:before {
+    content: url('../../public/img/icon/icon-mail.svg');
+}
+
+.partneri {
+    width: 100%;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+.socials {
+    a {
+        padding: 0 10px;
+    }
+}
+
+.signature {
+    margin-top: 20px;
+    color: #BDF1D2;
 }
