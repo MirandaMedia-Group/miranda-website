@@ -2,7 +2,7 @@
     margin-right: rem(60);
 }
 .mainHeader {
-    color: #fff;
+    color: $color-font;
     padding: 70px;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 10
 }
 .navigation {
     flex: 0 1 750px;
@@ -31,5 +31,14 @@
     line-height: 0;
     span {
         cursor: pointer;
+    }
+    svg {
+        fill: $color-primary;
+    }
+}
+.headerWhite {
+    color: $color-white;
+    svg {
+        fill: $color-white;
     }
 }
