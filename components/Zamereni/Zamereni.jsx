@@ -12,7 +12,7 @@ const Zamereni = () => {
                 velit esse cillum dolore eu fugiat.</p>
             </div>
             <div className={styles.zamereniInner}>
-                <div><Image src='/../public/img/zamereni.png' width={1043} height={750}></Image></div>
+                <div><Image src='/img/zamereni.png' width={1043} height={750} alt=""></Image></div>
                 <div className={styles.zamereniAcordeon}>
                     <ZamereniItem></ZamereniItem>
                 </div>

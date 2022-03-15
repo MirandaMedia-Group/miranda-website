@@ -7,7 +7,9 @@ const Navbar = () => {
     <header className={styles.mainHeader}>
         <div className={styles.logo}>
           <Link href="/" passHref>
-            <Image src="/img/logo.png" width="67" height="55" alt="MirandaMedia Group" />
+            <>
+              <Image src="/img/logo.png" width="67" height="55" alt="MirandaMedia Group" />
+            </>
           </Link>
         </div>
         <nav className={styles.navigation}>
