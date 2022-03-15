@@ -1,5 +1,5 @@
 .footer {
-    background-color: #59DC8E;
+    background: linear-gradient(to bottom, transparent 0%, transparent 200px, $color-primary 200px);
     color: #fff;
     padding-bottom: 45px;
 
@@ -16,10 +16,6 @@
         &:first-of-type {
             margin-top: 30px;
         }
-    }
-
-    &>span {
-        margin-top:  -200px !important;
     }
 
     .container {
@@ -70,11 +66,11 @@
 }
 
 .phone:before {
-    content: url('../../public/img/icon/icon-phone.svg');
+    content: url('/img/icon/icon-phone.svg');
 }
 
 .mail:before {
-    content: url('../../public/img/icon/icon-mail.svg');
+    content: url('/img/icon/icon-mail.svg');
 }
 
 .partneri {

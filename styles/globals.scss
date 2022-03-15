@@ -224,16 +224,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 h1 {
-  font-size: 92px;
+  font-size: rem(92);
   line-height: 1.4em;
 }
 h2 {
-  font-size: 48px;
+  font-size: rem(48);
 }
 
 h4 {
-  font-size: 32px;
-  line-height: 42px;
+  font-size: rem(32);
+  line-height: em(42,32);
 }
 section {
   margin-bottom: 100px;

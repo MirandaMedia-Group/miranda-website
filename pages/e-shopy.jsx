@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import HeroStatic from '../components/HeroStatic/HeroStatic'
 import Reference from '../components/Reference/Reference'
+import Sluzby from '../components/Sluzby/Sluzby'
 
 export default function EShopy() {
 	return (
@@ -16,6 +15,9 @@ export default function EShopy() {
 			<section className="container">
 				<h2>Naše práce</h2>
 				<Reference></Reference>
+			</section>
+			<section className='container'>
+				<Sluzby></Sluzby>
 			</section>
 		</>
 	)
