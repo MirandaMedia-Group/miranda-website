@@ -7,7 +7,6 @@ export default function EShopy() {
         
       </Head>
       <h1>E-shopy</h1>
-      <h2>Novák smrdí!</h2>
     </>
   )
 }
