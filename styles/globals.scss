@@ -263,15 +263,16 @@ section {
   display: inline-block;
   line-height: 1em;
   padding: em(20);
-  padding: 20px;
 }
 .btn.btn-primary {
   background-color: #59DC8E;
   color: $color-font;
+  border: 1px solid $color-primary;
 }
 .btn.btn-secondary {
   border: 1px solid #59DC8E;
   color: $color-font;
+  background-color: $color-white;
 }
 .text-center {
   text-align: center;
@@ -280,4 +281,22 @@ section {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+}
+.reference {
+  font-size: rem(20);
+  line-height: em(36, 20);
+  h2 {
+      margin-bottom: 0;
+      text-align: left;
+  }
+}
+.buttons-wrapper {
+  display: flex;
+  padding: 20px 0;
+  &.justify-center {
+    justify-content: center;
+  }
+  .btn:not(:last-of-type) {
+      margin-right: rem(20);
+  }
 }
