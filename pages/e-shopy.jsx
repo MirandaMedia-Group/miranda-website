@@ -4,6 +4,7 @@ import Image from 'next/image'
 import HeroStatic from '../components/HeroStatic/HeroStatic'
 import Reference from '../components/Reference/Reference'
 import Sluzby from '../components/Sluzby/Sluzby'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 
 export default function EShopy() {
 	return (
@@ -49,11 +50,34 @@ export default function EShopy() {
 					<h2>Proč byste si měli vybrat pro vaše úspěšné podnikání právě Shoptet</h2>
 					<p>Jednička mezi e-commerce platformami v Česku a na Slovensku.</p>
 					<div className="proc-shoptet-block">
+						<div className="bg-img">
+							<Image src="/img/proc-shoptet-bg.svg" width={1369} height={916} alt=""></Image>
+						</div>
 						<div className="item">
-							
+							<span className="number">01</span>
+							<p>Shoptet je na českém trhu <strong>TOP on-line platforma</strong> určená pro provozování elektronického obchodu. <strong>S Mirandou dokážete</strong> krabicové řešení 
+								posunout na úroveň <strong>řešení na míru!</strong></p>
+						</div>
+						<div className="item">
+							<span className="number">02</span>
+							<p><strong>Shoptet na míru znamená vlastní e-shop</strong> s možností individuálních a téměř neomezených úprav grafiky, struktury a funkcionalit</p>
+						</div>
+						<div className="item">
+							<span className="number">03</span>
+							<p><strong>Řešení na míru od Mirandy</strong> vám pomůže vystoupit z davu a odlišit se od konkurence</p>
+						</div>
+						<div className="item">
+							<span className="number">04</span>
+							<p><strong>Intuitivní a jednoduchá obsluha</strong>, kterou zvládne každý a hlavně vám vše vysvětlíme a do administrace <strong>zaškolíme</strong>.</p>
+						</div>
+						<div className="mockup">
+							<Image src="/img/mobile-mockup.png" width={595} height={862} alt=""></Image>
 						</div>
 					</div>
 				</div>
+			</section>
+			<section>
+				<CoONasRikaji></CoONasRikaji>
 			</section>
 		</>
 	)
