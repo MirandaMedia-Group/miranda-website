@@ -221,7 +221,6 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  text-align: center;
 }
 h1 {
   font-size: rem(92);
@@ -256,6 +255,11 @@ section {
 
   .col-4 {
     flex: 0 1 auto;
+  }
+  &.col-2 {
+    .column {
+      flex: 0 1 50%;
+    }
   }
 }
 
@@ -298,5 +302,18 @@ section {
   }
   .btn:not(:last-of-type) {
       margin-right: rem(20);
+  }
+}
+
+
+
+// NOT COMPONENTS SECTION
+.systemy {
+  h2 {
+    text-align: left;
+  }
+  .img-wrapper {
+    position: relative;
+    left: -180px;
   }
 }

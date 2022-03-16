@@ -31,9 +31,11 @@
         background-color: rgba($color-primary, .4);
     }
     &:nth-of-type(3),
-    &:nth-of-type(8),
     &:nth-of-type(9) {
         background-color: rgba($color-primary, .1);
+    }
+    &:nth-of-type(8) {
+        background-color: rgba($color-primary, .05);
     }
     &.large {
         grid-column-end: span 2;
@@ -65,5 +67,20 @@
     margin-bottom: 55px;
     & > span:not(:last-of-type) {
         margin-right: 40px !important;
+    }
+}
+.usp {
+    background-color: $color-primary;
+    padding: 45px 85px;
+    margin: 0 -85px;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    .uspItem {
+        padding: 15px;
+        flex: 0 1 16.67%;
+        p {
+            margin: 0;
+        }
     }
 }
