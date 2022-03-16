@@ -13,8 +13,12 @@
     h3, h2 {
         text-align: left;
     }
+    h2 {
+        margin: 0;
+    }
     h3 {
         font-size: 1rem;
+        margin: em(20,16) 0;
     }
     p {
         line-height: em(28,16);
@@ -35,5 +39,31 @@
         grid-column-end: span 2;
         grid-row-end: span 2;
         padding: 90px 60px;
+        p {
+            font-size: rem(24);
+            margin-top: 0;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: .4em;
+            &::before {
+                content: url(/img/icon/list-marker.svg);
+                display: inline-block;
+                line-height: 0;
+                margin-right: .4em;
+            }
+        }
+    }
+}
+.certifikace {
+    margin-bottom: 55px;
+    & > span:not(:last-of-type) {
+        margin-right: 40px !important;
     }
 }
