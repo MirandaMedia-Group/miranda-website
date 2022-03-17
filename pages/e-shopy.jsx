@@ -84,6 +84,19 @@ export default function EShopy() {
 			<section>
 				<CoONasRikaji></CoONasRikaji>
 			</section>
+			<section className="container konfigurator">
+				<div className="columns col-2">
+					<div className="column">
+						<h2>Zkuste si nakonfigurovat váš e-shop</h2>
+						<p><strong>Zaberete jo jen chvílku</strong> (pár draganddrop), dáte nám váš email a my vám obratem pošleme nabídku adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+							laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<Link href="#">
+							<a className='btn btn-primary'>Přejít na konfigurátor</a>
+						</Link>
+					</div>
+				</div>
+			</section>
 		</>
 	)
 }

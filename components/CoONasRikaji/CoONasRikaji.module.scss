@@ -4,3 +4,136 @@
         text-align: center;
     }
 }
+.texts {
+    padding-left: 90px;
+    position: relative;
+    z-index: 3;
+    p {
+        font-size: rem(24);
+        line-height: em(40,20);
+    }
+    strong {
+        font-weight: 400;
+        color: $color-primary;
+    }
+}
+.image {
+    position: relative;
+    line-height: 0;
+    &::before {
+        content: url(/img/icon/quotes.svg);
+        display: block;
+        position: absolute;
+        font-size: 100px;
+        z-index: 1;
+        right: 26px;
+        top: 39px;
+    }
+}
+.arrows {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    .arrow {
+        background-color: $color-primary;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+.perex {
+    display: flex;
+    align-items: center;
+    .btn {
+        flex-shrink: 0;
+        margin-right: rem(14);
+    }
+    .author {
+        text-align: right;
+        strong {
+            color: $color-font;
+            font-weight: 700;
+            display: block;
+            font-size: 32px;
+            line-height: 1em;
+        }
+    }
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transform: translate(calc(50% + 5px), calc(50% + 5px));
+    .tile {
+        background-color: $color-primary;
+        animation: 10s pulse ease-in infinite;
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(5),
+        &:nth-of-type(6),
+        &:nth-of-type(4),
+        &:nth-of-type(13),
+        &:nth-of-type(16) {
+            visibility: hidden;
+        }
+        &:nth-of-type(3) {
+            opacity: 1;
+            animation-delay: 0;
+        }
+        &:nth-of-type(7) {
+            opacity: 1;
+            animation-delay: 200ms;
+        }
+        &:nth-of-type(8) {
+            opacity: 1;
+            animation-delay: 1.3s;
+        }
+        &:nth-of-type(9) {
+            opacity: 1;
+            animation-delay: 2.4s;
+        }
+        &:nth-of-type(10) {
+            opacity: 1;
+            animation-delay: 1s;
+        }
+        &:nth-of-type(11) {
+            opacity: 1;
+            animation-delay: 3.5s;
+        }
+        &:nth-of-type(12) {
+            opacity: 1;
+            animation-delay: 500ms;
+        }
+        &:nth-of-type(14) {
+            opacity: 1;
+            animation-delay: 2.8s;
+        }
+        &:nth-of-type(15) {
+            opacity: 1;
+            animation-delay: 1.8s;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
