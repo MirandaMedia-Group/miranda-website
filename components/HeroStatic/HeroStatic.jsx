@@ -2,14 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from './HeroStatic.module.scss'
 
-const HeroStatic = () => {
+const HeroStatic = (props) => {
+    console.log(props)
     return (
         <div className={styles.hero}>
-            <Image src="/img/eshopy-hero.png" width="1920" height="1080" alt="" />
+           <Image src={props.image} width="1920" height="1080" alt="" />
             <div className={styles.itemTexts}>
                 <div className="container">
-                    <h1>Připravíme vám Shoptet na míru</h1>
-                    <p>Kompletní e-shopové řešení za nejkratší možnou dobu</p>
+                    <h1>{props.title}</h1>
+                    <p>{props.subtitle}</p>
                     <div className="buttons-wrapper">
                         <Link href="/kontakty">
                             <a className="btn btn-primary">Chci Shoptetové řešení</a>

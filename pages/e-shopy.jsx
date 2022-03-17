@@ -12,7 +12,12 @@ export default function EShopy() {
 				
 			</Head>
 			<section>
-				<HeroStatic></HeroStatic>
+				<HeroStatic 
+					title="Připravíme vám Shoptet na míru" 
+					subtitle="Kompletní e-shopové řešení za nejkratší možnou dobu"
+					image="/img/eshopy-hero.png"
+					>
+				</HeroStatic>
 			</section>
 			<section className="container">
 				<h2>Naše práce</h2>
