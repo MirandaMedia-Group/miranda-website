@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
       <div className={styles.footer}>
-        <Image src="/../public/img/footer.png" width={1920} height={364} />
+        <Image src="/img/footer.png" width={1920} height={364} alt=""/>
         <div className={`container ${styles.container}`}>
           <div className='col-4'>
             <div className={styles.logo}>
@@ -35,7 +35,7 @@ function Footer() {
           <div className='col-4'>
             <a href="tel:+420732264251" className={styles.phone}>+420 732 264 251</a>
             <a href="mailto:info@mirandamedia.cz" className={styles.mail}>info@mirandamedia.cz</a>
-            <Image src="/../public/img/mapa.jpg" width={460} height={300} />
+            <Image src="/img/mapa.jpg" width={460} height={300} alt=""/>
           </div>
           <div className={`col-4 ${styles.sluzby}`}>
             <div>
