@@ -230,6 +230,10 @@ h2 {
   font-size: rem(48);
 }
 
+h3 {
+  font-size: rem(56);
+}
+
 h4 {
   font-size: rem(32);
   line-height: em(42,32);
@@ -314,6 +318,16 @@ section {
 }
 
 
+.blur {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.negative-margin {
+  margin-top: -180px;
+  position: relative;
+  z-index: 1;
+}
+
 
 // NOT COMPONENTS SECTION
 .systemy {
@@ -366,5 +380,56 @@ section {
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+  }
+}
+
+// SLUŽBY PAGE
+
+.green-background {
+  background-color: #EAFFF2;
+  max-width: 750px;
+  max-height: 750px;
+  flex: 1;
+}
+
+.sluzby {
+  margin-top: 150px;
+
+  .sluzby-div:nth-child(odd) {
+    .sluzby-img {
+      left: 0;
+    }
+  }
+
+  .sluzby-div:nth-child(even) {
+    .sluzby-img {
+      right: 0;
+    }
+  }
+  
+}
+
+.sluzby-img {
+  position: absolute;
+  max-width: 65%;
+}
+
+.sluzby-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 140px;
+
+
+
+  h3 {
+    line-height: 68px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  
+
+  &>div:not(.green-background) {
+      width: 35%;
   }
 }
