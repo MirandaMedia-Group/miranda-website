@@ -115,7 +115,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class={styles.partneri}>
+            <div className={styles.partneri}>
               <h4>Partneři</h4>
               <div>
                 <img src="/img/icon/google-partner.svg"></img>
