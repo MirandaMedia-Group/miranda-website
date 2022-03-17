@@ -97,6 +97,76 @@ export default function EShopy() {
 					</div>
 				</div>
 			</section>
+			<section className="container balicky">
+				<div className={`columns col-2-3 reference`}>
+					<div className="column">
+						<h2>3 programy pro shoptet bez starostí</h2>
+					</div>
+					<div className="column">
+						<p>Máte hotový e-shop a nechcete platit vysoké částky za vývojový tým? Uvítali byste mít po ruce šikovné programátory a grafiky? 
+							Naše programy Miranda/partner jsou tu právě pro vás! Každý měsíc se o vás postaráme a zajistíme nezbytné úpravy, aktualizace, 
+							nastavování, tvorbu bannerů a rozšíření e-shopu dle vašich aktuálních potřeb, které potřebujete neprodleně vyřešit a nemáte dostatečné kapacity ve vašem týmu.</p>
+					</div>
+				</div>
+				<table className='balicky-table'>
+					<tbody>
+						<tr>
+							<th></th>
+							<th>Start</th>
+							<th>Business</th>
+							<th>Korpo</th>
+						</tr>
+						<tr>
+							<td>Pravidelné aktualizace v ceně</td>
+							<td className='cross'></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Kodérské a programátorské práce</td>
+							<td className='cross'></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Grafické práce</td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Dedikovaný projekt manažer</td>
+							<td className='cross'></td>
+							<td className="checked"></td>
+							<td className='cross'></td>
+						</tr>
+						<tr>
+							<td>Vyřízení požadavků nejpozději do 8 hodin</td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Řešení klíčových servisních incidentů</td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Zálohování dat na oddělené úložiště</td>
+							<td className='cross'></td>
+							<td className="checked"></td>
+							<td className="checked"></td>
+						</tr>
+						<tr>
+							<td>Rozumná cena</td>
+							<td>1 995 Kč</td>
+							<td>4 590 Kč</td>
+							<td>Cena na vyžádání</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 		</>
 	)
 }
