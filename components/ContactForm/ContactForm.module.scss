@@ -1,0 +1,122 @@
+.formWrapper {
+    display: flex;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: -320px;
+    position: relative;
+    z-index: 2;
+    h2 {
+        strong {
+            color: $color-primary;
+            font-weight: 700;
+        }
+    }
+    & > div:first-of-type {
+        background: url(/img/form-bg.jpg) top center no-repeat, #222E27;
+        background-blend-mode: luminosity, normal;
+        color: $color-white;
+        padding: 115px 75px;
+        flex: 0 1 560px;
+    }
+    & > div:last-of-type {
+        flex: 0 1 880px;
+        padding: 65px 150px;
+        background-color: $color-white;
+    }
+    form {
+        font-size: 1rem;
+    }
+    input:not([type="checkbox"]),
+    textarea {
+        background-color: #F2F2F2;
+        box-shadow: none;
+        border: none;
+        padding: em(16);
+        font-size: inherit;
+        width: 100%;
+    }
+    .formRow {
+        margin-bottom: 15px;
+        display: flex;
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            flex: 0 1 50%;
+        }
+        input:not(:last-of-type) {
+            margin-right: 15px;
+        }
+    }
+    .checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 7.5px;
+        .group {
+            flex: 0 1 calc(50% - 7.5px);
+            padding: 7.5px 0;
+            &:nth-of-type(odd) {
+                margin-right: 15px;
+            }
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+    input[type="checkbox"] + label {
+        padding-left: 36px;
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: "";
+            display: block;
+            width: 27px;
+            height: 27px;
+            border: 1px solid #F2F2F2;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s ease-in;
+        }
+        &::after {
+            transition: all .3s ease-in;
+            opacity: 0;
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 19px;
+            height: 19px;
+        }
+    }
+    input[type="checkbox"]:checked + label {
+        &::after {
+            background-color: $color-primary;
+            opacity: 1;
+        }
+        &::before {
+            border-color: $color-primary;
+        }
+    }
+    input[type="checkbox"] + label[for="consent"] {
+        padding-left: 0;
+        margin-top: 15px;
+        &::before, &::after {
+            display: none;
+        }
+    }
+    input::placeholder,
+    textarea::placeholder,
+    textarea,
+    input {
+        font-family: "Poppins", sans-serif;;
+    }
+}

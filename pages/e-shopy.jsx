@@ -5,6 +5,7 @@ import HeroStatic from '../components/HeroStatic/HeroStatic'
 import Reference from '../components/Reference/Reference'
 import Sluzby from '../components/Sluzby/Sluzby'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
+import ContactForm from '../components/ContactForm/ContactForm'
 
 export default function EShopy() {
 	return (
@@ -184,6 +185,9 @@ export default function EShopy() {
 						</tr>
 					</tbody>
 				</table>
+			</section>
+			<section className="kontakt-form">
+				<ContactForm></ContactForm>
 			</section>
 		</>
 	)
