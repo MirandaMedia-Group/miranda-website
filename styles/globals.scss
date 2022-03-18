@@ -433,9 +433,17 @@ section {
       margin-top: em(30,24);
     }
   }
-  tr:last-of-type {
+  tr:nth-last-of-type(2) {
     td {
       padding-bottom: em(30,24);
+    }
+  }
+  tr:last-of-type {
+    td {
+      background-color: transparent;
+      font-weight: 400;
+      font-size: 1rem;
+      padding-top: em(30,16);
     }
   }
   .cross {
