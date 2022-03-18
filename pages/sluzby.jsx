@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="green-background">
             <div className='sluzby-img'>
-              <Image src="/img/Mockups_analyza.png" width={1200} height={750} />
+              <Image src="/img/Mockups_analyza.png" width={1000} height={750} />
             </div>
           </div>
         </div>
