@@ -164,6 +164,24 @@ export default function EShopy() {
 							<td>4 590 Kč</td>
 							<td>Cena na vyžádání</td>
 						</tr>
+						<tr className='buttons'>
+							<td></td>
+							<td>
+								<Link href="#">
+									<a className="btn btn-secondary">Poptat řešení</a>
+								</Link>
+							</td>
+							<td>
+								<Link href="#">
+									<a className="btn btn-secondary">Poptat řešení</a>
+								</Link>
+							</td>
+							<td>
+								<Link href="#">
+									<a className="btn btn-secondary">Poptat řešení</a>
+								</Link>
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</section>

@@ -8,7 +8,7 @@ const CoONasRikaji = () => {
     return (
         <div className={styles.CoONasRikajiSection}>
             <div className='container'>
-                <h2>Co o náš říkají</h2>
+                <h2>Co o nás říkají</h2>
                 <div className="slider-wrapper">
                     <div className="item">
                         <div className="columns col-4-6 align-center">
