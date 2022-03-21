@@ -1,8 +1,8 @@
 .footer {
-    background: linear-gradient(to bottom, transparent 0%, transparent 200px, $color-primary 200px);
+    background: $color-font;
     color: #fff;
     padding-bottom: 45px;
-
+    padding-top: 200px;
     ul {
         list-style: none;
         padding-left: 0;
@@ -11,6 +11,9 @@
 
         li {
             line-height: 28px;
+            strong {
+                color: $color-primary;
+            }
         }
 
         &:first-of-type {
@@ -32,6 +35,7 @@
     h4 {
         margin-bottom: 0;
         text-align: left;
+        color: $color-primary;
     }
 
     .sluzby {
@@ -57,6 +61,7 @@
     position: relative;
     margin-left: 14px;
     padding-left: 27px;
+    color: $color-primary;
 
     &:before {
         position: absolute;
@@ -84,12 +89,36 @@
 }
 
 .socials {
+    display: flex;
+    justify-content: center;
     a {
-        padding: 0 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 64px;
+        min-width: 64px;
+        svg {
+            fill: $color-primary;
+            transition: all .3s ease-in;
+        }
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+        &:hover, &:focus {
+            svg {
+                fill: $color-white;
+            }
+        }
     }
 }
 
 .signature {
     margin-top: 20px;
-    color: #BDF1D2;
+    color: $color-white;
+    opacity: .6;
+}
+
+.footerLogo {
+    fill: $color-primary;
 }
