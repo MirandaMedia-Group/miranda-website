@@ -45,7 +45,7 @@ export default function Home() {
       <section>
         <CoONasRikaji></CoONasRikaji>
       </section>
-      <section>
+      <section className="no-margin">
         <ProjektBanner></ProjektBanner>
       </section>
     </>
