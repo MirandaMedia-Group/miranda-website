@@ -17,7 +17,7 @@ export default function Home() {
         <div className="sluzby-div">
           <div className="green-background">
             <div className='sluzby-img'>
-              <Image src="/img/mockup_eshopy.png" width={1200} height={750} />
+              <Image src="/img/mockup_eshopy.png" width={1040} height={750} />
             </div>
           </div>
           <div>
@@ -62,14 +62,14 @@ export default function Home() {
           </div>
           <div className="green-background">
             <div className='sluzby-img'>
-              <Image src="/img/mockups_webs.png" width={1200} height={750} />
+              <Image src="/img/mockups_webs.png" width={1067} height={750} />
             </div>
           </div>
         </div>
         <div className="sluzby-div">
         <div className="green-background">
             <div className='sluzby-img'>
-              <Image src="/img/Mockups_insta.png" width={1200} height={750} />
+              <Image src="/img/Mockups_insta.png" width={1020} height={750} />
             </div>
           </div>
           <div>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="green-background">
             <div className='sluzby-img'>
-              <Image src="/img/Mockups_analyza.png" width={1000} height={750} />
+              <Image src="/img/Mockups_analyza.png" width={1053} height={750} />
             </div>
           </div>
         </div>
