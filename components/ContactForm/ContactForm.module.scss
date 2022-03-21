@@ -16,6 +16,9 @@
         color: $color-white;
         padding: 115px 75px;
         flex: 0 1 560px;
+        p {
+            margin-top: 0;
+        }
     }
     & > div:last-of-type {
         flex: 0 1 880px;
@@ -118,5 +121,29 @@
     textarea,
     input {
         font-family: "Poppins", sans-serif;;
+    }
+    .projectPhone {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: rem(24);
+        &::before {
+            content: url(/img/icon/icon-phone.svg);
+            display: inline-block;
+            margin-right: .5em;
+            line-height: 0;
+        }
+    }
+    .projectMail {
+        display: flex;
+        align-items: center;
+        font-size: rem(24);
+        font-weight: 700;
+        &::before {
+            content: url(/img/icon/icon-mail.svg);
+            display: inline-block;
+            margin-right: .5em;
+            line-height: 0;
+        }
     }
 }

@@ -61,9 +61,9 @@ const ContactForm = () => {
             <div className="column">
                 <h2>Mám zájem <strong>o spolupráci</strong></h2>
                 <p>Zanechte nám na sebe kontakt, spojíme se s vámi.</p>
-                <a className="project-phone" href="tel:+420732264251">+420 732 264 251</a>
+                <a className={styles.projectPhone} href="tel:+420732264251">+420 732 264 251</a>
                 <p>Pondělí - Pátek: <strong>9:00 - 17:00</strong></p>
-                <a href="mailto:info@mirandamedia.cz" className="project-mail">info@mirandamedia.cz</a>
+                <a href="mailto:info@mirandamedia.cz" className={styles.projectMail}>info@mirandamedia.cz</a>
             </div>
             <div className="column">
                 <form onSubmit={sendForm}>
@@ -115,7 +115,7 @@ const ContactForm = () => {
                     </div>
                     <textarea name="zprava" id="zprava" rows="8" placeholder="Váš vzkaz" ref={form.zprava}></textarea>
                     <div className={styles.formRow}>
-                        <input type="checkbox" name="consent" id="consent" required checked/>
+                        <input type="checkbox" name="consent" id="consent" readOnly/>
                         <label htmlFor="consent">Odesláním souhlasíte s Podmínkami o zpracovaní osobních údajů</label>
                     </div>
                     <button type="submit" className="btn btn-primary">Odeslat poptávku</button>
