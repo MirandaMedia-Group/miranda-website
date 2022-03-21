@@ -8,8 +8,9 @@ const CoONasRikaji = () => {
     return (
         <div className={styles.CoONasRikajiSection}>
             <div className='container'>
-                <h2>Co o nás říkají</h2>
-                <div className="slider-wrapper">
+                <h2>Co říkáte <span>na Mirandu</span></h2>
+                <p className='text-center narrow'>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsem dopadli s jeho novým a vymazleným e-shopem...</p>
+                <div className={styles.sliderWrapper}>
                     <div className="item">
                         <div className="columns col-4-6 align-center">
                             <div className={`column ${styles.image}`}>
@@ -36,20 +37,14 @@ const CoONasRikaji = () => {
                                 </div>
                             </div>
                             <div className={`column ${styles.texts}`}>
-                                <p><strong>Spolupráci s Miranda Media si velice cením</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p><strong>Spolupráci s Mirandou jsme započali koncem roku 2021.</strong> Lidé z Mirandy nás vyhledali a oslovili sami, a tak jsme jednoho dne zasedli ke společnému stolu. 
+                                    Dostali jsme nabídku na zpracování e-shopu na míru pro náš nově vznikající podnik butikové cukrárny, který chystáme otevřít v průběhu roku 2022. 
+                                    Spolupráce se nám vydařila a  e-shop jsme vytvořili. Celý proces realizace proběhl podle předem dohodnutých postupů a termínů, bez zbytečných obezliček. 
+                                    <strong> Jednu věc máme za sebou ale nezůstali jsme u ní a s dalšími projekty společné navazujeme.</strong> Spolehlivosti si totiž cením, v kuchyni se bez ní nedá existovat.</p>
                                 <div className={styles.perex}>
-                                    <Link href="#">
-                                        <a className={`btn btn-secondary ${styles.btn}`}>Přečíst celý rozhovor</a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className={`btn btn-primary ${styles.btn}`}>Přehrát video</a>
-                                    </Link>
                                     <div className={styles.author}>
-                                        <strong>Markéta Zrnková</strong>
-                                        <span className={styles.position}>marketing specialist ve společnosti Penny</span>
+                                        <strong>Zdeněk Pohlreich</strong>
+                                        <span className={styles.position}>Majitel Café Imperial</span>
                                     </div>
                                 </div>
                             </div>

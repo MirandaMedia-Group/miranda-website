@@ -2,6 +2,10 @@
     display: flex;
     h2 {
         text-align: center;
+        margin: 0;
+        span {
+            color: $color-primary;
+        }
     }
 }
 .texts {
@@ -38,13 +42,16 @@
     right: 0;
     z-index: 2;
     .arrow {
-        background-color: $color-primary;
+        background-color: $color-font;
         width: 100px;
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        &:not(:last-of-type) {
+            margin-right: 1px;
+        }
     }
 }
 .perex {
@@ -56,6 +63,7 @@
     }
     .author {
         text-align: right;
+        margin-left: auto;
         strong {
             color: $color-font;
             font-weight: 700;
@@ -125,6 +133,9 @@
             animation-delay: 1.8s;
         }
     }
+}
+.sliderWrapper {
+    margin-top: 60px;
 }
 
 @keyframes pulse {
