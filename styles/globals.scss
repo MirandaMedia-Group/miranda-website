@@ -245,6 +245,11 @@ section:not(.no-margin) {
   margin-bottom: 100px;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -253,10 +258,10 @@ section:not(.no-margin) {
   }
   &.col-1-4 {
     .column:first-of-type {
-      flex: 0 1 25%;
+      flex: 0 1 30%;
     }
     .column {
-      flex: 0 1 75%;
+      flex: 0 1 70%;
     }
   }
 
@@ -522,4 +527,29 @@ section:not(.no-margin) {
       content: url(/img/icon/check.svg);
     }
   }
+}
+
+// KONTAKTY
+.adresa {
+  flex: 1;
+  padding: 0 100px;
+  margin-top: 5%;
+
+  h4 {
+    margin-bottom: 12px;
+  }
+
+  ul:first-of-type {
+    margin-bottom: 70px;
+  }
+}
+
+.mapa {
+  flex: 2;
+}
+
+.adresa-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
 }

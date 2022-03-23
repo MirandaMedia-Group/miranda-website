@@ -19,11 +19,10 @@ export default function Home() {
       <section className="container">
         <div className={`columns col-1-4 align-center reference`}>
             <div className="column">
-                <h2>Reference</h2>
+                <h2>Na co jsme hrdí</h2>
             </div>
             <div className="column">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Prohlédněte si naše referenční projekty, které jsme realizovali napříč obory a segmenty podnikání. Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně,</strong> tvorbou značek a nových produktů, ale nejen to. U nás najdete vše, co potřebujete k e-podnikání na jednom místě.</p>
             </div>
         </div>
         <Reference></Reference>

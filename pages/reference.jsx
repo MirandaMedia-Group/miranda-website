@@ -1,12 +1,19 @@
-import Head from 'next/head'
+import HeroStatic from '../components/HeroStatic/HeroStatic'
+import ProjektBanner from '../components/ProjektBanner/ProjektBanner'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        
-      </Head>
-      <h1>Reference</h1>
+     <HeroStatic 
+      title="Reference"
+      subtitle="Lorem ipsum dolor sit amet adpisicng lorem
+      ipsum."
+      image="/img/referenceBackground.jpg"
+     />
+    
+      <CoONasRikaji />
+      <ProjektBanner />
     </>
   )
 }
