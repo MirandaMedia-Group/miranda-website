@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import HeroStatic from '../components/HeroStatic/HeroStatic'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        
-      </Head>
-      <h1>Proč s námi?</h1>
+      <HeroStatic 
+        title="Proč s námi?"
+        subtitle=""
+        image="/img/heroBanner.png"
+      />
     </>
   )
 }

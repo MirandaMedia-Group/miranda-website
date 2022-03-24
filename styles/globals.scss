@@ -291,6 +291,16 @@ ul {
   }
 }
 
+.columns.col-1-4.wider {
+  .column:first-of-type {
+    flex: 0 1 40%
+  }
+
+  .column {
+    flex: 0 1 60%;
+  }
+}
+
 .btn {
   display: inline-block;
   line-height: 1em;
@@ -325,6 +335,9 @@ ul {
   }
 }
 
+.green {
+  color: $color-primary;
+}
 
 .blur {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -552,4 +565,42 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 150px;
+}
+
+// O NÁS
+.partner {
+  display: flex;
+
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  &>div {
+    width: 50%;
+
+    &:nth-child(2) {
+      padding: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  h4 {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+
+  a {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 700;
+  }
 }

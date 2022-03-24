@@ -1,0 +1,38 @@
+.section {
+    position: relative;
+
+    &>div>div {
+        min-height: 450px;
+
+        &>div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 2.5em;
+        }
+    }
+}
+
+.images {
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    &>div {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.list {
+    margin-top: 50px;
+    
+    li {
+        font-size: em(24);
+        line-height: em(42);
+        font-weight: 700;
+    }
+}

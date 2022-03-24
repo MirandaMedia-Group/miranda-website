@@ -17,7 +17,7 @@ function ProjektBanner () {
                         Jenomže ty dobrý projekty rostou, vyvíjej se, inspirujou a přitahujou pozornost ostatních. V čem je ale rozdíl a kde se láme chleba? Miranda věří, že je to hlavně o lidech, 
                         kteří jsou produktem svých vlastních myšlenek stejně jako jejich projekty a partnerství, která vznikají.</p>
                     <Link href="/kontakty">
-                        <a className="btn">Kontaktujte nás</a>
+                        <a className="btn">Spojit se s Mirandou</a>
                     </Link>
                 </div>
             </div>

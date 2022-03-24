@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import Reference from '../components/Reference/Reference'
-import Zamereni from '../components/Zamereni/Zamereni'
-import Cesta from '../components/Cesta/Cesta'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ProjektBanner  from '../components/ProjektBanner/ProjektBanner'
+import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
+import Spoluprace from '../components/Spoluprace/Spoluprace'
+import Projekty from '../components/Projekty/Projekty'
 
 export default function Home() {
   return (
@@ -36,13 +37,16 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <Zamereni></Zamereni>
+        <PravaMiranda></PravaMiranda>
       </section>
       <section>
-        <Cesta></Cesta>
+        <Spoluprace></Spoluprace>
       </section>
       <section>
         <CoONasRikaji></CoONasRikaji>
+      </section>
+      <section>
+        <Projekty />
       </section>
       <section>
         <ProjektBanner></ProjektBanner>
