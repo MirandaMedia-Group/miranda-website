@@ -1,6 +1,11 @@
 .projekty {
     text-align: center;
     margin-top: 60px;
+
+    &>p {
+        max-width: 55%;
+        margin: 10px auto 50px;
+    }
 }
 
 .title {
@@ -27,10 +32,11 @@
 
     p {
         color: #4E5852;
+        margin-bottom: 0;
     }
 }
 
-.projekt {
+/*.projekt {
     &:nth-child(odd) {
         margin-bottom: 50px;
     }
@@ -39,3 +45,4 @@
         padding-bottom: 80px;
     }
 }
+*/

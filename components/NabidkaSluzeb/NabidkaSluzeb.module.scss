@@ -1,0 +1,51 @@
+.title {
+    text-align: center;
+}
+
+.par {
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sluzby {
+    display: flex;
+    margin-top: 80px;
+}
+
+.sluzba {
+    flex: 1 1 25%;
+    margin-right: 20px;
+    border: 1px solid #59DC8E;
+    padding: 50px;
+    height: fit-content;
+
+    a {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+
+        .poradi {
+            color: #fff;
+        }
+
+        .btnSm {
+            background-color: #fff;
+        }
+    }
+}
+
+.poradi {
+    color: $color-primary;
+    font-size: 2rem;
+    line-height: 1.3125em;
+    font-weight: 700;
+}

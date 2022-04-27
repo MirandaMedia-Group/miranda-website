@@ -7,6 +7,7 @@ import ProjektBanner  from '../components/ProjektBanner/ProjektBanner'
 import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
 import Spoluprace from '../components/Spoluprace/Spoluprace'
 import Projekty from '../components/Projekty/Projekty'
+import NabidkaSluzeb from '../components/NabidkaSluzeb/NabidkaSluzeb'
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
                 <h2>Na co jsme hrdí</h2>
             </div>
             <div className="column">
-                <p>Prohlédněte si naše referenční projekty, které jsme realizovali napříč obory a segmenty podnikání. Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně,</strong> tvorbou značek a nových produktů, ale nejen to. U nás najdete vše, co potřebujete k e-podnikání na jednom místě.</p>
+                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně,</strong> tvorbou značek a nových produktů, ale nejen to. V Mirandě najdete vše, co potřebujete k e-podnikání na jednom místě.</p>
             </div>
         </div>
         <Reference></Reference>
@@ -38,6 +39,9 @@ export default function Home() {
       </section>
       <section>
         <PravaMiranda></PravaMiranda>
+      </section>
+      <section>
+        <NabidkaSluzeb></NabidkaSluzeb>
       </section>
       <section>
         <Spoluprace></Spoluprace>

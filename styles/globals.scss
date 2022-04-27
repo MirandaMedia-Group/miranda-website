@@ -301,6 +301,21 @@ ul {
   }
 }
 
+.btn-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  &::before {
+    content: url('/img/icon/sipka.svg');
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+}
+
 .btn {
   display: inline-block;
   line-height: 1em;

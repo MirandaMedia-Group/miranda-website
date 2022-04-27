@@ -12,10 +12,8 @@ function ProjektBanner () {
                     </div>
                 </div>
                 <div className="column">
-                    <h2>Nastartujte <span>váš projekt</span></h2>
-                    <p><strong>Každý den vznikne po celým světě nepřeberný množství nápadů a  nových projektů.</strong> Jedny z nich skončej dřív, než řeknete švec a za nedlouho po nich ani pes neštěkne. 
-                        Jenomže ty dobrý projekty rostou, vyvíjej se, inspirujou a přitahujou pozornost ostatních. V čem je ale rozdíl a kde se láme chleba? Miranda věří, že je to hlavně o lidech, 
-                        kteří jsou produktem svých vlastních myšlenek stejně jako jejich projekty a partnerství, která vznikají.</p>
+                    <h2>Nastartujte váš projekt</h2>
+                    <p>Miranda od počátku tvrdí, že je to hlavně o lidech, co umí vzít za práci a do každýho projektu přinesou pořádnej zápal a nadšení! Tahle energie se pak šíří napříč celým týmem. Není pak divu, že vznikaj projekty, na který můžete být právem pyšní!</p>
                     <Link href="/kontakty">
                         <a className="btn">Spojit se s Mirandou</a>
                     </Link>

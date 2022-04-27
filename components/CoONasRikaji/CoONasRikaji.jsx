@@ -8,8 +8,8 @@ const CoONasRikaji = () => {
     return (
         <div className={styles.CoONasRikajiSection}>
             <div className='container'>
-                <h2>Co říkáte <span>na Mirandu</span></h2>
-                <p className='text-center narrow'>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsem dopadli s jeho novým a vymazleným e-shopem...</p>
+                <h2>Co říkáte na Mirandu</h2>
+                <p className='text-center narrow'>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým, parádně vymazleným e-shopem a co na nás říkají další vybraní klienti...</p>
                 <div className={styles.sliderWrapper}>
                     <div className="item">
                         <div className="columns col-4-6 align-center">
@@ -39,8 +39,8 @@ const CoONasRikaji = () => {
                             <div className={`column ${styles.texts}`}>
                                 <p><strong>Spolupráci s Mirandou jsme započali koncem roku 2021.</strong> Lidé z Mirandy nás vyhledali a oslovili sami, a tak jsme jednoho dne zasedli ke společnému stolu. 
                                     Dostali jsme nabídku na zpracování e-shopu na míru pro náš nově vznikající podnik butikové cukrárny, který chystáme otevřít v průběhu roku 2022. 
-                                    Spolupráce se nám vydařila a  e-shop jsme vytvořili. Celý proces realizace proběhl podle předem dohodnutých postupů a termínů, bez zbytečných obezliček. 
-                                    <strong> Jednu věc máme za sebou ale nezůstali jsme u ní a s dalšími projekty společné navazujeme.</strong> Spolehlivosti si totiž cením, v kuchyni se bez ní nedá existovat.</p>
+                                    Spolupráce se nám vydařila a  e-shop jsme vytvořili. <strong>Celý proces realizace proběhl podle předem dohodnutých postupů a termínů, bez zbytečných obezliček. </strong>
+                                    Jednu věc máme za sebou ale nezůstali jsme u ní a s dalšími projekty společné navazujeme. Spolehlivosti si totiž cením, v kuchyni se bez ní nedá existovat.</p>
                                 <div className={styles.perex}>
                                     <div className={styles.author}>
                                         <strong>Zdeněk Pohlreich</strong>
