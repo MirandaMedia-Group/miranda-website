@@ -30,10 +30,7 @@ export default function Home() {
         <Reference></Reference>
         <div className="buttons-wrapper justify-center">
             <Link href="/reference">
-                <a className="btn btn-secondary">Přejít na reference</a>
-            </Link>
-            <Link href="/kontakty">
-                <a className="btn btn-primary">Poptat řešení</a>
+                <a className="btn btn-primary">Objevit další projekty</a>
             </Link>
         </div>
       </section>
@@ -52,7 +49,7 @@ export default function Home() {
       <section>
         <Projekty />
       </section>
-      <section>
+      <section className='visible'>
         <ProjektBanner></ProjektBanner>
       </section>
     </>

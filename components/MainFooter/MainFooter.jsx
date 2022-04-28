@@ -17,104 +17,98 @@ function Footer() {
               </Link>
               </div>
               <ul>
-                <li>Jankovcova 1595/14</li>
-                <li>Praha 7 - Holešovice</li>
-                <li>Vchod A</li>
-                <li>mapa</li>
-              </ul>
-              <ul>
-                <li><strong>MirandaMedia Group, s.r.o.</strong></li>
+                <li><strong className={styles.green}>MirandaMedia Group, s.r.o.</strong></li>
                 <li>Jankovcova 1595/14, 170 00</li>
                 <li>Praha 7 - Holešovice</li>
+                <li>Vchod B</li>
               </ul>
               <ul>
-                <li><span>IČO:</span> 08272930</li>
-                <li><span>DIČ:</span> CZ08272930</li>
-                <li><span>BÚ:</span> 2201649999/2010</li>
+                <li><strong>IČO:</strong> 08272930</li>
+                <li><strong>DIČ:</strong> CZ08272930</li>
+                <li><strong>BÚ:</strong> 2201649999/2010</li>
               </ul>
           </div>
-          <div className='col-4'>
-            <a href="tel:+420732264251" className={styles.phone}>+420 732 264 251</a>
-            <a href="mailto:info@mirandamedia.cz" className={styles.mail}>info@mirandamedia.cz</a>
-            <Image src="/img/mapa.jpg" width={460} height={300} alt=""/>
+          <div>
+            <h4>Stránky</h4>
+            <ul>
+              <li>
+                <Link href="/#">
+                  <a>Homepage</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/o-nas">
+                  <a>O nás</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/reference">
+                  <a>Reference</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/sluzby">
+                  <a>Sluzby</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kariera">
+                  <a>Kariera</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kontakty">
+                  <a>Kontakt</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              Služby
+            </h4>
+            <ul>
+              <li>
+                <Link href="/strategie">
+                  <a>Strategie</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kreativita-a-produkce">
+                  <a>Kreativita a produkce</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/performace">
+                  <a>Performace</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/brandove-kampane">
+                  <a>Brandové kampaně</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/socialni-site">
+                  <a>Sociální sítě</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/data-a-technologie">
+                  <a>Data a technologie</a>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className={`col-4 ${styles.sluzby}`}>
             <div>
-              <h4>Stránky</h4>
-              <ul>
-                <li>
-                  <Link href="/#">
-                    <a>Homepage</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/o-nas">
-                    <a>O nás</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/reference">
-                    <a>Reference</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sluzby">
-                    <a>Sluzby</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/kariera">
-                    <a>Kariera</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog">
-                    <a>Blog</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/kontakty">
-                    <a>Kontakt</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4>
-                Služby
-              </h4>
-              <ul>
-                <li>
-                  <Link href="/strategie">
-                    <a>Strategie</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/kreativita-a-produkce">
-                    <a>Kreativita a produkce</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/performace">
-                    <a>Performace</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/brandove-kampane">
-                    <a>Brandové kampaně</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/socialni-site">
-                    <a>Sociální sítě</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/data-a-technologie">
-                    <a>Data a technologie</a>
-                  </Link>
-                </li>
-              </ul>
+              <a href="tel:+420732264251" className={styles.phone}>+420 732 264 251</a>
+              <a href="mailto:info@mirandamedia.cz" className={styles.mail}>info@mirandamedia.cz</a>
             </div>
             <div className={styles.partneri}>
               <h4>Partneři</h4>

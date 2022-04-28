@@ -6,6 +6,8 @@ import styles from "./MainHeader.module.scss"
 const Navbar = () => {
   const router = useRouter()
 
+  const actualHour = new Date().getHours()
+
   return (
     <header className={`${styles.mainHeader} ${router.pathname === "/" ? styles.headerWhite : ''}`}>
         <div className={styles.logo}>
@@ -34,7 +36,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="/e-shopy" >
-                <a>E-shopy</a>
+                <a>Shoptet na míru</a>
               </Link> 
             </li>
             <li>
@@ -49,6 +51,14 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+        <div className={styles.contacts}>
+          
+          <a href="tel:00420732264251" className={styles.projectPhone}>
+            <span className={`${actualHour > 8 && actualHour < 18 ? styles.online : styles.offline} ${styles.status}`}></span>
+            +420 732 264 251
+          </a>
+          <a href="mailto:info@mirandamedia.cz" className={styles.projectMail}>info@mirandamedia.cz</a>
+        </div>
     </header>
   )
 }

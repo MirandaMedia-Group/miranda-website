@@ -13,7 +13,10 @@ const Reference = () => {
         try {
             const res = await fetch('http://164.92.206.112:1337/api/references?populate=*', {
                 method: 'GET',
-                // headers: '',
+                cors: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
             })
             const data = await res.json()
             setReferenceData(data.data)

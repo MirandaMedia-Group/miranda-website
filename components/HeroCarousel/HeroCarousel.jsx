@@ -7,7 +7,8 @@ const HeroCarousel = () => {
             <div className={styles.item}>
                 <Image src="/img/carousel.jpg" width="1920" height="1080" alt="" />
                 <div className={`container ${styles.itemTexts}`}>
-                    <h1>E-eshopy na&nbsp;míru</h1>
+                    <div>Miranda Media</div>
+                    <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1>
                 </div>
             </div>
             <div className={`container ${styles.scrollDown}`}>
@@ -18,7 +19,7 @@ const HeroCarousel = () => {
                     <span>Scrolluj</span>
                 </div>
             </div>
-            <nav className={styles.carouselNavigation}>
+            {/* <nav className={styles.carouselNavigation}>
                 <ol>
                     <li>
                         Penny
@@ -39,7 +40,7 @@ const HeroCarousel = () => {
                         PetCenter
                     </li>
                 </ol>
-            </nav>
+            </nav> */}
         </div>
     )
 }
