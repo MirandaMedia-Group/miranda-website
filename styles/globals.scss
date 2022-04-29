@@ -193,8 +193,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -576,6 +575,18 @@ main#content {
     top: -16px;
     left: -12px;
     pointer-events: none;
+  }
+}
+.reference-banner {
+  background-color: #F7F4D5;
+  .column:first-of-type {
+    padding: 100px;
+  }
+  h3 {
+    color: $color-primary;
+    strong {
+      font-size: 110%;
+    }
   }
 }
 

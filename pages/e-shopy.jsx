@@ -110,6 +110,59 @@ export default function EShopy() {
 					</div>
 				</div>
 			</section>
+			<section className='visible'>
+				<div className="container">
+					<Swiper
+						modules={[Navigation]}
+						slidesPerView={1}
+						spaceBetween={20}
+						navigation
+					>
+						<SwiperSlide className='reference-banner'>
+							<div className="columns col-2 align-center">
+								<div className="column">
+									<h3>Navýšili jsme o <strong>125%</strong></h3>
+									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
+									<Link href="#">
+										<a className='btn btn-primary'>Případová studie</a>
+									</Link>
+								</div>
+								<div className="column">
+									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className='reference-banner'>
+							<div className="columns col-2 align-center">
+								<div className="column">
+									<h3>Navýšili jsme o <strong>125%</strong></h3>
+									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
+									<Link href="#">
+										<a className='btn btn-primary'>Případová studie</a>
+									</Link>
+								</div>
+								<div className="column">
+									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className='reference-banner'>
+							<div className="columns col-2 align-center">
+								<div className="column">
+									<h3>Navýšili jsme o 125%</h3>
+									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
+									<Link href="#">
+										<a className='btn btn-primary'>Případová studie</a>
+									</Link>
+								</div>
+								<div className="column">
+									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
+								</div>
+							</div>
+						</SwiperSlide>
+					</Swiper>
+				</div>
+			</section>
 			<section className="proc-shoptet">
 				<div className="container narrow text-center">
 					<h2>Proč zvolit Shoptet?</h2>
