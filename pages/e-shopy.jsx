@@ -1,34 +1,88 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import HeroStatic from '../components/HeroStatic/HeroStatic'
-import Reference from '../components/Reference/Reference'
 import Sluzby from '../components/Sluzby/Sluzby'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ContactForm from '../components/ContactForm/ContactForm'
+import styles from '../styles/e-shopy.module.scss'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
+import 'swiper/css';
 
 export default function EShopy() {
 	return (
 		<>
-			<Head>
-				
-			</Head>
 			<section>
 				<HeroStatic 
 					title="Připravíme vám Shoptet na míru" 
 					subtitle="Kompletní e-shopové řešení za nejkratší možnou dobu"
-					image="/img/eshopy-hero.png"
+					image=""
+					video="/shoptetnamiru.mp4"
+					buttons="true"
 					>
 				</HeroStatic>
 			</section>
-			<section className="container">
-				<h2>Naše práce</h2>
-				<Reference></Reference>
-				<div className="buttons-wrapper justify-center">
-					<Link href="/reference">
-						<a className="btn btn-secondary">Další reference</a>
-					</Link>
-				</div>
+			<section className="container text-center">
+				<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
+				<Swiper
+					modules={[Navigation]}
+                    spaceBetween={20}
+					slidesPerView={3}
+					slidesPerColumn={2}
+					slidesPerGroup={3}
+					slidesPerColumnFill="row"
+					navigation
+				>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+					<SwiperSlide className={styles.slideItem}>
+						<Link href="#" passHref>
+							<>
+								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+								<span className={styles.anchor}>www.rebelbean.cz</span>
+							</>
+						</Link>
+					</SwiperSlide>
+				</Swiper>
 			</section>
 			<section className='container'>
 				<Sluzby></Sluzby>

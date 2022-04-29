@@ -1,0 +1,17 @@
+.slideItem {
+    position: relative;
+    img {
+        transition: transform .3s ease-in;
+    } 
+    &:hover, &:focus {
+        img {
+            transform: scale(1.05);
+        }
+    }
+    .anchor {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

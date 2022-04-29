@@ -382,7 +382,7 @@ img {
 .btn.btn-tertiary {
   background-color: #000;
   color: $color-white;
-  border: 1px solid;
+  border: 1px solid transparent;
   &:hover, &:focus {
     background-color: transparent;
     border-color: 1px solid #000;
@@ -401,8 +401,8 @@ img {
   margin-right: auto;
   margin-bottom: 60px;
   p {
-    font-size: rem(24);
-    line-height: em(40,24);
+    font-size: rem(20);
+    line-height: em(36,20);
   }
 }
 .buttons-wrapper {

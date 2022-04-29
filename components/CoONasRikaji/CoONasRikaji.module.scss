@@ -1,13 +1,3 @@
-.CoONasRikajiSection {
-    display: flex;
-    h2 {
-        text-align: center;
-        margin: 0;
-        span {
-            color: $color-primary;
-        }
-    }
-}
 .texts {
     padding-left: 90px;
     position: relative;
@@ -135,7 +125,7 @@
 }
 .sliderWrapper {
     margin-top: 60px;
-    margin-bottom: 90px;
+    margin-bottom: 105px;
 }
 
 @keyframes pulse {

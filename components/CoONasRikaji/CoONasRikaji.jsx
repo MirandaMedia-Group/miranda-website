@@ -7,9 +7,12 @@ const CoONasRikaji = () => {
 
     return (
         <div className={styles.CoONasRikajiSection}>
-            <div className='container'>
+            <div className='container narrow text-center'>
                 <h2>Co říkáte na Mirandu</h2>
-                <p className='text-center narrow'>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým, parádně vymazleným e-shopem a co na nás říkají další vybraní klienti...</p>
+                <p>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým, 
+                    parádně vymazleným e-shopem a co na nás říkají další vybraní klienti...</p>
+            </div>
+            <div className="container">
                 <div className={styles.sliderWrapper}>
                     <div className="item">
                         <div className="columns col-4-6 align-center">
