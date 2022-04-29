@@ -4,21 +4,32 @@
     grid-template-rows: repeat(3, minmax(1px,1fr));
 }
 .item {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &:not(.image) {
-        padding: 65px 30px;
+        padding: 50px;
     }
     &.image {
         line-height: 0;
+        display: block;
     }
     h3, h2 {
         text-align: left;
     }
     h2 {
         margin: 0;
+        font-size: rem(48);
+        line-height: em(72,48);
     }
     h3 {
-        font-size: 1rem;
+        font-size: rem(24);
+        line-height: em(42,24);
         margin: em(20,16) 0;
+        text-align: center;
     }
     p {
         line-height: em(28,16);
@@ -40,7 +51,9 @@
     &.large {
         grid-column-end: span 2;
         grid-row-end: span 2;
-        padding: 90px 60px;
+        padding: 60px 60px;
+        text-align: left;
+        align-items: flex-start;
         p {
             font-size: rem(24);
             margin-top: 0;
@@ -62,9 +75,33 @@
             }
         }
     }
+    .texts {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $color-primary;
+        padding: 0 50px;
+    }
+    &:hover, &:focus {
+        .texts {
+            max-height: 400px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
 }
 .certifikace {
-    margin-bottom: 55px;
+    justify-content: center;
+    margin-bottom: 30px;
     & > span:not(:last-of-type) {
         margin-right: 40px !important;
     }
@@ -73,7 +110,6 @@
     background-color: $color-primary;
     padding: 45px 85px;
     margin: 0 -85px;
-    color: $color-white;
     display: flex;
     justify-content: space-between;
     .uspItem {

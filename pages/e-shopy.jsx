@@ -15,7 +15,7 @@ export default function EShopy() {
 		<>
 			<section>
 				<HeroStatic 
-					title="Připravíme vám Shoptet na míru" 
+					title="Postavíme vám Shoptet na míru" 
 					subtitle="Kompletní e-shopové řešení za nejkratší možnou dobu"
 					image=""
 					video="/shoptetnamiru.mp4"
@@ -30,8 +30,8 @@ export default function EShopy() {
 						modules={[Navigation]}
 						spaceBetween={20}
 						slidesPerView={3}
-						slidesPerGroup={3}
 						navigation
+						pagination
 					>
 						<SwiperSlide className={styles.slideItem}>
 							<Link href="#" passHref>
@@ -82,6 +82,11 @@ export default function EShopy() {
 							</Link>
 						</SwiperSlide>
 					</Swiper>
+					<div className={styles.buttonsWrap}>
+						<Link href="/reference">
+							<a className="btn btn-tertiary">Zobrazit všehny reference</a>
+						</Link>
+					</div>
 				</div>
 			</section>
 			<section className='container'>
