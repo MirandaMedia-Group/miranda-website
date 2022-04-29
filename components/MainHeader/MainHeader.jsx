@@ -20,33 +20,33 @@ const Navbar = () => {
         <nav className={styles.navigation}>
           <ul>
             <li>
-              <Link href="/proc-s-nami">
-                <a>Proč s námi</a>
+              <Link href="/proc-s-nami" passHref>
+                <a className={router.pathname == "/proc-s-nami" ? `${styles.active}` : ""}>Proč s námi</a>
               </Link>
             </li>
             <li>
               <Link href="/reference">
-                <a>Reference</a>
+                <a className={router.pathname == "/reference" ? `${styles.active}` : ""}>Reference</a>
               </Link>
             </li>
             <li>
               <Link href="/sluzby" >
-                <a>Služby</a>
+                <a className={router.pathname == "/sluzby" ? `${styles.active}` : ""}>Služby</a>
               </Link>
             </li>
             <li>
               <Link href="/e-shopy" >
-                <a>Shoptet na míru</a>
+                <a className={router.pathname == "/e-shopy" ? `${styles.active}` : ""}>Shoptet na míru</a>
               </Link> 
             </li>
             <li>
               <Link href="/kariera" >
-                <a>Kariera</a>
+                <a className={router.pathname == "/kariera" ? `${styles.active}` : ""}>Kariera</a>
               </Link>
             </li>
             <li>
               <Link href="/kontakty" >
-                <a>Kontakty</a>
+                <a className={router.pathname == "/kontakty" ? `${styles.active}` : ""}>Kontakty</a>
               </Link>
             </li>
           </ul>

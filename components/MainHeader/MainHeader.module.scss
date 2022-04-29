@@ -25,6 +25,12 @@
         justify-content: space-between;
         a {
             padding: em(15);
+            transition: all .3s ease-in;
+            &.active,
+            &:hover, &:focus {
+                background-color: $color-primary;
+                color: $color-white;
+            }
         }
     }
 }
