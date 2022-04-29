@@ -23,66 +23,66 @@ export default function EShopy() {
 					>
 				</HeroStatic>
 			</section>
-			<section className="container text-center">
-				<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
-				<Swiper
-					modules={[Navigation]}
-                    spaceBetween={20}
-					slidesPerView={3}
-					slidesPerColumn={2}
-					slidesPerGroup={3}
-					slidesPerColumnFill="row"
-					navigation
-				>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={styles.slideItem}>
-						<Link href="#" passHref>
-							<>
-								<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-								<span className={styles.anchor}>www.rebelbean.cz</span>
-							</>
-						</Link>
-					</SwiperSlide>
-				</Swiper>
+			<section>
+				<div className="container text-center">
+					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
+					<Swiper
+						modules={[Navigation]}
+						spaceBetween={20}
+						slidesPerView={3}
+						slidesPerGroup={3}
+						navigation
+					>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide className={styles.slideItem}>
+							<Link href="#" passHref>
+								<>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<span className={styles.anchor}>www.rebelbean.cz</span>
+								</>
+							</Link>
+						</SwiperSlide>
+					</Swiper>
+				</div>
 			</section>
 			<section className='container'>
 				<Sluzby></Sluzby>
