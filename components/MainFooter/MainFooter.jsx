@@ -3,13 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './MainFooter.module.scss'
 import ProjektBanner from '../ProjektBanner/ProjektBanner'
+import { useRouter } from 'next/router'
 
 function Footer() {
+  const router = useRouter()
+
   return (
     <>
-      <section className='visible'>
-        <ProjektBanner></ProjektBanner>
-      </section>
+      { router.pathname != "/e-shopy" && (
+        <section className='visible'>
+          <ProjektBanner></ProjektBanner>
+        </section> 
+      )}
       <footer className={styles.footer}>
         <div className={`container ${styles.container}`}>
           <div className='col-4'>

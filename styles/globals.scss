@@ -229,8 +229,8 @@ h1 {
   line-height: em(82,62);
 }
 h2 {
-  font-size: rem(56);
-  line-height: em(68,56);
+  font-size: rem(48);
+  line-height: em(72,48);
 }
 
 h3 {
@@ -368,6 +368,10 @@ img {
   line-height: 1em;
   padding: em(20);
   transition: all .3s ease-in;
+  &.disabled {
+    opacity: .6;
+    cursor: not-allowed;
+  }
 }
 .btn.btn-primary {
   background-color: #59DC8E;
@@ -450,10 +454,11 @@ main#content {
 .systemy {
   h2 {
     text-align: left;
+    font-size: rem(48);
+    line-height: em(72,48);
   }
-  .img-wrapper {
-    position: relative;
-    left: -180px;
+  .column:last-of-type {
+    padding-left: 20px;
   }
 }
 .proc-shoptet-block {
@@ -468,7 +473,7 @@ main#content {
     border: 1px solid $color-primary;
     &:nth-of-type(2) {
       top: 0;
-      left: 0;
+      left: 100px;
     }
     &:nth-of-type(3) {
       top: 0;
@@ -476,7 +481,7 @@ main#content {
     }
     &:nth-of-type(5) {
       bottom: 90px;
-      left: 90px;
+      left: 150px;
     }
     &:nth-of-type(4) {
       bottom: 120px;
@@ -552,12 +557,25 @@ main#content {
 }
 .konfigurator {
   background-color: rgba($color-primary, .1);
-  padding: 128px 94px;
+  background-image: url(/img/kofigurator-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 100px;
+  position: relative;
   h2 {
     margin: 0;
   }
   p {
     margin: 26px 0;
+  }
+  .column:first-of-type {
+    padding-right: 50px;
+  }
+  .pripravujeme {
+    position: absolute;
+    top: -16px;
+    left: -12px;
+    pointer-events: none;
   }
 }
 

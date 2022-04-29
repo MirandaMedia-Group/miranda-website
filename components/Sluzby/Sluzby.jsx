@@ -54,7 +54,7 @@ const Sluzby = () => {
                 </div>
                 <div className={styles.item}>
                     <Image src="/img/icon/Copy.svg" width={56} height={56} alt=""></Image>
-                    <h3>Pravidelná správa e-shopu</h3>   
+                    <h3>Pravidelná správa Shoptetu</h3>   
                     <div className={styles.texts}>
                         <p>Jde vám hlava kolem z řady popisků a prodejních textů.. a že jich je.</p>
                     </div>

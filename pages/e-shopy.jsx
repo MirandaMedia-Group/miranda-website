@@ -95,25 +95,27 @@ export default function EShopy() {
 			<section className="systemy">
 				<div className="container columns col-2 align-center">
 					<div className="column">
-						<div className="img-wrapper">
-							<Image src="/img/systemy-bg.png" width={771} height={731} alt=""></Image>
-						</div>
+						<Image src="/img/systemy-bg.png" width={821} height={738} alt="" layout='responsive'></Image>
 					</div>
 					<div className="column">
-						<h2>Napojujeme na jakýkoliv systém, který potřebujete</h2>
-						<p>Potřebujete napojit systém, který jste zde nenašli?<br />Kontaktujte nás a najdeme se řešení i pro vás!</p>
+						<h2>Napojíme váš Shoptet na jakýkoli systém pomocí API</h2>
+						<p>Napojení Shoptet na pokladní, informační, účetní a podnikové systémy ERP a CRM<br />
+						Synchronizace dat v reálném čase<br />
+						Možnost doprogramovat vlastní funkcionality</p>
 						<div className="buttons-wrapper">
 							<Link href="/kontakt">
-								<a className="btn btn-secondary">Pojďme najít řešení</a>
+								<a className="btn btn-tertiary">Pojďme najít řešení</a>
 							</Link>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section className="proc-shoptet">
+				<div className="container narrow text-center">
+					<h2>Proč zvolit Shoptet?</h2>
+					<p>Jednička mezi e-commerce platformami v Česku a na na Slovensku s obrovskou podporou a minimálními náklady na provoz.</p>
+				</div>
 				<div className="container">
-					<h2>Proč byste si měli vybrat pro vaše úspěšné podnikání právě Shoptet</h2>
-					<p>Jednička mezi e-commerce platformami v Česku a na Slovensku.</p>
 					<div className="proc-shoptet-block">
 						<div className="bg-img">
 							<Image src="/img/proc-shoptet-bg.svg" width={1369} height={916} alt=""></Image>
@@ -144,20 +146,24 @@ export default function EShopy() {
 			<section>
 				<CoONasRikaji></CoONasRikaji>
 			</section>
-			<section className="container konfigurator">
-				<div className="columns col-2">
-					<div className="column">
-						<h2>Zkuste si nakonfigurovat váš e-shop</h2>
-						<p><strong>Zaberete jo jen chvílku</strong> (pár draganddrop), dáte nám váš email a my vám obratem pošleme nabídku adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-							laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<Link href="#">
-							<a className='btn btn-primary'>Přejít na konfigurátor</a>
-						</Link>
+			<section className="container visible">
+				<div className="konfigurator">
+					<div className="pripravujeme">
+						<Image src="/img/pripravujeme.svg" width={210} height={214} alt=""></Image>
+					</div>
+					<div className="columns col-2">
+						<div className="column">
+							<h2>Zkuste si nakonfigurovat váš Shoptet na míru</h2>
+							<p><strong>Zaberete jo jen chvílku</strong> (pár drag&amp;drop), <strong>dáte nám váš email a my vám obratem pošleme orientační nabídku.</strong> Kromě toho máte jedinečnou příležitost poznat, 
+								na čem závisí a z jakých kroků se skládá tvorba skutečně úspěšného e-shopu na Shoptetu.</p>
+							
+								<a className='btn btn-primary disabled'>Přejít na konfigurátor</a>
+							
+						</div>
 					</div>
 				</div>
 			</section>
-			<section className="container balicky">
+			{/* <section className="container balicky">
 				<div className={`columns col-2-3 reference`}>
 					<div className="column">
 						<h2>3 programy pro shoptet bez starostí</h2>
@@ -244,8 +250,8 @@ export default function EShopy() {
 						</tr>
 					</tbody>
 				</table>
-			</section>
-			<section className="kontakt-form">
+			</section> */}
+			<section className="kontakt-form visible container">
 				<ContactForm></ContactForm>
 			</section>
 		</>

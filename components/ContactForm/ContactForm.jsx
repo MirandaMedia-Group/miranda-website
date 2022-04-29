@@ -57,7 +57,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="container">
+        <>
             <div className={`${styles.formWrapper}`}>
                 <div className="column">
                     <h2>Mám zájem <strong>o spolupráci</strong></h2>
@@ -117,13 +117,13 @@ const ContactForm = () => {
                         <textarea name="zprava" id="zprava" rows="8" placeholder="Váš vzkaz" ref={form.zprava}></textarea>
                         <div className={styles.formRow}>
                             <input type="checkbox" name="consent" id="consent" readOnly/>
-                            <label htmlFor="consent">Odesláním souhlasíte s Podmínkami o zpracovaní osobních údajů</label>
+                            <label htmlFor="consent">Odesláním souhlasíte s Podmínkami zpracovaní osobních údajů</label>
                         </div>
                         <button type="submit" className="btn btn-primary">Odeslat poptávku</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
