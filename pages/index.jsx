@@ -49,9 +49,6 @@ export default function Home() {
       <section>
         <Projekty />
       </section>
-      <section className='visible'>
-        <ProjektBanner></ProjektBanner>
-      </section>
     </>
   )
 }

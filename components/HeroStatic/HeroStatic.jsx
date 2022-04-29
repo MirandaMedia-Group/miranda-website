@@ -5,9 +5,9 @@ import styles from './HeroStatic.module.scss'
 const HeroStatic = (props) => {
     return (
         <div className={styles.hero}>
-           <Image src={props.image} width="1920" height="1080" alt="" />
+           <Image src={props.image} width="1920" height="1080" alt="" layout="responsive"/>
             <div className={styles.itemTexts}>
-                <div className="container">
+                <div className={`container ${styles.maxWidth}`}>
                     <h1>{props.title}</h1>
                     <p>{props.subtitle}</p>
                     {

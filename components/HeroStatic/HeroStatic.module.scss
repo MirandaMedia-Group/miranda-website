@@ -21,3 +21,8 @@
         line-height: em(40,24);
     }
 }
+.maxWidth {
+    & > * {
+        max-width: 660px;
+    }
+}

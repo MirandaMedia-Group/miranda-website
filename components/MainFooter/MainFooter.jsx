@@ -2,11 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './MainFooter.module.scss'
+import ProjektBanner from '../ProjektBanner/ProjektBanner'
 
 function Footer() {
   return (
     <>
-      <div className={styles.footer}>
+      <section className='visible'>
+        <ProjektBanner></ProjektBanner>
+      </section>
+      <footer className={styles.footer}>
         <div className={`container ${styles.container}`}>
           <div className='col-4'>
             <div className={styles.logo}>
@@ -164,8 +168,7 @@ function Footer() {
               </p>
           </div>
         </div>
-      </div>
-    
+      </footer>
     </>
   )
 }

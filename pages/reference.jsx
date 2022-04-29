@@ -8,8 +8,7 @@ export default function Home() {
     <>
      <HeroStatic 
       title="Reference"
-      subtitle="Lorem ipsum dolor sit amet adpisicng lorem
-      ipsum."
+      subtitle="Tohle je naše výkladní skříň, tak se tu porozhlédni a třeba najdeš zrovna tu správnou inspiraci pro svůj vlastní projekt."
       image="/img/referenceBackground.jpg"
      />
      <div className='container'>
@@ -18,7 +17,6 @@ export default function Home() {
     
     
       <CoONasRikaji />
-      <ProjektBanner />
     </>
   )
 }
