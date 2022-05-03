@@ -38,15 +38,13 @@ export default function Home() {
   return (
     <>
       <HeroStatic 
-        title="Kariéra" 
-        subtitle="Potřebujete poradit lorem ipsum dolor sit amet." 
-        image="/img/heroBanner-min.png" 
-        />
+        title="Tvůj nový začátek" 
+        subtitle="Miranda není jenom práce. Je to místo, kde se vzájemná důvěra, respekt a úcta jednoho k druhému stávají základními stavebními kameny spolupráce. 
+          Je to prostředí, kde vznikají skvělé myšlenky a rodí se nové projekty. Možná je to právě Ta práce, kterou si vždycky hledal..." 
+        image="/img/kariera-hero.jpg" 
+      />
       <section className={`container negative-margin`}>
        {poziceItems}
-      </section>
-      <section>
-        <ProjektBanner />
       </section>
     </>
   )

@@ -9,7 +9,7 @@ const Formular = () => {
             nezarazeno: useRef(null),
             eshop: useRef(null),
             web: useRef(null),
-            analyza: useRef(null),
+            design: useRef(null),
             marketing: useRef(null),
         },
         jmeno: useRef(null),
@@ -29,7 +29,7 @@ const Formular = () => {
                 nezarazeno: form.typDotazu.nezarazeno.current.checked,
                 eshop: form.typDotazu.eshop.current.checked,
                 web: form.typDotazu.web.current.checked,
-                analyza: form.typDotazu.analyza.current.checked,
+                design: form.typDotazu.design.current.checked,
                 marketing: form.typDotazu.marketing.current.checked
             },
 
@@ -38,8 +38,6 @@ const Formular = () => {
             phone: form.phone.current.value,
             zprava: form.zprava.current.value
         }
-
-        console.log(data)
 
         try {
             const resolve = await axios.post('http://164.92.206.112:1337/api/ezforms/submit', {
@@ -54,8 +52,8 @@ const Formular = () => {
 
     return (
         <div className={styles.form}>
-            <h3 className={styles.h3}>Vyplňte nám formulář</h3>
-            <p>a naši accounti se vám do <span className={styles.green}>24 hodin ozvou</span></p>
+            <h3 className={styles.h3}>Ozvi se Mirandě</h3>
+            <p>Odpovíme rychleji, než stačíš říct švec</p>
             <p><strong>Typ dotazu</strong></p>
             <form onSubmit={sendForm}>
                 <div className={styles.radioButtons}>
@@ -69,11 +67,11 @@ const Formular = () => {
                     </span>
                     <span className={styles.group}>
                         <input type="radio" name="typ" id="web" ref={form.typDotazu.web} />
-                        <label htmlFor="web">Web na míru</label>
+                        <label htmlFor="web">Web</label>
                     </span>
                     <span className={styles.group}>
-                        <input type="radio" name="typ" id="analyza" ref={form.typDotazu.analyza} />
-                        <label htmlFor="analyza">Analýzy</label>
+                        <input type="radio" name="typ" id="design" ref={form.typDotazu.design} />
+                        <label htmlFor="analyza">Design a grafika</label>
                     </span>
                     <span className={styles.group}>
                         <input type="radio" name="typ" id="marketing" ref={form.typDotazu.marketing} />
@@ -87,7 +85,7 @@ const Formular = () => {
                     <textarea name="zprava" id="zprava" rows="8" placeholder="Vaše zpráva" ref={form.zprava}></textarea>
                     <div className={styles.souhlas}>
                         <input type="checkbox" name="consent" id="consent" readOnly/>
-                        <label htmlFor="consent">Odesláním souhlasíte s Podmínkami o zpracovaní osobních údajů</label>
+                        <label htmlFor="consent">Souhlasím s poskytnutím osobních údajů a cookies</label>
                     </div>
                 </div>
                 <button type="submit" className="btn btn-primary">Poslat zprávu</button>

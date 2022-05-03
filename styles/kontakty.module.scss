@@ -1,0 +1,48 @@
+.hero {
+    position: relative;
+    color: $color-white;
+}
+
+.itemTexts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    h1 {
+        text-align: left;
+        max-width: 780px;
+        color: $color-primary;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: rem(24);
+        line-height: em(40,24);
+    }
+    .sidlo {
+        padding-left: 10%;
+        p {
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: rem(32);
+        }
+    }
+}
+
+.contactButton {
+    font-size: rem(24);
+    line-height: em(42,24);
+    padding: em(20,24);
+    &::before {
+        margin-right: em(20,24);
+    }
+}
+.mapSection {
+    height: 900px;
+    background: url(/img/mapa.jpg) center center no-repeat;
+    background-size: cover;
+}

@@ -9,7 +9,7 @@ const Navbar = () => {
   const actualHour = new Date().getHours()
 
   return (
-    <header className={`${styles.mainHeader} ${router.pathname === "/" ? styles.headerWhite : ''}`}>
+    <header className={`${styles.mainHeader} ${router.pathname === "/" || router.pathname === '/kontakty' ? styles.headerWhite : ''}`}>
         <div className={styles.logo}>
           <Link href="/" passHref>
             <svg width="67" height="55" viewBox="0 0 67 55" xmlns="http://www.w3.org/2000/svg">
