@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <>
-      { router.pathname != "/e-shopy" && (
+      { router.pathname != "/e-shopy" && router.pathname != '/kontakty' && (
         <section className='visible'>
           <ProjektBanner></ProjektBanner>
         </section> 
