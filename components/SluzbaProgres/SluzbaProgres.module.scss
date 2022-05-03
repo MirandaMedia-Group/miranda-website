@@ -1,0 +1,7 @@
+.sluzby {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+        flex: 0 1 33.33%;
+    }
+}
