@@ -1,9 +1,16 @@
+import {useState} from "react"
 import HeroStatic from '../components/HeroStatic/HeroStatic'
 import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
 import Link from 'next/link'
 import styles from '../styles/sluzby.module.scss'
 
 export default function Home() {
+  const [style, setStyle] = useState('true')
+
+  const handleText = () => {
+    console.log('working')
+  }
+
   return (
     <>
       <HeroStatic
@@ -16,7 +23,7 @@ export default function Home() {
         <div className={styles.sluzby}>
         <div className={styles.sluzba}>
           <div>
-            <h4><span>01</span>Shoptet & Shoptet Premium</h4><Link href="/shoptet-na-miru">
+            <h4 onClick={handleText}><span>01</span>Shoptet & Shoptet Premium</h4><Link href="/shoptet-na-miru">
               <a className='btn-sm'></a>
             </Link>
           </div>
