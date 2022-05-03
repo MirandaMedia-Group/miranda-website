@@ -25,15 +25,23 @@ const ppcVyhledavace = () => {
                     <SluzbaProgres>
                         <SluzbaProgresItem
                             image="/"
-                            icon="/"
+                            icon="/img/icon/spoluprace.svg"
                             title="Marketingový audit"
                             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                         />
                         <SluzbaProgresItem
                             image="/"
-                            icon="/"
-                            title="Marketingový audit"
-                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                            icon="/img/icon/setkani.svg"
+                            title="První setkání"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                        />
+                        <SluzbaProgresItem
+                            image="/"
+                            icon="/img/icon/PPC2.svg"
+                            title="První setkání"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                         />
                     </SluzbaProgres>
                 </div>

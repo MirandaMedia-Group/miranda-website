@@ -1,7 +1,8 @@
 .sluzby {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     & > div {
-        flex: 0 1 33.33%;
+        flex: 0 1 360px;
     }
 }

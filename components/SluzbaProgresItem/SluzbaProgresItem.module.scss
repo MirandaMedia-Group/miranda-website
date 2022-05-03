@@ -1,5 +1,9 @@
 .progresItem {
     .texts {
         padding: 50px;
+        border: 1px solid $color-primary;
+    }
+    h2 {
+        font-size: rem(32);
     }
 }
