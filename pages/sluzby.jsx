@@ -1,125 +1,152 @@
-//import Head from 'next/head'
-import ProjektBanner from '../components/ProjektBanner/ProjektBanner'
 import HeroStatic from '../components/HeroStatic/HeroStatic'
+import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
 import Link from 'next/link'
-import Image from 'next/image'
-
+import styles from '../styles/sluzby.module.scss'
 
 export default function Home() {
   return (
     <>
-      <HeroStatic 
-        title="Služby"
-        subtitle="Potřebujete poradit lorem ipsum dolor sit amet."
+      <HeroStatic
+        title="Vše pro digital na jednom místě"
+        subtitle="Miranda plnohodnotně působí jako full servis digitální - marketingová & kreativní agentura. Jeden by řekl, že toho je na samotnou agenturu poměrně hodně, ale už od počátku bylo naším cílem poskytovat služby, které spolu úzce souvisí tzv. pod jednou střechou. Tento komplexní přístup šetří našim klientům ve výsledku čas i peníze. Na své potřeby v digitální světě si snadno vystačí s jedním, silným partnerem."
         image="/img/heroBanner-min.png" 
       />
       <div className='container sluzby'>
-        <div className="sluzby-div">
-          <div className="green-background">
-            <div className='sluzby-img'>
-              <Image src="/img/mockup_eshopy.png" width={1040} height={750} />
-            </div>
-          </div>
+        <PravaMiranda className={styles.pravaMiranda} />
+        <div className={styles.sluzby}>
+        <div className={styles.sluzba}>
           <div>
-            <h3>E-shopy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className='buttons-wrapper'>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Hotové projekty</a>
-              </Link>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Case study</a>
-              </Link>
-              <Link href="/kontakty">
-                <a className="btn btn-primary">Poptat řešení</a>
-              </Link>
-            </div>
+            <h4><span>01</span>Shoptet & Shoptet Premium</h4><Link href="/shoptet-na-miru">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            <p>Když potřebuješ Shoptet na míru nebo rovnou na klíč , nenajdeš zkušenějšího parťáka nebo vlastně parťačku než právě Mirandu. Na téhle krabici jsme navrhli a postavili už hromadu e-shopů včetně Penny Marketu, Autosalonu Klokočka nebo taky on-line obchůdek pro ten zatraceně dobrej Svijanskej Pivovar.</p>
+            <p>Tenhle vymakanej systém si za víc jak 13 let svého působení dokázal přitáhnout přes 30.000 e-shopů v Český a Slovenský republice. A Miranda, tak ta je nejenom Zlatým a Prémiovým parťákem týhle super platformy, ale především místem, kde se on-lajn výkladní skříň tvýho podnikání posouvá na zcela jinej level! Pakliže hledáš pořádně vymazlenou grafiku, abys nebyl tuctovej, co je třeba naroubovat na Shoptetí střeva, naprogramovat vlastní vychytaný funkcionality, napojit jakejkoli externí systém přes apíčko nebo snad zajistit dohled nad e-shopem v režimu 24/7 přes komunikační platformu provozovanou v plně redundantním režimu s 2 databázovými servery s master-master replikou, k tomu 2x aplikační server a navrch 2x balancer zajišťující logiku automatického zapojení slave větvě při výpadku některého serveru, tak ačkoli možná nemáš šajna, co to všechno znamená, pak si tu rozhodně na tom správným místě!</p>
           </div>
         </div>
-        <div className="sluzby-div">
+        <div className={styles.sluzba}>
           <div>
-            <h3>Webové řešení</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className='buttons-wrapper'>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Hotové projekty</a>
-              </Link>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Case study</a>
-              </Link>
-              <Link href="/kontakty">
-                <a className="btn btn-primary">Poptat řešení</a>
-              </Link>
-            </div>
+            <h4><span>02</span>Software na míru</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
           </div>
-          <div className="green-background">
-            <div className='sluzby-img'>
-              <Image src="/img/mockups_webs.png" width={1067} height={750} />
-            </div>
+          <div className={styles.text}>
+            #
           </div>
         </div>
-        <div className="sluzby-div">
-        <div className="green-background">
-            <div className='sluzby-img'>
-              <Image src="/img/Mockups_insta.png" width={1020} height={750} />
-            </div>
-          </div>
+        <div className={styles.sluzba}>
           <div>
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className='buttons-wrapper'>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Hotové projekty</a>
-              </Link>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Case study</a>
-              </Link>
-              <Link href="/kontakty">
-                <a className="btn btn-primary">Poptat řešení</a>
-              </Link>
-            </div>
+            <h4><span>03</span>Produktové fotografie</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
           </div>
         </div>
-        <div className="sluzby-div">
+        <div className={styles.sluzba}>
           <div>
-            <h3>Analýza</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            <p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className='buttons-wrapper'>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Hotové projekty</a>
-              </Link>
-              <Link href="/reference">
-                <a className="btn btn-secondary">Case study</a>
-              </Link>
-              <Link href="/kontakty">
-                <a className="btn btn-primary">Poptat řešení</a>
-              </Link>
-            </div>
+            <h4><span>04</span>Mobilní aplikace</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
           </div>
-          <div className="green-background">
-            <div className='sluzby-img'>
-              <Image src="/img/Mockups_analyza.png" width={1053} height={750} />
-            </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>05</span>Návrh značek</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>06</span>Firemní identita</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>07</span>Copywriting</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>08</span>Webová analytika</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>09</span>Projektové řízení</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>10</span>UX/UI</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>11</span>Datové služby</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>12</span>Školení</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
+          </div>
+        </div>
+        <div className={styles.sluzba}>
+          <div>
+            <h4><span>13</span>Podcast</h4><Link href="/#">
+              <a className='btn-sm'></a>
+            </Link>
+          </div>
+          <div className={styles.text}>
+            #
           </div>
         </div>
       </div>
-      <ProjektBanner />
+      </div>
     </>
   )
 }

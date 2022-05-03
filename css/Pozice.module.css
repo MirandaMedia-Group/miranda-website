@@ -1,0 +1,24 @@
+.position {
+  background-color: #EFFCF4;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+.position h3 {
+  margin-bottom: 32px;
+  line-height: 68px;
+  text-transform: uppercase;
+}
+
+.position p {
+  max-width: 70%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.position .container {
+  margin-top: -180px;
+  position: relative;
+  z-index: 1;
+}
+/*# sourceMappingURL=Pozice.module.css.map */

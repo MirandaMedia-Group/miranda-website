@@ -1,0 +1,19 @@
+.projekt {
+  border: 1px solid #E9EBEA;
+  padding: 50px;
+  text-align: center;
+  height: 100%;
+}
+
+.projekt h5 {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.projekt p {
+  color: #4E5852;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=Projekty.module.css.map */

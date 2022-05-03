@@ -1,0 +1,61 @@
+.title {
+  text-align: center;
+}
+
+.sluzba {
+  position: relative;
+  background-color: #f4f4f4;
+}
+
+.sluzba:first-child {
+  grid-column-end: span 2;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.sluzba:nth-child(2) {
+  grid-column-end: span 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.sluzba:nth-child(3), .sluzba:nth-child(4) {
+  grid-row-end: span 2;
+  grid-row-start: 1;
+}
+
+.sluzba span {
+  width: 100%;
+  height: 100%;
+}
+
+.sluzby {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text h4 {
+  margin-bottom: 0;
+  max-width: 70%;
+}
+
+.text h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=PravaMiranda.module.css.map */

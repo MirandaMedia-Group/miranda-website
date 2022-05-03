@@ -1,0 +1,23 @@
+.slideItem {
+  position: relative;
+}
+
+.slideItem img {
+  transition: transform .3s ease-in;
+}
+
+.slideItem:hover img, .slideItem:focus img {
+  transform: scale(1.05);
+}
+
+.slideItem .anchor {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttonsWrap {
+  margin-top: 60px;
+}
+/*# sourceMappingURL=e-shopy.module.css.map */

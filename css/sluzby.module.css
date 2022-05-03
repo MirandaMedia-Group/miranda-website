@@ -1,0 +1,22 @@
+.sluzby {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sluzby .sluzba {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sluzby .sluzba > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sluzby .sluzba > div:first-child h4 {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=sluzby.module.css.map */

@@ -7,11 +7,7 @@ import Link from 'next/link'
 const PravaMiranda = () => {
     return (
         <>
-            <div className="container narrow text-center">
-                <h2 className={styles.title}>Miranda je ta pravá</h2>
-                <p>Uvařit pořádně hutnej a dlouhodobej výkon v digitálu není jen tak, ale když se spojí dobrý nápad s vytrvalostí a zápalem a k tomu přidáte pár nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní! </p>
-            </div>
-            <div className="container">
+            <div>
                 <div className={styles.sluzby}>
                     <div className={styles.sluzba}>
                         <Image src="/img/ppc.jpg" width={710} height={290} layout="fill" alt=""/>

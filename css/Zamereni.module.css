@@ -3,6 +3,10 @@
   padding: 80px 0;
 }
 
+.background h2 {
+  text-align: center;
+}
+
 .backgroundText {
   background: #FFFFFF;
   opacity: 0.25;

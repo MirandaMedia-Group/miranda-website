@@ -1,0 +1,91 @@
+.form {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 920px;
+  box-shadow: 0px 50px 50px 0px #00000026;
+  padding: 100px;
+  background-color: #fff;
+  margin: -150px auto -100px;
+}
+
+.form p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.souhlas {
+  text-align: left;
+}
+
+.h3 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.radioButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioButtons span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.radioButtons input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.radioButtons input:checked + label:after {
+  transition: all 0.3s ease-in;
+  opacity: 1;
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #59DC8E;
+  border-radius: 50%;
+}
+
+.radioButtons input + label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #F2F2F2;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.formRow {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.formRow input, .formRow textarea {
+  background-color: #F2F2F2;
+  border: 1px solid #E1E0E0;
+  padding: 15px 10px;
+  margin-bottom: 28px;
+}
+
+.formRow input::placeholder, .formRow textarea::placeholder {
+  color: #B7B7B7;
+}
+/*# sourceMappingURL=Formular.module.css.map */
