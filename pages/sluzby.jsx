@@ -1,9 +1,16 @@
+import {useState} from "react"
 import HeroStatic from '../components/HeroStatic/HeroStatic'
 import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
 import Link from 'next/link'
 import styles from '../styles/sluzby.module.scss'
 
 export default function Home() {
+  const [style, setStyle] = useState('true')
+
+  const handleText = () => {
+    console.log('working')
+  }
+
   return (
     <>
       <HeroStatic
@@ -12,7 +19,7 @@ export default function Home() {
         image="/img/heroBanner-min.png" 
       />
       <section>
-        <div className="container sluzby">
+        <div className='container sluzby'>
           <PravaMiranda className={styles.pravaMiranda} />
         </div>
       </section>
