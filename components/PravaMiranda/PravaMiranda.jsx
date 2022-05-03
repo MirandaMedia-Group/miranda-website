@@ -29,7 +29,7 @@ const PravaMiranda = () => {
                         <Image src="/img/design.jpg" width={345} height={600} layout="fill" alt=""/>
                         <div className={styles.text}>
                             <h3><span>Miranda</span>Produktový design &amp; kreativa</h3>
-                            <Link href="/design">
+                            <Link href="/sluzby/design">
                                 <a className="btn-sm"></a>
                             </Link>
                         </div>
@@ -38,7 +38,7 @@ const PravaMiranda = () => {
                         <Image src="/img/socSite.jpg" width={345} height={600} alt="" />
                         <div className={styles.text}>
                             <h3><span>Miranda</span>Sociální sítě</h3>
-                            <Link href="/socialni-site">
+                            <Link href="/sluzby/socialni-site">
                                 <a className="btn-sm"></a>
                             </Link>
                         </div>
@@ -47,7 +47,7 @@ const PravaMiranda = () => {
                         <Image src="/img/weby.jpg" width={710} height={290}  layout="fill" alt="" />
                         <div className={styles.text}>
                             <h3><span>Miranda</span>Weby &amp; e-shopy na klíč</h3>
-                            <Link href="/weby">
+                            <Link href="/sluzby/weby">
                                 <a className="btn-sm"></a>
                             </Link>
                         </div>
@@ -56,7 +56,7 @@ const PravaMiranda = () => {
                         <Image src="/img/influencer.png" width={710} height={290}  layout="fill" alt="" />
                         <div className={styles.text}>
                             <h3><span>Miranda</span>Influencer</h3>
-                            <Link href="/influencer">
+                            <Link href="/sluzby/influencer">
                                 <a className="btn-sm"></a>
                             </Link>
                         </div>

@@ -8,8 +8,8 @@ const ppcVyhledavace = () => {
         <>
             <section>
                 <HeroStatic 
-                    title="PPC &amp; zbožové vyhledávače"
-                    image="/img/ppc-hero.jpg"
+                    title="Sociální sítě"
+                    image="/img/social-hero.jpg"
                 />
             </section>
             <section>

@@ -19,10 +19,20 @@ const Navbar = () => {
         </div>
         <nav className={styles.navigation}>
           <ul>
-            <li>
-              <Link href="/proc-s-nami" passHref>
-                <a className={router.pathname == "/proc-s-nami" ? `${styles.active}` : ""}>Proč s námi</a>
-              </Link>
+            <li className={`${router.pathname == "/proc-s-nami" || router.pathname == '/jak-to-funguje' ? `${styles.active}` : ""} ${styles.hasChildren}`}>
+              <span>O nás</span>
+              <ul className={styles.menuLevel2}>
+                <li>
+                  <Link href="/proc-s-nami" passHref>
+                    <a>Proč s námi</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/jak-to-funguje">
+                    <a>Jak to u nás funguje</a>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/reference">
@@ -30,14 +40,46 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/sluzby" >
-                <a className={router.pathname == "/sluzby" ? `${styles.active}` : ""}>Služby</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/e-shopy" >
                 <a className={router.pathname == "/e-shopy" ? `${styles.active}` : ""}>Shoptet na míru</a>
               </Link> 
+            </li>
+            <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren}`}>
+              <Link href="/sluzby" >
+                <a>Služby</a>
+              </Link>
+              <ul className={styles.menuLevel2}>
+                <li>
+                  <Link href="/sluzby/ppc-vyhledavace">
+                    <a>PPC &amp; zbožové vyhledávače</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sluzby/design">
+                    <a>Produktový design &amp; grafika</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sluzby/socialni-site">
+                    <a>Sociální sítě</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sluzby/weby">
+                    <a>Weby &amp; e-shopy na klíč</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sluzby/influencer">
+                    <a>Influencer</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link href="/blog" >
+                <a className={router.pathname == "/blog" ? `${styles.active}` : ""}>Blog</a>
+              </Link>
             </li>
             <li>
               <Link href="/kariera" >

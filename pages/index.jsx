@@ -35,10 +35,12 @@ export default function Home() {
       </section>
       <section>
         <div className="container narrow text-center">
-              <h2 className="miranda-title">Miranda je ta pravá</h2>
-              <p>Uvařit pořádně hutnej a dlouhodobej výkon v digitálu není jen tak, ale když se spojí dobrý nápad s vytrvalostí a zápalem a k tomu přidáte pár nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní! </p>
-          </div>
-        <PravaMiranda></PravaMiranda>
+          <h2 className="miranda-title">Miranda je ta pravá</h2>
+          <p>Uvařit pořádně hutnej a dlouhodobej výkon v digitálu není jen tak, ale když se spojí dobrý nápad s vytrvalostí a zápalem a k tomu přidáte pár nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní! </p>
+        </div>
+        <div className="container">
+          <PravaMiranda></PravaMiranda>
+        </div>
       </section>
       <section>
         <NabidkaSluzeb></NabidkaSluzeb>

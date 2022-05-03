@@ -23,13 +23,48 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        a {
+        & > li > a,
+        & > li > span {
             padding: em(15);
             transition: all .3s ease-in;
-            &.active,
+            display: inline-block;
             &:hover, &:focus {
                 background-color: $color-primary;
                 color: $color-font;
+            }
+        }
+        & > li {
+            &.active {
+                & > a, & > span {
+                    background-color: $color-primary;
+                    color: $color-font;
+                }
+            }
+        }
+    }
+    .menuLevel2 {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $color-primary;
+        box-shadow: 10px 10px 25px rgba(#000, .15);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in;
+    }
+    .hasChildren {
+        & > span,
+        & > a {
+            cursor: pointer;
+            &::after {
+                content: url(/img/icon/menu-arrow.svg);
+                display: inline-block;
+                margin-left: 1em;
+            }
+        }
+        &:hover, &:focus {
+            .menuLevel2 {
+                max-height: 400px;
             }
         }
     }
