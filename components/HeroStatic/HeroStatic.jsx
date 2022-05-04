@@ -15,7 +15,7 @@ const HeroStatic = (props) => {
                 <div className={`container ${ props.maxWidth && styles.maxWidth}`}>
                     <h1>{props.title}</h1>
                     <p>{props.subtitle}</p>
-                    { props.url && (<a href={`https://${props.url}`} className={styles.url} target="_blank">{props.url}</a>) }
+                    { props.url && (<a href={`https://${props.url}`} className={styles.url} target="_blank" rel="noreferrer">{props.url}</a>) }
                     {
                         props.buttons == 'true' && (
                             <div className="buttons-wrapper">
