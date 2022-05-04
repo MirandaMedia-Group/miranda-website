@@ -1,0 +1,13 @@
+.top {
+    display: flex;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 0;
+        flex: 0 1 40%;
+    }
+
+    p {
+        flex: 0 1 60%;
+    }
+}

@@ -1,6 +1,7 @@
 import HeroStatic from "../../components/HeroStatic/HeroStatic";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
+import CaseStudy from "../../components/CaseStudy/CaseStudy";
 
 const ReferenceRenault = () => {
     return (
@@ -50,13 +51,14 @@ const ReferenceRenault = () => {
                         </div>
                     </section>
                     <section className={styles.banner}>
-                        <Image src="/img/renautBanner.jpg" width={1440} height={574} alt="renault" />
+                        <Image src="/img/renaultBanner.jpg" width={1440} height={574} alt="renault" />
                         <div className={styles.text}>
                             <h2>Příběh pokračuje</h2>
                             <p>Nadále jsme marketingovou a strategickou součástí společnosti  Fair Autotop. Máme společný dlouhodobý a jasný cíl – udržovat povědomí o prémiové kvalitě dodávaných služeb, podpořit prodej nových vozů a nadále zvyšovat spokojenost stávajících klientů.</p>
                         </div>
                     </section>
                 </section>
+                <CaseStudy></CaseStudy>
 
             </section>
         
