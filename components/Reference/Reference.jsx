@@ -33,6 +33,7 @@ const Reference = () => {
         <>
             <div className={styles.referenceGrid}>
                 { referenceData.map( (item, index) => {
+                    console.log(referenceData)
                     return <ReferenceItem key={index} data={item}></ReferenceItem>
                 }) }
             </div>
