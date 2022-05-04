@@ -1,0 +1,15 @@
+.sluzby {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sluzby > div {
+  flex: 0 1 360px;
+}
+
+.buttonWrap {
+  text-align: center;
+  margin: 60px 0;
+}
+/*# sourceMappingURL=SluzbaProgres.module.css.map */

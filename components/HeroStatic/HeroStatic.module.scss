@@ -37,3 +37,15 @@
         max-width: 660px;
     }
 }
+
+.url {
+    color: #4E5852;
+    text-decoration: underline;
+    display: inline-flex;
+
+    &::before {
+        content: url('/img/icon/url.svg');
+        margin-right: 10px;
+    }
+
+}

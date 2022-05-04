@@ -313,6 +313,12 @@ img {
   height: auto;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+}
+
 .columns {
   display: flex;
   flex-wrap: wrap;

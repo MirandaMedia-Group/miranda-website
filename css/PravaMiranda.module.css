@@ -13,7 +13,7 @@
   grid-row-start: 1;
 }
 
-.sluzba:nth-child(2) {
+.sluzba:nth-of-type(2) {
   grid-column-end: span 2;
   grid-column-start: 1;
   grid-row-start: 2;
@@ -24,38 +24,65 @@
   grid-row-start: 1;
 }
 
+.sluzba:nth-child(5), .sluzba:nth-child(6) {
+  grid-column-end: span 2;
+}
+
 .sluzba span {
   width: 100%;
   height: 100%;
 }
 
+.sluzba img {
+  transition: transform .3s ease-in;
+}
+
+.sluzba:hover img, .sluzba:focus img {
+  transform: scale(1.07);
+}
+
 .sluzby {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(1px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   margin-top: 60px;
 }
 
 .text {
   position: absolute;
-  bottom: 40px;
-  left: 40px;
-  right: 40px;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.text h4 {
-  margin-bottom: 0;
-  max-width: 70%;
+.text h2 {
+  margin-bottom: 20px;
 }
 
-.text h4 span {
+.text h3 {
+  margin-bottom: 0;
+  max-width: 70%;
+  font-size: rem(32);
+}
+
+.text h3 span {
   display: block;
   font-size: 16px;
   font-weight: 400;
+}
+
+.miranda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=PravaMiranda.module.css.map */
