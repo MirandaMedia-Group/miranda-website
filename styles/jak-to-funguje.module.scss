@@ -70,17 +70,17 @@
     position: absolute;
     left: 50%;
     top: 40%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1) rotate(-4deg);
     animation: pulse 2s ease-in-out infinite;
     
 }
 @keyframes pulse {
     0% {
-        transform: translateX(-50%) scale(1);
+        transform: translateX(-50%) scale(1) rotate(-4deg);
         filter: none;
     }
-    20% {
-        transform: translateX(-50%) scale(1.2) rotate(10deg);
-        filter: drop-shadow(0 0 10px $color-primary);
+    25% {
+        transform: translateX(-50%) scale(1.2) rotate(1deg);
+        // filter: drop-shadow(0 0 4px $color-primary);
     }
 }
