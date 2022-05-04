@@ -5,7 +5,7 @@
 .sluzba {
     position: relative;
     background-color: #f4f4f4;
-
+    cursor: pointer;
     &:first-child {
         grid-column-end: span 2;
         grid-column-start: 1;

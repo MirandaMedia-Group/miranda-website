@@ -1,0 +1,86 @@
+.headline {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(1px, 1fr));
+    grid-template-rows: repeat(2, minmax(1px, 1fr));
+    .item {
+        padding: 50px 30px;
+        background-color: rgba($color-primary, .05);
+        &.large {
+            grid-column-end: span 2;
+            padding: 50px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &.image {
+            padding: 0;
+        }
+        h3 {
+            font-size: rem(16);
+        }
+        .number {
+            font-size: rem(32);
+            color: $color-primary;
+        }
+        &:nth-of-type(2) {
+            background-color: $color-primary;
+            .number {
+                color: $color-white;
+            }
+        }
+        &:nth-of-type(5) {
+            background-color: rgba($color-primary, .1);
+        }
+    }
+}
+.cesta {
+    position: relative;
+    padding: 120px;
+    background: url(/img/cesta-bg.svg) no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 31%;
+}
+.cestaItem {
+    max-width: 360px;
+    padding: 50px;
+    border: 1px solid $color-primary;
+    position: absolute;
+    background-color: $color-white;
+    h3 {
+        font-size: rem(32);
+        line-height: em(42,32);
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+    }
+    .postavy {
+        position: absolute;
+    }
+}
+.mirandaLogo {
+    fill: $color-primary;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    animation: pulse 2s ease-in-out infinite;
+    
+}
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+        filter: none;
+    }
+    20% {
+        transform: translateX(-50%) scale(1.2) rotate(10deg);
+        filter: drop-shadow(0 0 10px $color-primary);
+    }
+}
