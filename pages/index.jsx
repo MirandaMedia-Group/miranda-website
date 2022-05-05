@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import Reference from '../components/Reference/Reference'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
@@ -52,8 +53,23 @@ export default function Home() {
         <CoONasRikaji></CoONasRikaji>
       </section>
       <section>
-        <Projekty />
+        <div className="columns col-2 align-center container podcast">
+          <div className="column">
+            <h3>Miranda podcast</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+            <Link href="/sluzby/podcast">
+              <a className='btn btn-primary'>Poptat podcast</a>
+            </Link>
+          </div>
+          <div className="column">
+           
+          </div>
+        </div>
       </section>
+      {/* <section>
+        <Projekty />
+      </section> */}
     </>
   )
 }

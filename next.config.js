@@ -1,7 +1,10 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['164.92.206.112'],
+    domains: [
+      '164.92.206.112',
+      'backend.mirandamedia.cz'
+  ],
   },
   sassOptions: {
     includePaths: ['./'],

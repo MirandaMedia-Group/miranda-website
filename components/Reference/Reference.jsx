@@ -11,7 +11,7 @@ const Reference = () => {
 
     const getReference = async () => {
         try {
-            const res = await fetch('http://164.92.206.112:1337/api/references?populate=*', {
+            const res = await fetch('https://backend.mirandamedia.cz/api/references?populate=*', {
                 method: 'GET',
                 cors: 'cors',
                 headers: {
@@ -33,7 +33,6 @@ const Reference = () => {
         <>
             <div className={styles.referenceGrid}>
                 { referenceData.map( (item, index) => {
-                    console.log(referenceData)
                     return <ReferenceItem key={index} data={item}></ReferenceItem>
                 }) }
             </div>

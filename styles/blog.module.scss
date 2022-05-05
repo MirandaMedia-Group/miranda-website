@@ -1,0 +1,53 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1px, 1fr));
+    gap: 60px;
+    article {
+        h1 {
+            font-size: rem(24);
+            line-height: em(42,24);
+            margin-bottom: 10px;
+        }
+        .cat {
+            text-transform: uppercase;
+            font-weight: 700;
+            &::after {
+                content: ":";
+                font-size: rem(32);
+                line-height: em(32,42);
+            }
+            span {
+                font-size: rem(32);
+                line-height: em(32,42);
+                display: inline-block;
+            }
+        }
+        .image {
+            margin-bottom: 20px;
+        }
+    }
+}
+.heroArticle {
+    position: relative;
+}
+.heroTexts {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    & > * {
+        max-width: 700px;
+    }
+    h1 {
+        font-size: rem(56);
+    }
+}
+.heroCat {
+    font-size: rem(90);
+    line-height: em(125,90);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-primary;
+    &::after {
+        content: ":";
+    }
+}
