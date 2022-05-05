@@ -1,8 +1,9 @@
 import HeroStatic from '../components/HeroStatic/HeroStatic'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import Reference from '../components/Reference/Reference'
+import { fetchAPI } from '../lib/api'
 
-export default function Home() {
+export default function Home({ reference }) {
   return (
     <>
       <section>
@@ -13,11 +14,22 @@ export default function Home() {
         />
       </section>
       <section className='container'>
-        <Reference />
+        <Reference data={reference} />
       </section>
       <section>
         <CoONasRikaji />
       </section>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const referenceRes = await fetchAPI('/references', { populate: '*' })
+
+  return {
+      props: {
+          reference: referenceRes.data,
+      },
+      revalidate: 1,
+  }
 }

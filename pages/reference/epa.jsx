@@ -35,16 +35,16 @@ const ReferenceEpa = () => {
                             <p><span className="green">+305%</span>Nárůst obratu</p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epaVysledky.jpg" width={360} height={360} />
+                            <Image src="/img/epaVysledky.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epaVysledky2.jpg" width={360} height={360} />
+                            <Image src="/img/epaVysledky2.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">-53%</span>Snížení PNO (již první měsíc)</p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epaVysledky3.jpg" width={360} height={360} />
+                            <Image src="/img/epaVysledky3.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">2,26%</span>Konverzní poměr (již první měsíc)</p>

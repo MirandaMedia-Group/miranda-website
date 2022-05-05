@@ -1,26 +1,28 @@
 import Image from "next/image"
 import Link from "next/link"
+import FetchedImage from "../FetchedImage/FetchedImage"
 
 import styles from './ReferenceItem.module.scss'
 
 
 const ReferenceItem = (props) => {
-    const tmb = props.data.attributes.thumbnail.data.attributes,
-      logo = props.data.attributes.logo.data.attributes
-
     return (
         <div className={styles.item}>
-            <Image src={'http://backend.mirandamedia.cz' + tmb.url} alt="" width={tmb.width} height={tmb.height} />
+            <FetchedImage
+                image={props.data.attributes.thumbnail}
+            />
             <div className={styles.logo}>
-                <Image src={'http://backend.mirandamedia.cz' + logo.url} alt="" width={logo.width} height={logo.height} />
+                <FetchedImage
+                    image={props.data.attributes.logo}
+                    responsive={false}
+                />
             </div>
             <div className={styles.link}>
-                <Link href={`/detail-reference/${props.data.id}`} className="btn">
+                <Link href={`/reference/${props.data.attributes.slug}`} className="btn">
                     <a>O projektu</a>
                 </Link>
             </div>
-        </div>
-        
+        </div> 
     )
 }
 

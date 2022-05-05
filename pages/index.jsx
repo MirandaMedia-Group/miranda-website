@@ -8,8 +8,9 @@ import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
 import Spoluprace from '../components/Spoluprace/Spoluprace'
 import Projekty from '../components/Projekty/Projekty'
 import NabidkaSluzeb from '../components/NabidkaSluzeb/NabidkaSluzeb'
+import { fetchAPI } from '../lib/api'
 
-export default function Home() {
+export default function Home({ reference }) {
   return (
     <>
       <Head>
@@ -27,7 +28,7 @@ export default function Home() {
                 <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně,</strong> tvorbou značek a nových produktů, ale nejen to. V Mirandě najdete vše, co potřebujete k e-podnikání na jednom místě.</p>
             </div>
         </div>
-        <Reference></Reference>
+        <Reference data={reference}></Reference>
         <div className="buttons-wrapper justify-center">
             <Link href="/reference">
                 <a className="btn btn-primary">Objevit další projekty</a>
@@ -72,4 +73,15 @@ export default function Home() {
       </section> */}
     </>
   )
+}
+
+export async function getStaticProps() {
+  const referenceRes = await fetchAPI('/references', { populate: '*' })
+
+  return {
+      props: {
+          reference: referenceRes.data,
+      },
+      revalidate: 1,
+  }
 }

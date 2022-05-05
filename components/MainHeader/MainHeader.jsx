@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className={styles.contacts}>
           
           <a href="tel:00420732264251" className={styles.projectPhone}>
-            <span className={`${actualHour > 8 && actualHour < 18 ? styles.online : styles.offline} ${styles.status}`}></span>
+            <span className={`${actualHour > 8 && actualHour < 17 ? styles.online : styles.offline} ${styles.status}`}></span>
             +420 732 264 251
           </a>
           <a href="mailto:info@mirandamedia.cz" className={styles.projectMail}>info@mirandamedia.cz</a>

@@ -35,16 +35,16 @@ const ReferenceEpiderma = () => {
                             <p><span className="green">+305%</span>Nárust obratu</p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epidermaVysledky.jpg" width={360} height={360} />
+                            <Image src="/img/epidermaVysledky.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epidermaVysledky2.jpg" width={360} height={360} />
+                            <Image src="/img/epidermaVysledky2.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">-53%</span>Snížení PNO (již první měsíc)</p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/epidermaVysledky3.jpg" width={360} height={360} />
+                            <Image src="/img/epidermaVysledky3.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">2,26%</span>Konverzní poměr (již první měsíc)</p>

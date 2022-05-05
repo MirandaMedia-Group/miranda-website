@@ -8,7 +8,6 @@ import { Navigation } from 'swiper'
 import 'swiper/css'
 
 const CaseStudy = (props) => {
-    console.log(props)
     return (
         <>
             <section className='container'>

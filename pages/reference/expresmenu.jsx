@@ -44,7 +44,7 @@ const ReferenceExpresmenu = () => {
                             <p><span className="green">-14%</span>Snížení PNO</p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/expresmenuVysledky.jpg" width={360} height={360} />
+                            <Image src="/img/expresmenuVysledky.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">-200 KČ</span>Snížení nákladu na jeden nákup</p>

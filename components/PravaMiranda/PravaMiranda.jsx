@@ -18,7 +18,7 @@ const PravaMiranda = () => {
                     </div>
                     <Link href="/sluzby/ppc-vyhledavace" passHref>
                         <div className={styles.sluzba}>
-                            <Image src="/img/ppc.jpg" width={710} height={290} layout="fill" alt=""/>
+                            <Image src="/img/ppc.jpg" width={710} height={290} alt=""/>
                             <div className={styles.text}>
                                 <h3><span>Miranda</span>PPC &amp; zbožové vyhledávače</h3>
                                     <a className="btn-sm"></a>
@@ -27,7 +27,7 @@ const PravaMiranda = () => {
                     </Link>
                     <Link href="/sluzby/design" passHref>
                         <div className={styles.sluzba}>
-                            <Image src="/img/design.jpg" width={345} height={600} layout="fill" alt=""/>
+                            <Image src="/img/design.jpg" width={345} height={600} alt=""/>
                             <div className={styles.text}>
                                 <h3><span>Miranda</span>Produktový design &amp; kreativa</h3>
                                     <a className="btn-sm"></a>
@@ -45,7 +45,7 @@ const PravaMiranda = () => {
                     </Link>
                     <Link href="/sluzby/weby" passHref>
                         <div className={styles.sluzba}>
-                            <Image src="/img/weby.jpg" width={710} height={290}  layout="fill" alt="" />
+                            <Image src="/img/weby.jpg" width={710} height={290} alt="" />
                             <div className={styles.text}>
                                 <h3><span>Miranda</span>Weby &amp; e-shopy na klíč</h3>
                                     <a className="btn-sm"></a>
@@ -54,7 +54,7 @@ const PravaMiranda = () => {
                     </Link>
                     <Link href="/sluzby/influencer" passHref>
                         <div className={styles.sluzba}>
-                            <Image src="/img/influencer.png" width={710} height={290}  layout="fill" alt="" />
+                            <Image src="/img/influencer.png" width={710} height={290} alt="" />
                             <div className={styles.text}>
                                 <h3><span>Miranda</span>Influencer</h3>
                                     <a className="btn-sm"></a>

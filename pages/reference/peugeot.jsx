@@ -35,16 +35,16 @@ const ReferencePeugeot = () => {
                             <p><span className="green">-62,3%</span>Snížení nákladů na 1 online poptávku : <span>SNÍŽENÍ PNO</span></p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/peugeotVysledky.jpg" width={360} height={360} />
+                            <Image src="/img/peugeotVysledky.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/peugeotVysledky2.jpg" width={360} height={360} />
+                            <Image src="/img/peugeotVysledky2.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">+169%</span>Do 3 měsíců od zahájení spolupráce: <span>Nárůst poptávek</span></p>
                         </div>
                         <div className={styles.item}>
-                            <Image src="/img/peugeotVysledky3.jpg" width={360} height={360} />
+                            <Image src="/img/peugeotVysledky3.jpg" width={360} height={360} alt="" />
                         </div>
                         <div className={styles.item}>
                             <p><span className="green">-36%</span>Snížení míry okamžitého opuštění webu</p>

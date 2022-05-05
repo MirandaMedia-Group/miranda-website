@@ -4,29 +4,6 @@ import { fetchAPI } from '../lib/api'
 import Link from 'next/link'
 
 const Blog = ({ clanky }) => {
-    // const [clankyData, setClankyData] = useState([])
-    // const apiURL = 'https://backend.mirandamedia.cz'
-
-    // const getClanky = async () => {
-    //     try {
-    //         const res = await fetch(`${apiURL}/api/clanky?populate=*`, {
-    //             method: 'GET',
-    //             cors: 'cors',
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //         })
-    //         const data = await res.json()
-    //         setClankyData(data.data)
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    // }
-
-    // useEffect( () => {
-    //     getClanky()
-    // }, [])
-
     return (
         <>
         <section>
