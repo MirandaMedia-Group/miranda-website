@@ -7,7 +7,7 @@ const HeroStatic = (props) => {
         <div className={styles.hero}>
            { props.image && (<Image src={props.image} width="1920" height="1080" alt="" layout="responsive"/>) }
            { props.video && (
-                <video autoPlay style={{ width: '1920px', height: '1080px' }}>
+                <video autoPlay style={{ width: '100%', height: 'auto' }}>
                     <source src={props.video} />
                 </video>
             )}
