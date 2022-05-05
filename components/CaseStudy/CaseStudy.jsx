@@ -1,3 +1,4 @@
+import ReferenceItem from '../ReferenceItem/ReferenceItem'
 import styles from './CaseStudy.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -6,7 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
 
-const CaseStudy = () => {
+const CaseStudy = (props) => {
+    console.log(props)
     return (
         <>
             <section className='container'>
@@ -19,9 +21,6 @@ const CaseStudy = () => {
                 navigation
                 pagination
             >
-                
-                <SwiperSlide>
-                </SwiperSlide>
             </Swiper>
         </>
     )

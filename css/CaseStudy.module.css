@@ -1,0 +1,14 @@
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top h2 {
+  margin-bottom: 0;
+  flex: 0 1 40%;
+}
+
+.top p {
+  flex: 0 1 60%;
+}
+/*# sourceMappingURL=CaseStudy.module.css.map */

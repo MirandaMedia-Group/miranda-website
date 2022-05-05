@@ -51,7 +51,7 @@ const ReferencePeugeot = () => {
                         </div>
                     </section>
                     <section className={styles.banner}>
-                        <Image src="/img/peugeotBanner2.jpg" width={1440} height={574} alt="renault" />
+                        <Image src="/img/peugeotBanner2.jpg" width={1440} height={574} alt="peugoet" />
                         <div className={styles.text}>
                             <h2>Příběh pokračuje</h2>
                             <p>Nadále jsme marketingovou a strategickou součástí společnosti  Fair Autotop. Máme společný dlouhodobý a jasný cíl – udržovat povědomí o prémiové kvalitě dodávaných služeb, podpořit prodej nových vozů a nadále zvyšovat spokojenost stávajících klientů.</p>

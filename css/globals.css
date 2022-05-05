@@ -335,6 +335,7 @@ img {
 
 .columns.col-1-4.wider .column {
   flex: 0 1 60%;
+  max-width: 60%;
 }
 
 .btn-sm,
