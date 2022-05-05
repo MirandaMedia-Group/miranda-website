@@ -4,6 +4,17 @@ import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
 
 const ReferenceRenault = () => {
+
+    const referenceData = [
+        {
+            id: 1,
+            nazev: 'renault'
+        },
+        {
+            id: 2,
+            nazev: 'epiderma'
+        }
+    ]
     return (
         <>
             <section className={styles.reference}>
@@ -58,7 +69,7 @@ const ReferenceRenault = () => {
                         </div>
                     </section>
                 </section>
-                <CaseStudy></CaseStudy>
+                <CaseStudy referenceData={referenceData}></CaseStudy>
 
             </section>
         

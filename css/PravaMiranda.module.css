@@ -5,6 +5,7 @@
 .sluzba {
   position: relative;
   background-color: #f4f4f4;
+  cursor: pointer;
 }
 
 .sluzba:first-child {

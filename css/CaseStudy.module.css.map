@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CAUtB;;AAZD,AAII,IAJA,CAIA,EAAE,CAAC;EACC,aAAa,EAAE,CAAC;EAChB,IAAI,EAAE,OAAO;CAChB;;AAPL,AASI,IATA,CASA,CAAC,CAAC;EACE,IAAI,EAAE,OAAO;CAChB",
+    "sources": [
+        "../components/CaseStudy/CaseStudy.module.scss"
+    ],
+    "names": [],
+    "file": "CaseStudy.module.css"
+}
