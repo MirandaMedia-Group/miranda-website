@@ -71,7 +71,7 @@ const Formular = () => {
                     </span>
                     <span className={styles.group}>
                         <input type="radio" name="typ" id="design" ref={form.typDotazu.design} />
-                        <label htmlFor="analyza">Design a grafika</label>
+                        <label htmlFor="design">Design a grafika</label>
                     </span>
                     <span className={styles.group}>
                         <input type="radio" name="typ" id="marketing" ref={form.typDotazu.marketing} />
