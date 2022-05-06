@@ -130,7 +130,7 @@ const JakToFunguje = () => {
                         <p>Miranda pokračuje ve spolupráci s Penny Market i po dokončení a předání e-shopu. Vídáme se na pravidelných schůzkách, dodáváme nové funkcionality, plánujeme další rozvoj...</p>
                     </div>
                     <div className="text-center" style={{marginTop: '60px'}}>
-                        <Link href="#">
+                        <Link href="/kontakty">
                             <a className='btn btn-tertiary'>Sjednat první setkání</a>
                         </Link>
                     </div>

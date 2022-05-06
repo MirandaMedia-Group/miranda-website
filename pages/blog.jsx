@@ -11,16 +11,18 @@ const Blog = ({ clanky }) => {
                 <FetchedImage 
                     image={clanky[0].attributes.obrazek}
                 />
-                <div className={`${styles.heroTexts} container`}>
-                    <div className={styles.heroCat}>
-                        {clanky[0].attributes.kategorie_clankus.data.map((cat, index) => {
-                            return <span key={index}>{cat.attributes.nazev}</span>
-                        })}
+                <div className={`${styles.heroTexts}`}>
+                    <div className="container">
+                        <div className={styles.heroCat}>
+                            {clanky[0].attributes.kategorie_clankus.data.map((cat, index) => {
+                                return <span key={index}>{cat.attributes.nazev}</span>
+                            })}
+                        </div>
+                        <h1>{clanky[0].attributes.nazev}</h1>
+                        <Link href={`/clanky/${clanky[0].attributes.slug}`}>
+                            <a className="btn btn-primary">Přečíst článek</a>
+                        </Link>
                     </div>
-                    <h1>{clanky[0].attributes.nazev}</h1>
-                    <Link href={`/clanky/${clanky[0].attributes.slug}`}>
-                        <a className="btn btn-primary">Přečíst článek</a>
-                    </Link>
                 </div>
             </article>)}
         </section>
@@ -45,6 +47,9 @@ const Blog = ({ clanky }) => {
                                     { (new Date(item.attributes.publishedAt)).toLocaleDateString('cs-CZ')  }
                                 </div>
                                 <p>{item.attributes.description}</p>
+                                <div className={styles.readMore}>
+                                    <span className="btn-sm"></span><span>Celý článek</span>
+                                </div>
                             </article>
                         </Link>
                     )

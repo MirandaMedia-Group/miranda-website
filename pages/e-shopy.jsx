@@ -123,7 +123,7 @@ export default function EShopy() {
 								<div className="column">
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
-									<Link href="#">
+									<Link href="/reference/expresmenu">
 										<a className='btn btn-primary'>Případová studie</a>
 									</Link>
 								</div>
@@ -137,7 +137,7 @@ export default function EShopy() {
 								<div className="column">
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
-									<Link href="#">
+									<Link href="/reference/expresmenu">
 										<a className='btn btn-primary'>Případová studie</a>
 									</Link>
 								</div>
@@ -151,7 +151,7 @@ export default function EShopy() {
 								<div className="column">
 									<h3>Navýšili jsme o 125%</h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
-									<Link href="#">
+									<Link href="/reference/expresmenu">
 										<a className='btn btn-primary'>Případová studie</a>
 									</Link>
 								</div>

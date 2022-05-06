@@ -7,22 +7,22 @@ import styles from './ReferenceItem.module.scss'
 
 const ReferenceItem = (props) => {
     return (
-        <div className={styles.item}>
-            <FetchedImage
-                image={props.data.attributes.thumbnail}
-            />
-            <div className={styles.logo}>
+        <Link href={`/reference/${props.data.attributes.slug}`} passHref>
+            <div className={styles.item}>
                 <FetchedImage
-                    image={props.data.attributes.logo}
-                    responsive={false}
+                    image={props.data.attributes.thumbnail}
                 />
-            </div>
-            <div className={styles.link}>
-                <Link href={`/reference/${props.data.attributes.slug}`} className="btn">
-                    <a>O projektu</a>
-                </Link>
-            </div>
-        </div> 
+                <div className={styles.logo}>
+                    <FetchedImage
+                        image={props.data.attributes.logo}
+                        responsive={false}
+                    />
+                </div>
+                <div className={styles.link}>
+                        <a className="btn">O projektu</a>
+                </div>
+            </div> 
+        </Link>
     )
 }
 

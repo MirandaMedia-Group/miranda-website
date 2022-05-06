@@ -3,10 +3,12 @@
     grid-template-columns: repeat(3, minmax(1px, 1fr));
     gap: 60px;
     article {
+        cursor: pointer;
         h1 {
             font-size: rem(24);
             line-height: em(42,24);
             margin-bottom: 10px;
+            transition: all .3s ease-in;
         }
         .cat {
             text-transform: uppercase;
@@ -25,6 +27,11 @@
         .image {
             margin-bottom: 20px;
         }
+        &:hover, &:focus {
+            h1 {
+                color: $color-primary;
+            }
+        }
     }
 }
 .heroArticle {
@@ -34,7 +41,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    & > * {
+    width: 100%;
+    & > div > * {
         max-width: 700px;
     }
     h1 {
@@ -49,5 +57,19 @@
     color: $color-primary;
     &::after {
         content: ":";
+    }
+}
+.readMore {
+    display: flex;
+    align-items: center;
+    span:first-of-type {
+        margin-right: 1em;
+    }
+    span:last-of-type {
+        text-decoration: underline;
+        transition: all .3s ease-in;
+    }
+    &:hover, &:focus {
+        color: $color-primary;
     }
 }

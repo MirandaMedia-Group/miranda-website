@@ -2,8 +2,9 @@ import HeroStatic from "../../components/HeroStatic/HeroStatic";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
+import { fetchAPI } from "../../lib/api";
 
-const ReferenceRenault = () => {
+const ReferenceRenault = ({ reference }) => {
 
     const referenceData = [
         {
@@ -69,8 +70,7 @@ const ReferenceRenault = () => {
                         </div>
                     </section>
                 </section>
-                <CaseStudy referenceData={referenceData}></CaseStudy>
-
+                <CaseStudy reference={reference}></CaseStudy>
             </section>
         
         </>
@@ -78,3 +78,14 @@ const ReferenceRenault = () => {
 }
 
 export default ReferenceRenault
+
+export async function getStaticProps() {
+    const referenceRes = await fetchAPI('/references', { populate: '*' })
+  
+    return {
+        props: {
+            reference: referenceRes.data,
+        },
+        revalidate: 1,
+    }
+}

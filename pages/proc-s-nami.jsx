@@ -53,7 +53,7 @@ export default function Home() {
           <div className={`${styles.itemWider} ${styles.textItem}`}>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <Link href="#">
+            <Link href="/jak-to-funguje">
               <a className='btn btn-primary'>Zjisti jak to u nás funguje</a>
             </Link>
           </div>

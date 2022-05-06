@@ -2,8 +2,9 @@ import HeroStatic from "../../components/HeroStatic/HeroStatic";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
+import { fetchAPI } from "../../lib/api";
 
-const ReferenceEpiderma = () => {
+const ReferenceEpiderma = ({ reference }) => {
     return (
         <>
             <section className={styles.reference}>
@@ -58,7 +59,7 @@ const ReferenceEpiderma = () => {
                         </div>
                     </section>
                 </section>
-                <CaseStudy></CaseStudy>
+                <CaseStudy reference={reference}></CaseStudy>
 
             </section>
         
@@ -67,3 +68,14 @@ const ReferenceEpiderma = () => {
 }
 
 export default ReferenceEpiderma
+
+export async function getStaticProps() {
+    const referenceRes = await fetchAPI('/references', { populate: '*' })
+  
+    return {
+        props: {
+            reference: referenceRes.data,
+        },
+        revalidate: 1,
+    }
+}

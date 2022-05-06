@@ -34,7 +34,7 @@ const Spoluprace = () => {
                         </ol>
                     </div>
                     <div className="column text-right">
-                        <Link href="#">
+                        <Link href="/jak-to-funguje">
                             <a className='btn btn-primary'>Zjisti, jak to u nás funguje</a>
                         </Link>
                     </div>

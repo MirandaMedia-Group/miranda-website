@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: url(/img/cesta-bg-small.svg) no-repeat;
+    background-position: center;
     & > div {
         flex: 0 1 360px;
     }
