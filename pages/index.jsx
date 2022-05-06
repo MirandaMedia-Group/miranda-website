@@ -36,17 +36,22 @@ export default function Home({ reference }) {
         </div>
       </section>
       <section>
-        <div className="container narrow text-center">
+        {/* <div className="container narrow text-center">
           <h2 className="miranda-title">Miranda je ta pravá</h2>
           <p>Uvařit pořádně hutnej a dlouhodobej výkon v digitálu není jen tak, ale když se spojí dobrý nápad s vytrvalostí a zápalem a k tomu přidáte pár nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní! </p>
-        </div>
+        </div> */}
         <div className="container">
           <PravaMiranda></PravaMiranda>
+          <div className='text-center'>
+            <Link href="/sluzby">
+              <a className="btn btn-tertiary">Kompletní nabídka služeb</a>
+            </Link>
+          </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
-      </section>
+      </section> */}
       <section>
         <Spoluprace></Spoluprace>
       </section>
@@ -76,7 +81,7 @@ export default function Home({ reference }) {
 }
 
 export async function getStaticProps() {
-  const referenceRes = await fetchAPI('/references', { populate: '*' })
+  const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita', pagination: { page: 1, pageSize: 6 } })
 
   return {
       props: {

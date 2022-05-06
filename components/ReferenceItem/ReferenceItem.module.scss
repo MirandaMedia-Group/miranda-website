@@ -17,10 +17,21 @@
     }
     .logo {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: all .3s ease-in;
+        // background-color: rgba($color: #000000, $alpha: .3);
+        padding: 20%;
+        // & > div {
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
     }
     .link {
         position: absolute;
@@ -45,6 +56,7 @@
     &:hover, &:focus {
         img {
             filter: none;
+            transform: scale(1.05);
         }
         .logo {
             opacity: 0;
@@ -52,5 +64,103 @@
         .link {
             transform: none;
         }
+        .box {
+            animation: boxShow .5s ease-in 1 both;
+        }
     }
+    .box {
+        position: absolute;
+        transform: scale(0);
+        opacity: 0;
+        animation: boxHide .5s ease-in 1 both;
+        &:nth-of-type(1) {
+            width: 10%;
+            height: 10%;
+            border: 2px solid #000;
+            top: 10%;
+            left: 15%;
+            animation-delay: 0;
+        }
+        &:nth-of-type(2) {
+            width: 15%;
+            height: 15%;
+            background-color: $color-primary;
+            top: 20%;
+            left: 28%;
+            animation-delay: .05s;
+        }
+        &:nth-of-type(3) {
+            width: 16%;
+            height: 16%;
+            border: 2px solid $color-primary;
+            top: 20%;
+            left: 70%;
+            animation-delay: .1s;
+        }
+        &:nth-of-type(4) {
+            width: 10%;
+            height: 10%;
+            background-color: $color-primary;
+            top: 30%;
+            left: 80%;
+            animation-delay: .15s;
+        }
+        &:nth-of-type(5) {
+            width: 16%;
+            height: 16%;
+            border: 2px solid $color-primary;
+            top: 60%;
+            left: 5%;
+            animation-delay: .2s;
+        }
+        &:nth-of-type(6) {
+            width: 8%;
+            height: 8%;
+            background-color: $color-primary;
+            top: 74%;
+            left: 15%;
+            animation-delay: .25s;
+        }
+        &:nth-of-type(7) {
+            width: 10%;
+            height: 10%;
+            background-color: #000;
+            top: 65%;
+            left: 75%;
+            animation-delay: .3s;
+        }
+        &:nth-of-type(8) {
+            width: 15%;
+            height: 15%;
+            border: 2px solid $color-primary;
+            top: 79%;
+            left: 90%;
+            animation-delay: .35s;
+        }
+    }
+}
+
+@keyframes boxShow {
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        // top: revert;
+        // left: revert;
+        opacity: 1;
+        transform: scale(1) rotate(720deg);
+    }   
+}
+@keyframes boxHide {
+    0% {
+        opacity: 1;
+        transform: scale(1) rotate(720deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+        top: 50%;
+        left: 50%;
+    }   
 }

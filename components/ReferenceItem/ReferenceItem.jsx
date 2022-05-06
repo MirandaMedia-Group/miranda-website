@@ -8,15 +8,25 @@ import styles from './ReferenceItem.module.scss'
 const ReferenceItem = (props) => {
     return (
         <Link href={`/reference/${props.data.attributes.slug}`} passHref>
-            <div className={styles.item}>
+            <div className={styles.item} style={{backgroundColor: props.data.attributes.barva_pozadi}}>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
+                <div className={`${styles.box}`}></div>
                 <FetchedImage
                     image={props.data.attributes.thumbnail}
                 />
                 <div className={styles.logo}>
-                    <FetchedImage
-                        image={props.data.attributes.logo}
-                        responsive={false}
-                    />
+                    <div>
+                        <FetchedImage
+                            image={props.data.attributes.logo}
+                            responsive={false}
+                        />
+                    </div>
                 </div>
                 <div className={styles.link}>
                         <a className="btn">O projektu</a>
