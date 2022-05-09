@@ -55,7 +55,7 @@ const PravaMiranda = () => {
                     <div className={styles.sluzba}>
                         <Image src="/img/influencer.png" width={710} height={290} alt="" />
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>Influencer</h3>
+                            <h3><span>Miranda</span>Influencer marketing</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>

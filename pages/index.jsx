@@ -25,13 +25,18 @@ export default function Home({ reference }) {
                 <h2>Na co jsme hrdí</h2>
             </div>
             <div className="column">
-                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně,</strong> tvorbou značek a nových produktů, ale nejen to. V Mirandě najdete vše, co potřebujete k e-podnikání na jednom místě.</p>
+                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně</strong>. 
+                Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.</p>
             </div>
         </div>
         <Reference data={reference}></Reference>
         <div className="buttons-wrapper justify-center">
             <Link href="/reference">
-                <a className="btn btn-primary">Objevit další projekty</a>
+                <a className="btn btn-primary">
+                  <span data-hover="Objevit další projekty">
+                    Objevit další projekty
+                  </span>
+                </a>
             </Link>
         </div>
       </section>

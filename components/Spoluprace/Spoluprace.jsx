@@ -8,8 +8,9 @@ const Spoluprace = () => {
             <div className="container">
                 <div className={`columns col-1-4 wider align-center ${styles.section}`}>
                     <div className='column'>
-                        <h2>Proč si začít s Mirandou</h2>
-                        <p>Tahle partička kolem Mirandiny rodiny lítá den co den s hlavou v oblacích, ale přitom nezapomíná stát s nohama pevně na zemi. Pořád mluví o tom, že jak uvnitř tak navenek a do práce posílá vždycky kousek toho srdíčka, aniž by nenechala ležet kdejakou pořádnou výzvu bokem.</p>
+                        <h2>Proč si začít s Mirandou?</h2>
+                        <p>Protože tahle agenturní dáma umí být věrná a spolehlivá každým coulem. Pro svého zákazníka udělá, co mu na očích vidí a nikdy 
+                            nenechá ležet kdejakou pořádnou výzvu bokem.</p>
                     </div>
                     <div className='column'>
                         <div className={styles.images}>
