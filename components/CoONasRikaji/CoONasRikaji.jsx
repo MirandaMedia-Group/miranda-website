@@ -1,9 +1,22 @@
 import styles  from './CoONasRikaji.module.scss'
 import Image from "next/image"
 import Link from 'next/link'
+import { useState } from 'react'
+import ReactMarkdown from "react-markdown"
+import FetchedImage from '../FetchedImage/FetchedImage'
 
-const CoONasRikaji = () => {
+const CoONasRikaji = (props) => {
     const tiles = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+
+    const [activeData, setActiveData] = useState(0)
+    const maxRefIndex = props.data.length - 1
+    
+    const prevRef = () => {
+        if (activeData > 0) setActiveData(activeData-1)
+    }
+    const nextRef = () => {
+        if (activeData < maxRefIndex) setActiveData(activeData+1)
+    }
 
     return (
         <div className={styles.CoONasRikajiSection}>
@@ -17,14 +30,14 @@ const CoONasRikaji = () => {
                     <div className="item">
                         <div className="columns col-4-6 align-center">
                             <div className={`column ${styles.image}`}>
-                                <Image src="/img/pohlreich.jpg" width={590} height={590} alt="Zdeněk Pohlreich"></Image>
+                                <FetchedImage image={props.data[activeData].attributes.obrazek} />
                                 <div className={styles.arrows}>
-                                    <div className={`${styles.arrowLeft} ${styles.arrow}`}>
+                                    <div className={`${styles.arrowLeft} ${styles.arrow}`} onClick={prevRef}>
                                         <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M26 1L2 25L26 49" stroke="white" strokeWidth="2"/>
                                         </svg>
                                     </div>
-                                    <div className={`${styles.arrowReft} ${styles.arrow}`}>
+                                    <div className={`${styles.arrowReft} ${styles.arrow}`} onClick={nextRef}>
                                         <svg width="27" height="50" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 1L19.5 19.5L1 38" stroke="white" strokeWidth="2"/>
                                         </svg>
@@ -40,14 +53,13 @@ const CoONasRikaji = () => {
                                 </div>
                             </div>
                             <div className={`column ${styles.texts}`}>
-                                <p><strong>Spolupráci s Mirandou jsme započali koncem roku 2021.</strong> Lidé z Mirandy nás vyhledali a oslovili sami, a tak jsme jednoho dne zasedli ke společnému stolu. 
-                                    Dostali jsme nabídku na zpracování e-shopu na míru pro náš nově vznikající podnik butikové cukrárny, který chystáme otevřít v průběhu roku 2022. 
-                                    Spolupráce se nám vydařila a  e-shop jsme vytvořili. <strong>Celý proces realizace proběhl podle předem dohodnutých postupů a termínů, bez zbytečných obezliček. </strong>
-                                    Jednu věc máme za sebou ale nezůstali jsme u ní a s dalšími projekty společné navazujeme. Spolehlivosti si totiž cením, v kuchyni se bez ní nedá existovat.</p>
+                                <ReactMarkdown>
+                                    {props.data[activeData].attributes.text}
+                                </ReactMarkdown>
                                 <div className={styles.perex}>
                                     <div className={styles.author}>
-                                        <strong>Zdeněk Pohlreich</strong>
-                                        <span className={styles.position}>Majitel Café Imperial</span>
+                                        <strong>{props.data[activeData].attributes.jmeno}</strong>
+                                        <span className={styles.position}>{props.data[activeData].attributes.pozice}</span>
                                     </div>
                                 </div>
                             </div>

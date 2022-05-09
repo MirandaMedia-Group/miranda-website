@@ -10,7 +10,7 @@ import Projekty from '../components/Projekty/Projekty'
 import NabidkaSluzeb from '../components/NabidkaSluzeb/NabidkaSluzeb'
 import { fetchAPI } from '../lib/api'
 
-export default function Home({ reference }) {
+export default function Home({ reference, coONas }) {
   return (
     <>
       <Head>
@@ -60,7 +60,7 @@ export default function Home({ reference }) {
         <Spoluprace></Spoluprace>
       </section>
       <section>
-        <CoONasRikaji></CoONasRikaji>
+        <CoONasRikaji data={coONas}></CoONasRikaji>
       </section>
       <section>
         <div className="columns col-2 align-center container podcast">
@@ -85,10 +85,12 @@ export default function Home({ reference }) {
 
 export async function getStaticProps() {
   const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita', pagination: { page: 1, pageSize: 6 } })
+  const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 
   return {
       props: {
           reference: referenceRes.data,
+          coONas: coONasRes.data
       },
       revalidate: 1,
   }
