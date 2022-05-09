@@ -25,8 +25,7 @@ export default function Home({ reference }) {
                 <h2>Na co jsme hrdí</h2>
             </div>
             <div className="column">
-                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně</strong>. 
-                Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.</p>
+                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně.</strong> Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.</p>
             </div>
         </div>
         <Reference data={reference}></Reference>
@@ -67,8 +66,7 @@ export default function Home({ reference }) {
         <div className="columns col-2 align-center container podcast">
           <div className="column">
             <h3>Miranda podcast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+            <p>Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání nebo chceš jednoduše vyplnit volný čas, tak pouštej!</p>
             <Link href="/sluzby/podcast">
               <a className='btn btn-primary'>Poptat podcast</a>
             </Link>
