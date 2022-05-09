@@ -1,0 +1,56 @@
+.logo {
+    display: inline-flex;
+
+    &::before {
+        content: url('/img/icon/miranda-icon.svg');
+        display: inline-block;
+
+    }
+}
+
+.head {
+    h2 {
+        margin-bottom: 20px;
+    }
+    a {
+        display: block;
+        width: fit-content;
+        margin: 60px auto;
+    }
+}
+
+.biggerFont {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+
+.list {
+    text-align: left;
+    margin-bottom: 60px;
+    li::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $color-primary;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.part {
+    margin-top: 60px;
+
+    h3 {
+        margin: 0 auto 25px;
+        max-width: 415px;
+    }
+
+    &>p {
+        margin-bottom: 30px;
+    }
+}
+
+.marginTop {
+    margin-top: 60px;
+}
