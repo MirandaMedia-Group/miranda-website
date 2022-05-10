@@ -23,11 +23,17 @@
     }
 }
 
+.img {
+    max-width: 900px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    text-align: left;
 
     &>div {
         max-width: 450px;
@@ -35,6 +41,19 @@
 
     h2 {
         margin-bottom: 25px;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+}
+
+.small {
+    color: #222e27;
+    margin: 0;
+
+    span {
+        color: $color-primary;
     }
 }
 
@@ -69,5 +88,83 @@
 
 .background {
     background-color: #F6FDF9;
-    padding: 10px 0;
+    padding: 100px 0;
+
+
+    p {
+        color: #5F5F5F;
+    }
+
+    &>div {
+        display: flex;
+
+        &>div:first-child {
+            width: 33.33%;
+        }
+
+        &>div:nth-child(2) {
+            width: 66%;
+        }
+    }
+}
+.quotes {
+    position: relative;
+}
+
+.quotes::before {
+    content: url('/img/icon/quotes.svg');
+    display: block;
+    position: absolute;
+    font-size: 100px;
+    z-index: 1;
+    right: 26px;
+    top: 0;
+}
+
+.bigger {
+    font-size: 24px;
+    font-weight: 700;
+    color: #656D68;
+    margin: 0 0 30px;
+}
+
+.eshop {
+    position: relative;
+    background: radial-gradient(97.63% 107.46% at 72.03% 100%, rgba(89, 220, 142, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+
+    &>div {
+        min-height: 900px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &>div:nth-child(2) {
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+        }
+    }
+
+    .text {
+        max-width: 550px;
+    }
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &>span {
+        -webkit-box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.1); 
+        box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.1);
+
+        &:first-child, &:nth-child(2) {
+            grid-column-end: span 2;
+        }
+
+        &:nth-child(4) {
+            grid-column-end: span 2;
+        }
+    }
 }
