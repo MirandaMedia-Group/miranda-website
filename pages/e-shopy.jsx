@@ -5,12 +5,13 @@ import Sluzby from '../components/Sluzby/Sluzby'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ContactForm from '../components/ContactForm/ContactForm'
 import styles from '../styles/e-shopy.module.scss'
+import { fetchAPI } from '../lib/api'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 
-export default function EShopy() {
+export default function EShopy({ coONas }) {
 	return (
 		<>
 			<section>
@@ -197,7 +198,7 @@ export default function EShopy() {
 				</div>
 			</section>
 			<section>
-				<CoONasRikaji></CoONasRikaji>
+				<CoONasRikaji data={coONas}></CoONasRikaji>
 			</section>
 			<section className="container visible">
 				<div className="konfigurator">
@@ -310,3 +311,14 @@ export default function EShopy() {
 		</>
 	)
 }
+
+export async function getStaticProps() {
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
+  
+	return {
+		props: {
+			coONas: coONasRes.data,
+		},
+		revalidate: 1,
+	}
+  }
