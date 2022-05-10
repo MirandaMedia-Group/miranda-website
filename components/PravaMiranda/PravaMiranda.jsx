@@ -11,6 +11,7 @@ const PravaMiranda = () => {
                 <div className={styles.sluzba}>
                     <div className={`${styles.text} ${styles.miranda}`}>
                         <h2>Miranda je ta pravá</h2>
+                        určitě?
                         <p>Uvařit pořádně hutnej a dlouhodobej výkon v digitálu není jen tak, ale když se spojí dobrý nápad s vytrvalostí a zápalem a k tomu přidáte pár 
                             nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní! </p>
                     </div>
