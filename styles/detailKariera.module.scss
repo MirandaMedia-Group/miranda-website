@@ -17,6 +17,9 @@
         width: fit-content;
         margin: 60px auto;
     }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .biggerFont {
@@ -53,4 +56,19 @@
 
 .marginTop {
     margin-top: 60px;
+}
+
+.btnArrow {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    
+    &::after {
+        content: url('/img/icon/arrow-small.svg');
+        margin-left: 10px;
+    }
+}
+
+.visible {
+    display: none;
 }

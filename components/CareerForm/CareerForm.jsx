@@ -8,18 +8,8 @@ const CareerForm = () => {
         prijmeni: useRef(null),
         email: useRef(null),
         tel: useRef(null),
-        sluzby: {
-            premium: useRef(null),
-            grafika: useRef(null),
-            prevod: useRef(null),
-            skoleni: useRef(null),
-            programovani: useRef(null),
-            copy: useRef(null),
-            ppc: useRef(null),
-            foto: useRef(null),
-            foto360: useRef(null),
-        },
-        zprava: useRef(null)
+        zprava: useRef(null),
+        linkedin: useRef(null)
     }
     let token = 'Token!'
 
@@ -31,18 +21,8 @@ const CareerForm = () => {
             prijmeni: form.prijmeni.current.value,
             email: form.email.current.value,
             tel: form.tel.current.value,
-            sluzby: {
-                premium: form.sluzby.premium.current.checked,
-                grafika: form.sluzby.grafika.current.checked,
-                prevod: form.sluzby.prevod.current.checked,
-                skoleni: form.sluzby.skoleni.current.checked,
-                programovani: form.sluzby.programovani.current.checked,
-                copy: form.sluzby.copy.current.checked,
-                ppc: form.sluzby.ppc.current.checked,
-                foto: form.sluzby.foto.current.checked,
-                foto360: form.sluzby.foto360.current.checked,
-            },
-            zprava: form.zprava.current.value
+            zprava: form.zprava.current.value,
+            linkedin: form.linkedin.current.value
         }
 
         try {
@@ -79,15 +59,15 @@ const CareerForm = () => {
                         <div className={styles.formRow}>
                             <input type="text" name="linkedin" id="linkedin" placeholder="Odkaz na LinkedIn profil" ref={form.linkedin} />
                         </div>
-                        <div className={styles.formRow}>
-                            <input type="checkbox" name="consent" id="consent" readOnly/>
-                            <label htmlFor="consent">Odesláním souhlasíte s Podmínkami zpracovaní osobních údajů</label>
-                        </div>
                         <div>
                             <button type="" className="btn btn-tertiary">Nahrát soubor</button>
                             <p className={styles.small}>Nahrajte prosím soubor typu PDF, DOC(X) nebo ODT</p>
                         </div>
-                        <button type="submit" className="btn btn-primary">Odeslat odpověď</button>
+                        <div className={styles.formRow}>
+                            <input type="checkbox" name="consent" id="consent" />
+                            <label htmlFor="consent">Odesláním formuláře souhlasím se zpracovaním osobních údajů</label>
+                        </div>
+                        <button type="submit" className={`btn btn-primary ${styles.btnArrow}`} >Odeslat odpověď</button>
                     </form>
                 </div>
             </div>

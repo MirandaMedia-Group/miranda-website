@@ -17,7 +17,7 @@ const detailKariera = () => {
                     <div className={styles.head}>
                         <h2>Projektový manažer</h2>
                         <span className={styles.logo}>Praha</span>
-                        <a className='btn btn-primary'>Mám zájem</a>
+                        <a className={`btn btn-primary ${styles.btnArrow}`}>Mám zájem</a>
                     </div>
                     <p className={styles.biggerFont}>Obsahová + digitální agentura se spojila, aby vznikla MirandaMedia Group, s.r.o., která rychle roste a posouvá se kupředu. Budeš součástí?</p>
                     <p>Koho hledáme? Jednoduše projekťáka nebo projekťačku, který/která bude enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
@@ -64,7 +64,9 @@ const detailKariera = () => {
                         <a className='btn btn-primary'>No jistě!</a>
                     </div>
                 </div>
-                <div className="container">
+            </section>
+            <section>
+            <div className="container">
                     <CareerForm />
                 </div>
             </section>
