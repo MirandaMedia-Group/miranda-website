@@ -85,7 +85,11 @@ export default function EShopy({ coONas }) {
 					</Swiper>
 					<div className={styles.buttonsWrap}>
 						<Link href="/reference">
-							<a className="btn btn-tertiary">Zobrazit všehny reference</a>
+							<a className="btn btn-tertiary">
+								<span data-hover="Zobrazit všechny reference">
+									Zobrazit všechny reference
+								</span>
+							</a>
 						</Link>
 					</div>
 				</div>
@@ -105,7 +109,11 @@ export default function EShopy({ coONas }) {
 						Možnost doprogramovat vlastní funkcionality</p>
 						<div className="buttons-wrapper">
 							<Link href="/kontakt">
-								<a className="btn btn-tertiary">Pojďme najít řešení</a>
+								<a className="btn btn-tertiary">
+									<span data-hover="Pojďme najít řešení">
+										Pojďme najít řešení
+									</span>
+								</a>
 							</Link>
 						</div>
 					</div>
@@ -125,7 +133,11 @@ export default function EShopy({ coONas }) {
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -139,7 +151,11 @@ export default function EShopy({ coONas }) {
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -153,7 +169,11 @@ export default function EShopy({ coONas }) {
 									<h3>Navýšili jsme o 125%</h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -211,7 +231,11 @@ export default function EShopy({ coONas }) {
 							<p><strong>Zaberete jo jen chvílku</strong> (pár drag&amp;drop), <strong>dáte nám váš email a my vám obratem pošleme orientační nabídku.</strong> Kromě toho máte jedinečnou příležitost poznat, 
 								na čem závisí a z jakých kroků se skládá tvorba skutečně úspěšného e-shopu na Shoptetu.</p>
 							
-								<a className='btn btn-primary disabled'>Přejít na konfigurátor</a>
+								<a className='btn btn-primary disabled'>
+									<span data-hover="Přejít na konfigurátor">
+										Přejít na konfigurátor
+									</span>
+								</a>
 							
 						</div>
 					</div>

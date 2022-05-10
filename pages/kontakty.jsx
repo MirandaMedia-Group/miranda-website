@@ -15,8 +15,12 @@ export default function Home() {
                 <h1>Kontakty</h1>
                 <p>Jankovcova 1596/14b<br/>Praha 7 - Holešovice<br/>Vchod B</p>
                 <div className="buttons-wrapper">
-                    <a href="tel:00420732264251" className={`btn btn-primary project-phone ${styles.contactButton}`}>+420 732 264 251</a>
-                    <a href="mailto:info@mirandamedia.cz" className={`btn btn-primary project-mail ${styles.contactButton}`}>info@mirandamedia.cz</a>
+                    <a href="tel:00420732264251" className={`btn btn-primary project-phone ${styles.contactButton}`}>
+                        +420 732 264 251
+                    </a>
+                    <a href="mailto:info@mirandamedia.cz" className={`btn btn-primary project-mail ${styles.contactButton}`}>
+                        info@mirandamedia.cz
+                    </a>
                 </div>
               </div>
               <div className={`column ${styles.sidlo}`}>

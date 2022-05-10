@@ -37,6 +37,8 @@
     font-size: rem(24);
     line-height: em(42,24);
     padding: em(20,24);
+    background-color: $color-primary;
+    color: $color-font;
     &::before {
         margin-right: em(20,24);
     }

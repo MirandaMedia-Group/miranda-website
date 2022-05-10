@@ -131,7 +131,11 @@ const JakToFunguje = () => {
                     </div>
                     <div className="text-center" style={{marginTop: '60px'}}>
                         <Link href="/kontakty">
-                            <a className='btn btn-tertiary'>Sjednat první setkání</a>
+                            <a className='btn btn-tertiary'>
+                                <span data-hover="Sjednat první setkání">
+                                    Sjednat první setkání
+                                </span>
+                            </a>
                         </Link>
                     </div>
                 </div>

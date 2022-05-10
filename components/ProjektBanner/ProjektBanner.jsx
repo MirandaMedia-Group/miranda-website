@@ -15,7 +15,11 @@ function ProjektBanner () {
                     <h2>Nastartujte váš projekt</h2>
                     <p>Miranda od počátku tvrdí, že je to hlavně o lidech, co umí vzít za práci a do každýho projektu přinesou pořádnej zápal a nadšení! Tahle energie se pak šíří napříč celým týmem. Není pak divu, že vznikaj projekty, na který můžete být právem pyšní!</p>
                     <Link href="/kontakty">
-                        <a className="btn">Spojit se s Mirandou</a>
+                        <a className="btn btn-tertiary">
+                            <span data-hover="Spojit se s Mirandou">
+                                Spojit se s Mirandou
+                            </span>
+                        </a>
                     </Link>
                 </div>
             </div>

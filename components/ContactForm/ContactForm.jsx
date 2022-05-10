@@ -119,7 +119,11 @@ const ContactForm = () => {
                             <input type="checkbox" name="consent" id="consent" readOnly/>
                             <label htmlFor="consent">Odesláním souhlasíte s Podmínkami zpracovaní osobních údajů</label>
                         </div>
-                        <button type="submit" className="btn btn-primary">Odeslat poptávku</button>
+                        <button type="submit" className="btn btn-primary">
+                            <span data-hover="Odeslat poptávku">
+                                Odeslat poptávku
+                            </span>
+                        </button>
                     </form>
                 </div>
             </div>

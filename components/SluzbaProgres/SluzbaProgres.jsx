@@ -10,7 +10,11 @@ const SluzbaProgres = (props) => {
             </div>
             <div className={styles.buttonWrap}>
                 <Link href={props.link}>
-                    <a className='btn btn-tertiary'>{props.linkText}</a>
+                    <a className='btn btn-tertiary'>
+                        <span data-hover={props.linkText}>
+                            {props.linkText}
+                        </span>
+                    </a>
                 </Link>
             </div>
         </>
