@@ -10,6 +10,8 @@ const ppcVyhledavace = () => {
                 <HeroStatic 
                     title="PPC &amp; zbožové vyhledávače"
                     image="/img/ppc-hero.jpg"
+                    bigFont
+                    maxWidth
                 />
             </section>
             <section>

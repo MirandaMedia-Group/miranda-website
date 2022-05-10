@@ -2,6 +2,10 @@
     position: relative;
     min-height: 450px;
     margin-bottom: 60px;
+    p {
+        font-size: rem(20);
+        line-height: em(36,20);
+    }
 }
 .images {
     display: flex;
@@ -18,9 +22,16 @@
 .list {
     padding: 0;
     margin: 0;
+    counter-reset: counter;
+    list-style: none;
     li {
+        counter-increment: counter;
         font-size: em(24);
         line-height: em(42);
         font-weight: 700;
+        &::before {
+            content: '0'counter(counter)'.';
+            margin-right: .2em;
+        }
     }
 }

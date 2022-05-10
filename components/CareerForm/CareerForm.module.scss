@@ -1,15 +1,18 @@
 .formWrapper {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: -180px;
+    position: relative;
+    z-index: 1;
+    background-color: $color-white;
     &>div:first-child {
         background-color: #222E27;
         color: #fff;
-        width: 33%;
+        width: 33.33%;
     }
 
     &>div {
-        width: 66%;
+        width: 66.67%;
         padding: 66px;
     }
 
@@ -55,17 +58,7 @@
 }
 
 .btnArrow {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    
-    &::after {
-        content: url('/img/icon/arrow-small.svg');
-        margin-left: 10px;
-    }
 }
 
 .small {

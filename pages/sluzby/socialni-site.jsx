@@ -10,6 +10,8 @@ const ppcVyhledavace = () => {
                 <HeroStatic 
                     title="Sociální sítě"
                     image="/img/social-hero.jpg"
+                    bigFont
+                    maxWidth
                 />
             </section>
             <section>

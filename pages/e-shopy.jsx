@@ -20,7 +20,8 @@ export default function EShopy({ coONas }) {
 					subtitle="Kompletní e-shopové řešení za nejkratší možnou dobu"
 					image=""
 					video="/shoptetnamiru.mp4"
-					buttons="true"
+					buttons
+					overlay
 					>
 				</HeroStatic>
 			</section>
@@ -103,11 +104,13 @@ export default function EShopy({ coONas }) {
 						<Image src="/img/systemy-bg.png" width={821} height={738} alt="" layout='responsive'></Image>
 					</div>
 					<div className="column">
-						<h2>Napojíme váš Shoptet na jakýkoli systém pomocí API</h2>
-						<p>Napojení Shoptet na pokladní, informační, účetní a podnikové systémy ERP a CRM<br />
-						Synchronizace dat v reálném čase<br />
-						Možnost doprogramovat vlastní funkcionality</p>
-						<div className="buttons-wrapper">
+						<h2>Napojení Shoptet na pokladní, informační,
+							účetní a podnikové systémy ERP a CRM</h2>
+						<ul className='styled'>
+							<li>Synchronizace dat v reálném čase</li>
+							<li>Možnost doprogramovat vlastní funkcionality</li>
+						</ul>
+						<div className="buttons-wrapper" style={{marginTop: '20px'}}>
 							<Link href="/kontakt">
 								<a className="btn btn-tertiary">
 									<span data-hover="Pojďme najít řešení">
@@ -134,8 +137,8 @@ export default function EShopy({ coONas }) {
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
 										<a className='btn btn-primary'>
-											<span data-hover="Případová studie">
-												Případová studie
+											<span data-hover="Zjistit více">
+												Zjistit více
 											</span>
 										</a>
 									</Link>
@@ -329,7 +332,7 @@ export default function EShopy({ coONas }) {
 					</tbody>
 				</table>
 			</section> */}
-			<section className="kontakt-form visible container">
+			<section id='kontakt' className="kontakt-form visible container">
 				<ContactForm></ContactForm>
 			</section>
 		</>

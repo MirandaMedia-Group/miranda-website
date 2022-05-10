@@ -1,9 +1,7 @@
-import Image from "next/image"
 import Link from "next/link"
 import FetchedImage from "../FetchedImage/FetchedImage"
 
 import styles from './ReferenceItem.module.scss'
-
 
 const ReferenceItem = (props) => {
     return (

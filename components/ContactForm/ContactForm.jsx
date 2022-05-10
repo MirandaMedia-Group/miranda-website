@@ -60,7 +60,7 @@ const ContactForm = () => {
         <>
             <div className={`${styles.formWrapper}`}>
                 <div className="column">
-                    <h2>Mám zájem <strong>o spolupráci</strong></h2>
+                    <h2>Mám zájem <strong>o&nbsp;spolupráci</strong></h2>
                     <p>Zanechte nám na sebe kontakt, spojíme se s vámi.</p>
                     <a className={styles.projectPhone} href="tel:+420732264251">+420 732 264 251</a>
                     <p>Pondělí - Pátek: <strong>9:00 - 17:00</strong></p>
