@@ -3,7 +3,7 @@ import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import Reference from '../components/Reference/Reference'
 import { fetchAPI } from '../lib/api'
 
-export default function Home({ reference }) {
+export default function Home({ reference, coONas }) {
   return (
     <>
       <section>
@@ -17,7 +17,7 @@ export default function Home({ reference }) {
         <Reference data={reference} />
       </section>
       <section>
-        <CoONasRikaji />
+        <CoONasRikaji data={coONas}/>
       </section>
     </>
   )
@@ -25,10 +25,12 @@ export default function Home({ reference }) {
 
 export async function getStaticProps() {
   const referenceRes = await fetchAPI('/references', { populate: '*' })
+  const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 
   return {
       props: {
           reference: referenceRes.data,
+          coONas: coONasRes.data,
       },
       revalidate: 1,
   }
