@@ -62,7 +62,7 @@ const JakToFunguje = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="hidden">
                 <div className="container">
                     <h2 className={styles.headline}>Průběh projektu</h2>
                     <div className={styles.cesta}>
@@ -131,7 +131,11 @@ const JakToFunguje = () => {
                     </div>
                     <div className="text-center" style={{marginTop: '60px'}}>
                         <Link href="/kontakty">
-                            <a className='btn btn-tertiary'>Sjednat první setkání</a>
+                            <a className='btn btn-tertiary'>
+                                <span data-hover="Sjednat první setkání">
+                                    Sjednat první setkání
+                                </span>
+                            </a>
                         </Link>
                     </div>
                 </div>

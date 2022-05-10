@@ -439,25 +439,26 @@ img {
 .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide {
   opacity: .25;
 }
-
+button {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
 .btn {
   display: inline-block;
   line-height: 1em;
-  padding: em(20);
+  font-size: 1rem;
   transition: all .3s ease-in;
-  &.disabled {
-    opacity: .6;
-    cursor: not-allowed;
-  }
-}
-.btn.btn-primary {
-  background-color: #59DC8E;
-  color: $color-font;
   position: relative;
   perspective: 1000px;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
-  
+  &.disabled {
+    opacity: .6;
+    cursor: not-allowed;
+  }
   span {
     transition: transform 0.3s;
     -webkit-transition: -webkit-transform 0.3s;
@@ -478,7 +479,6 @@ img {
       left: 0;
       width: 100%;
       height: 100%;
-      background: lighten($color-primary, 20%);
       content: attr(data-hover);
       transition: all 0.3s;
       -webkit-transition: all 0.3s;
@@ -492,9 +492,17 @@ img {
     }
   }
   &:hover, &:focus {
-    // background-color: $color-white;
     span {
       transform: rotateX(90deg) translateY(-22px);
+    }
+  }
+}
+.btn.btn-primary {
+  span {
+    background-color: #59DC8E;
+    color: $color-font;  
+    &::before {
+      background: lighten($color-primary, 20%);
     }
   }
 }
@@ -504,13 +512,12 @@ img {
   background-color: $color-white;
 }
 .btn.btn-tertiary {
-  background-color: #000;
-  color: $color-white;
-  border: 1px solid transparent;
-  &:hover, &:focus {
-    background-color: transparent;
-    border-color: #000;
-    color: #000;
+  span {
+    background-color: #000;
+    color: $color-white;
+    &::before {
+      background: lighten(#000, 20%);
+    }
   }
 }
 .text-center {
@@ -556,7 +563,7 @@ img {
 
 // NOT COMPONENTS SECTION
 main#content {
-  & > section:not(.visible) {
+  & > section.hidden {
     overflow: hidden;
   }
 }
@@ -847,17 +854,17 @@ main#content {
 .project-phone, .project-mail {
   display: flex;
   align-items: center;
-  &:before {
+  &::before {
     display: inline-block;
     line-height: 0;
     margin-right: 1em;
   }
 }
-.project-phone:before {
+.project-phone::before {
   content: url('/img/icon/icon-phone-black.svg');
 }
 
-.project-mail:before {
+.project-mail::before {
   content: url('/img/icon/icon-mail-black.svg');
 }
 

@@ -88,7 +88,11 @@ const Formular = () => {
                         <label htmlFor="consent">Souhlasím s poskytnutím osobních údajů a cookies</label>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Poslat zprávu</button>
+                <button type="submit" className="btn btn-primary">
+                    <span data-hover="Poslat zprávu">
+                        Poslat zprávu
+                    </span>
+                </button>
             </form>
         </div>
     )

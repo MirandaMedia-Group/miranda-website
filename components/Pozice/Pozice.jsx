@@ -8,7 +8,11 @@ const Pozice = (props) => {
           <h3>{props.nazev}</h3>
           <p>{props.text}</p>
           <Link href={props.link}>
-            <a className='btn btn-primary'>Zobrazit pozici</a>
+            <a className='btn btn-primary'>
+              <span data-hover="Zobrazit pozici">
+                Zobrazit pozici
+              </span>
+            </a>
           </Link>
         </div>
     )

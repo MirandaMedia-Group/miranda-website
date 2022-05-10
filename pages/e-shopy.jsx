@@ -5,12 +5,13 @@ import Sluzby from '../components/Sluzby/Sluzby'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ContactForm from '../components/ContactForm/ContactForm'
 import styles from '../styles/e-shopy.module.scss'
+import { fetchAPI } from '../lib/api'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 
-export default function EShopy() {
+export default function EShopy({ coONas }) {
 	return (
 		<>
 			<section>
@@ -23,7 +24,7 @@ export default function EShopy() {
 					>
 				</HeroStatic>
 			</section>
-			<section>
+			<section className='hidden'>
 				<div className="container text-center">
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
 					<Swiper
@@ -84,7 +85,11 @@ export default function EShopy() {
 					</Swiper>
 					<div className={styles.buttonsWrap}>
 						<Link href="/reference">
-							<a className="btn btn-tertiary">Zobrazit všehny reference</a>
+							<a className="btn btn-tertiary">
+								<span data-hover="Zobrazit všechny reference">
+									Zobrazit všechny reference
+								</span>
+							</a>
 						</Link>
 					</div>
 				</div>
@@ -104,13 +109,17 @@ export default function EShopy() {
 						Možnost doprogramovat vlastní funkcionality</p>
 						<div className="buttons-wrapper">
 							<Link href="/kontakt">
-								<a className="btn btn-tertiary">Pojďme najít řešení</a>
+								<a className="btn btn-tertiary">
+									<span data-hover="Pojďme najít řešení">
+										Pojďme najít řešení
+									</span>
+								</a>
 							</Link>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className='visible'>
+			<section className='hidden'>
 				<div className="container">
 					<Swiper
 						modules={[Navigation]}
@@ -124,7 +133,11 @@ export default function EShopy() {
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -138,7 +151,11 @@ export default function EShopy() {
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -152,7 +169,11 @@ export default function EShopy() {
 									<h3>Navýšili jsme o 125%</h3>
 									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>Případová studie</a>
+										<a className='btn btn-primary'>
+											<span data-hover="Případová studie">
+												Případová studie
+											</span>
+										</a>
 									</Link>
 								</div>
 								<div className="column">
@@ -196,8 +217,8 @@ export default function EShopy() {
 					</div>
 				</div>
 			</section>
-			<section>
-				<CoONasRikaji></CoONasRikaji>
+			<section className='hidden'>
+				<CoONasRikaji data={coONas}></CoONasRikaji>
 			</section>
 			<section className="container visible">
 				<div className="konfigurator">
@@ -210,7 +231,11 @@ export default function EShopy() {
 							<p><strong>Zaberete jo jen chvílku</strong> (pár drag&amp;drop), <strong>dáte nám váš email a my vám obratem pošleme orientační nabídku.</strong> Kromě toho máte jedinečnou příležitost poznat, 
 								na čem závisí a z jakých kroků se skládá tvorba skutečně úspěšného e-shopu na Shoptetu.</p>
 							
-								<a className='btn btn-primary disabled'>Přejít na konfigurátor</a>
+								<a className='btn btn-primary disabled'>
+									<span data-hover="Přejít na konfigurátor">
+										Přejít na konfigurátor
+									</span>
+								</a>
 							
 						</div>
 					</div>
@@ -310,3 +335,14 @@ export default function EShopy() {
 		</>
 	)
 }
+
+export async function getStaticProps() {
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
+  
+	return {
+		props: {
+			coONas: coONasRes.data,
+		},
+		revalidate: 1,
+	}
+  }

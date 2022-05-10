@@ -48,7 +48,11 @@ export default function Home({ reference, coONas }) {
           <PravaMiranda></PravaMiranda>
           <div className='text-center'>
             <Link href="/sluzby">
-              <a className="btn btn-tertiary">Kompletní nabídka služeb</a>
+              <a className="btn btn-tertiary">
+                  <span data-hover="Kompletní nabídka služeb">
+                    Kompletní nabídka služeb
+                  </span>
+                </a>
             </Link>
           </div>
         </div>
@@ -56,11 +60,11 @@ export default function Home({ reference, coONas }) {
       {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
       </section> */}
-      <section>
+      <section className='hidden'>
         <Spoluprace></Spoluprace>
       </section>
-      <section>
-        <CoONasRikaji data={coONas}></CoONasRikaji>
+      <section className='hidden'>
+        <CoONasRikaji data={coONas} className="hidden"></CoONasRikaji>
       </section>
       <section>
         <div className="columns col-2 align-center container podcast">
@@ -68,7 +72,11 @@ export default function Home({ reference, coONas }) {
             <h3>Miranda podcast</h3>
             <p>Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání nebo chceš jednoduše vyplnit volný čas, tak pouštej!</p>
             <Link href="/sluzby/podcast">
-              <a className='btn btn-primary'>Poptat podcast</a>
+              <a className='btn btn-primary'>
+                <span data-hover="Poptat podcast">
+                  Poptat podcast
+                </span>
+              </a>
             </Link>
           </div>
           <div className="column">

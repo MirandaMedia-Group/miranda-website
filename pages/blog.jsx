@@ -20,7 +20,11 @@ const Blog = ({ clanky }) => {
                         </div>
                         <h1>{clanky[0].attributes.nazev}</h1>
                         <Link href={`/clanky/${clanky[0].attributes.slug}`}>
-                            <a className="btn btn-primary">Přečíst článek</a>
+                            <a className="btn btn-primary">
+                                <span data-hover="Přečíst článek">
+                                    Přečíst článek
+                                </span>
+                            </a>
                         </Link>
                     </div>
                 </div>

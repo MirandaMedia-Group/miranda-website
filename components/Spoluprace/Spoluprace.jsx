@@ -36,7 +36,11 @@ const Spoluprace = () => {
                     </div>
                     <div className="column text-right">
                         <Link href="/jak-to-funguje">
-                            <a className='btn btn-primary'>Zjisti, jak to u nás funguje</a>
+                            <a className='btn btn-primary'>
+                                <span data-hover="Zjisti, jak to u nás funguje">
+                                    Zjisti, jak to u nás funguje
+                                </span>
+                            </a>
                         </Link>
                     </div>
                 </div>
