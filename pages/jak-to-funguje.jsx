@@ -62,7 +62,7 @@ const JakToFunguje = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="hidden">
                 <div className="container">
                     <h2 className={styles.headline}>Průběh projektu</h2>
                     <div className={styles.cesta}>

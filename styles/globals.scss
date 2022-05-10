@@ -443,7 +443,6 @@ img {
 .btn {
   display: inline-block;
   line-height: 1em;
-  padding: em(20);
   transition: all .3s ease-in;
   &.disabled {
     opacity: .6;
@@ -556,7 +555,7 @@ img {
 
 // NOT COMPONENTS SECTION
 main#content {
-  & > section:not(.visible) {
+  & > section.hidden {
     overflow: hidden;
   }
 }

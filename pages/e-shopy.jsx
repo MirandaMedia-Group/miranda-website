@@ -24,7 +24,7 @@ export default function EShopy({ coONas }) {
 					>
 				</HeroStatic>
 			</section>
-			<section>
+			<section className='hidden'>
 				<div className="container text-center">
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
 					<Swiper
@@ -111,7 +111,7 @@ export default function EShopy({ coONas }) {
 					</div>
 				</div>
 			</section>
-			<section className='visible'>
+			<section className='hidden'>
 				<div className="container">
 					<Swiper
 						modules={[Navigation]}
@@ -197,7 +197,7 @@ export default function EShopy({ coONas }) {
 					</div>
 				</div>
 			</section>
-			<section>
+			<section className='hidden'>
 				<CoONasRikaji data={coONas}></CoONasRikaji>
 			</section>
 			<section className="container visible">

@@ -56,11 +56,11 @@ export default function Home({ reference, coONas }) {
       {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
       </section> */}
-      <section>
+      <section className='hidden'>
         <Spoluprace></Spoluprace>
       </section>
       <section>
-        <CoONasRikaji data={coONas}></CoONasRikaji>
+        <CoONasRikaji data={coONas} className="hidden"></CoONasRikaji>
       </section>
       <section>
         <div className="columns col-2 align-center container podcast">

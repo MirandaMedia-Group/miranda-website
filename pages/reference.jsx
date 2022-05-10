@@ -16,7 +16,7 @@ export default function Home({ reference, coONas }) {
       <section className='container'>
         <Reference data={reference} />
       </section>
-      <section>
+      <section className='hidden'>
         <CoONasRikaji data={coONas}/>
       </section>
     </>
