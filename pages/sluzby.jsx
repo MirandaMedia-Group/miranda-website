@@ -17,6 +17,7 @@ export default function Home() {
         title="Vše pro digital na jednom místě"
         subtitle="Miranda plnohodnotně působí jako full servis digitální - marketingová & kreativní agentura. Jeden by řekl, že toho je na samotnou agenturu poměrně hodně, ale už od počátku bylo naším cílem poskytovat služby, které spolu úzce souvisí tzv. pod jednou střechou. Tento komplexní přístup šetří našim klientům ve výsledku čas i peníze. Na své potřeby v digitální světě si snadno vystačí s jedním, silným partnerem."
         image="/img/heroBanner-min.png" 
+        bigFont
       />
       <section>
         <div className='container sluzby'>

@@ -60,14 +60,22 @@ const CareerForm = () => {
                             <input type="text" name="linkedin" id="linkedin" placeholder="Odkaz na LinkedIn profil" ref={form.linkedin} />
                         </div>
                         <div>
-                            <button type="" className="btn btn-tertiary">Nahrát soubor</button>
+                            <button type="" className="btn btn-tertiary">
+                                <span data-hover="Nahrát soubor">
+                                    Nahrát soubor
+                                </span>
+                            </button>
                             <p className={styles.small}>Nahrajte prosím soubor typu PDF, DOC(X) nebo ODT</p>
                         </div>
                         <div className={styles.formRow}>
                             <input type="checkbox" name="consent" id="consent" />
                             <label htmlFor="consent">Odesláním formuláře souhlasím se zpracovaním osobních údajů</label>
                         </div>
-                        <button type="submit" className={`btn btn-primary ${styles.btnArrow}`} >Odeslat odpověď</button>
+                        <button type="submit" className={`btn btn-primary ${styles.btnArrow}`} >
+                            <span data-hover="Odeslat odpoveď">
+                                Odeslat odpověď
+                            </span>
+                        </button>
                     </form>
                 </div>
             </div>

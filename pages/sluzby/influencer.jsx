@@ -10,6 +10,8 @@ const ppcVyhledavace = () => {
                 <HeroStatic 
                     title="Influencer"
                     image="/img/influencer-hero.jpg"
+                    bigFont
+                    maxWidth
                 />
             </section>
             <section>

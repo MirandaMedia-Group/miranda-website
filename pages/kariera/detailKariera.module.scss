@@ -1,10 +1,8 @@
 .logo {
     display: inline-flex;
-
     &::before {
         content: url('/img/icon/miranda-icon.svg');
         display: inline-block;
-
     }
 }
 
@@ -71,4 +69,9 @@
 
 .visible {
     display: none;
+}
+.overallWrapper {
+    & > div {
+        background-color: $color-white;
+    }
 }

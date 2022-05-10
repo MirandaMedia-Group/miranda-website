@@ -9,8 +9,10 @@ const JakToFunguje = () => {
         <>
             <section>
                 <HeroStatic
-                    title="Jak to u nás funguje"
+                    title="Jak to u&nbsp;nás funguje"
                     image="/img/proc-s-nami.jpg"
+                    bigFont
+                    maxWidth
                 >
 
                 </HeroStatic>

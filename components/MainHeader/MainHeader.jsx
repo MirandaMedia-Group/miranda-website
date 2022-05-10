@@ -19,30 +19,27 @@ const Navbar = () => {
         </div>
         <nav className={styles.navigation}>
           <ul>
-            <li className={`${router.pathname == "/proc-s-nami" || router.pathname == '/jak-to-funguje' ? `${styles.active}` : ""} ${styles.hasChildren}`}>
-              <span>O nás</span>
+            <li className={router.pathname == "/proc-s-nami" ? `${styles.active}` : ""}>
+              <Link href="/proc-s-nami" passHref>
+                <a>O nás</a>
+              </Link>
+            </li>
+            <li className={router.pathname == "/reference" ? `${styles.active}` : ""}>
+              <Link href="/reference">
+                <a>Reference</a>
+              </Link>
+            </li>
+            <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren}`}>
+              <Link href="/e-shopy" >
+                <a >Shoptet na míru</a>
+              </Link> 
               <ul className={styles.menuLevel2}>
-                <li>
-                  <Link href="/proc-s-nami" passHref>
-                    <a>Proč s námi</a>
-                  </Link>
-                </li>
                 <li>
                   <Link href="/jak-to-funguje">
                     <a>Jak to u nás funguje</a>
                   </Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <Link href="/reference">
-                <a className={router.pathname == "/reference" ? `${styles.active}` : ""}>Reference</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/e-shopy" >
-                <a className={router.pathname == "/e-shopy" ? `${styles.active}` : ""}>Shoptet na míru</a>
-              </Link> 
             </li>
             <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren}`}>
               <Link href="/sluzby" >
