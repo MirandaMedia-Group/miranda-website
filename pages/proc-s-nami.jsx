@@ -11,7 +11,6 @@ export default function Home() {
           title=""
           subtitle=""
           image="/img/proc-s-nami.jpg"
-          buttons='false'
         />
       </section>
       <section className='text-center'>
@@ -29,17 +28,17 @@ export default function Home() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className={styles.itemWide}>
-            <Image src="/img/grid1.jpg" width={700} height={710} alt="" layout="responsive"></Image>
+            <Image src="/img/buchta.jpg" width={700} height={710} alt="" layout="responsive"></Image>
           </div>
           <div>
-            <Image src="/img/grid2.jpg" width={466} height={466} alt="" layout="responsive"></Image>
+            <Image src="/img/epiderma-casopis.jpg" width={466} height={466} alt="" layout="responsive"></Image>
           </div>
           <div className={styles.textItem}>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
           <div>
-            <Image src="/img/grid3.jpg" width={466} height={466} alt="" layout="responsive"></Image>
+            <Image src="/img/miranda-lounge.jpg" width={466} height={466} alt="" layout="responsive"></Image>
           </div>
           <div className={`${styles.textItem} text-center`}>
             <p><strong>25 <span>profesionálů</span></strong></p>

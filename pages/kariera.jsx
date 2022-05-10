@@ -42,6 +42,7 @@ export default function Home() {
         subtitle="Miranda není jenom práce. Je to místo, kde se vzájemná důvěra, respekt a úcta jednoho k druhému stávají základními stavebními kameny spolupráce. 
           Je to prostředí, kde vznikají skvělé myšlenky a rodí se nové projekty. Možná je to právě Ta práce, kterou si vždycky hledal..." 
         image="/img/kariera-hero.jpg" 
+        bigFont
       />
       <section className={`container negative-margin`}>
        {poziceItems}

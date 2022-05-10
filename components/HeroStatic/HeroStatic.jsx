@@ -4,7 +4,7 @@ import styles from './HeroStatic.module.scss'
 
 const HeroStatic = (props) => {
     return (
-        <div className={styles.hero}>
+        <div className={`${styles.hero} ${props.overlay && styles.overlay} ${props.bigFont && styles.large}`}>
            { props.image && (<Image src={props.image} width="1920" height="1080" alt="" layout="responsive"/>) }
            { props.video && (
                 <video autoPlay style={{ width: '100%', height: 'auto' }}>
@@ -17,13 +17,19 @@ const HeroStatic = (props) => {
                     <p>{props.subtitle}</p>
                     { props.url && (<a href={`https://${props.url}`} className={styles.url} target="_blank" rel="noreferrer">{props.url}</a>) }
                     {
-                        props.buttons == 'true' && (
+                        props.buttons && (
                             <div className="buttons-wrapper">
-                                <Link href="/kontakty">
-                                    <a className="btn btn-primary">Chci Shoptet na klíč</a>
-                                </Link>
+                                <a href="#kontakt" className="btn btn-primary">
+                                    <span data-hover="Chci Shoptet na klíč">
+                                        Chci Shoptet na klíč
+                                    </span>
+                                </a>
                                 <Link href="/reference">
-                                    <a className="btn btn-tertiary">Naše práce</a>
+                                    <a className="btn btn-tertiary">
+                                        <span data-hover="Naše práce">
+                                            Naše práce
+                                        </span>
+                                    </a>
                                 </Link>
                             </div>
                         )

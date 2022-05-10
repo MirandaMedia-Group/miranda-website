@@ -44,7 +44,7 @@ const PravaMiranda = () => {
                 </Link>
                 <Link href="/sluzby/weby" passHref>
                     <div className={styles.sluzba}>
-                        <Image src="/img/weby.jpg" width={710} height={290} alt="" />
+                        <Image src="/img/weby.jpg" width={710} height={290} alt="" layout="fill"/>
                         <div className={styles.text}>
                             <h3><span>Miranda</span>Weby &amp; e-shopy na klíč</h3>
                                 <a className="btn-sm"></a>
@@ -53,9 +53,9 @@ const PravaMiranda = () => {
                 </Link>
                 <Link href="/sluzby/influencer" passHref>
                     <div className={styles.sluzba}>
-                        <Image src="/img/influencer.png" width={710} height={290} alt="" />
+                        <Image src="/img/influencer2.png" width={710} height={290} alt="" layout="fill"/>
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>Influencer marketing</h3>
+                            <h3><span>Miranda</span>Influencer<br/>marketing</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>

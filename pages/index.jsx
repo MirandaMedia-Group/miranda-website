@@ -66,8 +66,8 @@ export default function Home({ reference, coONas }) {
       <section className='hidden'>
         <CoONasRikaji data={coONas} className="hidden"></CoONasRikaji>
       </section>
-      <section>
-        <div className="columns col-2 align-center container podcast">
+      <section className='container'>
+        <div className="columns col-2 align-center podcast">
           <div className="column">
             <h3>Miranda podcast</h3>
             <p>Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání nebo chceš jednoduše vyplnit volný čas, tak pouštej!</p>

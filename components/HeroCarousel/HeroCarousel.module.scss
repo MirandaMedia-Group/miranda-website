@@ -36,6 +36,9 @@ $color-primary: #59DC8E;
                 top: 16px;
                 left: 0;
             }
+            svg {
+                animation: bounce 2s infinite ease-out;
+            }
         }
     }
     .imgWrap {
@@ -67,3 +70,15 @@ $color-primary: #59DC8E;
 //         }
 //     }
 // }
+
+@keyframes bounce {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: none;
+    }
+}

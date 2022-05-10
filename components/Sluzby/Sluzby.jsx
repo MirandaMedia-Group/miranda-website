@@ -17,6 +17,13 @@ const Sluzby = () => {
                         <li>Neomezený počet produktů, uživatelů, e-mailů</li>
                         <li>Bez nutnosti vlastních programátorů</li>
                     </ul>
+                    <div className="text-center" style={{marginTop: '20px'}}>
+                        <a href="#kontakt" className='btn btn-primary'>
+                            <span data-hover="Poptat služby">
+                                Poptat služby
+                            </span>
+                        </a>
+                    </div>
                 </div>
                 <div className={styles.item}>
                     <Image src="/img/icon/Grafika.svg" width={56} height={56} alt=""></Image>

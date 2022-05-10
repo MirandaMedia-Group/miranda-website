@@ -11,10 +11,15 @@ export default function Home({ reference, coONas }) {
           title="Reference"
           subtitle="Tohle je naše výkladní skříň, tak se tu porozhlédni a třeba najdeš zrovna tu správnou inspiraci pro svůj vlastní projekt."
           image="/img/referenceBackground.jpg"
+          bigFont
+          maxWidth
         />
       </section>
       <section className='container'>
         <Reference data={reference} />
+        <div className='text-center'>
+          <span className='highlight'>+ mnoho dalších</span>
+        </div>
       </section>
       <section className='hidden'>
         <CoONasRikaji data={coONas}/>
@@ -24,7 +29,7 @@ export default function Home({ reference, coONas }) {
 }
 
 export async function getStaticProps() {
-  const referenceRes = await fetchAPI('/references', { populate: '*' })
+  const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
   const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 
   return {
