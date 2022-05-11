@@ -4,7 +4,9 @@ import Image from 'next/image'
 import styles from '../../styles/pennyDomu.module.scss'
 import { fetchAPI } from "../../lib/api";
 
-const pennyDomu = ({ reference }) => {
+const pennyDomu = ({ reference, props }) => {
+    const tiles = [1,2,3,4,5,6,7,8,9,10,11,12]
+
     return (
         <>
             <PripadovkyHead 
@@ -54,7 +56,17 @@ const pennyDomu = ({ reference }) => {
             </div>
             <section className={styles.background} id="oProjektu">
                     <div className='container'>
-                        <div className={styles.quotes}><Image src="/img/michal.jpg" width={500} height={500} /></div>
+                        <div className={styles.quotes}><Image src="/img/michal.jpg" width={500} height={500} />
+                            <div className={styles.coRika}><img src="/img/icon/coRika.svg"></img></div>
+                            <div className={styles.tiles}>
+                                    {
+                                        tiles.map( (tile, index) => {
+                                                return <div className={styles.tile} key={index}></div>
+                                            }   
+                                        )
+                                    }
+                                </div>
+                            </div>
                         <div className={styles.text}>
                             <p className={styles.bigger}>
                             E-shop Penny Market byl pro všechny strany velkou výzvou. Už jen pro to, že jsme celou platformu vystavěli od počátku na Shoptetu. 

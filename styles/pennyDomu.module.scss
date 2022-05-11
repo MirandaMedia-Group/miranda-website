@@ -168,3 +168,73 @@
         }
     }
 }
+
+.coRika {
+    position: absolute;
+    top: 0;
+    right: -61px;
+    max-height: 359px;
+    overflow: hidden;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transform: translate(calc(50% - 55px), calc(50% - 5px));
+    .tile {
+        background-color: $color-primary;
+        animation: 10s pulse ease-in infinite;
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(5),
+        &:nth-of-type(13) {
+            visibility: hidden;
+        }
+        &:nth-of-type(3) {
+            opacity: 1;
+            animation-delay: 0;
+        }
+        &:nth-of-type(7) {
+            opacity: 1;
+            animation-delay: 200ms;
+        }
+        &:nth-of-type(8) {
+            opacity: 1;
+            animation-delay: 1.3s;
+        }
+        &:nth-of-type(9) {
+            opacity: 1;
+            animation-delay: 2.4s;
+        }
+        &:nth-of-type(10) {
+            opacity: 1;
+            animation-delay: 1s;
+        }
+        &:nth-of-type(11) {
+            opacity: 1;
+            animation-delay: 3.5s;
+        }
+        &:nth-of-type(12) {
+            opacity: 1;
+            animation-delay: 500ms;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
