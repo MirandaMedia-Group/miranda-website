@@ -40,7 +40,7 @@ const CareerForm = () => {
         <>
             <div className={`${styles.formWrapper}`}>
                 <div className="column">
-                    <h2>Jste připraveni seznámit se s <span className="green">Mirandou</span>?</h2>
+                    <h2>Jdeš do toho?</h2>
                     <p>Tenhle formulář odešle vaši zprávu rychleji, než řeknete švec. Tak to tam naťukejte, ať se můžeme konečně poznat.</p>
                 </div>
                 <div className="column">

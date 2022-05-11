@@ -916,3 +916,27 @@ ul.styled {
       }
   }
 }
+
+@media (max-width: 992px) {
+  section:not(.no-margin) {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-thin {
+    text-align: left;
+    padding: 0 20px;
+
+  }
+
+  h2 {
+    font-size: rem(28);
+    line-height: em(42,28);
+  }
+  
+  h3 {
+    font-size: rem(28);
+    line-height: em(42,28);
+  }
+}

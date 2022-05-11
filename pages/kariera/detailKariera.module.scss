@@ -75,3 +75,42 @@
         background-color: $color-white;
     }
 }
+
+@media (max-width: 767px) {
+    .head {
+       a {
+            margin: 40px 0;
+       }
+    }
+
+    .biggerFont {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .marginTop, .part {
+        margin-top: 40px;
+    }
+
+    .list {
+        margin-bottom: 40px;
+    }
+
+    .hideMobil {
+        display: none;
+    }
+
+    .overallWrapper {
+        h2, h3 {
+            text-align: center;
+        }
+    }
+
+    .part h3 {
+        margin-bottom: 15px;
+    }
+    
+}

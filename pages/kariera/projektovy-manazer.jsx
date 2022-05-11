@@ -65,8 +65,8 @@ const detailKariera = () => {
                             <li>Být součástí agenturního týmu, který si neklade malé cíle 😉</li>
                             <li><strong>Práce na IČO</strong></li>
                         </ul>
-                        <p >Jdeš do toho? 🙂</p>
-                        <a href="#kontakt"className='btn btn-primary'>
+                        <p className={styles.hideMobil}>Jdeš do toho? 🙂</p>
+                        <a href="#kontakt"className={`btn btn-primary ${styles.hideMobil} `}>
                             <span data-hover="No jistě!">
                                 No jistě!
                             </span>
