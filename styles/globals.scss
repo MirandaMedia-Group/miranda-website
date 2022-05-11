@@ -921,6 +921,11 @@ ul.styled {
   section:not(.no-margin) {
     margin-bottom: 45px;
   }
+
+  .negative-margin {
+    margin-top: 0;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -938,5 +943,18 @@ ul.styled {
   h3 {
     font-size: rem(28);
     line-height: em(42,28);
+  }
+
+  .btn {
+    line-height: 1.75em;
+    
+    span {
+      padding: 0.7em;
+    }
+  }
+
+  .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
   }
 }
