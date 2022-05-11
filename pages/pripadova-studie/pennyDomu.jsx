@@ -29,17 +29,19 @@ const pennyDomu = ({ reference, props }) => {
             </section>
             <div className='container'>
                 <section className={styles.row} id="oPenny">
-                    <Image src="/img/pennyImg.jpg" width={710} height={710} />
+                    <Image src="/img/pennyImg.jpg" width={710} height={710} alt=""/>
                     <div className={styles.text}>
                         <div>
                             <h2>Kdo by neznal Penny Market</h2>
-                            <p>Penny Market s.r.o. je dceřinou společností mezinárodního obchodního řetězce REWE, který provozuje přes 15 000 prodejen v 20 evropských zemích a zaměstnává kolem 330 000 lidí. PENNY kromě České republiky najdete i v Německu, Rakousku, Itálii, Maďarsku a Rumunsku.</p>
+                            <p>Penny Market s.r.o. je dceřinou společností mezinárodního obchodního řetězce REWE, který provozuje přes 15 000 prodejen v 20 evropských zemích a 
+                                zaměstnává kolem 330 000 lidí. PENNY kromě České republiky najdete i v Německu, Rakousku, Itálii, Maďarsku a Rumunsku.</p>
                         </div>
                     </div>
                 </section>
                 <section className={styles.cile} id="cile">
                     <h2>Naše společné cíle</h2>
-                    <p>Jednoho dne zazvonil v Mirandě telefon, že prý Penny Market poptává digitální agenturu na tvorbu nového e-shopu. Od té chvíle se spustil kolotoč schůzek a jednání, které nás dovedly k výhradní spolupráci na vytvoření e-commerce platformy na klíč.</p>
+                    <p>Jednoho dne zazvonil v Mirandě telefon, že prý Penny Market poptává digitální agenturu na tvorbu nového e-shopu. Od té chvíle se spustil kolotoč schůzek a jednání, 
+                        které nás dovedly k výhradní spolupráci na vytvoření e-commerce platformy na klíč.</p>
                     <div>
                         <ul>
                             <li>Analýza zadávací technické dokumentace</li>
@@ -71,8 +73,11 @@ const pennyDomu = ({ reference, props }) => {
                             <p className={styles.bigger}>
                             E-shop Penny Market byl pro všechny strany velkou výzvou. Už jen pro to, že jsme celou platformu vystavěli od počátku na Shoptetu. 
                             </p>
-                            <p>Samotné zadání ze strany partnera obnášelo funkcionality a požadavky, které nebyly součástí "krabice" Shoptet. Vývojový tým v tomto ohledu sehrál nenahraditelnou roli a pomocí tzv. komunikační mezivrstvy dokázal s Shoptetem udělat zdánlivě nemožné. Jedním z požadavků bylo např. naprogramování funkcionality "Výběr časových oken s ověřením akčních cen". Doplněk zobrazuje u každé položky v košíku cenu, která platí dnes společně s cenou, která bude platit v den doručení v závislosti na akčním letáku.</p>
-                            <p>To a dlouhou řadu dalších "vychytávek" zvládla Miranda na jedničku a my děkujeme partnerovi Penny, že jsme mohli být součástí!</p>
+                            <p>Samotné zadání ze strany partnera obnášelo funkcionality a požadavky, které nebyly součástí &quot;krabice&quot; Shoptet. Vývojový tým v tomto ohledu sehrál 
+                                nenahraditelnou roli a pomocí tzv. komunikační mezivrstvy dokázal s Shoptetem udělat zdánlivě nemožné. Jedním z požadavků bylo např. naprogramování funkcionality
+                                &quot;Výběr časových oken s ověřením akčních cen&quot;. Doplněk zobrazuje u každé položky v košíku cenu, která platí dnes společně s cenou, která bude platit
+                                 v den doručení v závislosti na akčním letáku.</p>
+                            <p>To a dlouhou řadu dalších &quot;vychytávek&quot; zvládla Miranda na jedničku a my děkujeme partnerovi Penny, že jsme mohli být součástí!</p>
                             <h4>Michal Baloun</h4>
                             <p className={styles.small}>Partner <span className={styles.green}>MirandaMedia Group s.r.o.</span></p>
                         </div>
@@ -82,20 +87,21 @@ const pennyDomu = ({ reference, props }) => {
                 <div className='container'>
                     <div className={styles.text}>
                         <h2>Ukázka hotového e-shopu</h2>
-                        <p>Podívej se, jak vypadá e-shop Pennydomu.cz na Shoptetu. Kompletně navržená struktura a grafika na základě brand manuálu, jednotný a rozum dá, že plně responzivní design, který jsme testovali na všech možných zařízeních, co to jen šlo. Tak to projeď a rovnou něco objednej, když už tam budeš.</p>
+                        <p>Podívej se, jak vypadá e-shop Pennydomu.cz na Shoptetu. Kompletně navržená struktura a grafika na základě brand manuálu, jednotný a rozum dá, že plně responzivní design, 
+                            který jsme testovali na všech možných zařízeních, co to jen šlo. Tak to projeď a rovnou něco objednej, když už tam budeš.</p>
                         <a href="https://www.pennydomu.cz/" className='btn btn-primary'><span data-hover="Zobrazit web">Zobrazit web</span></a>
                     </div>
                     <div className={styles.img}>
-                        <Image src="/img/pennyRuka.png" width={1010} height={877} />
+                        <Image src="/img/pennyRuka.png" width={1010} height={877} alt=""/>
                     </div>
                 </div>
             </section>
             <section className={styles.images}>
-                <Image src="/img/penny1.jpg" width={950} height={535} />
-                <Image src="/img/penny2.jpg" width={950} height={535} />
-                <Image src="/img/penny3.jpg" width={464} height={535} />
-                <Image src="/img/penny4.jpg" width={950} height={535} />
-                <Image src="/img/penny5.jpg" width={464} height={535} />
+                <Image src="/img/penny1.jpg" width={950} height={535} alt=""/>
+                <Image src="/img/penny2.jpg" width={950} height={535} alt=""/>
+                <Image src="/img/penny3.jpg" width={464} height={535} alt=""/>
+                <Image src="/img/penny4.jpg" width={950} height={535} alt=""/>
+                <Image src="/img/penny5.jpg" width={464} height={535} alt=""/>
             </section>
             <section className="hidden">
                     <CaseStudy reference={reference}></CaseStudy>
