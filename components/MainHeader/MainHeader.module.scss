@@ -126,3 +126,103 @@
         box-shadow: 0 0 20px #FFF;
     }
 }
+
+.mobileNavigation {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .mainHeader {
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .navigation {
+        display: none;
+    }
+    .mobileNavigation {
+        display: block;
+        margin-left: auto;
+        .hamburger {
+            cursor: pointer;
+            span {
+                height: 3px;
+                border-radius: 9999px;
+                width: 45px; 
+                display: block;
+                background-color: $color-white;
+                transition: all .3s ease-in;
+                &:not(:last-of-type) {
+                    margin-bottom: 7px;
+                }
+            }
+            &.visible {
+                span:nth-of-type(2) {
+                    transform: translateX(100%);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                span:first-of-type {
+                    transform: rotate(45deg) translateY(7px) translateX(7px);
+                }
+                span:last-of-type {
+                    transform: rotate(-45deg) translateY(-7px) translateX(7px);
+                }
+            }
+        }
+        nav {
+            position: absolute;
+            background-color: $color-white;
+            color: $color-primary;
+            top: 100%;
+            right: 0;
+            max-width: 0;
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: all .3s ease-in;
+            a {
+                padding: 1em 2em;
+                display: inline-block;
+            }
+            &.visible {
+                max-width: 640px;
+                padding: 2rem;
+            }
+        }
+        .menuLevel2 {
+            display: none;
+        }
+        .hasChildren {
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 3px solid $color-primary;
+                border-style: solid solid none none;
+                border-radius: 3px;
+                transform: rotate(135deg);
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px) {
+    .contacts {
+        display: none;
+    }
+    .mainHeader {
+        padding: 20px;
+    }
+    .mobileNavigation {
+        .hamburger {
+            span {
+                width: 25px;
+            }
+        }
+    }
+}
