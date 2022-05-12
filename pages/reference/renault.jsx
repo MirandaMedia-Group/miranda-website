@@ -33,8 +33,8 @@ const ReferenceRenault = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/renault.jpg" width={450} height={450} alt=""  /></div>
                     <div ><Image src="/img/renault2.jpg"  width={250} height={450} /></div>
-                    <div className={styles.mobilHide}><Image src="/img/renault2.png" width={741} height={417}/></div>
-                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" className={styles.mobilHidden}/></div>
+                    <div className={styles.mobilHide}><Image src="/img/renault2.png" width={355} height={160}/></div>
+                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" /></div>
                 </div>
             </section>
             <section className={`container ${styles.spolupraceGrid}`}>
@@ -62,7 +62,8 @@ const ReferenceRenault = ({ reference }) => {
                 </div>
             </section>
             <section className={`container ${styles.banner}`}>
-                <Image src="/img/renaultBanner.jpg" width={1440} height={574} alt="renault" />
+                <div><Image src="/img/renaultBanner.jpg" width={1440} height={574} alt="renault" /></div>
+                <div  className={styles.mobilHide}><Image src="/img/renaultBannerMobil.jpg" width={335} height={655} alt="renault"/></div>
                 <div className={styles.text}>
                     <h2>Příběh pokračuje</h2>
                     <p>Nadále jsme marketingovou a strategickou součástí společnosti  Fair Autotop. Máme společný dlouhodobý a jasný cíl – udržovat povědomí o prémiové kvalitě dodávaných služeb, podpořit prodej nových vozů a nadále zvyšovat spokojenost stávajících klientů.</p>

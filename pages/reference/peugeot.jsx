@@ -22,6 +22,7 @@ const ReferencePeugeot = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/peugeot.jpg" width={450} height={450} alt=""  /></div>
                     <div><Image src="/img/peugeot2.jpg" width="250" height="450" alt="" /></div>
+                    <div className={styles.mobilHide}><Image src="/img/peugeotMobil.jpg" width="1280" height="518" alt="" /></div>
                     <div><Image src="/img/peugeot3.jpg" width="350" height="450" alt="" /></div>
                 </div>
             </section>
@@ -34,23 +35,24 @@ const ReferencePeugeot = ({ reference }) => {
                     <p><span className="green">-62,3%</span>Snížení nákladů na 1 online poptávku : <span>SNÍŽENÍ PNO</span></p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/peugeotVysledky.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/peugeotVysledky.jpg" width={360} height={360} alt="" layout="fill"  objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/peugeotVysledky2.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/peugeotVysledky2.jpg" width={360} height={360} alt="" layout="fill"  objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">+169%</span>Do 3 měsíců od zahájení spolupráce: <span>Nárůst poptávek</span></p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/peugeotVysledky3.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/peugeotVysledky3.jpg" width={360} height={360} alt="" layout="fill"  objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">-36%</span>Snížení míry okamžitého opuštění webu</p>
                 </div>
             </section>
             <section className={`container ${styles.banner}`}>
-                <Image src="/img/peugeotBanner2.jpg" width={1440} height={574} alt="peugoet" />
+                <div><Image src="/img/peugeotBanner2.jpg" width={1440} height={574} alt="peugoet" /></div>
+                <div className={styles.mobilHide}><Image src="/img/peugeotBannerMobil.jpg" width={335} height={655} alt="peugoet" /></div>
                 <div className={styles.text}>
                     <h2>Příběh pokračuje</h2>
                     <p>Nadále jsme marketingovou a strategickou součástí společnosti  Fair Autotop. Máme společný dlouhodobý a jasný cíl – udržovat povědomí o prémiové kvalitě dodávaných služeb, podpořit prodej nových vozů a nadále zvyšovat spokojenost stávajících klientů.</p>

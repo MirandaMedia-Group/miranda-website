@@ -22,6 +22,7 @@ const ReferenceEpa = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/epa.jpg" width={450} height={450} alt=""  /></div>
                     <div><Image src="/img/epa2.jpg" width="250" height="450" alt="" /></div>
+                    <div className={styles.mobilHide}><Image src="/img/epaMobil.jpg" width="335" height="160" alt="" /></div>
                     <div><Image src="/img/epa3.jpg" width="350" height="450" alt="" /></div>
                 </div>
             </section>
@@ -34,23 +35,24 @@ const ReferenceEpa = ({ reference }) => {
                     <p><span className="green">+305%</span>Nárůst obratu</p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/epaVysledky.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/epaVysledky.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center"/>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/epaVysledky2.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/epaVysledky2.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center"/>
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">-53%</span>Snížení PNO (již první měsíc)</p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/epaVysledky3.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/epaVysledky3.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">2,26%</span>Konverzní poměr (již první měsíc)</p>
                 </div>
             </section>
             <section className={`${styles.banner} container`}>
-                <Image src="/img/epaBanner.jpg" width={1440} height={574} alt="renault" />
+                <div><Image src="/img/epaBanner.jpg" width={1440} height={574} alt="epa" /></div>
+                <div className={styles.mobilHide}><Image src="/img/epaBannerMobil.jpg" width={335} height={689} alt="epa" /></div>
                 <div className={styles.text}>
                     <h2>Příběh pokračuje</h2>
                     <p>Klient EPA svítidla je pro nás jasným příkladem dobře fungujícího e-shopu, jehož konverzní míra stále vzrůstá a v součinnosti s tím roste i velikost celého elektronického obchodu. Jeho jednoznačně nejlepší vizitkou jsou další a další spokojení zákazníci.</p>

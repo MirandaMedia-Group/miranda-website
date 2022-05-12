@@ -22,6 +22,7 @@ const ReferenceExpresmenu = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/expresmenu1.jpg" width={450} height={450} alt=""  /></div>
                     <div><Image src="/img/expresmenu2.jpg" width="250" height="450" alt="" /></div>
+                    <div className={styles.mobilHide}><Image src="/img/expresMenuMobil.jpg" width="335" height="160" alt="" /></div>
                     <div><Image src="/img/expresmenu3.jpg" width="350" height="450" alt="" /></div>
                 </div>
             </section>
@@ -43,14 +44,15 @@ const ReferenceExpresmenu = ({ reference }) => {
                     <p><span className="green">-14%</span>Snížení PNO</p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/expresmenuVysledky.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/expresmenuVysledky.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">-200 KČ</span>Snížení nákladu na jeden nákup</p>
                 </div>
             </section>
             <section className={`container ${styles.banner}`}>
-                <Image src="/img/expresmenuBanner.jpg" width={1440} height={574} alt="expresmenu" />
+                <div><Image src="/img/expresmenuBanner.jpg" width={1440} height={574} alt="expresmenu" /></div>
+                <div className={styles.mobilHide}><Image src="/img/expresmenuBannerMobil.jpg" width={335} height={655} alt="expresmenu" /></div>
                 <div className={styles.text}>
                     <h2>Příběh pokračuje</h2>
                     <p>Klient Expresmenu je pro nás jasným příkladem dobře odvedené práce. Jsme rádi, že jsme sociální sítě mohli převzít a vymyslet novou strategii. Konverzní poměr šel raketově nahoru a to i díky tomu, že se staráme již nyní o kompletně celý marketing klienta.</p>
