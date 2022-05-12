@@ -9,6 +9,7 @@ const CoONasRikaji = (props) => {
     const tiles = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 
     const [activeData, setActiveData] = useState(0)
+    const [textToggled, setTextToggled] = useState(false)
     const maxRefIndex = props.data.length - 1
     
     const prevRef = () => {
@@ -17,12 +18,16 @@ const CoONasRikaji = (props) => {
     const nextRef = () => {
         if (activeData < maxRefIndex) setActiveData(activeData+1)
     }
+    const toggleText = (e) => {
+        e.preventDefault()
+        textToggled ? setTextToggled(false) : setTextToggled(true)
+    }
 
     return (
         <div className={styles.CoONasRikajiSection}>
             <div className='container narrow text-center'>
                 <h2>Co říkáte na Mirandu</h2>
-                <p>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým, 
+                <p className={styles.perex}>I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým, 
                     parádně vymazleným e-shopem a co na nás říkají další vybraní klienti...</p>
             </div>
             <div className="container">
@@ -30,7 +35,7 @@ const CoONasRikaji = (props) => {
                     <div className="item">
                         <div className="columns col-4-6 align-center">
                             <div className={`column ${styles.image}`}>
-                                <FetchedImage image={props.data[activeData].attributes.obrazek} />
+                                <FetchedImage image={props.data[activeData].attributes.obrazek} responsive={false}/>
                                 <div className={styles.arrows}>
                                     <div className={`${styles.arrowLeft} ${styles.arrow}`} onClick={prevRef}>
                                         <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,10 +58,17 @@ const CoONasRikaji = (props) => {
                                 </div>
                             </div>
                             <div className={`column ${styles.texts}`}>
-                                <ReactMarkdown>
+                                <div className="text-center">
+                                    <a href="#" onClick={toggleText} className="btn btn-tertiary">
+                                        <span data-hover="Přečíst celé">
+                                            Přečíst celé
+                                        </span>
+                                    </a>
+                                </div>
+                                <ReactMarkdown className={`${textToggled ? styles.toggled : ''} ${styles.description}`}>
                                     {props.data[activeData].attributes.text}
                                 </ReactMarkdown>
-                                <div className={styles.perex}>
+                                <div className={styles.jmeno}>
                                     <div className={styles.author}>
                                         <strong>{props.data[activeData].attributes.jmeno}</strong>
                                         <span className={styles.position}>{props.data[activeData].attributes.pozice}</span>

@@ -359,10 +359,10 @@ img {
   }
   &.col-4-6 {
     .column {
-      flex: 0 1 825px;
+      flex: 0 1 57.3%;
     }
     .column:first-of-type {
-      flex: 0 1 615px;
+      flex: 0 1 42.7%;
     }
   }
   &.col-2-3 {
@@ -392,6 +392,19 @@ img {
       flex-direction: column;
       .column {
         flex-basis: 100%;
+        &:last-of-type {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 830px) {
+  .columns {
+    &.col-4-6 {
+      flex-direction: column;
+      .column {
+        flex-basis: auto;
         &:last-of-type {
           padding-left: 0;
         }
@@ -570,7 +583,11 @@ button {
     margin-right: rem(20);
   }
 }
-
+@media screen and (max-width: 767px) {
+  .narrow {
+    margin-bottom: 20px;
+  }
+}
 .green {
   color: $color-primary;
 }
