@@ -32,7 +32,8 @@ const ReferenceRenault = ({ reference }) => {
                 </div>
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/renault.jpg" width={450} height={450} alt=""  /></div>
-                    <div><Image src="/img/renault2.jpg" width="250" height="450" alt="" /></div>
+                    <div ><Image src="/img/renault2.jpg"  width={250} height={450} /></div>
+                    <div className={styles.mobilHide}><Image src="/img/renault2.png" width={741} height={417}/></div>
                     <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" className={styles.mobilHidden}/></div>
                 </div>
             </section>
@@ -45,16 +46,16 @@ const ReferenceRenault = ({ reference }) => {
                     <p><span className="green">-79,4%</span>Snížení nákladů na 1 online poptávku : <span>SNÍŽENÍ PNO</span></p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/renaultVysledky.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/renaultVysledky.jpg" width={360} height={360} alt="" layout="fill"  objectFit="cover" objectPosition="center"/>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/renaultVysledky2.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/renaultVysledky2.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center"/>
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">+109%</span>Do 3 měsíců od zahájení spolupráce: <span>Nárůst poptávek</span></p>
                 </div>
                 <div className={styles.item}>
-                    <Image src="/img/renaultVysledky3.jpg" width={360} height={360} alt="" />
+                    <Image src="/img/renaultVysledky3.jpg" width={360} height={360} alt=""  layout="fill"  objectFit="cover" objectPosition="center" />
                 </div>
                 <div className={styles.item}>
                     <p><span className="green">+445%</span>Zvýšení relevantních fanoušků na sociálních sítích: </p>

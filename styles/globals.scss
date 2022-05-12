@@ -927,6 +927,12 @@ ul.styled {
     margin-top: 0;
   }
 
+  .columns.col-1-4.wider .column:first-of-type, 
+  .columns.col-1-4.wider .column {
+    flex: unset;
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width: 767px) {
