@@ -1,4 +1,4 @@
-import HeroStatic from "../../components/HeroStatic/HeroStatic";
+import ReferenceHead from "../../components/ReferenceHead/ReferenceHead";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
@@ -8,7 +8,7 @@ const ReferencePeugeot = ({ reference }) => {
     return (
         <>
             <section>
-                <HeroStatic
+                <ReferenceHead
                     title="Autorizovaný prodej vozů Peugeot"
                     image="/img/reference-peugeot.jpg"
                     url="www.autotop-ul.cz"

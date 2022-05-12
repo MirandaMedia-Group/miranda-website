@@ -1,4 +1,4 @@
-import HeroStatic from "../../components/HeroStatic/HeroStatic";
+import ReferenceHead from "../../components/ReferenceHead/ReferenceHead";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
@@ -19,11 +19,10 @@ const ReferenceRenault = ({ reference }) => {
     return (
         <>
             <section className={styles.reference}>
-            <HeroStatic
+            <ReferenceHead
                 title="Autorizovaný prodej vozů Renault a Dacia"
                 image="/img/reference-renault.jpg"
                 url="www.autohornat.cz"
-                className={styles.blackText}
             />
             </section>
             <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>
