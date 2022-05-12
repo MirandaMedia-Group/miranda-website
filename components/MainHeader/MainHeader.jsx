@@ -1,12 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import styles from "./MainHeader.module.scss"
 
 const Navbar = () => {
   const router = useRouter()
-
+  const [submenuVisible, setSubmenuVisible] = useState(false)
   const actualHour = new Date().getHours()
+
+  const toggleNav = () => {
+    submenuVisible ? setSubmenuVisible(false) : setSubmenuVisible(true)
+  }
 
   return (
     <header className={`${styles.mainHeader} ${router.pathname === "/" || router.pathname === '/kontakty' ? styles.headerWhite : ''}`}>
@@ -90,6 +95,86 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+        <div className={styles.mobileNavigation}>
+          <div onClick={toggleNav} className={`${styles.hamburger} ${submenuVisible ? styles.visible : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav className={submenuVisible ? styles.visible : ''}>
+            <ul>
+              <li className={router.pathname == "/proc-s-nami" ? `${styles.active}` : ""}>
+                <Link href="/proc-s-nami" passHref>
+                  <a>O nás</a>
+                </Link>
+              </li>
+              <li className={router.pathname == "/reference" ? `${styles.active}` : ""}>
+                <Link href="/reference">
+                  <a>Reference</a>
+                </Link>
+              </li>
+              <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren}`}>
+                <Link href="/e-shopy" >
+                  <a >Shoptet na míru</a>
+                </Link> 
+                <ul className={styles.menuLevel2}>
+                  <li>
+                    <Link href="/jak-to-funguje">
+                      <a>Jak to u nás funguje</a>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren}`}>
+                <Link href="/sluzby" >
+                  <a>Služby</a>
+                </Link>
+                <ul className={styles.menuLevel2}>
+                  <li>
+                    <Link href="/sluzby/ppc-vyhledavace">
+                      <a>PPC &amp; zbožové vyhledávače</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/sluzby/design">
+                      <a>Produktový design &amp; grafika</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/sluzby/socialni-site">
+                      <a>Sociální sítě</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/sluzby/weby">
+                      <a>Weby &amp; e-shopy na klíč</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/sluzby/influencer">
+                      <a>Influencer</a>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link href="/blog" >
+                  <a className={router.pathname == "/blog" ? `${styles.active}` : ""}>Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kariera" >
+                  <a className={router.pathname == "/kariera" ? `${styles.active}` : ""}>Kariera</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kontakty" >
+                  <a className={router.pathname == "/kontakty" ? `${styles.active}` : ""}>Kontakty</a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div className={styles.contacts}>
           
           <a href="tel:00420732264251" className={styles.projectPhone}>
