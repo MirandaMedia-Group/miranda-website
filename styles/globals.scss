@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 h1 {
-  font-size: rem(62);
+  font-size: clamp(rem(38), 5.5vw, rem(62));
   line-height: em(82,62);
 }
 h2 {
