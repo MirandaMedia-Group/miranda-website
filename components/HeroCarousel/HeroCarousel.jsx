@@ -5,7 +5,7 @@ const HeroCarousel = () => {
     return (
         <div className={styles.carousel}>
             <div className={styles.item}>
-                <Image src="/img/carousel.jpg" width="1920" height="1080" alt="" layout="responsive"/>
+                <Image src="/img/carousel.jpg" width="1920" height="1080" alt="" layout="fill" objectFit="cover"/>
                 <div className={`container ${styles.itemTexts}`}>
                     <div>Miranda Media</div>
                     <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1>

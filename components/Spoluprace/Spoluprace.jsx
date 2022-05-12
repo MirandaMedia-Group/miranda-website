@@ -11,6 +11,13 @@ const Spoluprace = () => {
                         <h2>Proč si začít s Mirandou?</h2>
                         <p>Protože tahle agenturní dáma umí být věrná a spolehlivá každým coulem. Pro svého zákazníka udělá, co mu na očích vidí a nikdy 
                             nenechá ležet kdejakou pořádnou výzvu bokem.</p>
+                        <Link href="/jak-to-funguje">
+                            <a className='btn btn-primary'>
+                                <span data-hover="Zjisti, jak to u nás funguje">
+                                    Zjisti, jak to u nás funguje
+                                </span>
+                            </a>
+                        </Link>
                     </div>
                     <div className='column'>
                         <div className={styles.images}>
@@ -26,7 +33,7 @@ const Spoluprace = () => {
                         </div>
                     </div>
                 </div>
-                <div className="columns col-4-1 align-center">
+                {/* <div className="columns col-4-1 align-center">
                     <div className="column">
                         <ol className={styles.list}>
                             <li>Naši klienti a reference jsou tou nejcennější vizitkou</li>
@@ -43,7 +50,7 @@ const Spoluprace = () => {
                             </a>
                         </Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

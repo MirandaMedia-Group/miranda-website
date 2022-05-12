@@ -25,6 +25,9 @@ export default function EShopy({ coONas }) {
 					>
 				</HeroStatic>
 			</section>
+			<section className='container'>
+				<Sluzby></Sluzby>
+			</section>
 			<section className='hidden'>
 				<div className="container text-center">
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
@@ -42,8 +45,6 @@ export default function EShopy({ coONas }) {
 									<span className={styles.anchor}>www.rebelbean.cz</span>
 								</>
 							</Link>
-						</SwiperSlide>
-						<SwiperSlide className={styles.slideItem}>
 							<Link href="#" passHref>
 								<>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
@@ -58,8 +59,6 @@ export default function EShopy({ coONas }) {
 									<span className={styles.anchor}>www.rebelbean.cz</span>
 								</>
 							</Link>
-						</SwiperSlide>
-						<SwiperSlide className={styles.slideItem}>
 							<Link href="#" passHref>
 								<>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
@@ -74,8 +73,6 @@ export default function EShopy({ coONas }) {
 									<span className={styles.anchor}>www.rebelbean.cz</span>
 								</>
 							</Link>
-						</SwiperSlide>
-						<SwiperSlide className={styles.slideItem}>
 							<Link href="#" passHref>
 								<>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
@@ -94,9 +91,6 @@ export default function EShopy({ coONas }) {
 						</Link>
 					</div>
 				</div>
-			</section>
-			<section className='container'>
-				<Sluzby></Sluzby>
 			</section>
 			<section className="systemy">
 				<div className="container columns col-2 align-center">
