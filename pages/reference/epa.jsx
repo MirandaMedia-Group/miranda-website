@@ -12,6 +12,9 @@ const ReferenceEpa = ({ reference }) => {
                     title="EPA - svítidla Svítidla a osvětlení"
                     image="/img/reference-epa.jpg"
                     url="www.epasvitidla.cz"
+                    pozadi="background: radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(226, 226, 225, 0) 100%),
+                    linear-gradient(0deg, #D6D5D4, #D6D5D4)
+                    "
                 />
             </section>
             <section className={`columns wider col-1-4 align-center container ${styles.absolute}`}>

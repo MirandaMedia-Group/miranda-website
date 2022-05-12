@@ -12,6 +12,9 @@ const ReferencePeugeot = ({ reference }) => {
                     title="Autorizovaný prodej vozů Peugeot"
                     image="/img/reference-peugeot.jpg"
                     url="www.autotop-ul.cz"
+                    pozadi="radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(213, 237, 247, 0) 100%),
+                    linear-gradient(0deg, #D6F0FF, #D6F0FF)
+                    "
                 />
             </section>
             <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>
