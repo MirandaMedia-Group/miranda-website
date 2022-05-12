@@ -211,18 +211,25 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .mainHeader {
+        padding: 20px;
+    }
+}
 @media screen and (max-width: 680px) {
     .contacts {
         display: none;
-    }
-    .mainHeader {
-        padding: 20px;
     }
     .mobileNavigation {
         .hamburger {
             span {
                 width: 25px;
             }
+        }
+    }
+    .logo {
+        svg {
+            width: 42px;
         }
     }
 }

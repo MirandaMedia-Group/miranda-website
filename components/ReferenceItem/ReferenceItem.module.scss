@@ -133,6 +133,13 @@
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .item.itemHp {
+        grid-column-end: unset;
+        grid-row-end: unset;
+    }
+    
+}
 
 @keyframes boxShow {
     0% {

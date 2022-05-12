@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 h1 {
-  font-size: rem(62);
+  font-size: clamp(rem(38), 5.5vw, rem(62));
   line-height: em(82,62);
 }
 h2 {
@@ -333,6 +333,9 @@ img {
   &.col-1-4 {
     .column:first-of-type {
       flex: 0 1 30%;
+    }
+    .column:last-of-type {
+      padding-left: 2rem;
     }
     .column {
       flex: 0 1 70%;
@@ -381,6 +384,19 @@ img {
   .column {
     flex: 0 1 60%;
     max-width: 60%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .columns {
+    &.col-1-4 {
+      flex-direction: column;
+      .column {
+        flex-basis: 100%;
+        &:last-of-type {
+          padding-left: 0;
+        }
+      }
+    }
   }
 }
 
@@ -585,6 +601,21 @@ main#content {
   h2 {
       margin-bottom: 0;
       text-align: left;
+  }
+}
+@media screen and (max-width: 992px) {
+  .reference h2 {
+    margin-bottom: .5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reference {
+    p {
+      display: none;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
   }
 }
 .systemy {
@@ -957,6 +988,9 @@ ul.styled {
     
     span {
       padding: 0.7em;
+      &::before {
+        padding: .7em;
+      }
     }
   }
 
