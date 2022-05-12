@@ -23,6 +23,9 @@ const ReferenceRenault = ({ reference }) => {
                 title="Autorizovaný prodej vozů Renault a Dacia"
                 image="/img/reference-renault.jpg"
                 url="www.autohornat.cz"
+                pozadi="radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(247, 244, 213, 0),
+                linear-gradient(0deg, #FFF4D6, #FFF4D6);
+                "
             />
             </section>
             <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>
