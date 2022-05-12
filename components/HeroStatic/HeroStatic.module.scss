@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+    height: 100vh;
     &.overlay {
         &::after {
             content: "";
@@ -12,12 +13,12 @@
             background: linear-gradient(to bottom, #FFF 0%, transparent 40%, transparent 60%, #FFF 100%), linear-gradient(to right, #FFF 0%, transparent 50%);
         }
     }
-    &.large {
-        h1 {
-            font-size: rem(134);
-            line-height: em(160,134);
-        }
-    }
+    // &.large {
+    //     h1 {
+    //         font-size: rem(134);
+    //         line-height: em(160,134);
+    //     }
+    // }
 }
 
 .itemTexts {
