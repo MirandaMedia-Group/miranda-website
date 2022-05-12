@@ -12,6 +12,9 @@ const ReferenceExpresmenu = ({ reference }) => {
                 title="Tradiční česká jídla z Krkonoš, která šetří čas i peníze"
                 image="/img/reference-expresmenu.jpg"
                 url="www.expresmenu.com"
+                pozadi="background: radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(247, 244, 213, 0) 100%),
+                linear-gradient(0deg, #E6F7D5, #E6F7D5)
+                "
             />
             </section>
             <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>

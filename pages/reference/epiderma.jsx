@@ -12,6 +12,9 @@ const ReferenceEpiderma = ({ reference }) => {
                     title="EPIDERMA® - holisticky zaměřená kosmetika"
                     image="/img/reference-epiderma.jpg"
                     url="www.epiderma.cz"
+                    pozadi="background: radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(239, 231, 220, 0) 100%),
+                    linear-gradient(0deg, #EEDFD6, #EEDFD6)
+                    "
                 />
                 </section>
                 <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>
