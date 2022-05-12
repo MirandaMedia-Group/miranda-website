@@ -17,4 +17,30 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
+    &>div {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .projektBanner {
+        text-align: center;
+        padding: 40px 20px;
+        background-image: url('/img/backgroundMobil.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &>div>div:first-child {
+            display: none;
+        }
+
+        p {
+            display: none;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
 }

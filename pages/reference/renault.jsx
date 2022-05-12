@@ -18,11 +18,12 @@ const ReferenceRenault = ({ reference }) => {
     ]
     return (
         <>
-            <section>
+            <section className={styles.reference}>
             <HeroStatic
                 title="Autorizovaný prodej vozů Renault a Dacia"
                 image="/img/reference-renault.jpg"
                 url="www.autohornat.cz"
+                className={styles.blackText}
             />
             </section>
             <section className={`columns wider col-1-4 align-center container hidden ${styles.absolute}`}>
@@ -33,7 +34,7 @@ const ReferenceRenault = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/renault.jpg" width={450} height={450} alt=""  /></div>
                     <div><Image src="/img/renault2.jpg" width="250" height="450" alt="" /></div>
-                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" /></div>
+                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" className={styles.mobilHidden}/></div>
                 </div>
             </section>
             <section className={`container ${styles.spolupraceGrid}`}>
