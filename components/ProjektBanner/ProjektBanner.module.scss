@@ -5,7 +5,7 @@
     color: $color-font;
     padding: 100px 0 70px;
     margin-top: 150px;
-    margin-bottom: -100px;
+    margin-bottom: -60px;
     h2 {
         margin-bottom: 0;
         span {
@@ -42,5 +42,11 @@
         h2 {
             margin-bottom: 40px;
         }
+    }
+}
+@media screen and (max-width: 767px) {
+    .projektBanner {
+        margin-top: 60px;
+        margin-bottom: 0;
     }
 }

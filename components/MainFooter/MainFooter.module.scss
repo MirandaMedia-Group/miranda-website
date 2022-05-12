@@ -26,10 +26,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         max-width: calc(1440px + 4rem);
-
+        margin: 0 -1rem;
         &>div:not(.sluzby)  {
             display: flex;
             flex-direction: column;
+        }
+        & > div {
+            padding: 0 1rem;
         }
     }
 
@@ -124,4 +127,27 @@
 
 .footerLogo {
     fill: $color-primary;
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        h4 {
+            font-size: rem(22);
+        }
+    }
+    .phone, .mail {
+        font-size: rem(16);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .footer {
+        padding-top: 40px;
+    }
+    .logo {
+        text-align: center;
+    }
 }
