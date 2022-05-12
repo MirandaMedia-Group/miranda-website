@@ -988,6 +988,9 @@ ul.styled {
     
     span {
       padding: 0.7em;
+      &::before {
+        padding: .7em;
+      }
     }
   }
 
