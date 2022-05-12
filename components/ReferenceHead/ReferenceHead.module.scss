@@ -1,6 +1,33 @@
 .referenceHead {
     position: relative;
+    height: 100vh;
+}
+
+.itemText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    z-index: 1;
+
+    h1 {
+        color: #222E27;
+        font-size: 56px;
+        line-height: 68px;
+        max-width: 500px;
+    }
+}
+
+.url {
+    color: #4E5852;
+    text-decoration: underline;
+    display: inline-flex;
+
+    &::before {
+        content: url(/img/icon/url.svg);
+        margin-right: 10px;
+    }
 }

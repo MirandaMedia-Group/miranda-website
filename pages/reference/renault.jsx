@@ -1,4 +1,4 @@
-import HeroStatic from "../../components/HeroStatic/HeroStatic";
+import ReferenceHead from "../../components/ReferenceHead/ReferenceHead";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
@@ -18,8 +18,8 @@ const ReferenceRenault = ({ reference }) => {
     ]
     return (
         <>
-            <section>
-            <HeroStatic
+            <section className={styles.reference}>
+            <ReferenceHead
                 title="Autorizovaný prodej vozů Renault a Dacia"
                 image="/img/reference-renault.jpg"
                 url="www.autohornat.cz"
@@ -33,7 +33,7 @@ const ReferenceRenault = ({ reference }) => {
                 <div className={`column row ${styles.images} `}>
                     <div><Image src="/img/renault.jpg" width={450} height={450} alt=""  /></div>
                     <div><Image src="/img/renault2.jpg" width="250" height="450" alt="" /></div>
-                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" /></div>
+                    <div><Image src="/img/renault3.jpg" width="350" height="450" alt="" className={styles.mobilHidden}/></div>
                 </div>
             </section>
             <section className={`container ${styles.spolupraceGrid}`}>

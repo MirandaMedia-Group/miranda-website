@@ -1,4 +1,4 @@
-import HeroStatic from "../../components/HeroStatic/HeroStatic";
+import ReferenceHead from "../../components/ReferenceHead/ReferenceHead";
 import Image from "next/image";
 import styles from "../../styles/reference.module.scss";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
@@ -8,7 +8,7 @@ const ReferenceEpa = ({ reference }) => {
     return (
         <>
             <section>
-                <HeroStatic
+                <ReferenceHead
                     title="EPA - svítidla Svítidla a osvětlení"
                     image="/img/reference-epa.jpg"
                     url="www.epasvitidla.cz"
