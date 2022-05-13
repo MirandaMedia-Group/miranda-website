@@ -58,7 +58,7 @@ const CoONasRikaji = (props) => {
                                 </div>
                             </div>
                             <div className={`column ${styles.texts}`}>
-                                <div className="text-center">
+                                <div className={`text-center ${styles.desktopHide}`}>
                                     <a href="#" onClick={toggleText} className="btn btn-tertiary">
                                         <span data-hover="Přečíst celé">
                                             Přečíst celé

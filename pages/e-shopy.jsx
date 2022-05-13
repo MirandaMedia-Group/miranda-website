@@ -8,10 +8,11 @@ import styles from '../styles/e-shopy.module.scss'
 import { fetchAPI } from '../lib/api'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 
 export default function EShopy({ coONas }) {
+
 	return (
 		<>
 			<section>
@@ -32,52 +33,62 @@ export default function EShopy({ coONas }) {
 				<div className="container text-center">
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
 					<Swiper
-						modules={[Navigation]}
+						modules={[Navigation, Pagination]}
 						spaceBetween={20}
-						slidesPerView={3}
+						slidesPerView={1}
 						navigation
-						pagination
+						pagination={{
+							clickable: true
+						}}
+						breakpoints={{
+							992: {
+								slidesPerView: 3,
+							},
+							600: {
+								slidesPerView: 2,
+							}
+						}}
 					>
-						<SwiperSlide className={styles.slideItem}>
+						<SwiperSlide>
 							<Link href="#" passHref>
-								<>
+								<div className={styles.slideItem}>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
 							</Link>
 							<Link href="#" passHref>
-								<>
+								<div className={styles.slideItem}>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
-							</Link>
-						</SwiperSlide>
-						<SwiperSlide className={styles.slideItem}>
-							<Link href="#" passHref>
-								<>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
-							</Link>
-							<Link href="#" passHref>
-								<>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
 							</Link>
 						</SwiperSlide>
-						<SwiperSlide className={styles.slideItem}>
+						<SwiperSlide>
 							<Link href="#" passHref>
-								<>
+								<div className={styles.slideItem}>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
 							</Link>
 							<Link href="#" passHref>
-								<>
+								<div className={styles.slideItem}>
 									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<span className={styles.anchor}>www.rebelbean.cz</span>
-								</>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Link href="#" passHref>
+								<div className={styles.slideItem}>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
+							</Link>
+							<Link href="#" passHref>
+								<div className={styles.slideItem}>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+								</div>
 							</Link>
 						</SwiperSlide>
 					</Swiper>
@@ -119,10 +130,11 @@ export default function EShopy({ coONas }) {
 			<section className='hidden'>
 				<div className="container">
 					<Swiper
-						modules={[Navigation]}
+						modules={[Navigation, Pagination]}
 						slidesPerView={1}
 						spaceBetween={20}
 						navigation
+						pagination
 					>
 						<SwiperSlide className='reference-banner'>
 							<div className="columns col-2 align-center">

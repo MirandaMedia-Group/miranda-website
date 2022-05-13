@@ -93,7 +93,7 @@
     }
     &:hover, &:focus {
         .texts {
-            max-height: 400px;
+            max-height: 500px;
             padding-top: 50px;
             padding-bottom: 50px;
         }
@@ -117,6 +117,74 @@
         flex: 0 1 16.67%;
         p {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sluzbyGrid {
+        grid-template-columns: repeat(3, minmax(1px, 1fr));
+        grid-template-rows: repeat(4, minmax(1px, 1fr));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sluzbyGrid {
+        grid-template-columns: repeat(2, minmax(1px, 1fr));
+        grid-template-rows: repeat(6, minmax(1px, 1fr));
+    }
+}
+@media screen and (max-width: 767px) {
+    .item {
+        h2 {
+            font-size: rem(28);
+        }
+        h3 {
+            font-size: rem(16);
+        }
+        svg {
+            width: 24px;
+        }
+        &:not(.image) {
+            padding: 20px;
+        }
+        &.large {
+            padding: 20px 0;
+            p {
+                font-size: rem(20);
+            }
+        }
+    }
+    .certifikace {
+        max-width: 115px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .sluzbyGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, minmax(335px, auto));
+        gap: 15px;
+    }
+    .item {
+        text-align: left;
+        align-items: flex-start;
+        &.large {
+            grid-column-end: unset;
+            grid-row-end: unset;
+        }
+        .texts {
+            position: initial;
+            max-height: unset;
+            background-color: transparent;
+            padding: 0;
+            height: auto;
+            align-items: flex-start;
+        }
+        &:hover, &:focus {
+            .texts {
+                max-height: unset;
+                padding: 0;
+            }
         }
     }
 }
