@@ -1,8 +1,9 @@
 .sluzby {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     & > div {
-        flex: 0 1 calc(50% - 10px);
+        flex: 1 1 520px;
     }
     .sluzba {
         border: 1px solid $color-primary;
@@ -32,6 +33,19 @@
                 max-height: 600px;
             }
         }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 
+@media screen and (max-width: 767px) {
+    .sluzby {
+        .sluzba {
+            padding: 20px;
+            h4 {
+                font-size: rem(22);
+            }
+        }
+    }
+}
