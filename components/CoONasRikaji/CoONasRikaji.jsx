@@ -35,7 +35,7 @@ const CoONasRikaji = (props) => {
                     <div className="item">
                         <div className="columns col-4-6 align-center">
                             <div className={`column ${styles.image}`}>
-                                <FetchedImage image={props.data[activeData].attributes.obrazek} responsive={false}/>
+                                <FetchedImage image={props.data[activeData].attributes.obrazek}/>
                                 <div className={styles.arrows}>
                                     <div className={`${styles.arrowLeft} ${styles.arrow}`} onClick={prevRef}>
                                         <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
