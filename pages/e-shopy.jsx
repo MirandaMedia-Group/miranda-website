@@ -253,6 +253,8 @@ export default function EShopy({ coONas }) {
 								</a>
 							
 						</div>
+						<div className="column">
+						</div>
 					</div>
 				</div>
 			</section>

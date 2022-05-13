@@ -731,6 +731,81 @@ main#content {
     transform: translate(-50%,-50%);
   }
 }
+@media screen and (max-width: 1500px) {
+  .proc-shoptet-block {
+    .item {
+      &:nth-of-type(3) {
+        right: 0;
+      }
+      &:nth-of-type(5) {
+        left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1330px) {
+  .proc-shoptet-block {
+    .item {
+      &:nth-of-type(4) {
+        right: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .proc-shoptet-block {
+    .item {
+      &:nth-of-type(2) {
+        left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1120px) {
+  .proc-shoptet-block {
+    .mockup {
+      display: none;
+    }
+    .item {
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
+        bottom: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 940px) {
+  .proc-shoptet-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    .bg-img {
+      display: none;
+    }
+    .item {
+      position: initial;
+      flex: 1 1 340px;
+    }
+  }
+}
+@media screen and (max-width: 778px) {
+  .proc-shoptet-block {
+    padding: 60px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: url(/img/proc-shoptet-bg-mobile.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    .item {
+      padding: 30px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 .miranda-title {
   text-align: center;
@@ -791,6 +866,7 @@ main#content {
   background-image: url(/img/kofigurator-bg.jpg);
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: cover;
   padding: 100px;
   position: relative;
   h2 {
@@ -807,6 +883,41 @@ main#content {
     top: -16px;
     left: -12px;
     pointer-events: none;
+  }
+}
+@media screen and (max-width: 1218px) {
+  .konfigurator {
+    background-color: rgba(#FFF, .5);
+    background-blend-mode: overlay;
+  }
+}
+@media screen and (max-width: 767px) {
+  .konfigurator {
+    padding: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-image: url(/img/konfigurator-bg-mobile.jpg);
+    background-position: bottom right;
+    padding-bottom: 350px;
+    .columns {
+      padding: 20px;
+    }
+    .pripravujeme {
+      display: none;
+    }
+    &::before {
+      content: "Připravujeme";
+      display: block;
+      background-color: $color-primary;
+      color: $color-font;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: rem(16);
+      line-height: em(36,16);
+      letter-spacing: .2em;
+      font-weight: 700;
+      padding: 10px 20px;
+    }
   }
 }
 .reference-banner {
