@@ -19,7 +19,7 @@ export default function EShopy({ coONas }) {
 				<HeroStatic 
 					title="Postavíme vám Shoptet na míru" 
 					subtitle="Kompletní e-shopové řešení za nejkratší možnou dobu"
-					image=""
+					image="/img/shoptetnamiru-bg-mobile.jpg"
 					video="/shoptetnamiru.mp4"
 					buttons
 					overlay

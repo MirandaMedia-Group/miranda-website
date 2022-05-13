@@ -5,11 +5,15 @@ import styles from './HeroStatic.module.scss'
 const HeroStatic = (props) => {
     return (
         <div className={`${styles.hero} ${props.overlay && styles.overlay} ${props.bigFont && styles.large}`}>
-           { props.image && (<Image src={props.image} width="1920" height="1080" alt="" layout="fill" objectFit="cover"/>) }
-           { props.video && (
-                <video autoPlay style={{ width: 'auto', height: '100%' }}>
-                    <source src={props.video} />
-                </video>
+            { props.video && (
+                 <video autoPlay style={{ width: 'auto', height: '100%' }}>
+                     <source src={props.video} />
+                 </video>
+             )}
+            { props.image && (
+                <div className={styles.heroImage}>
+                    <Image src={props.image} width="1920" height="1080" alt="" layout="fill" objectFit="cover"/> 
+                </div>
             )}
             <div className={styles.itemTexts}>
                 <div className={`container ${ props.maxWidth && styles.maxWidth}`}>
