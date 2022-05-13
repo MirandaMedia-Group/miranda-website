@@ -1,8 +1,10 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(1px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(3, minmax(1px, 1fr));
     gap: 60px;
     article {
+        flex: 1 1 360px;
         cursor: pointer;
         h1 {
             font-size: rem(24);
@@ -36,6 +38,7 @@
 }
 .heroArticle {
     position: relative;
+    min-height: 600px;
 }
 .heroTexts {
     position: absolute;
@@ -46,11 +49,11 @@
         max-width: 700px;
     }
     h1 {
-        font-size: rem(56);
+        font-size: clamp(rem(32), 4vw, rem(56));
     }
 }
 .heroCat {
-    font-size: rem(90);
+    font-size: clamp(rem(58), 6vw, rem(90));
     line-height: em(125,90);
     text-transform: uppercase;
     font-weight: 700;
@@ -71,5 +74,16 @@
     }
     &:hover, &:focus {
         color: $color-primary;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heroTexts {
+        bottom: 20px;
+        top: unset;
+        transform: none;
+    }
+    .grid {
+        gap: 30px;
     }
 }

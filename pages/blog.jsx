@@ -10,6 +10,7 @@ const Blog = ({ clanky }) => {
             {clanky[0] && (<article className={styles.heroArticle}>
                 <FetchedImage 
                     image={clanky[0].attributes.obrazek}
+                    layout='fill'
                 />
                 <div className={`${styles.heroTexts}`}>
                     <div className="container">

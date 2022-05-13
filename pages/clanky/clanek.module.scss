@@ -1,5 +1,6 @@
 .heroArticle {
     position: relative;
+    min-height: 600px;
 }
 .heroTexts {
     position: absolute;
@@ -10,11 +11,11 @@
         max-width: 700px;
     }
     h1 {
-        font-size: rem(56);
+        font-size: clamp(rem(32), 4vw, rem(56));
     }
 }
 .heroCat {
-    font-size: rem(90);
+    font-size: clamp(rem(58), 6vw, rem(90));
     line-height: em(125,90);
     text-transform: uppercase;
     font-weight: 700;
@@ -44,5 +45,25 @@
     ul {
         list-style: circle;
         padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heroTexts {
+        bottom: 30px;
+        top: unset;
+        transform: none;
+    }
+    .articleContainer {
+        h2 {
+            font-size: rem(28);
+        }
+        h3 {
+            font-size: rem(22);
+        }
+        h4 {
+            font-size: rem(16);
+        }
+        margin-bottom: 100px;
     }
 }
