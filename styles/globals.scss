@@ -353,8 +353,9 @@ img {
     flex: 0 1 auto;
   }
   &.col-2 {
+    gap: 20px;
     .column {
-      flex: 0 1 50%;
+      flex: 1 1 460px;
     }
   }
   &.col-4-6 {
@@ -681,8 +682,10 @@ main#content {
     font-size: rem(48);
     line-height: em(72,48);
   }
-  .column:last-of-type {
-    padding-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .systemy h2 {
+    font-size: rem(28);
   }
 }
 .proc-shoptet-block {
@@ -809,16 +812,32 @@ main#content {
 .reference-banner {
   background-color: #F7F4D5;
   .column:first-of-type {
-    padding: 100px;
+    padding: 75px 0 75px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   h3 {
-    color: $color-primary;
-    strong {
-      font-size: 110%;
+    font-size: rem(40);
+    margin-bottom: 20px;
+    margin-top: auto;
+    // strong {
+    //   font-size: 110%;
+    // }
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .reference-banner {
+    .column:first-of-type {
+      padding: 60px 20px 20px;
+      align-items: center;
     }
   }
 }
-
+ 
 .balicky-table {
   font-weight: 700;
   font-size: rem(24);

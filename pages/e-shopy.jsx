@@ -137,10 +137,12 @@ export default function EShopy({ coONas }) {
 						pagination
 					>
 						<SwiperSlide className='reference-banner'>
-							<div className="columns col-2 align-center">
+							<div className="columns col-2">
 								<div className="column">
+									<div className="logo">
+										<Image src="/img/expremenu-black.png" width={251} height={100} alt="ExpresMenu"></Image>
+									</div>
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
-									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
 									<Link href="/reference/expresmenu">
 										<a className='btn btn-primary'>
 											<span data-hover="Zjistit více">
@@ -154,39 +156,43 @@ export default function EShopy({ coONas }) {
 								</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className='reference-banner'>
-							<div className="columns col-2 align-center">
+						<SwiperSlide className='reference-banner' style={{backgroundColor: '#EFE7DC'}}>
+							<div className="columns col-2">
 								<div className="column">
+									<div className="logo">
+										<Image src="/img/epiderma-black.png" width={365} height={75} alt="Epiderma"></Image>
+									</div>
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
-									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
-									<Link href="/reference/expresmenu">
+									<Link href="/reference/epiderma">
 										<a className='btn btn-primary'>
-											<span data-hover="Případová studie">
-												Případová studie
+											<span data-hover="Zjistit více">
+												Zjistit více
 											</span>
 										</a>
 									</Link>
 								</div>
 								<div className="column">
-									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
+									<Image src="/img/reference-banner-epiderma.png" width={720} height={520} alt="" layout="responsive"></Image>
 								</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className='reference-banner'>
-							<div className="columns col-2 align-center">
+						<SwiperSlide className='reference-banner' style={{backgroundColor: '#F7F0EA'}}>
+							<div className="columns col-2">
 								<div className="column">
-									<h3>Navýšili jsme o 125%</h3>
-									<p>lorem ipsum dolor sit amet adipsicing lorem  ipsum dolor sit amet adispcing lorem ipsum dolor sti amet.</p>
-									<Link href="/reference/expresmenu">
+									<div className="logo">
+										<Image src="/img/dolce-black.png" width={240} height={75} alt="Café Imperial Dolce"></Image>
+									</div>
+									<h3>Navýšili jsme o <strong>125%</strong></h3>
+									<Link href="/reference/dolce">
 										<a className='btn btn-primary'>
-											<span data-hover="Případová studie">
-												Případová studie
+											<span data-hover="Zjistit více">
+												Zjistit více
 											</span>
 										</a>
 									</Link>
 								</div>
 								<div className="column">
-									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
+									<Image src="/img/reference-banner-dolce.png" width={720} height={520} alt="" layout="responsive"></Image>
 								</div>
 							</div>
 						</SwiperSlide>
