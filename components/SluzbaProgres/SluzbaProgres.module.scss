@@ -1,9 +1,11 @@
 .sluzby {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
     background: url(/img/cesta-bg-small.svg) no-repeat;
     background-position: center;
+    gap: 20px;
     & > div {
         flex: 0 1 360px;
     }
@@ -11,4 +13,10 @@
 .buttonWrap {
     text-align: center;
     margin: 60px 0;
+}
+
+@media screen and (max-width: 1278px) {
+    .sluzby {
+        justify-content: center;
+    }
 }
