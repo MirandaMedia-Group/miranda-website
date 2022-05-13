@@ -81,6 +81,9 @@
     svg {
         fill: $color-white;
     }
+    .hamburger span {
+        background-color: $color-white;
+    }
 }
 .contacts {
     border-left: 2px solid $color-primary;
@@ -150,7 +153,7 @@
                 border-radius: 9999px;
                 width: 45px; 
                 display: block;
-                background-color: $color-white;
+                background-color: $color-font;
                 transition: all .3s ease-in;
                 &:not(:last-of-type) {
                     margin-bottom: 7px;

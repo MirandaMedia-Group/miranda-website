@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(1px, 1fr));
+    grid-template-rows: minmax(710px, 1fr) repeat(7, minmax(466px, auto));
     text-align: left;
     gap: 20px;
     & > div {
@@ -8,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
     }
     .itemWide {
         grid-column-end: span 3;
@@ -50,5 +52,40 @@
     }
     a {
         align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(1px, 1fr));
+        grid-template-rows: repeat(13, minmax(400px, 1fr));
+        .itemWide {
+            grid-column-end: span 4;
+        }
+        .itemWider {
+            grid-column-end: span 4;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(1px, 1fr));
+        grid-template-rows: minmax(335px, auto) repeat(13, minmax(162px, auto));
+        gap: 15px;
+        & > div {
+            grid-column-end: unset;
+            &:nth-of-type(16) {
+                grid-row-start: 3;
+            }
+        }
+        .itemWide, .itemWider, .mobileWide {
+            grid-column-end: span 2;
+        }
+        .itemBuchta {
+            grid-row-start: 1;
+        }
+        .textItem {
+            padding: 20px;
+        }
     }
 }
