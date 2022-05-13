@@ -1,17 +1,21 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from "./MainHeader.module.scss"
 
 const Navbar = () => {
   const router = useRouter()
   const [submenuVisible, setSubmenuVisible] = useState(false)
-  const actualHour = new Date().getHours()
-
+  const [actualHour, setActualHour] = useState(null)
+  
   const toggleNav = () => {
     submenuVisible ? setSubmenuVisible(false) : setSubmenuVisible(true)
   }
+  useEffect(() => {
+    setActualHour(new Date().getHours())
+    const submenuHide = () => setSubmenuVisible(false)
+    router.events.on('routeChangeStart', submenuHide)
+  }, [])
 
   return (
     <header className={`${styles.mainHeader} ${router.pathname === "/" || router.pathname === '/kontakty' ? styles.headerWhite : ''}`}>

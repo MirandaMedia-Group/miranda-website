@@ -60,7 +60,7 @@ const JakToFunguje = () => {
                         <p>Aniž by se projekt pořádně otestoval, nesmí ven. Od toho tu jsou naši testeři, kteří dokážou najít i ten nejmenší pixel mimo osu a pohlídat výstupnou kvalitu na 100 %</p>
                     </div>
                     <div className={`${styles.item} ${styles.image}`}>
-                        <Image src="/img/grid4.jpg" width={360} height={360} alt=""></Image>
+                        <Image src="/img/grid4.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center"></Image>
                     </div>
                 </div>
             </section>
@@ -84,7 +84,7 @@ const JakToFunguje = () => {
                             </div>
                             <Image src="/img/icon/file.svg" width={24} height={24} alt=""></Image>
                             <h3>Analýza projektu</h3>
-                            <p>JKdyž dostaneme do ruky zadávací dokumentaci, zabere to nějakou tu chvíli, než všechno projdeme do posledního detailu. Analyzujeme,  validujeme, 
+                            <p>Když dostaneme do ruky zadávací dokumentaci, zabere to nějakou tu chvíli, než všechno projdeme do posledního detailu. Analyzujeme,  validujeme, 
                                 hledáme workaroundy a plánujeme...v tomhle bodě je do značné míry známo, jaká cesta před náma stojí.</p>
                         </div>
                         <div className={styles.cestaItem} style={{right: '0', top: '15%'}}>

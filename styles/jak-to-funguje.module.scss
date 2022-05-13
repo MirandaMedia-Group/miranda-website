@@ -10,6 +10,7 @@
     .item {
         padding: 50px 30px;
         background-color: rgba($color-primary, .05);
+        position: relative;
         &.large {
             grid-column-end: span 2;
             padding: 50px;
@@ -100,5 +101,84 @@
     }
     35% {
         transform: translateX(-50%) scale(1.2) rotate(1deg);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .cesta {
+        .cestaItem {
+            &:nth-of-type(5) {
+                .postavy {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(1px, 1fr));
+    }
+    .cesta {
+        // background: none;
+        background-repeat: repeat;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(1px, 1fr));
+        gap: 20px;
+        padding: 0;
+        & > span {
+            display: none !important;
+        }
+        .cestaItem {
+            position: initial;
+            transform: none !important;
+            max-width: unset;
+            background-color: rgba(#FFF, .7);
+            .postavy {
+                display: none;
+            }
+        }
+        .mirandaLogo {
+            display: none;
+        }
+    }
+    .nekonci {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(1px, 1fr));
+    }
+}
+@media screen and (max-width: 767px) {
+    .grid {
+        grid-template-rows: auto repeat(3, minmax(1px, 1fr));
+        .item {
+            padding: 20px;
+            &.large {
+                padding: 20px;
+            }
+        }
+    }
+    .cestaItem {
+        padding: 20px;
+        h3 {
+            font-size: rem(22);
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(6, minmax(1px, 1fr));
+        .item {
+            &.large {
+                grid-column-end: unset;
+            }
+        }
+    }
+    .cesta {
+        grid-template-columns: 1fr;
     }
 }
