@@ -1,5 +1,5 @@
 import ReferenceItem from '../ReferenceItem/ReferenceItem'
-import styles from './CaseStudy.module.scss'
+// import styles from './CaseStudy.module.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'

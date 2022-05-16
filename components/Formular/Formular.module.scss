@@ -23,13 +23,15 @@
 
 .h3 {
     margin-bottom: 20px;
-    font-size: 48px;
-    line-height: 72px;
+    font-size: rem(48);
+    line-height: em(72,48);
     text-align: center;
 }
 
 .radioButtons {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     margin: 40px 0;
     span {
@@ -88,5 +90,14 @@
         &::placeholder {
             color: #B7B7B7;
         }
+    }
+}
+@media screen and (max-width: 767px) {
+    .form {
+        margin-top: -45px;
+        padding: 40px 20px;
+    }
+    .h3 {
+        font-size: rem(32);
     }
 }

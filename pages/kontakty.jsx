@@ -2,13 +2,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Formular from '../components/Formular/Formular'
 import styles from '../styles/kontakty.module.scss'
+import { Wrapper } from '@googlemaps/react-wrapper'
+import GoogleMap from '../components/GoogleMap/GoogleMap'
 
 export default function Home() {
+  // const render = (status) => {
+  //   return <h2>{status}</h2>
+  // }
   return (
     <>
       <section>
         <div className={styles.hero}>
-          <Image src="/img/kontakt-hero.jpg" width="1920" height="1080" alt="" layout="responsive"/>
+          <Image src="/img/kontakt-hero.jpg" width="1920" height="1080" alt="" layout="fill" objectFit='cover'/>
           <div className={styles.itemTexts}>
             <div className="container columns col-2 align-center">
               <div className="column">
@@ -32,13 +37,24 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="container">
+          <div className={`${styles.sidlo} ${styles.sidloMobile}`}>
+            <h2>Sídlo společnosti:</h2>
+            <p>MirandaMedia Group, s.r.o.<br/>Jankovcova 1596/14b, 170 00<br/>Praha 7 - Holešovice</p>
+            <p><strong>IČO:</strong> 08272930<br/><strong>DIČ:</strong> CZ08272930</p>
+            <p><strong>BÚ:</strong> 2201649999/2010</p>
+          </div>
+        </div>
       </section>
       <section className={`text-center`}>
         <div className="container">
           <h2>Kde sídlíme?</h2>
         </div>
-        <div className={`${styles.mapSection}`}>
-        </div>
+        <Wrapper apiKey={'AIzaSyAu8MzTDuTbDCe9Jvwy10SqJtDxy-W9Uc0'}>
+          <GoogleMap />
+        </Wrapper>
+        {/* <div className={`${styles.mapSection}`}>
+        </div> */}
       </section>
         <Formular />
     </>

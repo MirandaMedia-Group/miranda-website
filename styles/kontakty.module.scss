@@ -1,6 +1,8 @@
 .hero {
     position: relative;
     color: $color-white;
+    min-height: 650px;
+    height: 100vh;
 }
 
 .itemTexts {
@@ -17,7 +19,7 @@
         max-width: 780px;
         color: $color-primary;
         margin-bottom: 0;
-        font-size: rem(134);
+        font-size: clamp(rem(64), 9vw, rem(134));
     }
     p {
         font-size: rem(24);
@@ -48,4 +50,33 @@
     height: 900px;
     background: url(/img/mapa.jpg) center center no-repeat;
     background-size: cover;
+}
+.sidloMobile {
+    display: none;
+    margin: 20px 0;
+    h2 {
+        font-size: rem(32);
+    }
+}
+@media screen and (max-width: 1018px) {
+    .itemTexts {
+        .sidlo {
+            display: none;
+        }
+    }
+    .sidloMobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contactButton {
+        font-size: rem(16);
+    }
+    .itemTexts {
+        padding-bottom: 20px;
+        align-items: flex-end;
+        p {
+            font-size: rem(16);
+        }
+    }
 }
