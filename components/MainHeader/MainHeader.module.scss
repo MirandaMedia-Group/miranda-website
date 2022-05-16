@@ -82,7 +82,7 @@
     svg {
         fill: $color-white;
     }
-    .hamburger span {
+    .mobileNavigation .hamburger span {
         background-color: $color-white;
     }
 }
@@ -172,6 +172,9 @@
                 }
             }
             &.visible {
+                span {
+                    background-color: #000;
+                }
                 span:nth-of-type(2) {
                     transform: translateX(100%);
                     opacity: 0;
