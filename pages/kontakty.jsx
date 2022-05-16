@@ -4,6 +4,7 @@ import Formular from '../components/Formular/Formular'
 import styles from '../styles/kontakty.module.scss'
 import { Wrapper } from '@googlemaps/react-wrapper'
 import GoogleMap from '../components/GoogleMap/GoogleMap'
+import GoogleMapMarker from '../components/GoogleMapMarker/GoogleMapMarker'
 
 export default function Home() {
   // const render = (status) => {
@@ -51,7 +52,13 @@ export default function Home() {
           <h2>Kde sídlíme?</h2>
         </div>
         <Wrapper apiKey={'AIzaSyAu8MzTDuTbDCe9Jvwy10SqJtDxy-W9Uc0'}>
-          <GoogleMap />
+          <GoogleMap>
+            <GoogleMapMarker 
+              position={{lat: 50.1080258, lng: 14.4544731}}
+              title='MirandaMedia Group'
+              icon={'/img/icon/marker.png'}
+            />
+          </GoogleMap>
         </Wrapper>
         {/* <div className={`${styles.mapSection}`}>
         </div> */}
