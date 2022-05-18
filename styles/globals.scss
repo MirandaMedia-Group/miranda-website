@@ -1185,6 +1185,7 @@ ul.styled {
           margin-right: .4em;
       }
   }
+
 }
 
 
@@ -1237,4 +1238,8 @@ ul.styled {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
   }
+
+  .columns.align-center {
+    align-items: flex-start;
+}
 }

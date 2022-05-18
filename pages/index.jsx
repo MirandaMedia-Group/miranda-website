@@ -60,7 +60,7 @@ export default function Home({ reference, coONas }) {
       {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
       </section> */}
-      <section className='hidden'>
+      <section className='hidden container'>
         <Spoluprace></Spoluprace>
       </section>
       <section className='hidden'>

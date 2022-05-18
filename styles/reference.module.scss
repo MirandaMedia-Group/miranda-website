@@ -179,17 +179,17 @@
             }
         }
 
-        &>div:last-child {
+        /*  &>div:last-child {
             display: none;
-        }
+        }  */
 
-        .mobilHide {
+         .mobilHide {
             display: block;
-        }
+        } 
 
-        &>div:nth-child(2) {
+         &>div:nth-child(2) {
             display: none;
-        }
+        } 
     }
 
     .mobilHide {
@@ -226,5 +226,22 @@
             justify-content: flex-start;
             padding: 40px 60px;
         }
+    }
+
+    .spolupraceGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(6, 1fr);
+    }
+
+    .large {
+        grid-column-end: unset;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .images div:last-child {
+        max-height: 375px;
+        overflow: hidden;
     }
 }

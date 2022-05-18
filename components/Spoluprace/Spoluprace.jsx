@@ -5,7 +5,6 @@ import Link from 'next/link';
 const Spoluprace = () => {
     return (
         <div>
-            <div className="container">
                 <div className={`columns col-1-4 wider align-center ${styles.section}`}>
                     <div className='column'>
                         <h2>Proč si začít s Mirandou?</h2>
@@ -51,7 +50,6 @@ const Spoluprace = () => {
                         </Link>
                     </div>
                 </div> */}
-            </div>
         </div>
     )
 }

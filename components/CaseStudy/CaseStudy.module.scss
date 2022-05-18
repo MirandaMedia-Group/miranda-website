@@ -11,3 +11,13 @@
         flex: 0 1 60%;
     }
 }
+
+.margin {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    .margin {
+        margin-bottom: 20px;
+    }
+}

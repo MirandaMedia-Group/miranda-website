@@ -4,7 +4,9 @@ import styles from './ReferenceHead.module.scss'
 export default function ReferenceHead (props) {
     return (
         <div className={styles.referenceHead} style={{background: props.pozadi}} >
-            {props.image && <Image src={props.image}  width="1920" height="1080" alt="" layout="fill" objectFit="cover"/>}
+            <div className={styles.image}>
+                {props.image && <Image src={props.image}  width="1062" height="815" alt="" />}
+            </div>
             <div className={styles.itemText}>
                 <div className='container'>
                     <h1>{props.title}</h1>

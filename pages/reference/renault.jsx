@@ -21,7 +21,7 @@ const ReferenceRenault = ({ reference }) => {
             <section className={styles.reference}>
             <ReferenceHead
                 title="Autorizovaný prodej vozů Renault a Dacia"
-                image="/img/reference-renault.jpg"
+                image="/img/reference-renault.png"
                 url="www.autohornat.cz"
                 pozadi="radial-gradient(69.87% 136.42% at 100% 99.98%, #FFFFFF 0%, rgba(247, 244, 213, 0) 100%), linear-gradient(0deg, #FFF4D6, #FFF4D6), #F7F0EA"
             />

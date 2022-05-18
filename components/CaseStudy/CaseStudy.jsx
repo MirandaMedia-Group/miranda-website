@@ -1,5 +1,5 @@
 import ReferenceItem from '../ReferenceItem/ReferenceItem'
-// import styles from './CaseStudy.module.scss'
+import styles from './CaseStudy.module.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -9,7 +9,7 @@ const CaseStudy = (props) => {
     return (
         <>
             <section className='container'>
-                <div className={`columns col-1-4 align-center reference`} style={{marginBottom: '60px'}}>
+                <div className={`columns col-1-4 align-center reference ${styles.margin}` }>
                     <div className="column">
                         <h2>Další case study</h2>
                     </div>
@@ -20,9 +20,15 @@ const CaseStudy = (props) => {
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={20}
-                    slidesPerView={2}
+                    slidesPerView={1}
                     navigation
-                    pagination
+                    //pagination
+
+                    breakpoints={{
+                        767: {
+                            slidesPerView: 2,
+                        }
+                    }}
                 >
                     { props.reference && props.reference.map((item,index) => {
                         return (

@@ -10,7 +10,7 @@ const pennyDomu = ({ reference, props }) => {
     return (
         <>
             <PripadovkyHead 
-            image="/img/pennyHead.jpg"
+            image="/img/pennyHead.png"
             text="Než potkalo Penny Mirandu, nebylo u nich jak nakoupit, aniž byste museli vytáhnout paty 
             z domu. Dneska frčí e-shop na plný obrátky 
             a spokojení zákazníci posílají jednu 
@@ -18,6 +18,8 @@ const pennyDomu = ({ reference, props }) => {
             logo="/img/pennyLogo.svg"
             width="528"
             height="150"
+            pozadi="linear-gradient(107.56deg, #B82426 0%, #DF4E20 100%)"
+            url="www.pennydomu.cz"
             />
             <section>
                 <ul className={styles.nav}>
@@ -97,11 +99,17 @@ const pennyDomu = ({ reference, props }) => {
                 </div>
             </section>
             <section className={styles.images}>
-                <Image src="/img/penny1.jpg" width={950} height={535} alt=""/>
-                <Image src="/img/penny2.jpg" width={950} height={535} alt=""/>
-                <Image src="/img/penny3.jpg" width={464} height={535} alt=""/>
-                <Image src="/img/penny4.jpg" width={950} height={535} alt=""/>
-                <Image src="/img/penny5.jpg" width={464} height={535} alt=""/>
+                <div><Image src="/img/penny1.jpg" width={950} height={535} alt=""/></div>
+                <div><Image src="/img/penny2.jpg" width={950} height={535} alt=""/></div>
+                <div className={styles.mobilHide}><Image src="/img/penny3.jpg" width={464} height={535} alt=""  /></div>
+                <div className={styles.mobilHide} ><Image src="/img/penny4.jpg" width={950} height={535} alt="" /></div>
+                <div className={styles.mobilHide}><Image src="/img/penny5.jpg" width={464} height={535} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg1.jpg" width={160} height={160} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg2.jpg" width={160} height={160} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg3.jpg" width={160} height={160} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg4.jpg" width={160} height={160} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg5.jpg" width={160} height={160} alt="" /></div>
+                <div className={styles.mobilShow}><Image src="/img/pennyImg6.jpg" width={160} height={160} alt="" /></div>
             </section>
             <section className="hidden">
                     <CaseStudy reference={reference}></CaseStudy>

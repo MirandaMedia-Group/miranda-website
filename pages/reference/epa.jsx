@@ -10,9 +10,9 @@ const ReferenceEpa = ({ reference }) => {
             <section>
                 <ReferenceHead
                     title="EPA - svítidla Svítidla a osvětlení"
-                    image="/img/reference-epa.jpg"
+                    image="/img/reference-epa.png"
                     url="www.epasvitidla.cz"
-                    pozadi="background: radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(226, 226, 225, 0) 100%),
+                    pozadi="radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(226, 226, 225, 0) 100%),
                     linear-gradient(0deg, #D6D5D4, #D6D5D4)
                     "
                 />

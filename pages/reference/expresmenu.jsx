@@ -10,9 +10,9 @@ const ReferenceExpresmenu = ({ reference }) => {
             <section>
             <ReferenceHead
                 title="Tradiční česká jídla z Krkonoš, která šetří čas i peníze"
-                image="/img/reference-expresmenu.jpg"
+                image="/img/reference-expresmenu.png"
                 url="www.expresmenu.com"
-                pozadi="background: radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(247, 244, 213, 0) 100%),
+                pozadi="radial-gradient(90.46% 206.42% at 80.21% 78.33%, #FFFFFF 0%, rgba(247, 244, 213, 0) 100%),
                 linear-gradient(0deg, #E6F7D5, #E6F7D5)
                 "
             />
