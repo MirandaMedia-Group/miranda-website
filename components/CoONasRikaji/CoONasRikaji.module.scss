@@ -192,4 +192,7 @@
             height: 20px;
         }
     }
+    .image::before {
+        content: url(/img/icon/quotes-small.svg);
+    }
 }
