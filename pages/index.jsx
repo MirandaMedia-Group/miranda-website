@@ -48,9 +48,9 @@ export default function Home({ reference, coONas }) {
           <PravaMiranda></PravaMiranda>
           <div className='text-center'>
             <Link href="/sluzby">
-              <a className="btn btn-tertiary">
-                  <span data-hover="Kompletní nabídka služeb">
-                    Kompletní nabídka služeb
+              <a className="btn btn-primary">
+                  <span data-hover="Naše služby">
+                    Naše služby
                   </span>
                 </a>
             </Link>
@@ -60,8 +60,10 @@ export default function Home({ reference, coONas }) {
       {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
       </section> */}
-      <section className='hidden container'>
-        <Spoluprace></Spoluprace>
+      <section className='hidden'>
+        <div className="container">
+          <Spoluprace></Spoluprace>
+        </div>
       </section>
       <section className='hidden'>
         <CoONasRikaji data={coONas} className="hidden"></CoONasRikaji>

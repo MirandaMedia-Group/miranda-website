@@ -19,7 +19,7 @@ const PravaMiranda = () => {
                     <div className={styles.sluzba}>
                         <Image src="/img/ppc.jpg" width={710} height={290} alt=""/>
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>PPC &amp; zbožové vyhledávače</h3>
+                            <h3><span>Miranda</span>PPC</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ const PravaMiranda = () => {
                     <div className={styles.sluzba}>
                         <Image src="/img/design.jpg" width={345} height={600} alt=""/>
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>Produktový design &amp; kreativa</h3>
+                            <h3><span>Miranda</span>Produktový design</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const PravaMiranda = () => {
                     <div className={styles.sluzba}>
                         <Image src="/img/weby.jpg" alt="" layout="fill" objectFit="cover"/>
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>Weby &amp; e-shopy na klíč</h3>
+                            <h3><span>Miranda</span>Weby &amp; e-shopy</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const PravaMiranda = () => {
                     <div className={styles.sluzba}>
                         <Image src="/img/influencer2.png" alt="" layout="fill" objectFit="cover"/>
                         <div className={styles.text}>
-                            <h3><span>Miranda</span>Influencer<br/>marketing</h3>
+                            <h3><span>Miranda</span>Influencing</h3>
                                 <a className="btn-sm"></a>
                         </div>
                     </div>

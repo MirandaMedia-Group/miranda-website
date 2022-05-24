@@ -6,7 +6,7 @@ import styles from './ReferenceItem.module.scss'
 const ReferenceItem = (props) => {
     return (
         <Link href={`/reference/${props.data.attributes.slug}`} passHref>
-            <div className={`${styles.item} ${props.isHomepage ? styles.itemHp : ''}`} style={{backgroundColor: props.data.attributes.barva_pozadi}}>
+            <div className={`${styles.item} ${props.isHomepage ? styles.itemHp : ''}`} style={{ background: `radial-gradient(circle at 70% 70%, rgba(0,0,0,.1), ${props.data.attributes.barva_pozadi})`}}>
                 <div className={`${styles.box}`}></div>
                 <div className={`${styles.box}`}></div>
                 <div className={`${styles.box}`}></div>
