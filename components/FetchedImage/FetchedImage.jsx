@@ -11,6 +11,7 @@ const FetchedImage = ({ image, layout = '' }) => {
             height={height}
             src={getStrapiMedia(image)}
             alt={alternativeText || ''}
+            priority={true}
         />
     )
 }
