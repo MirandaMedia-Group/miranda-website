@@ -4,9 +4,17 @@ import Link from 'next/link'
 import styles from './MainFooter.module.scss'
 import ProjektBanner from '../ProjektBanner/ProjektBanner'
 import { useRouter } from 'next/router'
+import { useRef } from 'react'
 
 function Footer() {
   const router = useRouter()
+  const refStranky = useRef(null)
+  const refSluzby = useRef(null)
+  const refPartneri = useRef(null)
+
+  const toggleDropdown = () => {
+    console.log(refStranky);
+  }
 
   return (
     <>

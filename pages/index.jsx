@@ -60,7 +60,7 @@ export default function Home({ reference, coONas }) {
       {/* <section>
         <NabidkaSluzeb></NabidkaSluzeb>
       </section> */}
-      <section className='hidden'>
+      <section className='hidden spoluprace'>
         <div className="container">
           <Spoluprace></Spoluprace>
         </div>
@@ -69,20 +69,23 @@ export default function Home({ reference, coONas }) {
         <CoONasRikaji data={coONas} className="hidden"></CoONasRikaji>
       </section>
       <section className='container'>
-        <div className="columns col-2 align-center podcast">
-          <div className="column">
-            <h3>Miranda podcast</h3>
-            <p>Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání nebo chceš jednoduše vyplnit volný čas, tak pouštej!</p>
-            <Link href="/sluzby/podcast">
-              <a className='btn btn-primary'>
+        <div className="podcast">
+          <div className="pripravujeme">
+						<Image src="/img/pripravujeme.svg" width={210} height={214} alt=""></Image>
+					</div>
+          <div className='columns col-2 align-center'>
+            <div className="column">
+              <h3>Miranda podcast</h3>
+              <p>Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání nebo chceš jednoduše vyplnit volný čas, tak pouštej!</p>
+              <a className='btn btn-primary disabled'>
                 <span data-hover="Poptat podcast">
                   Poptat podcast
                 </span>
               </a>
-            </Link>
-          </div>
-          <div className="column">
-           
+            </div>
+            <div className="column">
+            
+            </div>
           </div>
         </div>
       </section>
