@@ -64,6 +64,11 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .carousel .itemTexts {
+        justify-content: flex-end;
+    }
+}
 @media screen and (max-width: 680px) {
     .scrollDown {
         display: none;

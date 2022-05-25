@@ -75,14 +75,14 @@ export default function Home() {
           <div className={styles.itemWider}>
             <Image src="/img/grid7.jpg" width={953} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center'></Image>
           </div>
-          <div className={`${styles.itemWider} ${styles.textItem}`}>
+          <div className={`${styles.mobileWide} ${styles.textItem}`}>
             <p><strong>15 let <span>zkušeností</span></strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
           </div>
           <div>
             <Image src="/img/grid5.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center'></Image>
           </div>
-          <div className={`${styles.itemWider} ${styles.textItem}`}>
+          <div className={`${styles.mobileWide} ${styles.textItem}`}>
             <p><strong>Tomáš Cina <span>Jednatel společnosti</span></strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
           </div>

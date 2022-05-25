@@ -44,7 +44,7 @@ const Spoluprace = () => {
                 </div>
             </div>
             <div className={`buttons-wrapper ${styles.desktopHidden}`}>
-                <Link href="/jak-to-funguje">
+                <Link href="/proc-s-nami">
                     <a className='btn btn-primary'>
                         <span data-hover="Zjisti, jak to u nás funguje">
                             Zjisti, jak to u nás funguje

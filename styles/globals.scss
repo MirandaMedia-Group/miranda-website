@@ -1,7 +1,3 @@
-$color-white: #FFF;
-$color-font: #000;
-$color-primary: #59DC8E;
-
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins Medium'), local('Poppins-Medium'),
@@ -198,6 +194,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+body {
+  color: $color-font;
 }
 
 input[type="checkbox"] {
@@ -476,17 +475,16 @@ img {
   height: auto !important;
   align-self: stretch !important;
 }
-.swiper-pagination {
-  display: none;
+.pagination-top .swiper .swiper-pagination {
+  order: -1;
+  padding-top: 0;
 }
-@media screen and (max-width: 600px) {
-  .swiper-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0;
-  }
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
   .swiper-pagination-bullet {
     flex-basis: 0 1 30px;
     width: 30px;
@@ -502,6 +500,8 @@ img {
     background-color: $color-primary;
     height: 5px;
   }
+}
+@media screen and (max-width: 600px) {
   .swiper {
     padding: 0 !important;
   }
@@ -668,11 +668,15 @@ main#content {
 }
 @media screen and (max-width: 767px) {
   .reference {
+    .column {
+      width: 100% !important;
+    }
     p {
       display: none;
     }
     h2 {
-      margin-bottom: 0;
+      // margin-bottom: 0;
+      text-align: center;
     }
   }
 }

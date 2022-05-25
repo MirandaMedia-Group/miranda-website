@@ -3,6 +3,10 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    background-color: #F0F0F0;
+    background-image: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #E8E8E8 100%) !important;
+    // background-blend-mode: luminosity;
+    transition: all .3s ease-in;
     img {
         // filter: grayscale(1);
         transition: all .3s ease-in;
@@ -61,6 +65,8 @@
         .box {
             animation: boxShow .5s ease-in 1 both;
         }
+        // background-blend-mode: unset;
+        background-image: revert;
     }
     .box {
         position: absolute;
