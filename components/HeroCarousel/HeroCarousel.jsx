@@ -5,8 +5,10 @@ const HeroCarousel = () => {
     return (
         <div className={styles.carousel}>
             <div className={styles.item}>
-                {/* <Image src="/img/carousel.jpg" width="1920" height="1080" alt="" layout="fill" objectFit="cover"/> */}
-                <video src="/hp-video.mp4" autoPlay playsInline muted preload="auto"></video>
+                <video autoPlay playsInline muted preload="auto">
+                    <source src="/hp-video-mobile.mp4" type="video/mp4" media="all and (max-width: 768px)"/>
+                    <source src="/hp-video.mp4" type="video/mp4" />
+                </video>
                 <div className={`container ${styles.itemTexts}`}>
                     <div>Miranda Media</div>
                     <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1>
