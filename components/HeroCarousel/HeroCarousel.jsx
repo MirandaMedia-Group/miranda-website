@@ -1,14 +1,35 @@
-import Image from "next/image"
 import styles from './HeroCarousel.module.scss'
+import { useState, useEffect } from 'react'
 
 const HeroCarousel = () => {
+    const [isDesktop, setDesktop] = useState()
+
+    useEffect( () => {
+        setDesktop(window.innerWidth > 830)
+        window.addEventListener('resize', () => {
+            setDesktop(window.innerWidth > 830)
+        })
+
+        return () => {
+            window.removeEventListener('resize', () => {
+                setDesktop(window.innerWidth > 830)
+            })
+        }
+    }, [])
+
     return (
         <div className={styles.carousel}>
             <div className={styles.item}>
-                <video autoPlay playsInline muted preload="auto">
-                    <source src="/hp-video-mobile.mp4" type="video/mp4" media="all and (max-width: 768px)"/>
-                    <source src="/hp-video.mp4" type="video/mp4" />
-                </video>
+                { isDesktop && (
+                    <video autoPlay playsInline muted preload="auto">
+                        <source src="/hp-video.mp4" type="video/mp4" />
+                    </video>
+                )}
+                { !isDesktop && (
+                    <video autoPlay playsInline muted preload="auto">
+                        <source src="/hp-video-mobile.mp4" type="video/mp4"/>
+                    </video>
+                )}
                 <div className={`container ${styles.itemTexts}`}>
                     <div>Miranda Media</div>
                     <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1>
@@ -22,28 +43,6 @@ const HeroCarousel = () => {
                     <span>Scrolluj</span>
                 </div>
             </div>
-            {/* <nav className={styles.carouselNavigation}>
-                <ol>
-                    <li>
-                        Penny
-                    </li>
-                    <li>
-                        PetCenter
-                    </li>
-                    <li>
-                        PetCenter
-                    </li>
-                    <li>
-                        PetCenter
-                    </li>
-                    <li>
-                        PetCenter
-                    </li>
-                    <li>
-                        PetCenter
-                    </li>
-                </ol>
-            </nav> */}
         </div>
     )
 }
