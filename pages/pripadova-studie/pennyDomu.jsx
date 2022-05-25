@@ -60,7 +60,11 @@ const pennyDomu = ({ reference, props }) => {
             </div>
             <section className={styles.background} id="oProjektu">
                     <div className='container'>
-                        <div className={styles.quotes}><Image src="/img/michal.jpg" width={500} height={500} />
+                     <div className={styles.image} >
+                     <div className={styles.coRikaMobil}>
+                         <div className={styles.tile}></div>
+                         <img src="/img/icon/coRikaMobil.svg"></img></div>
+                        <div className={styles.quotes}><Image src="/img/michal.jpg" width={992} height={992} />
                             <div className={styles.coRika}><img src="/img/icon/coRika.svg"></img></div>
                             <div className={styles.tiles}>
                                     {
@@ -71,6 +75,7 @@ const pennyDomu = ({ reference, props }) => {
                                     }
                                 </div>
                             </div>
+                        </div>
                         <div className={styles.text}>
                             <p className={styles.bigger}>
                             E-shop Penny Market byl pro všechny strany velkou výzvou. Už jen pro to, že jsme celou platformu vystavěli od počátku na Shoptetu. 
