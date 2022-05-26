@@ -156,4 +156,37 @@
     .logo {
         text-align: center;
     }
+    .acordeon {
+        h4 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 2px solid $color-primary;
+                border-style: none solid solid none;
+                transform: rotate(45deg);
+                transition: transform .3s ease-in;
+            }
+        }
+        & > ul,
+        & > div {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-in;
+        }
+        &.visible {
+            & > div,
+            & > ul {
+                max-height: 400px;
+            }
+            h4::after {
+                transform: rotate(-135deg);
+            }
+        }
+    }
 }

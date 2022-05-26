@@ -4,17 +4,13 @@ import Link from 'next/link'
 import styles from './MainFooter.module.scss'
 import ProjektBanner from '../ProjektBanner/ProjektBanner'
 import { useRouter } from 'next/router'
-import { useRef } from 'react'
+import { useState } from 'react'
 
 function Footer() {
   const router = useRouter()
-  const refStranky = useRef(null)
-  const refSluzby = useRef(null)
-  const refPartneri = useRef(null)
-
-  const toggleDropdown = () => {
-    console.log(refStranky);
-  }
+  const [strankyVisible, setStrankyVisible] = useState(false)
+  const [sluzbyVisible, setSluzbyVisible] = useState(false)
+  const [partneriVisible, setPartneriVisible] = useState(false)
 
   return (
     <>
@@ -46,8 +42,11 @@ function Footer() {
                   <li><strong>BÚ:</strong> 2201649999/2010</li>
                 </ul>
             </div>
-            <div>
-              <h4>Stránky</h4>
+            <div className={`${styles.acordeon} ${strankyVisible && styles.visible}`}>
+              <h4 onClick={(e) => {
+                strankyVisible ? setStrankyVisible(false) : setStrankyVisible(true)
+              }}
+              >Stránky</h4>
               <ul>
                 <li>
                   <Link href="/#">
@@ -86,8 +85,11 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h4>
+            <div className={`${styles.acordeon} ${sluzbyVisible && styles.visible}`}>
+              <h4 onClick={(e) => {
+                sluzbyVisible ? setSluzbyVisible(false) : setSluzbyVisible(true)
+                }
+              }>
                 Služby
               </h4>
               <ul>
@@ -124,8 +126,10 @@ function Footer() {
               </ul>
             </div>
             <div className={`col-4 ${styles.sluzby}`}>
-              <div className={styles.partneri}>
-                <h4>Partneři</h4>
+              <div className={`${styles.partneri} ${styles.acordeon} ${partneriVisible && styles.visible}`}>
+                <h4 onClick={(e) => {
+                  partneriVisible ? setPartneriVisible(false) : setPartneriVisible(true)
+                }}>Partneři</h4>
                 <div>
                   <div>
                     <Image src="/img/icon/google-partner.svg" width={60} height={44} alt="Google Partner"></Image>
