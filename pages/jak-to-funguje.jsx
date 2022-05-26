@@ -60,7 +60,7 @@ const JakToFunguje = () => {
                         <p>Aniž by se projekt pořádně otestoval, nesmí ven. Od toho tu jsou naši testeři, kteří dokážou najít i ten nejmenší pixel mimo osu a pohlídat výstupnou kvalitu na 100 %</p>
                     </div>
                     <div className={`${styles.item} ${styles.image}`}>
-                        <Image src="/img/grid4.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center"></Image>
+                        <Image src="/img/grid4.jpg" width={360} height={360} alt="" layout="fill" objectFit="cover" objectPosition="center" priority={true}></Image>
                     </div>
                 </div>
             </section>
@@ -68,54 +68,54 @@ const JakToFunguje = () => {
                 <div className="container">
                     <h2 className={styles.headline}>Průběh projektu</h2>
                     <div className={styles.cesta}>
-                        <Image src="/img/cesta-funguje.svg" width={1156} height={1695} alt="" layout="responsive"></Image>
+                        <Image src="/img/cesta-funguje.svg" width={1156} height={1695} alt="" layout="responsive" priority={true}></Image>
                         <div className={styles.cestaItem} style={{left: '0px', top: '15%'}}>
                             <div className={styles.postavy} style={{right: '40px', top: '-140px'}}>
-                                <Image src="/img/postava1.png" width={184} height={202} alt=""></Image>
+                                <Image src="/img/postava1.png" width={184} height={202} alt="" priority={true}></Image>
                             </div>
-                            <Image src="/img/icon/chat.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/chat.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>První setkání</h3>
                             <p>Jak se říká, nikdy nedostaneš šanci udělat první dojem dvakrát. Na prvních setkáních se často láme chleba a je to ten nejdůležitější moment, kdy se rozhoduje o 
                                 dalším osudu nových projektů v Mirandě.</p>
                         </div>
                         <div className={styles.cestaItem} style={{left: '50%', top: '4%', transform: 'translateX(-50%)'}}>
                             <div className={styles.postavy} style={{right: '-210px', top: '-150px'}}>
-                                <Image src="/img/postava2.png" width={419} height={245} alt=""></Image>
+                                <Image src="/img/postava2.png" width={419} height={245} alt="" priority={true}></Image>
                             </div>
-                            <Image src="/img/icon/file.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/file.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>Analýza projektu</h3>
                             <p>Když dostaneme do ruky zadávací dokumentaci, zabere to nějakou tu chvíli, než všechno projdeme do posledního detailu. Analyzujeme,  validujeme, 
                                 hledáme workaroundy a plánujeme...v tomhle bodě je do značné míry známo, jaká cesta před náma stojí.</p>
                         </div>
                         <div className={styles.cestaItem} style={{right: '0', top: '15%'}}>
                             <div className={styles.postavy} style={{right: '-170px', top: '-140px'}}>
-                                <Image src="/img/postava3.png" width={320} height={268} alt=""></Image>
+                                <Image src="/img/postava3.png" width={320} height={268} alt="" priority={true}></Image>
                             </div>
-                            <Image src="/img/icon/framer.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/framer.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>Návrh WF a&nbsp;grafiky</h3>
                             <p>Do pixelu vyladěný dráty a oku lahodící design si Miranda tuní většinou ve Figmě. Solidní prográmek pro každýho šikovnýho grafika a uixáka, 
                                 kterej navíc běží kompletně on-line. To se pak iteruje jedna báseň.   </p>
                         </div>
                         <div className={styles.cestaItem} style={{right: '0', top: '53%'}}>
-                            <Image src="/img/icon/figma.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/figma.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>Kódování</h3>
                             <p>Naši kodéři znají dneska od Reactu až po Shoptetí styly kdejakej programovací jazyk. Řeč, kterou dokonale ovládají, a nemaj proto problém udělat 
                                 i z takový krabice jako je Shoptet řešení na klíč pro ty největší ryby v digitálním rybníku. </p>
                         </div>
                         <div className={styles.cestaItem} style={{left: '50%', top: '63%', transform: 'translateX(-50%)'}}>
                             <div className={styles.postavy} style={{right: '-235px', top: '-230px'}}>
-                                <Image src="/img/postava4.png" width={426} height={280} alt=""></Image>
+                                <Image src="/img/postava4.png" width={426} height={280} alt="" priority={true}></Image>
                             </div>
-                            <Image src="/img/icon/code.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/code.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>Programování a API</h3>
                             <p>Naprogramovat funkce, který si klient žádá a napojit e-shop na kdejaký éerpéčko, platební bránu nebo dopravce zvládaj s přehledem ti nejlepší profíci 
                                 v oboru. Chceš, aby e-shop komunikoval s vesmírnou lodí na druhým konci vesmíru? Tvé přání předem splněno jest!</p>
                         </div>
                         <div className={styles.cestaItem} style={{left: '0', top: '53%'}}>
                             <div className={styles.postavy} style={{left: '-20px', bottom: '-200px'}}>
-                                <Image src="/img/postava5.png" width={479} height={284} alt=""></Image>
+                                <Image src="/img/postava5.png" width={479} height={284} alt="" priority={true}></Image>
                             </div>
-                            <Image src="/img/icon/star.svg" width={24} height={24} alt=""></Image>
+                            <Image src="/img/icon/star.svg" width={24} height={24} alt="" priority={true}></Image>
                             <h3>Testování a ostrý start</h3>
                             <p>Během testování se nesmí zapomenout na sebemenší detail. Jde totiž o hodně! Ve chvíli, kdy se e-shop spustí a začnou se na něj hrnout
                                  nedočkaví zákazníci, musí všechno běžet jak po drátkách.</p>
@@ -127,7 +127,7 @@ const JakToFunguje = () => {
                         </div>
                     </div>
                     <div className={`${styles.nekonci} text-center`}>
-                        <Image src="/img/icon/plus.svg" width={24} height={24} alt=""></Image>
+                        <Image src="/img/icon/plus.svg" width={24} height={24} alt="" priority={true}></Image>
                         <h3>Tím to samozřejmě nekončí</h3>
                         <p>Miranda pokračuje ve spolupráci s Penny Market i po dokončení a předání e-shopu. Vídáme se na pravidelných schůzkách, dodáváme nové funkcionality, plánujeme další rozvoj...</p>
                     </div>

@@ -14,7 +14,7 @@ export default function Home() {
         <div className='partneri'>
           <div className='partner'>
             <div>
-              <Image src="/img/missing-photo.jpg" width={720} height={720} alt="" />
+              <Image src="/img/missing-photo.jpg" width={720} height={720} alt="" priority={true}/>
             </div>
             <div>
               <h4>Michal Baloun</h4>
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <div className='partner row-reverse'>
             <div>
-              <Image src="/img/missing-photo.jpg" width={720} height={720} alt="" />
+              <Image src="/img/missing-photo.jpg" width={720} height={720} alt="" priority={true}/>
             </div>
             <div>
               <h4>Tomáš Cina</h4>

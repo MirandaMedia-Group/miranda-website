@@ -52,13 +52,13 @@ export default function EShopy({ coONas }) {
 						<SwiperSlide>
 							<Link href="#" passHref>
 								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
 									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
 								</div>
 							</Link>
 							<Link href="#" passHref>
 								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
 									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
 								</div>
 							</Link>
@@ -106,7 +106,7 @@ export default function EShopy({ coONas }) {
 			<section className="systemy">
 				<div className="container columns col-2 align-center">
 					<div className="column">
-						<Image src="/img/systemy-bg.png" width={821} height={738} alt="" layout='responsive'></Image>
+						<Image src="/img/systemy-bg.png" width={821} height={738} alt="" layout='responsive' priority={true}></Image>
 					</div>
 					<div className="column">
 						<h2>Napojení Shoptet na pokladní, informační,
@@ -140,7 +140,7 @@ export default function EShopy({ coONas }) {
 							<div className="columns col-2">
 								<div className="column">
 									<div className="logo">
-										<Image src="/img/expremenu-black.png" width={251} height={100} alt="ExpresMenu"></Image>
+										<Image src="/img/expremenu-black.png" width={251} height={100} alt="ExpresMenu" priority={true}></Image>
 									</div>
 									<h3>Navýšili jsme o <strong>125%</strong></h3>
 									<Link href="/reference/expresmenu">
@@ -207,7 +207,7 @@ export default function EShopy({ coONas }) {
 				<div className="container">
 					<div className="proc-shoptet-block">
 						<div className="bg-img">
-							<Image src="/img/proc-shoptet-bg.svg" width={1369} height={916} alt=""></Image>
+							<Image src="/img/proc-shoptet-bg.svg" width={1369} height={916} alt="" priority={true}></Image>
 						</div>
 						<div className="item">
 							<span className="number">01</span>
@@ -238,7 +238,7 @@ export default function EShopy({ coONas }) {
 			<section className="container visible">
 				<div className="konfigurator">
 					<div className="pripravujeme">
-						<Image src="/img/pripravujeme.svg" width={210} height={214} alt=""></Image>
+						<Image src="/img/pripravujeme.svg" width={210} height={214} alt="" priority={true}></Image>
 					</div>
 					<div className="columns col-2">
 						<div className="column">

@@ -1,6 +1,6 @@
 .heroArticle {
     position: relative;
-    min-height: 600px;
+    min-height: 1021px;
 }
 .heroTexts {
     position: absolute;
@@ -47,7 +47,11 @@
         padding-left: 40px;
     }
 }
-
+@media screen and (max-width: 992px) {
+    .heroArticle {
+        min-height: 600px;
+    }
+}
 @media screen and (max-width: 767px) {
     .heroTexts {
         bottom: 30px;

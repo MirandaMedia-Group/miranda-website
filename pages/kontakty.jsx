@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <section>
         <div className={styles.hero}>
-          <Image src="/img/kontakt-hero.jpg" width="1920" height="1080" alt="" layout="fill" objectFit='cover'/>
+          <Image src="/img/kontakt-hero.jpg" width="1920" height="1080" alt="" layout="fill" objectFit='cover' priority={true}/>
           <div className={styles.itemTexts}>
             <div className="container columns col-2 align-center">
               <div className="column">

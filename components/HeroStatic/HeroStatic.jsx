@@ -12,7 +12,7 @@ const HeroStatic = (props) => {
              )}
             { props.image && (
                 <div className={styles.heroImage}>
-                    <Image src={props.image} width="1920" height="1080" alt="" layout="fill" objectFit="cover"/> 
+                    <Image src={props.image} width="1920" height="1080" alt="" layout="fill" objectFit="cover" priority={true}/> 
                 </div>
             )}
             <div className={styles.itemTexts}>

@@ -1,7 +1,8 @@
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    // grid-template-columns: repeat(3, minmax(1px, 1fr));
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 60px;
     article {
         flex: 1 1 360px;
@@ -38,7 +39,7 @@
 }
 .heroArticle {
     position: relative;
-    min-height: 600px;
+    min-height: 1021px;
 }
 .heroTexts {
     position: absolute;
@@ -76,7 +77,11 @@
         color: $color-primary;
     }
 }
-
+@media screen and (max-width: 992px) {
+    .heroArticle {
+        min-height: 600px;
+    }
+}
 @media screen and (max-width: 767px) {
     .heroTexts {
         bottom: 20px;
