@@ -16,13 +16,13 @@ function MyApp({ Component, pageProps }) {
     router.events.on('routeChangeStart', handleRouteStart)
     router.events.on('routeChangeComplete', handleRouteDone)
     router.events.on('routeChangeError', handleRouteDone)
-    window.addEventListener('load', handleRouteDone)
+    window.addEventListener('DOMContentLoaded', handleRouteDone)
 
     return () => {
       router.events.off('routeChangeStart', handleRouteStart)
       router.events.off('routeChangeComplete', handleRouteDone)
       router.events.off('routeChangeError', handleRouteDone)
-      window.removeEventListener('load', handleRouteDone)
+      window.removeEventListener('DOMContentLoaded', handleRouteDone)
     }
   }, [])
   
