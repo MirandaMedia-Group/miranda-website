@@ -7,6 +7,8 @@ const Navbar = () => {
   const router = useRouter()
   const [submenuVisible, setSubmenuVisible] = useState(false)
   const [actualHour, setActualHour] = useState(null)
+  const [shopyVisible, setShopyVisible] = useState(false)
+  const [sluzbyVisible, setSluzbyVisible] = useState(false)
   
   const toggleNav = () => {
     submenuVisible ? setSubmenuVisible(false) : setSubmenuVisible(true)
@@ -40,8 +42,8 @@ const Navbar = () => {
             </li>
             <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren}`}>
               <Link href="/e-shopy" >
-                <a >Shoptet na míru</a>
-              </Link> 
+                <a>Shoptet na míru</a>
+              </Link>
               <ul className={styles.menuLevel2}>
                 <li>
                   <Link href="/jak-to-funguje">
@@ -117,10 +119,15 @@ const Navbar = () => {
                   <a>Reference</a>
                 </Link>
               </li>
-              <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren}`}>
-                <Link href="/e-shopy" >
-                  <a >Shoptet na míru</a>
-                </Link> 
+              <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren} ${shopyVisible && styles.lvl2Visible}`} >
+                <span>
+                  <Link href="/e-shopy" >
+                    <a>Shoptet na míru</a>
+                  </Link>
+                  <span className={styles.lvl2Toggle} onClick={() => {
+                    shopyVisible ? setShopyVisible(false) : setShopyVisible(true)
+                  }}></span>
+                </span>
                 <ul className={styles.menuLevel2}>
                   <li>
                     <Link href="/jak-to-funguje">
@@ -129,10 +136,15 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren}`}>
-                <Link href="/sluzby" >
-                  <a>Služby</a>
-                </Link>
+              <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren} ${sluzbyVisible && styles.lvl2Visible}`}>
+                <span>
+                  <Link href="/sluzby" >
+                    <a>Služby</a>
+                  </Link>
+                  <span className={styles.lvl2Toggle} onClick={() => {
+                    sluzbyVisible ? setSluzbyVisible(false) : setSluzbyVisible(true)
+                  }}></span>
+                </span>
                 <ul className={styles.menuLevel2}>
                   <li>
                     <Link href="/sluzby/ppc-vyhledavace">

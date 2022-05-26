@@ -147,11 +147,11 @@
     .mainHeader .logo {
         position: relative;
         z-index: 2;
-        &.submenuVisible {
-            svg {
-                fill: $color-primary;
-            }
-        }
+        // &.submenuVisible {
+        //     svg {
+        //         fill: $color-primary;
+        //     }
+        // }
     }
     .mobileNavigation {
         display: block;
@@ -191,46 +191,72 @@
         nav {
             position: absolute;
             background-color: $color-white;
-            color: $color-primary;
+            color: $color-font;
             top: 0;
-            right: 0;
+            right: -5px;
             max-width: 0;
-            width: 100%;
+            width: calc(100% - 80px);
+            height: 100vh;
             padding: 2rem 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
             overflow: hidden;
             white-space: nowrap;
             transition: all .3s ease-in;
             padding-top: 95px;
+            overflow-y: auto;
             ul {
                 margin: 0;
             }
             a {
-                padding: .5em 0;
+                padding: em(20);
                 display: inline-block;
             }
             &.visible {
                 max-width: 640px;
-                padding: 2rem;
                 padding-top: 95px;
             }
         }
         .menuLevel2 {
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .3s ease-in;
+            a {
+                width: 100%;
+                background-color: $color-primary;
+            }
         }
         .hasChildren {
-            &::after {
+            & > span {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            &.lvl2Visible {
+                .lvl2Toggle::before {
+                    transform: rotate(-45deg);
+                }
+                .menuLevel2 {
+                    max-height: 400px;
+                }
+            }
+        }
+        .lvl2Toggle {
+            padding: em(20);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
                 content: "";
                 display: inline-block;
-                width: 20px;
-                height: 20px;
-                border: 3px solid $color-primary;
+                width: 10px;
+                height: 10px;
+                border: 2px solid $color-font;
                 border-style: solid solid none none;
-                border-radius: 3px;
                 transform: rotate(135deg);
                 position: relative;
                 top: -3px;
                 margin-left: 1em;
+                transition: all .3s ease-in;
             }
         }
     }
