@@ -22,24 +22,24 @@ const Spoluprace = () => {
                 </div>
                 <div className={`column ${styles.images} ${styles.mobileHidden2}`}>
                     <div className={styles.image}>
-                        <Image src='/img/kancelar.jpg' width={450} height={450} alt=""/>
+                        <Image src='/img/kancelar.jpg' width={450} height={450} alt="" priority={true}/>
                     </div>
                     <div className={`${styles.image} ${styles.video}`}>
-                        <Image src='/img/kancelar2.jpg' width={250} height={450} alt=""/>
+                        <Image src='/img/kancelar2.jpg' width={250} height={450} alt="" priority={true}/>
                     </div>
                     <div className={styles.image}>
-                        <Image src='/img/kancelar3.jpg' width={350} height={450} alt=""/>
+                        <Image src='/img/kancelar3.jpg' width={350} height={450} alt="" priority={true}/>
                     </div>
                 </div>
                 <div className={`column ${styles.images} ${styles.desktopHidden2}`}>
                     <div className={styles.image}>
-                        <Image src='/img/kancelar.jpg' width={450} height={450} alt="" layout='responsive'/>
+                        <Image src='/img/kancelar.jpg' width={450} height={450} alt="" layout='responsive' priority={true}/>
                     </div>
                     <div className={`${styles.image} ${styles.video}`}>
-                        <Image src='/img/kancelar2.jpg' width={250} height={450} alt="" layout='responsive'/>
+                        <Image src='/img/kancelar2.jpg' width={250} height={450} alt="" layout='responsive' priority={true}/>
                     </div>
                     <div className={styles.image}>
-                        <Image src='/img/kancelar3.jpg' width={350} height={450} alt=""  layout='responsive'/>
+                        <Image src='/img/kancelar3.jpg' width={350} height={450} alt=""  layout='responsive' priority={true}/>
                     </div>
                 </div>
             </div>

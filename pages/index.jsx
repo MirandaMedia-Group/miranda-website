@@ -71,7 +71,7 @@ export default function Home({ reference, coONas }) {
       <section className='container'>
         <div className="podcast">
           <div className="pripravujeme">
-						<Image src="/img/pripravujeme.svg" width={210} height={214} alt=""></Image>
+						<Image src="/img/pripravujeme.svg" width={210} height={214} alt="" priority={true}></Image>
 					</div>
           <div className='columns col-2 align-center'>
             <div className="column">
