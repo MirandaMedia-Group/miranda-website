@@ -23,8 +23,11 @@ const HeroCarousel = () => {
         <div className={styles.carousel}>
             <div className={styles.item}>
                 { isDesktop && (
-                    <video poster='/img/hp-video-poster.png' autoPlay playsInline muted preload="auto">
-                        <source src="/hp-video.mp4" type="video/mp4" />
+                    // <video poster='/img/hp-video-poster.png' autoPlay playsInline muted preload="auto">
+                    //     <source src="/hp-video.mp4" type="video/mp4" />
+                    // </video>
+                    <video autoPlay playsInline muted preload="auto">
+                        <source src="/Ukazka02.mp4" type="video/mp4" />
                     </video>
                 )}
                 { !isDesktop && (
