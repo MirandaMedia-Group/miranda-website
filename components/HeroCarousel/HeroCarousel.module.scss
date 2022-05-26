@@ -50,6 +50,9 @@
         height: 100%;
         object-fit: cover;
     }
+    .headingWrapper {
+        min-height: 250px;
+    }
 }
 
 @keyframes bounce {

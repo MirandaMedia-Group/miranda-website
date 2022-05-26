@@ -1,5 +1,7 @@
 import styles from './HeroCarousel.module.scss'
 import { useState, useEffect } from 'react'
+// import TypeAnimation from 'react-type-animation'
+import TypeWriter from '../TypeWriter/TypeWriter'
 
 const HeroCarousel = () => {
     const [isDesktop, setDesktop] = useState()
@@ -32,7 +34,12 @@ const HeroCarousel = () => {
                 )}
                 <div className={`container ${styles.itemTexts}`}>
                     <div>Miranda Media</div>
-                    <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1>
+                    <div className={styles.headingWrapper}>
+                        <TypeWriter 
+                            content='E-shopy a weby na klíč, výkononstní marketing a design'
+                        />
+                    </div>
+                    {/* <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1> */}
                 </div>
             </div>
             <div className={`container ${styles.scrollDown}`}>
