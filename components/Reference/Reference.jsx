@@ -24,46 +24,40 @@ const Reference = (props) => {
             })
         }
     }, [])
-    return (
-        <>
-            { !isDesktop && isHomepage && (
-                <Swiper
-                    modules={[Pagination]}
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    pagination={{
-                        clickable: true
-                    }}
-                    breakpoints={{
-                        600: {
-                            slidesPerView: 2,
-                        }
-                    }}
-                >
-                    { props.data && props.data.map( (item, index) => {
-                        return (
-                            <SwiperSlide key={index}>
-                                <ReferenceItem data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
-                            </SwiperSlide>
-                        )
-                    }) }
-                </Swiper>
-            )}
-            { !isDesktop && !isHomepage && (
-                 <div className={`${styles.referenceGrid} ${router.pathname == '/' ? styles.homePage : ''}`}>
-                    { props.data && props.data.map( (item, index) => {
-                        return <ReferenceItem key={index} data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
-                    }) }
-                </div>
-            )}
-            { isDesktop && (
-                <div className={`${styles.referenceGrid} ${router.pathname == '/' ? styles.homePage : ''}`}>
-                    { props.data && props.data.map( (item, index) => {
-                        return <ReferenceItem key={index} data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
-                    }) }
-                </div>
-            )}
-        </>
-    )
+
+    if (!isDesktop && isHomepage) {
+        return (
+            <Swiper
+                modules={[Pagination]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{
+                    clickable: true
+                }}
+                breakpoints={{
+                    600: {
+                        slidesPerView: 2,
+                    }
+                }}
+            >
+                { props.data && props.data.map( (item, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                            <ReferenceItem data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
+                        </SwiperSlide>
+                    )
+                }) }
+            </Swiper>
+
+        )
+    } else {
+        return (
+            <div className={`${styles.referenceGrid} ${router.pathname == '/' ? styles.homePage : ''}`}>
+                { props.data && props.data.map( (item, index) => {
+                    return <ReferenceItem key={index} data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
+                }) }
+            </div>
+        )
+    }
 }
 export default Reference
