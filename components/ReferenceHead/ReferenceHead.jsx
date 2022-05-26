@@ -5,7 +5,7 @@ export default function ReferenceHead (props) {
     return (
         <div className={styles.referenceHead} style={{background: props.pozadi}} >
             <div className={styles.image}>
-                {props.image && <Image src={props.image}  width="1062" height="815" alt="" />}
+                {props.image && <Image src={props.image}  width="1062" height="815" alt="" priority={true}/>}
             </div>
             <div className={styles.itemText}>
                 <div className='container'>

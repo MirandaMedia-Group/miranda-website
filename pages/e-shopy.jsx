@@ -6,12 +6,18 @@ import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ContactForm from '../components/ContactForm/ContactForm'
 import styles from '../styles/e-shopy.module.scss'
 import { fetchAPI } from '../lib/api'
+import { useRef } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 
+
 export default function EShopy({ coONas }) {
+	const swiperNext = useRef(true)
+	const swiperPrev = useRef(true)
+	const swiperNext2 = useRef(true)
+	const swiperPrev2 = useRef(true)
 
 	return (
 		<>
@@ -32,66 +38,77 @@ export default function EShopy({ coONas }) {
 			<section className='hidden'>
 				<div className="container text-center">
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
-					<Swiper
-						modules={[Navigation, Pagination]}
-						spaceBetween={20}
-						slidesPerView={1}
-						navigation
-						pagination={{
-							clickable: true
+					<div className="custom-swiper-wrapper">
+						<Swiper
+							modules={[Navigation, Pagination]}
+							spaceBetween={20}
+							slidesPerView={1}
+							navigation={{
+								prevEl: swiperPrev2.current,
+								nextEl: swiperNext2.current,
+							}}
+							onBeforeInit={(swiper) => {
+								swiper.params.navigation.prevEl = swiperPrev2.current;
+								swiper.params.navigation.nextEl = swiperNext2.current;
 						}}
-						breakpoints={{
-							992: {
-								slidesPerView: 3,
-							},
-							600: {
-								slidesPerView: 2,
-							}
-						}}
-					>
-						<SwiperSlide>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-							<Link href="#" passHref>
-								<div className={styles.slideItem}>
-									<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
-									<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
-								</div>
-							</Link>
-						</SwiperSlide>
-					</Swiper>
+							pagination={{
+								clickable: true
+							}}
+							breakpoints={{
+								992: {
+									slidesPerView: 3,
+								},
+								600: {
+									slidesPerView: 2,
+								}
+							}}
+						>
+							<SwiperSlide>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive' priority={true}></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+							</SwiperSlide>
+							<SwiperSlide>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+							</SwiperSlide>
+							<SwiperSlide>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+								<Link href="#" passHref>
+									<div className={styles.slideItem}>
+										<Image src="/img/rebelbean.jpg" width={466} height={466} alt="Rebel-bean.cz" layout='responsive'></Image>
+										<a href="www.rebelbean.cz" target="_blank" className={styles.anchor}>www.rebelbean.cz</a>
+									</div>
+								</Link>
+							</SwiperSlide>
+						</Swiper>
+						<div className='swiper-button-prev' ref={swiperPrev2}></div>
+						<div className='swiper-button-next' ref={swiperNext2}></div>
+					</div>
 					<div className={styles.buttonsWrap}>
 						<Link href="/reference">
 							<a className="btn btn-tertiary">
@@ -129,74 +146,85 @@ export default function EShopy({ coONas }) {
 			</section>
 			<section className='hidden'>
 				<div className="container">
-					<Swiper
-						modules={[Navigation, Pagination]}
-						slidesPerView={1}
-						spaceBetween={20}
-						navigation
-						pagination
-					>
-						<SwiperSlide className='reference-banner'>
-							<div className="columns col-2">
-								<div className="column">
-									<div className="logo">
-										<Image src="/img/expremenu-black.png" width={251} height={100} alt="ExpresMenu" priority={true}></Image>
+					<div className="custom-swiper-wrapper">
+						<Swiper
+							modules={[Navigation, Pagination]}
+							slidesPerView={1}
+							spaceBetween={20}
+							navigation={{
+								prevEl: swiperPrev.current,
+								nextEl: swiperNext.current,
+							}}
+							onBeforeInit={(swiper) => {
+								swiper.params.navigation.prevEl = swiperPrev.current;
+								swiper.params.navigation.nextEl = swiperNext.current;
+						}}
+							pagination
+						>
+							<SwiperSlide className='reference-banner'>
+								<div className="columns col-2">
+									<div className="column">
+										<div className="logo">
+											<Image src="/img/expremenu-black.png" width={251} height={100} alt="ExpresMenu" priority={true}></Image>
+										</div>
+										<h3>Navýšili jsme o <strong>125%</strong></h3>
+										<Link href="/reference/expresmenu">
+											<a className='btn btn-primary'>
+												<span data-hover="Zjistit více">
+													Zjistit více
+												</span>
+											</a>
+										</Link>
 									</div>
-									<h3>Navýšili jsme o <strong>125%</strong></h3>
-									<Link href="/reference/expresmenu">
-										<a className='btn btn-primary'>
-											<span data-hover="Zjistit více">
-												Zjistit více
-											</span>
-										</a>
-									</Link>
-								</div>
-								<div className="column">
-									<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
-								</div>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='reference-banner' style={{backgroundColor: '#EFE7DC'}}>
-							<div className="columns col-2">
-								<div className="column">
-									<div className="logo">
-										<Image src="/img/epiderma-black.png" width={365} height={75} alt="Epiderma"></Image>
+									<div className="column">
+										<Image src="/img/reference-banner-EM.png" width={720} height={520} alt="" layout="responsive"></Image>
 									</div>
-									<h3>Navýšili jsme o <strong>125%</strong></h3>
-									<Link href="/reference/epiderma">
-										<a className='btn btn-primary'>
-											<span data-hover="Zjistit více">
-												Zjistit více
-											</span>
-										</a>
-									</Link>
 								</div>
-								<div className="column">
-									<Image src="/img/reference-banner-epiderma.png" width={720} height={520} alt="" layout="responsive"></Image>
-								</div>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='reference-banner' style={{backgroundColor: '#F7F0EA'}}>
-							<div className="columns col-2">
-								<div className="column">
-									<div className="logo">
-										<Image src="/img/dolce-black.png" width={240} height={75} alt="Café Imperial Dolce"></Image>
+							</SwiperSlide>
+							<SwiperSlide className='reference-banner' style={{backgroundColor: '#EFE7DC'}}>
+								<div className="columns col-2">
+									<div className="column">
+										<div className="logo">
+											<Image src="/img/epiderma-black.png" width={365} height={75} alt="Epiderma"></Image>
+										</div>
+										<h3>Navýšili jsme o <strong>125%</strong></h3>
+										<Link href="/reference/epiderma">
+											<a className='btn btn-primary'>
+												<span data-hover="Zjistit více">
+													Zjistit více
+												</span>
+											</a>
+										</Link>
 									</div>
-									<h3>Navýšili jsme o <strong>125%</strong></h3>
-									<Link href="/reference/dolce">
-										<a className='btn btn-primary'>
-											<span data-hover="Zjistit více">
-												Zjistit více
-											</span>
-										</a>
-									</Link>
+									<div className="column">
+										<Image src="/img/reference-banner-epiderma.png" width={720} height={520} alt="" layout="responsive"></Image>
+									</div>
 								</div>
-								<div className="column">
-									<Image src="/img/reference-banner-dolce.png" width={720} height={520} alt="" layout="responsive"></Image>
+							</SwiperSlide>
+							<SwiperSlide className='reference-banner' style={{backgroundColor: '#F7F0EA'}}>
+								<div className="columns col-2">
+									<div className="column">
+										<div className="logo">
+											<Image src="/img/dolce-black.png" width={240} height={75} alt="Café Imperial Dolce"></Image>
+										</div>
+										<h3>Navýšili jsme o <strong>125%</strong></h3>
+										<Link href="/reference/dolce">
+											<a className='btn btn-primary'>
+												<span data-hover="Zjistit více">
+													Zjistit více
+												</span>
+											</a>
+										</Link>
+									</div>
+									<div className="column">
+										<Image src="/img/reference-banner-dolce.png" width={720} height={520} alt="" layout="responsive"></Image>
+									</div>
 								</div>
-							</div>
-						</SwiperSlide>
-					</Swiper>
+							</SwiperSlide>
+						</Swiper>
+						<div className='swiper-button-prev' ref={swiperPrev}></div>
+						<div className='swiper-button-next' ref={swiperNext}></div>
+					</div>
 				</div>
 			</section>
 			<section className="proc-shoptet">
