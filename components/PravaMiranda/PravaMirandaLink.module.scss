@@ -1,0 +1,30 @@
+.listItem {
+    position: relative;
+    padding-right: 60px;
+    padding: 20px 0;
+    cursor: pointer;
+    h3 {
+        margin: 0;
+        transition: all .3s ease-in;
+    }
+    &:hover, &:focus {
+        h3 {
+            color: $color-primary;
+        }
+        .arrow {
+            svg {
+                fill: $color-font;
+            }
+        }
+    }
+}
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+        fill: #B7B7B7;
+        transition: all .3s ease-in;
+    }
+}

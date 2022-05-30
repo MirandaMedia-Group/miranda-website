@@ -64,6 +64,16 @@
     position: initial;
 }
 
+.sluzbyWrapper {
+    gap: 50px !important;
+    margin-bottom: 60px;
+}
+.sluzbyList {
+    li:not(:last-of-type) {
+        border-bottom: 1px solid #B7B7B7;
+    }
+}
+
 @media screen and (max-width: 1260px) {
     .text {
         padding: 30px;

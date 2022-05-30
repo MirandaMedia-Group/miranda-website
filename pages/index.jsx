@@ -20,13 +20,9 @@ export default function Home({ reference, coONas }) {
         <HeroCarousel></HeroCarousel>
       </section>
       <section className="container">
-        <div className={`columns col-1-4 align-center reference`}>
-            <div className="column">
-                <h2>Na co jsme hrdí</h2>
-            </div>
-            <div className="column">
-                <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně.</strong> Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.</p>
-            </div>
+        <div className="narrow text-center">
+          <h2>Na co jsme hrdí</h2>
+          <p>Našim skvělým partnerům pomáháme <strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně.</strong> Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.</p>
         </div>
         <Reference data={reference}></Reference>
         <div className="buttons-wrapper justify-center">

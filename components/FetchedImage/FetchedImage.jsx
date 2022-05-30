@@ -1,7 +1,7 @@
 import { getStrapiMedia } from "../../lib/media";
 import Image from "next/image";
 
-const FetchedImage = ({ image, layout = '' }) => {
+const FetchedImage = ({ image, layout = '', objectFit='' }) => {
     const { alternativeText, width, height } = image.data.attributes
     return (
         <Image 
