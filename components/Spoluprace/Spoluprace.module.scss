@@ -1,22 +1,33 @@
 .section {
     position: relative;
+    min-height: 636px;
     p {
         line-height: em(36,20);
     }
 
 }
 .images {
-    display: flex;
-    height: 100%;
+    height: inherit;
     align-self: stretch;
-    &>div {
-        flex: 1 0 auto;
-        margin-right: 20px;
-        position: relative;
-        height: 100%;
-        &:last-child {
-            margin-right: 0;
-        }
+    position: relative;
+    .image {
+        position: absolute;
+    }
+    .image1 {
+        left: 0;
+        bottom: 70px;
+        z-index: 1;
+    }
+    .image2 {
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .image3 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
     }
 }
 
