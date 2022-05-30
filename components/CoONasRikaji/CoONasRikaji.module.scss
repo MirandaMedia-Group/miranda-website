@@ -2,6 +2,8 @@
     padding-left: 90px;
     position: relative;
     z-index: 3;
+    background: url(/img/icon/quotes.svg) top center no-repeat;
+    background-size: auto 70%;
     p {
         // font-size: rem(24);
         line-height: em(40,20);
@@ -14,32 +16,28 @@
 .image {
     position: relative;
     line-height: 0;
-    &::before {
-        content: url(/img/icon/quotes.svg);
-        display: block;
-        position: absolute;
-        font-size: 100px;
-        z-index: 1;
-        right: 26px;
-        top: 39px;
-    }
 }
 .arrows {
     display: flex;
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     z-index: 2;
     .arrow {
-        background-color: $color-font;
-        width: 100px;
-        height: 100px;
+        background-color: $color-white;
+        width: 74px;
+        height: 74px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        svg {
+            fill: $color-font;
+        }
         &:not(:last-of-type) {
-            margin-right: 1px;
+            svg {
+                transform: rotate(180deg);
+            }
         }
     }
 }
