@@ -21,29 +21,30 @@ const HeroCarousel = () => {
 
     return (
         <div className={styles.carousel}>
-            <div className={styles.item}>
-                { isDesktop && (
-                    // <video poster='/img/hp-video-poster.png' autoPlay playsInline muted preload="auto">
-                    //     <source src="/hp-video.mp4" type="video/mp4" />
-                    // </video>
-                    <video autoPlay playsInline muted preload="auto">
-                        <source src="/Ukazka02.mp4" type="video/mp4" />
-                    </video>
-                )}
-                { !isDesktop && (
-                    <video poster='/img/hp-video-poster-mobile.png' autoPlay playsInline muted preload="auto">
-                        <source src="/hp-video-mobile.mp4" type="video/mp4"/>
-                    </video>
-                )}
-                <div className={`container ${styles.itemTexts}`}>
-                    <div>Miranda Media</div>
-                    <div className={styles.headingWrapper}>
-                        <TypeWriter 
-                            content='E-shopy a weby na klíč, výkononstní marketing a design'
-                        />
-                    </div>
-                    {/* <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1> */}
+            { isDesktop && (
+                <video autoPlay playsInline muted preload="auto">
+                    <source src="/Ukazka02.mp4" type="video/mp4" />
+                </video>
+            )}
+            { !isDesktop && (
+                <video poster='/img/hp-video-poster-mobile.png' autoPlay playsInline muted preload="auto">
+                    <source src="/hp-video-mobile.mp4" type="video/mp4"/>
+                </video>
+            )}
+            <div className={`container ${styles.itemTexts}`}>
+                <div className={styles.subheading}>Miranda Media</div>
+                <div className={styles.headingWrapper}>
+                    {/* <TypeWriter 
+                        content='E-shopy a weby na klíč, výkononstní marketing a design'
+                    /> */}
+                    <h1>
+                        <span>E-shopy a weby na klíč</span>
+                        <span>Výkonnostní marketing</span>
+                        <span>Kreativa</span>
+                    </h1>
+                    <a href="#" className="btn btn-tertiary">Přehrát showreal</a>
                 </div>
+                {/* <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1> */}
             </div>
             <div className={`container ${styles.scrollDown}`}>
                 <div className={styles.arrow}>

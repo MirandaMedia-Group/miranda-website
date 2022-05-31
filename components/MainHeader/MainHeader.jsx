@@ -28,7 +28,7 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
-        {/* <nav className={styles.navigation}>
+        <nav className={styles.navigation}>
           <ul>
             <li className={router.pathname == "/proc-s-nami" ? `${styles.active}` : ""}>
               <Link href="/proc-s-nami" passHref>
@@ -40,17 +40,17 @@ const Navbar = () => {
                 <a>Reference</a>
               </Link>
             </li>
-            <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren}`}>
+            <li className={`${router.pathname == "/e-shopy" ? styles.active : ""}`}>
               <Link href="/e-shopy" >
                 <a>Shoptet na míru</a>
               </Link>
-              <ul className={styles.menuLevel2}>
+              {/* <ul className={styles.menuLevel2}>
                 <li>
                   <Link href="/jak-to-funguje">
                     <a>Jak to u nás funguje</a>
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren}`}>
               <Link href="/sluzby" >
@@ -100,7 +100,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </nav> */}
+        </nav>
         <div className={styles.mobileNavigation}>
           <div onClick={toggleNav} className={`${styles.hamburger} ${submenuVisible ? styles.visible : ''}`}>
             <span></span>
@@ -119,22 +119,22 @@ const Navbar = () => {
                   <a>Reference</a>
                 </Link>
               </li>
-              <li className={`${router.pathname == "/e-shopy" ? styles.active : ""} ${styles.hasChildren} ${shopyVisible && styles.lvl2Visible}`} >
-                <span>
+              <li className={`${router.pathname == "/e-shopy" ? styles.active : ""}`} >
                   <Link href="/e-shopy" >
                     <a>Shoptet na míru</a>
                   </Link>
+                {/* <span>
                   <span className={styles.lvl2Toggle} onClick={() => {
                     shopyVisible ? setShopyVisible(false) : setShopyVisible(true)
                   }}></span>
-                </span>
-                <ul className={styles.menuLevel2}>
+                </span> */}
+                {/* <ul className={styles.menuLevel2}>
                   <li>
                     <Link href="/jak-to-funguje">
                       <a>Jak to u nás funguje</a>
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className={`${router.pathname.includes("/sluzby") ? `${styles.active}` : ""} ${styles.hasChildren} ${sluzbyVisible && styles.lvl2Visible}`}>
                 <span>

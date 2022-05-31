@@ -13,7 +13,7 @@
     z-index: 10;
 }
 .navigation {
-    flex: 0 1 750px;
+    flex: 0 1;
     white-space: nowrap;
     margin-left: auto;
     ul {
@@ -135,7 +135,9 @@
         background: radial-gradient(50% 50% at 50% 50%, #FFC896 0%, #D73F3F 100%);
     }
 }
-
+.mobileNavigation {
+    display: none;
+}
 @keyframes glow {
     0% {
         box-shadow: 0 0 20px #FFF;
@@ -147,7 +149,7 @@
         box-shadow: 0 0 20px #FFF;
     }
 }
-// @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .navigation {
         display: none;
     }
@@ -262,7 +264,7 @@
             }
         }
     }
-// }
+}
 @media screen and (max-width: 767px) {
     .mainHeader {
         padding: 20px;

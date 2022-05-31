@@ -21,7 +21,8 @@ const TypeWriter = ({ content = "", speed = 100}) => {
         setDisplayedContent((displayedContent) => displayedContent + content[index])
     }, [index])
 
-    return <h1 className={styles.typeWriter}>{displayedContent}</h1>
+    // return <h1 className={styles.typeWriter}>{displayedContent}</h1>
+    return displayedContent
 }
 
 const sample_content = `Alive = True;

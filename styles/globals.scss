@@ -540,31 +540,31 @@ button {
     opacity: .6;
     cursor: not-allowed;
   }
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    transition: all .15s ease-in;
-  }
-  &::before {
-    background-color: $color-primary;
-    top: 12px;
-    left: -12px;
-    width: 10px;
-    height: 100%;
-  }
-  &::after {
-    background-color: $color-primary;
-    bottom: -12px;
-    left: -12px;
-    height: 10px;
-    width: 100%;
-  }
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: 1;
+  //   transition: all .15s ease-in;
+  // }
+  // &::before {
+  //   background-color: $color-primary;
+  //   top: 12px;
+  //   left: -12px;
+  //   width: 10px;
+  //   height: 100%;
+  // }
+  // &::after {
+  //   background-color: $color-primary;
+  //   bottom: -12px;
+  //   left: -12px;
+  //   height: 10px;
+  //   width: 100%;
+  // }
   &:hover, &:focus {
-    margin-left: -6px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    // margin-left: -6px;
+    // margin-bottom: 5px;
+    // margin-top: 5px;
     color: $color-white;
     background-color: $color-primary;
     border-color: $color-primary;

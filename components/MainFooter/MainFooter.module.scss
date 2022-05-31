@@ -1,6 +1,6 @@
 .footer {
     background: $color-font;
-    color: #fff;
+    color: $color-white;
     padding-top: 100px;
     padding-bottom: 30px;
     ul {
@@ -8,48 +8,42 @@
         padding-left: 0;
         margin-bottom: 30px;
         margin-top: 0;
-
         li {
-            line-height: 28px;
+            line-height: em(28);
             .green {
                 color: $color-primary;
             }
-        }
-
-        &:first-of-type {
-            margin-top: 30px;
         }
     }
 
     .container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         max-width: calc(1440px + 4rem);
         margin: 0 -1rem;
-        &>div:not(.sluzby)  {
-            display: flex;
-            flex-direction: column;
-        }
         & > div {
             padding: 0 1rem;
+            flex: 1 1 auto;
+        }
+        .sluzby {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 0 1 410px;
+            justify-content: space-between;
+        }
+        .logo {
+            flex-grow: 0;
         }
     }
 
     h4 {
-        margin-bottom: 0;
-        line-height: 1em;
         text-align: left;
         color: $color-primary;
+        font-size: rem(24);
+        margin-bottom: 20px;
     }
 
-    .sluzby {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex: 0 1 35%;
-        justify-content: space-between;
-    }
 
     .footerBottom {
         width: 100%;
