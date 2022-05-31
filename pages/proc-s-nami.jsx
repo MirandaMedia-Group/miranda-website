@@ -67,36 +67,36 @@ export default function Home() {
             <Image src="/img/grid6.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div>
-            <Image src="/img/grid4.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid8.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div>
-            <Image src="/img/grid2.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid9.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div className={styles.itemWider}>
-            <Image src="/img/grid7.jpg" width={953} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid10.jpg" width={953} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div className={`${styles.mobileWide} ${styles.textItem}`}>
             <p><strong>15 let <span>zkušeností</span></strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
           </div>
           <div>
-            <Image src="/img/grid5.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid11.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div className={`${styles.mobileWide} ${styles.textItem}`}>
             <p><strong>Tomáš Cina <span>Jednatel společnosti</span></strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
           </div>
           <div>
-            <Image src="/img/grid6.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid12.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div className={`${styles.textItem} text-center`}>
             <p><strong>150 <span>projektů</span></strong></p>
           </div>
           <div>
-            <Image src="/img/grid2.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid13.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
           <div>
-            <Image src="/img/grid4.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+            <Image src="/img/grid14.jpg" width={466} height={466} alt="" layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
           </div>
         </div>
       </section>

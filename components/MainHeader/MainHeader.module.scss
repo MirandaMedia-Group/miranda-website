@@ -2,7 +2,7 @@
     margin-right: rem(60);
 }
 .mainHeader {
-    color: $color-font;
+    color: $color-white;
     padding: 70px;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10
+    z-index: 10;
 }
 .navigation {
     flex: 0 1 750px;
@@ -28,16 +28,20 @@
             padding: em(15);
             transition: all .3s ease-in;
             display: inline-block;
+            border: 1px solid transparent;
             &:hover, &:focus {
-                background-color: $color-primary;
-                color: $color-font;
+                color: $color-primary;
+                border-color: $color-primary;
+                &::after {
+                    border-color: $color-primary;
+                }
             }
         }
         & > li {
             &.active {
                 & > a, & > span {
-                    background-color: $color-primary;
-                    color: $color-font;
+                    border-color: $color-primary;
+                    color: $color-primary;
                 }
             }
         }
@@ -45,21 +49,32 @@
     .menuLevel2 {
         position: absolute;
         flex-direction: column;
-        align-items: flex-start;
-        background-color: $color-primary;
-        box-shadow: 10px 10px 25px rgba(#000, .15);
+        align-items: stretch;
+        background-color: $color-font;
         max-height: 0;
         overflow: hidden;
         transition: max-height .3s ease-in;
+        & > li > a {
+            border: none;
+            width: 100%;
+        }
     }
     .hasChildren {
         & > span,
         & > a {
             cursor: pointer;
+            display: flex;
+            align-items: center;
             &::after {
-                content: url(/img/icon/menu-arrow.svg);
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: 2px solid $color-white;
+                border-style: none solid solid none;
                 display: inline-block;
                 margin-left: 1em;
+                transform: rotate(45deg);
+                transition: all .3s ease-in;
             }
         }
         &:hover, &:focus {
@@ -77,22 +92,23 @@
         transition: all .3s ease-in;
     }
 }
-.headerWhite {
-    color: $color-white;
-    svg {
-        fill: $color-white;
+.submenuVisible {
+    .contacts {
+        color: $color-font;
     }
-    .mobileNavigation .hamburger span {
-        background-color: $color-white;
+    .status {
+        border-color: $color-font;
     }
 }
 .contacts {
     border-left: 2px solid $color-primary;
     padding-left: 20px;
     margin-left: 20px;
+    position: relative;
     a {
         display: flex;
         align-items: center;
+        transition: all .3s ease-in;
     }
     .projectMail {
         padding-left: 32px;
@@ -111,6 +127,7 @@
     margin-right: 6px;
     box-shadow: 0 0 20px #FFF;
     animation: glow 4s ease-in infinite;
+    transition: all .3s ease-in;
     &.online {
         background: radial-gradient(50% 50% at 50% 50%, #A5FF96 0%, #59DC8E 100%);
     }
@@ -130,28 +147,13 @@
         box-shadow: 0 0 20px #FFF;
     }
 }
-
-.mobileNavigation {
-    display: none;
-}
-
-@media screen and (max-width: 1300px) {
-    .mainHeader {
-        padding: 2rem;
-    }
-}
-@media screen and (max-width: 1200px) {
+// @media screen and (max-width: 1200px) {
     .navigation {
         display: none;
     }
     .mainHeader .logo {
         position: relative;
         z-index: 2;
-        // &.submenuVisible {
-        //     svg {
-        //         fill: $color-primary;
-        //     }
-        // }
     }
     .mobileNavigation {
         display: block;
@@ -165,7 +167,7 @@
                 border-radius: 9999px;
                 width: 45px; 
                 display: block;
-                background-color: $color-font;
+                background-color: $color-white;
                 transition: all .3s ease-in;
                 &:not(:last-of-type) {
                     margin-bottom: 7px;
@@ -213,7 +215,7 @@
             }
             &.visible {
                 max-width: 640px;
-                padding-top: 95px;
+                padding-top: 150px;
             }
         }
         .menuLevel2 {
@@ -260,7 +262,7 @@
             }
         }
     }
-}
+// }
 @media screen and (max-width: 767px) {
     .mainHeader {
         padding: 20px;

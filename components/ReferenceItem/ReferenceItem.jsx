@@ -17,6 +17,7 @@ const ReferenceItem = (props) => {
                 <div className={`${styles.box}`}></div> */}
                 <FetchedImage
                     image={props.data.attributes.thumbnail}
+                    layout="responsive"
                 />
                 <div className={styles.logo}>
                         <FetchedImage
