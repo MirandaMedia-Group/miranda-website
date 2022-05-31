@@ -1,4 +1,4 @@
-import HeroStatic from '../components/HeroStatic/HeroStatic'
+import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim'
 import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import Reference from '../components/Reference/Reference'
 import { fetchAPI } from '../lib/api'
@@ -7,19 +7,13 @@ export default function Home({ reference, coONas }) {
   return (
     <>
       <section>
-        <HeroStatic 
+        <HeroStaticSlim
           title="Reference"
-          subtitle="Tohle je naše výkladní skříň, tak se tu porozhlédni a třeba najdeš zrovna tu správnou inspiraci pro svůj vlastní projekt."
-          image="/img/referenceBackground.jpg"
-          bigFont
-          maxWidth
+          // image="/img/referenceBackground.jpg"
         />
       </section>
       <section className='container'>
         <Reference data={reference} />
-        <div className='text-center'>
-          <span className='highlight'>+ mnoho dalších</span>
-        </div>
       </section>
       <section className='hidden'>
         <CoONasRikaji data={coONas}/>

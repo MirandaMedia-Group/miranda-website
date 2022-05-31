@@ -56,6 +56,10 @@ const Reference = (props) => {
                 { props.data && props.data.map( (item, index) => {
                     return <ReferenceItem key={index} data={item} isHomepage={router.pathname == '/' ? true : false}></ReferenceItem>
                 }) }
+                <div className={styles.more}>
+                    <span>+</span>
+                    monoho dalších
+                </div>
             </div>
         )
     }

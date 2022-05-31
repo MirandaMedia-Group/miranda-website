@@ -20,7 +20,7 @@
     .textItem {
         padding: 50px;
         strong {
-            font-size: rem(56);
+            font-size: rem(48);
             line-height: em(68,56);
             span {
                 font-size: em(16,56);
@@ -29,25 +29,25 @@
             }
         }
         &:nth-of-type(1) {
-            background-color: rgba($color-primary, .05);
+            background-color: rgba($color-font, .05);
         }
         &:nth-of-type(4) {
-            background-color: rgba($color-primary, .1);
+            background-color: rgba($color-font, .1);
         }
         &:nth-of-type(6) {
-            background-color: rgba($color-primary, .4);
+            background-color: rgba($color-font, .3);
         }
         &:nth-of-type(9) {
-            background-color: rgba($color-primary, .1);
+            background-color: rgba($color-font, .1);
         }
         &:nth-of-type(15) {
-            background-color: rgba($color-primary, .1);
+            background-color: rgba($color-font, .05);
         }
         &:nth-of-type(17) {
             background-color: rgba($color-primary, 1);
         }
         &:nth-of-type(19) {
-            background-color: rgba($color-primary, .4);
+            background-color: rgba($color-font, .2);
         }
     }
     a {

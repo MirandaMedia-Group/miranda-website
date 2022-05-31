@@ -7,14 +7,6 @@ const ReferenceItem = (props) => {
     return (
         <Link href={props.data.attributes.url ? props.data.attributes.url : `/reference/${props.data.attributes.slug}`} passHref>
             <div className={`${styles.item} ${props.isHomepage ? styles.itemHp : ''}`}>
-                {/* <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div>
-                <div className={`${styles.box}`}></div> */}
                 <FetchedImage
                     image={props.data.attributes.thumbnail}
                     layout="responsive"

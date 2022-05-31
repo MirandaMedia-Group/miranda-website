@@ -6,11 +6,14 @@
     transition: all .2s ease-in;
     img {
         transition: all .2s ease-in;
+        filter: grayscale(.3);
     }
-    &:nth-of-type(6n+3),
-    &:nth-of-type(6n+4) {
-        grid-column-end: span 2;
-        grid-row-end: span 2;
+    &.itemHp {
+        &:nth-of-type(6n+3),
+        &:nth-of-type(6n+4) {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+        }
     }
     .logo {
         position: absolute;
@@ -58,6 +61,7 @@
     &:hover, &:focus {
         img {
             transform: scale(1.1);
+            filter: none;
         }
         .logo {
             transform: translate(-50%, -50%) scale(.7);
