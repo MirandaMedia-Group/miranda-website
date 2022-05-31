@@ -1,34 +1,64 @@
 .grid {
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 60px;
+    gap: 20px;
     article {
-        flex: 1 1 360px;
         cursor: pointer;
         h1 {
             font-size: rem(24);
-            line-height: em(42,24);
-            margin-bottom: 10px;
+            line-height: em(36,24);
+            margin-bottom: 20px;
             transition: all .3s ease-in;
         }
         .cat {
             text-transform: uppercase;
             font-weight: 700;
-            &::after {
-                content: ":";
-                font-size: rem(32);
-                line-height: em(32,42);
-            }
+            font-size: rem(16);
+            line-height: em(42);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
             span {
-                font-size: rem(32);
-                line-height: em(32,42);
                 display: inline-block;
+                background-color: $color-primary;
+                padding: em(10) em(20);
             }
         }
         .image {
+            position: relative;
             margin-bottom: 20px;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            .reading, .date, .author {
+                display: flex;
+                align-items: center;
+                &::before {
+                    display: inline-block;
+                    margin-right: .3em;
+                    line-height: 0;
+                }
+            }
+            .reading {
+                &::before {
+                    content: url(/img/icon/reading.svg);
+                }
+            }
+            .date {
+                &::before {
+                    content: url(/img/icon/date.svg);
+                }
+            }
+            .author {
+                &::before {
+                    content: url(/img/icon/author.svg);
+                }
+            }
         }
         &:hover, &:focus {
             h1 {
@@ -37,44 +67,15 @@
         }
     }
 }
-.heroArticle {
-    position: relative;
-    min-height: 1021px;
-}
-.heroTexts {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    & > div > * {
-        max-width: 700px;
-    }
-    h1 {
-        font-size: clamp(rem(32), 4vw, rem(56));
-    }
-}
-.heroCat {
-    font-size: clamp(rem(58), 6vw, rem(90));
-    line-height: em(125,90);
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $color-primary;
-    &::after {
-        content: ":";
-    }
-}
 .readMore {
-    display: flex;
-    align-items: center;
-    span:first-of-type {
-        margin-right: 1em;
-    }
-    span:last-of-type {
-        text-decoration: underline;
+    svg {
         transition: all .3s ease-in;
+        fill: rgba($color-font, .3);
     }
     &:hover, &:focus {
-        color: $color-primary;
+        svg {
+            fill: $color-primary;
+        }
     }
 }
 @media screen and (max-width: 992px) {
