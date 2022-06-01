@@ -6,7 +6,7 @@
     transition: all .2s ease-in;
     img {
         transition: all .2s ease-in;
-        filter: grayscale(.3);
+        // filter: grayscale(.3);
     }
     &.itemHp {
         &:nth-of-type(6n+3),

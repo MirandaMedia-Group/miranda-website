@@ -1,150 +1,132 @@
 .formWrapper {
-    display: flex;
-    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.15);
-    margin-bottom: -230px;
-    position: relative;
-    z-index: 2;
-    max-width: calc(1440px);
-    margin-left: auto;
-    margin-right: auto;
-    h2 {
-        strong {
-            color: $color-primary;
-            font-weight: 700;
-        }
-    }
-    & > div:first-of-type {
-        background: url(/img/form-bg.jpg) top center no-repeat, #222E27;
-        background-blend-mode: luminosity, normal;
-        background-size: cover;
-        color: $color-white;
-        padding: 115px 75px;
-        flex: 0 1 560px;
-        p {
-            margin-top: 0;
-        }
-    }
-    & > div:last-of-type {
-        flex: 0 1 880px;
-        padding: 65px 150px;
-        background-color: $color-white;
-    }
-    form {
-        font-size: 1rem;
-    }
-    input:not([type="checkbox"]),
-    textarea {
-        background-color: #F2F2F2;
-        box-shadow: none;
-        border: none;
-        padding: em(16);
-        font-size: inherit;
-        width: 100%;
-    }
-    .formRow {
-        margin-bottom: 15px;
-        display: flex;
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
-            flex: 0 1 50%;
-        }
-        input:not(:last-of-type) {
-            margin-right: 15px;
-        }
-    }
-    .checkboxes {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 7.5px;
-        .group {
-            flex: 0 1 calc(50% - 7.5px);
-            padding: 7.5px 0;
-            &:nth-of-type(odd) {
-                margin-right: 15px;
-            }
-        }
-    }
-    .projectPhone {
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-        font-size: rem(24);
-        &::before {
-            content: url(/img/icon/icon-phone.svg);
-            display: inline-block;
-            margin-right: .5em;
-            line-height: 0;
-        }
-    }
-    .projectMail {
-        display: flex;
-        align-items: center;
-        font-size: rem(24);
-        font-weight: 700;
-        &::before {
-            content: url(/img/icon/icon-mail.svg);
-            display: inline-block;
-            margin-right: .5em;
-            line-height: 0;
-        }
-    }
+	z-index: 2;
+	background: url(/img/contact-form-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 190px 0 100px;
+	.columns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		.column {
+			color: $color-white;
+			flex: 1;
+			&:last-of-type {
+				max-width: 578px;
+			}
+			p {
+				margin-top: 0;
+			}
+		}
+	}
+	input:not([type='checkbox']),
+	textarea {
+		background-color: rgba(50, 192, 108, 0.8);
+		border: 1px solid #7ae3a5;
+		box-shadow: none;
+		padding: em(10) em(20);
+		font-size: inherit;
+		width: 100%;
+		color: $color-white;
+		&::placeholder {
+			opacity: 1;
+		}
+	}
+	.formRow {
+		margin-bottom: 15px;
+	}
+	// .checkboxes {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	align-items: center;
+	// 	margin-bottom: 7.5px;
+	// 	.group {
+	// 		flex: 0 1 calc(50% - 7.5px);
+	// 		padding: 7.5px 0;
+	// 		&:nth-of-type(odd) {
+	// 			margin-right: 15px;
+	// 		}
+	// 	}
+	// }
+	.projectPhone {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: rem(24);
+		&::before {
+			content: url(/img/icon/icon-phone.svg);
+			display: inline-block;
+			margin-right: 0.5em;
+			line-height: 0;
+		}
+	}
+	.projectMail {
+		display: flex;
+		align-items: center;
+		font-size: rem(24);
+		font-weight: 700;
+		&::before {
+			content: url(/img/icon/icon-mail.svg);
+			display: inline-block;
+			margin-right: 0.5em;
+			line-height: 0;
+		}
+	}
 }
 @media screen and (max-width: 1400px) {
-    .formWrapper {
-        & > div:last-of-type {
-            padding: 65px;
-        }
-    }
+	.formWrapper {
+		& > div:last-of-type {
+			padding: 65px;
+		}
+	}
 }
 @media screen and (max-width: 1200px) {
-    .formWrapper {
-        flex-direction: column;
-        & > div:first-of-type {
-            padding: 65px;
-            flex-basis: auto;
-        }
-        & > div:last-of-type {
-            flex-basis: auto;
-        }
-    }
+	.formWrapper {
+		flex-direction: column;
+		& > div:first-of-type {
+			padding: 65px;
+			flex-basis: auto;
+		}
+		& > div:last-of-type {
+			flex-basis: auto;
+		}
+	}
 }
 @media screen and (max-width: 992px) {
-    .formWrapper {
-        margin-bottom: -160px;
-    }
+	.formWrapper {
+		margin-bottom: -160px;
+	}
 }
 @media screen and (max-width: 767px) {
-    .formWrapper {
-        & > div:first-of-type,
-        & > div:last-of-type {
-            padding: 20px;
-        }
-        .projectMail,
-        .projectPhone {
-            font-size: rem(22);
-        }
-    }
+	.formWrapper {
+		& > div:first-of-type,
+		& > div:last-of-type {
+			padding: 20px;
+		}
+		.projectMail,
+		.projectPhone {
+			font-size: rem(22);
+		}
+	}
 }
 @media screen and (max-width: 600px) {
-    .formWrapper {
-        margin-bottom: -45px;
-        margin-left: -20px;
-        margin-right: -20px;
-        box-shadow: none;
-        padding: 0;
-        .formRow {
-            flex-direction: column;
-            input {
-                &:not(:last-of-type) {
-                    margin-right: 0;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-        .checkboxes {
-            display: none;
-        }
-    }
+	.formWrapper {
+		margin-bottom: -45px;
+		margin-left: -20px;
+		margin-right: -20px;
+		box-shadow: none;
+		padding: 0;
+		.formRow {
+			flex-direction: column;
+			input {
+				&:not(:last-of-type) {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		.checkboxes {
+			display: none;
+		}
+	}
 }
