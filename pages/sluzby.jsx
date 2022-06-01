@@ -1,35 +1,36 @@
-import {useState} from "react"
-import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim'
-import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
-import Link from 'next/link'
-import styles from '../styles/sluzby.module.scss'
+import { useState } from 'react';
+import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim';
+import PravaMiranda from '../components/PravaMiranda/PravaMiranda';
+import Link from 'next/link';
+import styles from '../styles/sluzby.module.scss';
 
 export default function Home() {
-  // const [style, setStyle] = useState('true')
+	// const [style, setStyle] = useState('true')
 
-  // const handleText = () => {
-  //   console.log('working')
-  // }
+	// const handleText = () => {
+	//   console.log('working')
+	// }
 
-  return (
-    <>
-      {/* <HeroStatic
+	return (
+		<>
+			{/* <HeroStatic
         title="Vše pro digital na jednom místě"
         subtitle="Miranda plnohodnotně působí jako full servis digitální - marketingová & kreativní agentura. Jeden by řekl, že toho je na samotnou agenturu poměrně hodně, ale už od počátku bylo naším cílem poskytovat služby, které spolu úzce souvisí tzv. pod jednou střechou. Tento komplexní přístup šetří našim klientům ve výsledku čas i peníze. Na své potřeby v digitální světě si snadno vystačí s jedním, silným partnerem."
         image="/img/heroBanner-min.png" 
         bigFont
       /> */}
-      <section>
-        <HeroStaticSlim 
-          title="Naše služby"
-        />
-      </section>
-      <section>
-        <div className='container sluzby'>
-          <PravaMiranda className={styles.pravaMiranda} />
-        </div>
-      </section>
-      {/* <section>
+			<section>
+				<HeroStaticSlim
+					title='Naše služby'
+					image='/img/sluzby-hero.jpg'
+				/>
+			</section>
+			<section>
+				<div className='container sluzby'>
+					<PravaMiranda className={styles.pravaMiranda} />
+				</div>
+			</section>
+			{/* <section>
         <div className='container'>
           <div className={styles.sluzby}>
             <div className={styles.sluzbyLeft}>
@@ -170,6 +171,6 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-    </>
-  )
+		</>
+	);
 }
