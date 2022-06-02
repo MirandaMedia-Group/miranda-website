@@ -49,7 +49,9 @@ const HeroCarousel = () => {
 						<span>Kreativa</span>
 					</h1>
 					<a href='#' className='btn btn-tertiary'>
-						Přehrát showreal
+						<span data-hover='Přehrát showreal'>
+							Přehrát showreal
+						</span>
 					</a>
 				</div>
 				{/* <h1>E-shopy a weby na&nbsp;klíč, výkononstní marketing a design</h1> */}
