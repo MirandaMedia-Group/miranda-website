@@ -76,3 +76,55 @@
 		}
 	}
 }
+.anchors {
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	a {
+		padding: em(10) em(20);
+		transition: all 0.3s ease-in;
+		&:hover,
+		&:focus {
+			background-color: $color-font;
+			color: $color-white;
+		}
+	}
+}
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 100px 70px 100px 100px;
+	cursor: pointer;
+	.image {
+		margin: -130px 0px -130px -100px;
+		img {
+			transition: all 0.3s ease-in;
+		}
+	}
+	.text {
+		font-size: rem(24);
+		position: relative;
+		z-index: 1;
+		strong {
+			font-size: em(56, 24);
+			display: block;
+		}
+	}
+	.logo {
+		margin-right: 50px;
+	}
+	.arrow {
+		svg {
+			fill: $color-font;
+		}
+	}
+	&:hover,
+	&:focus {
+		.image img {
+			transform: scale(1.05);
+		}
+	}
+}

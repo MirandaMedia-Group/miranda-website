@@ -35,9 +35,79 @@ export default function EShopy({ reference, coONas }) {
 				></HeroStatic>
 			</section>
 			<section className='container'>
+				<nav className={styles.anchors}>
+					<ul>
+						<li>
+							<a href='#sluzby'>Služby</a>
+						</li>
+						<li>
+							<a href='#reference'>Reference</a>
+						</li>
+						<li>
+							<a href='#proc-shoptet'>Proč Shoptet</a>
+						</li>
+						<li>
+							<a href='#reakce'>Reakce zákazníků</a>
+						</li>
+						<li>
+							<a href='#konfigurator'>Konfigurátor Shoptet</a>
+						</li>
+						<li>
+							<a href='#sprava'>Správa e-shopu</a>
+						</li>
+						<li>
+							<a href='#kontakt'>Kontakty</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<section id='sluzby' className='container'>
 				<Sluzby></Sluzby>
 			</section>
-			<section className='hidden'>
+			<section className='container'>
+				<Link href='/reference/expresmenu' passHref>
+					<div
+						className={styles.banner}
+						style={{ backgroundColor: '#F7F4D5' }}
+					>
+						<div className={styles.logo}>
+							<Image
+								src='/img/expremenu-black.png'
+								width={200}
+								height={80}
+								alt='ExpresMenu'
+								priority={true}
+							></Image>
+						</div>
+						<div className={styles.text}>
+							<p>
+								<strong>o 125%</strong> Jsme navýšili
+								návštěvnost webu.
+							</p>
+						</div>
+						<div className={styles.image}>
+							<Image
+								src={'/img/em-mockup.png'}
+								alt=''
+								width={559}
+								height={350}
+							/>
+						</div>
+						<div className={styles.arrow}>
+							<svg
+								width='52'
+								height='24'
+								viewBox='0 0 52 24'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path d='M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807615 39.9792 0.807615 39.3934 1.3934C38.8076 1.97919 38.8076 2.92894 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM-1.31134e-07 13.5L50 13.5L50 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z' />
+							</svg>
+						</div>
+					</div>
+				</Link>
+			</section>
+			<section id='reference' className='hidden'>
 				<div className='container text-center'>
 					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
 					<Reference data={reference} />
@@ -205,7 +275,10 @@ export default function EShopy({ reference, coONas }) {
 					</div> */}
 				</div>
 			</section>
-			<section className={`container ${styles.procShoptet}`}>
+			<section
+				id='proc-shoptet'
+				className={`container ${styles.procShoptet}`}
+			>
 				<div className='columns col-1-2'>
 					<div
 						className='column'
@@ -331,6 +404,49 @@ export default function EShopy({ reference, coONas }) {
 					</Link>
 				</div>
 			</section>
+			<section className='container'>
+				<Link href='/reference/dolce' passHref>
+					<div
+						className={styles.banner}
+						style={{ backgroundColor: '#F4EBE4' }}
+					>
+						<div className={styles.logo}>
+							<Image
+								src='/img/dolce-black.png'
+								width={209}
+								height={65}
+								alt='Café Imperial Dolce'
+								priority={true}
+							></Image>
+						</div>
+						<div className={styles.text}>
+							<p>
+								<strong>450%</strong> Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+						</div>
+						<div className={styles.image}>
+							<Image
+								src={'/img/dolce-mockup.png'}
+								alt=''
+								width={559}
+								height={350}
+							/>
+						</div>
+						<div className={styles.arrow}>
+							<svg
+								width='52'
+								height='24'
+								viewBox='0 0 52 24'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path d='M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807615 39.9792 0.807615 39.3934 1.3934C38.8076 1.97919 38.8076 2.92894 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM-1.31134e-07 13.5L50 13.5L50 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z' />
+							</svg>
+						</div>
+					</div>
+				</Link>
+			</section>
 			{/* <section className='systemy'>
 				<div className='container columns col-2 align-center'>
 					<div className='column'>
@@ -367,9 +483,8 @@ export default function EShopy({ reference, coONas }) {
 					</div>
 				</div>
 			</section> */}
-			<section className='hidden'>
-				<div className='container'>
-					<div className='custom-swiper-wrapper'>
+			{/* <section className='hidden container'>
+				<div className='custom-swiper-wrapper'>
 						<Swiper
 							modules={[Navigation, Pagination]}
 							slidesPerView={1}
@@ -505,12 +620,11 @@ export default function EShopy({ reference, coONas }) {
 							ref={swiperNext}
 						></div>
 					</div>
-				</div>
-			</section>
-			<section className='hidden'>
+			</section> */}
+			<section id='reakce' className='hidden'>
 				<CoONasRikaji data={coONas}></CoONasRikaji>
 			</section>
-			<section className='container visible'>
+			<section id='konfigurator' className='container visible'>
 				<div className='konfigurator'>
 					<div className='pripravujeme'>
 						<Image
