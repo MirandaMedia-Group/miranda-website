@@ -1,73 +1,69 @@
-.heroArticle {
-    position: relative;
-    min-height: 1021px;
+.mainSection {
+	background: linear-gradient(
+		180deg,
+		#f3f3f3 0%,
+		rgba(217, 217, 217, 0) 100%
+	);
+	background-size: 100% 707px;
+	background-repeat: no-repeat;
+	background-position-y: 340px;
+	position: relative;
+	.container {
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
-.heroTexts {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    & > div > * {
-        max-width: 700px;
-    }
-    h1 {
-        font-size: clamp(rem(32), 4vw, rem(56));
-    }
+.heroImage {
+	margin-top: -340px;
+	line-height: 0;
 }
-.heroCat {
-    font-size: clamp(rem(58), 6vw, rem(90));
-    line-height: em(125,90);
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $color-primary;
-    &::after {
-        content: ":";
-    }
-}
-.articleContainer {
-    max-width: 1000px;
-    margin-bottom: 200px;
-    h2 {
-        font-size: rem(48);
-        line-height: em(72,48);
-    }
-    h3 {
-        font-size: rem(32);
-        line-height: em(42,32);
-    }
-    h4 {
-        font-size: rem(24);
-        line-height: em(42,24);
-    }
-    h2, h3, h4, h5, h6 {
-        margin: 1.5em 0 1em;
-    }
-    ul {
-        list-style: circle;
-        padding-left: 40px;
-    }
-}
-@media screen and (max-width: 992px) {
-    .heroArticle {
-        min-height: 600px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .heroTexts {
-        bottom: 30px;
-        top: unset;
-        transform: none;
-    }
-    .articleContainer {
-        h2 {
-            font-size: rem(28);
-        }
-        h3 {
-            font-size: rem(22);
-        }
-        h4 {
-            font-size: rem(16);
-        }
-        margin-bottom: 100px;
-    }
+.contentWrapper {
+	display: flex;
+	main {
+		flex: 0 1 1050px;
+		background-color: $color-white;
+		margin-top: -100px;
+		position: relative;
+		padding: 75px;
+	}
+	aside {
+		flex: 0 1 390px;
+		padding: 40px;
+	}
+	.kategorie {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(-100%);
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: rem(24);
+		span {
+			background-color: $color-primary;
+			padding: em(10) em(20);
+			display: inline-block;
+		}
+	}
+	h1 {
+		font-size: rem(64);
+	}
+	h2 {
+		font-size: rem(32);
+		line-height: em(42, 32);
+	}
+	h3 {
+		font-size: rem(24);
+		line-height: em(36, 24);
+	}
+	h4 {
+		font-size: rem(16);
+	}
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 1.5em 0 1em;
+	}
 }

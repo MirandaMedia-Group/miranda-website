@@ -1,63 +1,79 @@
-import { fetchAPI } from "../../lib/api"
-import FetchedImage from '../../components/FetchedImage/FetchedImage'
-import ReactMarkdown from "react-markdown"
-import styles from './clanek.module.scss'
+import { fetchAPI } from '../../lib/api';
+import FetchedImage from '../../components/FetchedImage/FetchedImage';
+import ReactMarkdown from 'react-markdown';
+import styles from './clanek.module.scss';
+import HeroStaticSlim from '../../components/HeroStaticSlim/HeroStaticSlim';
 
 const Clanek = ({ clanek }) => {
-    return (
-        <article>
-            <section className={styles.heroArticle}>
-                <FetchedImage 
-                    image={clanek.attributes.obrazek}
-                    layout="fill"
-                />
-                <div className={`${styles.heroTexts}`}>
-                    <div className="container">
-                        <div className={styles.heroCat}>
-                            {clanek.attributes.kategorie_clankus.data.map((cat, index) => {
-                                return <span key={index}>{cat.attributes.nazev}</span>
-                            })}
-                        </div>
-                        <h1>{clanek.attributes.nazev}</h1>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div className={`${styles.articleContainer} container`}>
-                    <ReactMarkdown>
-                        {clanek.attributes.content}
-                    </ReactMarkdown>
-                </div>
-            </section>     
-        </article>
-    )
-}
+	return (
+		<article>
+			<section className='no-margin'>
+				<HeroStaticSlim image='/img/clanek-hero.jpg' />
+			</section>
+			<section className={styles.mainSection}>
+				<div className={styles.container}>
+					<div className={styles.heroImage}>
+						<FetchedImage image={clanek.attributes.obrazek} />
+					</div>
+					<div className={styles.contentWrapper}>
+						<main>
+							<div className={styles.kategorie}>
+								{clanek.attributes.kategorie_clankus.data.map(
+									(cat, index) => {
+										return (
+											<span key={index}>
+												{cat.attributes.nazev}
+											</span>
+										);
+									}
+								)}
+							</div>
+							<h1>{clanek.attributes.nazev}</h1>
+							<ReactMarkdown>
+								{clanek.attributes.content}
+							</ReactMarkdown>
+						</main>
+						<aside>Autor bude zde</aside>
+					</div>
+				</div>
+			</section>
+			<section className={styles.heroArticle}>
+				<div className={`${styles.heroTexts}`}>
+					<div className='container'>
+						<div className={styles.heroCat}></div>
+					</div>
+				</div>
+			</section>
+			<section></section>
+		</article>
+	);
+};
 
 export async function getStaticPaths() {
-    const clankyRes = await fetchAPI('/clanky', { fields: ['slug'] })
+	const clankyRes = await fetchAPI('/clanky', { fields: ['slug'] });
 
-    return {
-        paths: clankyRes.data.map(clanek => ({
-            params: {
-                slug: clanek.attributes.slug,
-            }
-        })),
-        fallback: false,
-    }
+	return {
+		paths: clankyRes.data.map((clanek) => ({
+			params: {
+				slug: clanek.attributes.slug,
+			},
+		})),
+		fallback: false,
+	};
 }
 
 export async function getStaticProps({ params }) {
-    const clanekRes = await fetchAPI('/clanky', {
-        filters: {
-            slug: params.slug,
-        },
-        populate: '*',
-    })
+	const clanekRes = await fetchAPI('/clanky', {
+		filters: {
+			slug: params.slug,
+		},
+		populate: '*',
+	});
 
-    return {
-        props: { clanek: clanekRes.data[0] },
-        revalidate: 1,
-    }
+	return {
+		props: { clanek: clanekRes.data[0] },
+		revalidate: 1,
+	};
 }
 
-export default Clanek
+export default Clanek;
