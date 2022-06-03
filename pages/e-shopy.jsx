@@ -1,25 +1,25 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import HeroStatic from '../components/HeroStatic/HeroStatic';
-import Sluzby from '../components/Sluzby/Sluzby';
-import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji';
-import ContactForm from '../components/ContactForm/ContactForm';
-import styles from '../styles/e-shopy.module.scss';
-import { fetchAPI } from '../lib/api';
-import { useRef } from 'react';
-import Reference from '../components/Reference/Reference';
+import Link from 'next/link'
+import Image from 'next/image'
+import HeroStatic from '../components/HeroStatic/HeroStatic'
+import Sluzby from '../components/Sluzby/Sluzby'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
+import ContactForm from '../components/ContactForm/ContactForm'
+import styles from '../styles/e-shopy.module.scss'
+import { fetchAPI } from '../lib/api'
+import { useRef } from 'react'
+import Reference from '../components/Reference/Reference'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper'
+import 'swiper/css'
 
 export default function EShopy({ reference, coONas }) {
-	const swiperNext = useRef(true);
-	const swiperPrev = useRef(true);
-	const swiperNext2 = useRef(true);
-	const swiperPrev2 = useRef(true);
+	const swiperNext = useRef(true)
+	const swiperPrev = useRef(true)
+	const swiperNext2 = useRef(true)
+	const swiperPrev2 = useRef(true)
 
-	console.log(reference);
+	console.log(reference)
 
 	return (
 		<>
@@ -400,7 +400,7 @@ export default function EShopy({ reference, coONas }) {
 				</div>
 				<div className='button-wrapper text-center'>
 					<Link href='#kontakty'>
-						<a className='btn btn-primary'>Pojďme najít řešení</a>
+						<a className='btn btn-secondary'>Pojďme se dohodnout</a>
 					</Link>
 				</div>
 			</section>
@@ -652,10 +652,8 @@ export default function EShopy({ reference, coONas }) {
 								skutečně úspěšného e-shopu na Shoptetu.
 							</p>
 
-							<a className='btn btn-primary disabled'>
-								<span data-hover='Přejít na konfigurátor'>
-									Přejít na konfigurátor
-								</span>
+							<a className='btn btn-secondary disabled'>
+								Přejít na konfigurátor
 							</a>
 						</div>
 						<div className='column'></div>
@@ -754,7 +752,7 @@ export default function EShopy({ reference, coONas }) {
 				<ContactForm></ContactForm>
 			</section>
 		</>
-	);
+	)
 }
 
 export async function getStaticProps() {
@@ -762,8 +760,8 @@ export async function getStaticProps() {
 		populate: '*',
 		sort: 'priorita',
 		pagination: { page: 1, pageSize: 7 },
-	});
-	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' });
+	})
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 	return {
 		props: {
 			reference: referenceRes.data,
@@ -772,5 +770,5 @@ export async function getStaticProps() {
 			// coONas: coONasRes,
 		},
 		revalidate: 1,
-	};
+	}
 }

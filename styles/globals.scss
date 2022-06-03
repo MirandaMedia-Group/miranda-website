@@ -542,13 +542,12 @@ button {
 	padding: 0;
 	margin: 0;
 }
-.btn {
+.btn.btn-primary {
 	display: inline-block;
 	font-size: 1rem;
 	position: relative;
 	color: $color-font;
 	background-color: $color-white;
-	// background-color: $color-primary;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 	overflow: hidden;
 	&::before {
@@ -561,7 +560,7 @@ button {
 		top: 0;
 		right: calc(100% + 20px);
 		transform: skew(-20deg);
-		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0.4s;
+		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
 		z-index: 1;
 	}
 	&::after {
@@ -572,7 +571,6 @@ button {
 		right: 0;
 		height: 100%;
 		width: 0px;
-		// z-index: -1;
 		background-color: $color-primary;
 		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 	}
@@ -580,19 +578,7 @@ button {
 		display: block;
 		position: relative;
 		z-index: 1;
-		padding: em(10) em(20);
-		// &::before {
-		// 	position: absolute;
-		// 	content: attr(data-hover);
-		// 	top: 0;
-		// 	right: 0;
-		// 	height: 100%;
-		// 	width: 0;
-		// 	color: $color-white;
-		// 	overflow: hidden;
-		// 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
-		// 	white-space: nowrap;
-		// }
+		padding: em(20);
 	}
 	&:hover,
 	&:focus {
@@ -605,56 +591,79 @@ button {
 			right: auto;
 			width: 100%;
 		}
-		span {
-			// &::before {
-			// 	left: 0%;
-			// 	right: auto;
-			// 	width: 100%;
-			// }
-			&::before {
-			}
+	}
+}
+.btn.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+.btn.btn-secondary {
+	padding: em(10) em(20);
+	padding-left: 57px;
+	position: relative;
+	display: inline-block;
+	transition: text-decoration 0.3s ease-in-out;
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 42px;
+		height: 42px;
+		background-color: $color-font;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&::after {
+		content: url(/img/icon/btn-arrow.svg);
+		display: inline-block;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		left: 11px;
+		transform: translateY(-50%);
+	}
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		&::before {
+			animation: scale-btn 0.3s;
+		}
+		&::after {
+			animation: slide-arrow 0.3s;
 		}
 	}
-	&.disabled {
-		opacity: 0.6;
-		cursor: not-allowed;
+}
+@keyframes scale-btn {
+	0% {
+		transform: translateY(-50%);
+	}
+	50% {
+		transform: translateY(-50%) scale(0.9);
+	}
+	100% {
+		transform: translateY(-50%);
 	}
 }
-.btn.btn-primary {
-	span {
-		// background-color: #59DC8E;
-		// background-color: $color-white;
-		// color: $color-font;
-		// outline: 1px solid $color-font;
-		// &::before {
-		//   // background: $color-font;
-		//   // color: $color-white;
-		//   outline: 1px solid $color-font;
-		//   background-color: inherit;
-		// }
+@keyframes slide-arrow {
+	0% {
+		transform: translateY(-50%);
+	}
+	50% {
+		transform: translateY(-50%) translateX(30px);
+	}
+	51% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	52% {
+		transform: translateY(-50%) translateX(-30px);
+	}
+	100% {
+		transform: translateY(-50%);
 	}
 }
-// .btn.btn-secondary {
-// 	&::before,
-// 	&::after {
-// 		background-color: $color-font;
-// 	}
-// 	&:hover,
-// 	&:focus {
-// 		background-color: $color-font;
-// 		color: $color-white;
-// 		border-color: $color-font;
-// 	}
-// }
-.btn.btn-tertiary {
-	// span {
-	//   background-color: #000;
-	//   color: $color-white;
-	//   &::before {
-	//     background: lighten(#000, 10%);
-	//   }
-	// }
-}
+
 .text-center {
 	text-align: center;
 }

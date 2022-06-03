@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import HeroCarousel from '../components/HeroCarousel/HeroCarousel';
-import Reference from '../components/Reference/Reference';
-import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji';
-import PravaMiranda from '../components/PravaMiranda/PravaMiranda';
-import Spoluprace from '../components/Spoluprace/Spoluprace';
-import Projekty from '../components/Projekty/Projekty';
-import NabidkaSluzeb from '../components/NabidkaSluzeb/NabidkaSluzeb';
-import { fetchAPI } from '../lib/api';
+import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
+import Reference from '../components/Reference/Reference'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
+import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
+import Spoluprace from '../components/Spoluprace/Spoluprace'
+import Projekty from '../components/Projekty/Projekty'
+import NabidkaSluzeb from '../components/NabidkaSluzeb/NabidkaSluzeb'
+import { fetchAPI } from '../lib/api'
 
 export default function Home({ reference, coONas }) {
 	return (
@@ -34,10 +34,8 @@ export default function Home({ reference, coONas }) {
 				<Reference data={reference}></Reference>
 				<div className='btn-margin'>
 					<Link href='/reference'>
-						<a className='btn btn-primary'>
-							<span data-hover='Objevit další projekty'>
-								Objevit další projekty
-							</span>
+						<a className='btn btn-secondary'>
+							Objevit další projekty
 						</a>
 					</Link>
 				</div>
@@ -49,15 +47,11 @@ export default function Home({ reference, coONas }) {
         </div> */}
 				<div className='container'>
 					<PravaMiranda></PravaMiranda>
-					<div className='btn-margin'>
+					{/* <div className='btn-margin'>
 						<Link href='/sluzby'>
-							<a className='btn btn-primary'>
-								<span data-hover='Naše služby'>
-									Naše služby
-								</span>
-							</a>
+							<a className='btn btn-secondary'>Naše služby</a>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</section>
 			{/* <section>
@@ -92,10 +86,8 @@ export default function Home({ reference, coONas }) {
 								podnikání nebo chceš jednoduše vyplnit volný
 								čas, tak pouštej!
 							</p>
-							<a className='btn btn-primary disabled'>
-								<span data-hover='Poptat podcast'>
-									Poptat podcast
-								</span>
+							<a className='btn btn-secondary disabled'>
+								Poptat podcast
 							</a>
 						</div>
 						<div className='column'></div>
@@ -106,7 +98,7 @@ export default function Home({ reference, coONas }) {
         <Projekty />
       </section> */}
 		</>
-	);
+	)
 }
 
 export async function getStaticProps() {
@@ -114,8 +106,8 @@ export async function getStaticProps() {
 		populate: '*',
 		sort: 'priorita',
 		pagination: { page: 1, pageSize: 6 },
-	});
-	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' });
+	})
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 
 	return {
 		props: {
@@ -123,5 +115,5 @@ export async function getStaticProps() {
 			coONas: coONasRes.data,
 		},
 		revalidate: 1,
-	};
+	}
 }

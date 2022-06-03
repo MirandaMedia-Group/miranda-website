@@ -1,6 +1,6 @@
-import styles from './ProjektBanner.module.scss';
-import Link from 'next/link';
-import Image from 'next/image';
+import styles from './ProjektBanner.module.scss'
+import Link from 'next/link'
+import Image from 'next/image'
 
 function ProjektBanner() {
 	return (
@@ -15,15 +15,13 @@ function ProjektBanner() {
 					právem pyšní!
 				</p>
 				<Link href='/kontakty'>
-					<a className='btn btn-secondary'>
-						<span data-hover='Spojit se s Mirandou'>
-							Spojit se s Mirandou
-						</span>
+					<a className='btn btn-primary'>
+						<span>Spojit se s Mirandou</span>
 					</a>
 				</Link>
 			</div>
 		</div>
-	);
+	)
 }
 
-export default ProjektBanner;
+export default ProjektBanner

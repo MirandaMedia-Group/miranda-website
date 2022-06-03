@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import styles from './Sluzby.module.scss';
+import Image from 'next/image'
+import styles from './Sluzby.module.scss'
 
 const Sluzby = () => {
 	return (
@@ -27,10 +27,8 @@ const Sluzby = () => {
 						<li>Bez nutnosti vlastních programátorů</li>
 					</ul>
 					<div className='text-center' style={{ marginTop: '20px' }}>
-						<a href='#kontakt' className='btn btn-primary'>
-							<span data-hover='Poptat služby'>
-								Poptat služby
-							</span>
+						<a href='#kontakt' className='btn btn-secondary'>
+							Poptat služby
 						</a>
 					</div>
 				</div>
@@ -299,7 +297,7 @@ const Sluzby = () => {
                 </div>
             </div> */}
 		</>
-	);
-};
+	)
+}
 
-export default Sluzby;
+export default Sluzby

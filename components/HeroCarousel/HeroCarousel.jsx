@@ -27,10 +27,10 @@ const HeroCarousel = () => {
 
 	useEffect(() => {
 		let element = videoRef.current
-		if (element) element.addEventListener('ended', handleLoop)
+		if (element) element.addEventListener('ended', handleLoop, false)
 
 		return () => {
-			if (element) element.removeEventListener('ended', handleLoop)
+			if (element) element.removeEventListener('ended', handleLoop, false)
 		}
 	}, [videoRef?.current])
 
@@ -63,7 +63,7 @@ const HeroCarousel = () => {
 						<span>Výkonnostní marketing</span>
 						<span>Kreativa</span>
 					</h1>
-					<a href='#' className='btn btn-tertiary'>
+					<a href='#' className='btn btn-primary'>
 						<span data-hover='Přehrát showreal'>
 							Přehrát showreal
 						</span>

@@ -1,8 +1,8 @@
-import HeroStatic from '../../components/HeroStatic/HeroStatic';
-import CareerForm from '../../components/CareerForm/CareerForm';
-import ContactForm from '../../components/ContactForm/ContactForm';
-import styles from './detailKariera.module.scss';
-import Image from 'next/image';
+import HeroStatic from '../../components/HeroStatic/HeroStatic'
+import CareerForm from '../../components/CareerForm/CareerForm'
+import ContactForm from '../../components/ContactForm/ContactForm'
+import styles from './detailKariera.module.scss'
+import Image from 'next/image'
 
 const detailKariera = () => {
 	return (
@@ -18,8 +18,8 @@ const detailKariera = () => {
 					<div className={styles.head}>
 						<h2>Projektový manažer</h2>
 						<span className={styles.logo}>Praha</span>
-						<a className={`btn btn-primary`} href='#kontakt'>
-							<span data-hover='Mám zájem'>Mám zájem</span>
+						<a className='btn btn-secondary' href='#kontakt'>
+							Mám zájem
 						</a>
 					</div>
 					<p className={styles.biggerFont}>
@@ -141,9 +141,9 @@ const detailKariera = () => {
 						<p className={styles.hideMobil}>Jdeš do toho? 🙂</p>
 						<a
 							href='#kontakt'
-							className={`btn btn-primary ${styles.hideMobil} `}
+							className={`btn btn-secondary ${styles.hideMobil} `}
 						>
-							<span data-hover='No jistě!'>No jistě!</span>
+							No jistě!
 						</a>
 					</div>
 				</div>
@@ -152,7 +152,7 @@ const detailKariera = () => {
 				<ContactForm />
 			</section>
 		</>
-	);
-};
+	)
+}
 
-export default detailKariera;
+export default detailKariera
