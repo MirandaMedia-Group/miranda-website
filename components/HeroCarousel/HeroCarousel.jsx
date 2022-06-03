@@ -5,12 +5,16 @@ import TypeWriter from '../TypeWriter/TypeWriter'
 
 const HeroCarousel = () => {
 	const [isDesktop, setDesktop] = useState()
+	const [videoPlayed, setVideoPlayed] = useState(false)
 	const videoRef = useRef(null)
+	const videoRef2 = useRef(null)
 
 	const handleLoop = () => {
-		videoRef.current.setAttribute('poster', '/intro-loop-poster.png')
-		videoRef.current.src = '/intro-hp-loop.mp4'
-		videoRef.current.setAttribute('loop', true)
+		// videoRef.current.setAttribute('poster', '/intro-loop-poster.png')
+		// videoRef.current.src = '/intro-hp-loop.mp4'
+		// videoRef.current.setAttribute('loop', true)
+		setVideoPlayed(true)
+		videoRef2.current.play()
 	}
 
 	useEffect(() => {
@@ -37,6 +41,18 @@ const HeroCarousel = () => {
 	return (
 		<div className={styles.carousel}>
 			{isDesktop && (
+				<video
+					poster='/intro-loop-poster.png'
+					playsInline
+					muted
+					preload='auto'
+					loop
+					ref={videoRef2}
+				>
+					<source src='/intro-hp-loop.mp4' type='video/mp4' />
+				</video>
+			)}
+			{isDesktop && !videoPlayed && (
 				<video autoPlay playsInline muted preload='auto' ref={videoRef}>
 					<source src='/intro-hp-nove.mp4' type='video/mp4' />
 				</video>
