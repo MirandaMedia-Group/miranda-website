@@ -1,82 +1,189 @@
 .hero {
-    position: relative;
-    color: $color-white;
-    min-height: 650px;
-    height: 100vh;
+	position: relative;
+	color: $color-white;
+	min-height: 650px;
+	height: 100vh;
 }
 
 .itemTexts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    h1 {
-        text-align: left;
-        max-width: 780px;
-        color: $color-primary;
-        margin-bottom: 0;
-        font-size: clamp(rem(64), 9vw, rem(134));
-    }
-    p {
-        font-size: rem(24);
-        line-height: em(40,24);
-    }
-    .sidlo {
-        padding-left: 10%;
-        p {
-            font-size: 1rem;
-        }
-        h2 {
-            font-size: rem(32);
-        }
-    }
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	h1 {
+		text-align: left;
+		max-width: 780px;
+		color: $color-primary;
+		margin-bottom: 0;
+		font-size: clamp(rem(64), 9vw, rem(64));
+		line-height: em(160, 64);
+	}
 }
-
+.tiles {
+	position: relative;
+	color: $color-font;
+	align-self: stretch;
+}
+.mail,
+.phone,
+.address {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	border: 2px solid $color-font;
+	font-weight: 700;
+}
+.mail {
+	top: 0;
+	left: 50%;
+	transform: translateX(-35%) translateY(-20%);
+	background-color: #7ae3a5;
+}
+.phone,
+.address {
+	transform: translateY(20%);
+}
+.phone {
+	right: 50%;
+	bottom: 0;
+	background-color: #59dc8e;
+}
+.address {
+	left: calc(50% - 2px);
+	bottom: -40px;
+	background-color: #9beabb;
+}
+.maxWidth {
+	max-width: 1200px;
+}
+.scrollDown {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	.arrow {
+		display: inline-block;
+		position: relative;
+		span {
+			display: inline-block;
+			transform: rotate(-90deg);
+			position: absolute;
+			top: 16px;
+			left: 0;
+			color: $color-white;
+		}
+		svg {
+			animation: bounce 2s infinite ease-out;
+		}
+	}
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 25px;
+}
+.item {
+	position: relative;
+	color: $color-white;
+	.texts {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		max-height: 130px;
+		overflow: hidden;
+		transition: all 0.3s ease-in;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h3 {
+			font-size: rem(32);
+			margin: 0;
+		}
+		.hover {
+			opacity: 0;
+			transition: all 0.3s ease-in;
+			a {
+				display: block;
+			}
+		}
+	}
+	&:hover,
+	&:focus {
+		.texts {
+			max-height: 500px;
+			background-color: rgba($color-primary, 0.8);
+			.hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+@keyframes bounce {
+	0% {
+		transform: none;
+	}
+	50% {
+		transform: translateY(10%);
+	}
+	100% {
+		transform: none;
+	}
+}
 .contactButton {
-    font-size: rem(24);
-    line-height: em(42,24);
-    padding: em(20,24);
-    background-color: $color-primary;
-    color: $color-font;
-    &::before {
-        margin-right: em(20,24);
-    }
+	font-size: rem(24);
+	line-height: em(42, 24);
+	padding: em(20, 24);
+	background-color: $color-primary;
+	color: $color-font;
+	&::before {
+		margin-right: em(20, 24);
+	}
 }
 .mapSection {
-    height: 900px;
-    background: url(/img/mapa.jpg) center center no-repeat;
-    background-size: cover;
+	height: 900px;
+	background: url(/img/mapa.jpg) center center no-repeat;
+	background-size: cover;
 }
 .sidloMobile {
-    display: none;
-    margin: 20px 0;
-    h2 {
-        font-size: rem(32);
-    }
+	display: none;
+	margin: 20px 0;
+	h2 {
+		font-size: rem(32);
+	}
 }
 @media screen and (max-width: 1018px) {
-    .itemTexts {
-        .sidlo {
-            display: none;
-        }
-    }
-    .sidloMobile {
-        display: block;
-    }
+	.itemTexts {
+		.sidlo {
+			display: none;
+		}
+	}
+	.sidloMobile {
+		display: block;
+	}
 }
 @media screen and (max-width: 767px) {
-    .contactButton {
-        font-size: rem(16);
-    }
-    .itemTexts {
-        padding-bottom: 20px;
-        align-items: flex-end;
-        p {
-            font-size: rem(16);
-        }
-    }
+	.contactButton {
+		font-size: rem(16);
+	}
+	.itemTexts {
+		padding-bottom: 20px;
+		align-items: flex-end;
+		p {
+			font-size: rem(16);
+		}
+	}
 }
