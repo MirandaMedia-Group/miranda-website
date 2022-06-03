@@ -1,28 +1,43 @@
-import styles from './HeroCarousel.module.scss';
-import { useState, useEffect } from 'react';
+import styles from './HeroCarousel.module.scss'
+import { useState, useEffect, useRef } from 'react'
 // import TypeAnimation from 'react-type-animation'
-import TypeWriter from '../TypeWriter/TypeWriter';
+import TypeWriter from '../TypeWriter/TypeWriter'
 
 const HeroCarousel = () => {
-	const [isDesktop, setDesktop] = useState();
+	const [isDesktop, setDesktop] = useState()
+	const videoRef = useRef(null)
+
+	const handleLoop = () => {
+		videoRef.current.setAttribute('poster', '/intro-loop-poster.png')
+		videoRef.current.src = '/intro-hp-loop.mp4'
+		videoRef.current.setAttribute('loop', true)
+	}
 
 	useEffect(() => {
-		setDesktop(window.innerWidth > 830);
+		setDesktop(window.innerWidth > 830)
 		window.addEventListener('resize', () => {
-			setDesktop(window.innerWidth > 830);
-		});
-
+			setDesktop(window.innerWidth > 830)
+		})
 		return () => {
 			window.removeEventListener('resize', () => {
-				setDesktop(window.innerWidth > 830);
-			});
-		};
-	}, []);
+				setDesktop(window.innerWidth > 830)
+			})
+		}
+	}, [])
+
+	useEffect(() => {
+		let element = videoRef.current
+		if (element) element.addEventListener('ended', handleLoop)
+
+		return () => {
+			if (element) element.removeEventListener('ended', handleLoop)
+		}
+	}, [videoRef?.current])
 
 	return (
 		<div className={styles.carousel}>
 			{isDesktop && (
-				<video autoPlay playsInline muted preload='auto'>
+				<video autoPlay playsInline muted preload='auto' ref={videoRef}>
 					<source src='/intro-hp-nove.mp4' type='video/mp4' />
 				</video>
 			)}
@@ -74,7 +89,7 @@ const HeroCarousel = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default HeroCarousel;
+export default HeroCarousel
