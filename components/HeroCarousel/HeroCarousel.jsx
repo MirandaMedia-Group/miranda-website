@@ -53,7 +53,14 @@ const HeroCarousel = () => {
 				</video>
 			)}
 			{isDesktop && !videoPlayed && (
-				<video autoPlay playsInline muted preload='auto' ref={videoRef}>
+				<video
+					poster='/img/blank-black.jpg'
+					autoPlay
+					playsInline
+					muted
+					preload='auto'
+					ref={videoRef}
+				>
 					<source src='/intro-hp-nove.mp4' type='video/mp4' />
 				</video>
 			)}
