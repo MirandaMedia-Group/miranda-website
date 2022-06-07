@@ -1,6 +1,6 @@
-import axios from 'axios';
-import styles from './ContactForm.module.scss';
-import { useRef } from 'react';
+import axios from 'axios'
+import styles from './ContactForm.module.scss'
+import { useRef } from 'react'
 
 const ContactForm = () => {
 	let form = {
@@ -20,11 +20,11 @@ const ContactForm = () => {
 			foto360: useRef(null),
 		},
 		zprava: useRef(null),
-	};
-	let token = 'Token!';
+	}
+	let token = 'Token!'
 
 	const sendForm = async (e) => {
-		e.preventDefault();
+		e.preventDefault()
 
 		let data = {
 			jmeno: form.jmeno.current.value,
@@ -43,21 +43,18 @@ const ContactForm = () => {
 				foto360: form.sluzby.foto360.current.checked,
 			},
 			zprava: form.zprava.current.value,
-		};
+		}
 
 		try {
-			const resolve = await axios.post(
-				'http://164.92.206.112:1337/api/ezforms/submit',
-				{
-					token,
-					formData: JSON.stringify(data),
-				}
-			);
-			console.log(resolve);
+			const resolve = await axios.post('http://164.92.206.112:1337/api/ezforms/submit', {
+				token,
+				formData: JSON.stringify(data),
+			})
+			console.log(resolve)
 		} catch (e) {
-			console.log(e);
+			console.log(e)
 		}
-	};
+	}
 
 	return (
 		<>
@@ -66,53 +63,27 @@ const ContactForm = () => {
 					<div className={styles.columns}>
 						<div className={styles.column}>
 							<h2>Mám zájem o&nbsp;spolupráci</h2>
-							<p>
-								Zanechte nám na sebe kontakt, spojíme se s vámi.
-							</p>
-							<a
-								className={styles.projectPhone}
-								href='tel:+420732264251'
-							>
+							<p>Zanechte nám na sebe kontakt, spojíme se s vámi.</p>
+							<a className={styles.projectPhone} href='tel:+420732264251'>
 								+420 732 264 251
 							</a>
 							<p>
 								Pondělí - Pátek: <strong>9:00 - 17:00</strong>
 							</p>
-							<a
-								href='mailto:info@mirandamedia.cz'
-								className={styles.projectMail}
-							>
+							<a href='mailto:info@mirandamedia.cz' className={styles.projectMail}>
 								info@mirandamedia.cz
 							</a>
 						</div>
 						<div className={styles.column}>
 							<form onSubmit={sendForm}>
 								<div className={styles.formRow}>
-									<input
-										type='text'
-										name='jmeno'
-										id='jmeno'
-										placeholder='Jméno a příjmení'
-										ref={form.jmeno}
-									/>
+									<input type='text' name='jmeno' id='jmeno' placeholder='Jméno a příjmení' ref={form.jmeno} />
 								</div>
 								<div className={styles.formRow}>
-									<input
-										type='email'
-										name='email'
-										id='email'
-										placeholder='E-mail'
-										ref={form.email}
-									/>
+									<input type='email' name='email' id='email' placeholder='E-mail' ref={form.email} />
 								</div>
 								<div className={styles.formRow}>
-									<input
-										type='tel'
-										name='tel'
-										id='tel'
-										placeholder='Telefon'
-										ref={form.tel}
-									/>
+									<input type='tel' name='tel' id='tel' placeholder='Telefon' ref={form.tel} />
 								</div>
 
 								{/* <div className={styles.checkboxes}>
@@ -153,32 +124,13 @@ const ContactForm = () => {
                                         <label htmlFor="360">360° produktové fotky</label>
                                     </span>
                                 </div> */}
-								<textarea
-									name='zprava'
-									id='zprava'
-									rows='5'
-									placeholder='Váš vzkaz'
-									ref={form.zprava}
-								></textarea>
+								<textarea name='zprava' id='zprava' rows='5' placeholder='Váš vzkaz' ref={form.zprava}></textarea>
 								<div className={styles.formRow}>
-									<input
-										type='checkbox'
-										name='consent'
-										id='consent'
-										readOnly
-									/>
-									<label htmlFor='consent'>
-										Odesláním souhlasíte s Podmínkami
-										zpracovaní osobních údajů
-									</label>
+									<input type='checkbox' name='consent' id='consent' readOnly />
+									<label htmlFor='consent'>Odesláním souhlasíte s Podmínkami zpracovaní osobních údajů</label>
 								</div>
-								<button
-									type='submit'
-									className='btn btn-primary'
-								>
-									<span data-hover='Odeslat poptávku'>
-										Odeslat poptávku
-									</span>
+								<button type='submit' className='btn btn-primary'>
+									<span data-hover='Odeslat poptávku'>Odeslat poptávku</span>
 								</button>
 							</form>
 						</div>
@@ -186,7 +138,7 @@ const ContactForm = () => {
 				</div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default ContactForm;
+export default ContactForm

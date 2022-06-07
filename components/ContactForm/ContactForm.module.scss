@@ -35,19 +35,7 @@
 	.formRow {
 		margin-bottom: 15px;
 	}
-	// .checkboxes {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	align-items: center;
-	// 	margin-bottom: 7.5px;
-	// 	.group {
-	// 		flex: 0 1 calc(50% - 7.5px);
-	// 		padding: 7.5px 0;
-	// 		&:nth-of-type(odd) {
-	// 			margin-right: 15px;
-	// 		}
-	// 	}
-	// }
+
 	.projectPhone {
 		display: flex;
 		align-items: center;
@@ -73,60 +61,40 @@
 		}
 	}
 }
-@media screen and (max-width: 1400px) {
-	.formWrapper {
-		& > div:last-of-type {
-			padding: 65px;
-		}
-	}
-}
 @media screen and (max-width: 1200px) {
 	.formWrapper {
+		position: relative;
+		padding: 50px 0;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-font, 0.4);
+		}
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.formWrapper {
+		text-align: center;
+	}
+	.projectPhone,
+	.projectMail {
+		justify-content: center;
+	}
+	.columns {
 		flex-direction: column;
-		& > div:first-of-type {
-			padding: 65px;
-			flex-basis: auto;
-		}
-		& > div:last-of-type {
-			flex-basis: auto;
-		}
+		gap: 20px;
 	}
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 680px) {
 	.formWrapper {
-		margin-bottom: -160px;
-	}
-}
-@media screen and (max-width: 767px) {
-	.formWrapper {
-		& > div:first-of-type,
-		& > div:last-of-type {
-			padding: 20px;
-		}
-		.projectMail,
-		.projectPhone {
-			font-size: rem(22);
-		}
-	}
-}
-@media screen and (max-width: 600px) {
-	.formWrapper {
-		margin-bottom: -45px;
-		margin-left: -20px;
-		margin-right: -20px;
-		box-shadow: none;
-		padding: 0;
-		.formRow {
-			flex-direction: column;
-			input {
-				&:not(:last-of-type) {
-					margin-right: 0;
-					margin-bottom: 15px;
-				}
-			}
-		}
-		.checkboxes {
-			display: none;
+		&::before {
+			background-color: rgba($color-font, 0.5);
 		}
 	}
 }

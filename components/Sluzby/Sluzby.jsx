@@ -7,19 +7,10 @@ const Sluzby = () => {
 			<div className={styles.sluzbyGrid}>
 				<div className={`${styles.item} ${styles.large}`}>
 					<div className={`${styles.certifikace}`}>
-						<Image
-							src='/img/icon/shoptet-premium.png'
-							width={160}
-							height={160}
-							alt='Shoptet premium'
-						></Image>
+						<Image src='/img/icon/shoptet-premium.png' width={160} height={160} alt='Shoptet premium'></Image>
 					</div>
 					<h2>Služby, které nabízíme</h2>
-					<p>
-						Postavíme celý e-shop na klíč, zaškolíme vás v práci s
-						administrací a posuneme výkon vašich kampaní na zcela
-						jinou úroveň.
-					</p>
+					<p>Postavíme celý e-shop na klíč, zaškolíme vás v práci s administrací a posuneme výkon vašich kampaní na zcela jinou úroveň.</p>
 					<ul>
 						<li>Napojení jakéhokoliv systému pomocí API</li>
 						<li>Možnost programovat vlastní funkce</li>
@@ -33,13 +24,7 @@ const Sluzby = () => {
 					</div>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='56'
-						height='56'
-						viewBox='0 0 56 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
+					<svg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<path
 							d='M11.667 12.8334C11.667 10.6675 12.5274 8.59026 14.059 7.05871C15.5905 5.52716 17.6677 4.66675 19.8337 4.66675H28.0003V21.0001H19.8337C17.6677 21.0001 15.5905 20.1397 14.059 18.6081C12.5274 17.0766 11.667 14.9993 11.667 12.8334Z'
 							stroke='#59DC8E'
@@ -78,20 +63,11 @@ const Sluzby = () => {
 					</svg>
 					<h3>Úchvatná grafika a web design</h3>
 					<div className={styles.texts}>
-						<p>
-							Moderní, líbivý a především plně responzivní e-shop
-							je základním předpokladem úspěšného prodeje.
-						</p>
+						<p>Moderní, líbivý a především plně responzivní e-shop je základním předpokladem úspěšného prodeje.</p>
 					</div>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='56'
-						height='56'
-						viewBox='0 0 56 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
+					<svg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<path
 							d='M14 4.66675L7 14.0001V46.6668C7 47.9044 7.49167 49.0914 8.36683 49.9666C9.242 50.8418 10.429 51.3334 11.6667 51.3334H44.3333C45.571 51.3334 46.758 50.8418 47.6332 49.9666C48.5083 49.0914 49 47.9044 49 46.6668V14.0001L42 4.66675H14Z'
 							stroke='#59DC8E'
@@ -99,13 +75,7 @@ const Sluzby = () => {
 							strokeLinecap='round'
 							strokeLinejoin='round'
 						/>
-						<path
-							d='M7 14H49'
-							stroke='#59DC8E'
-							strokeWidth='3'
-							strokeLinecap='round'
-							strokeLinejoin='round'
-						/>
+						<path d='M7 14H49' stroke='#59DC8E' strokeWidth='3' strokeLinecap='round' strokeLinejoin='round' />
 						<path
 							d='M37.3337 23.3333C37.3337 25.8086 36.3503 28.1826 34.6 29.9329C32.8497 31.6833 30.4757 32.6666 28.0003 32.6666C25.525 32.6666 23.151 31.6833 21.4007 29.9329C19.6503 28.1826 18.667 25.8086 18.667 23.3333'
 							stroke='#59DC8E'
@@ -116,31 +86,14 @@ const Sluzby = () => {
 					</svg>
 					<h3>Převod e-shopu od konkurence</h3>
 					<div className={styles.texts}>
-						<p>
-							Starý e-shop vám už nevyhovuje a je na čase nutně
-							modernizovat.
-						</p>
+						<p>Starý e-shop vám už nevyhovuje a je na čase nutně modernizovat.</p>
 					</div>
 				</div>
 				<div className={`${styles.item} ${styles.image}`}>
-					<Image
-						src='/img/sluzby1.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-					></Image>
+					<Image src='/img/sluzby1.jpg' width={360} height={360} alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='56'
-						height='56'
-						viewBox='0 0 56 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
+					<svg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<path
 							d='M28.0003 4.66675L35.2103 19.2734L51.3337 21.6301L39.667 32.9934L42.4203 49.0467L28.0003 41.4634L13.5803 49.0467L16.3337 32.9934L4.66699 21.6301L20.7903 19.2734L28.0003 4.66675Z'
 							stroke='#59DC8E'
@@ -151,20 +104,11 @@ const Sluzby = () => {
 					</svg>
 					<h3>PPC a zbožové vyhledávače</h3>
 					<div className={styles.texts}>
-						<p>
-							E-shop je připraven ke spuštění a nastává moment,
-							dát o sobě vědět zákazníkům.
-						</p>
+						<p>E-shop je připraven ke spuštění a nastává moment, dát o sobě vědět zákazníkům.</p>
 					</div>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='56'
-						height='56'
-						viewBox='0 0 56 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
+					<svg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<path
 							d='M47.25 10.5V19.25H29.75V10.5H47.25ZM47.25 7H29.75C28.8217 7 27.9315 7.36875 27.2751 8.02513C26.6187 8.6815 26.25 9.57174 26.25 10.5V19.25C26.25 20.1783 26.6187 21.0685 27.2751 21.7249C27.9315 22.3813 28.8217 22.75 29.75 22.75H47.25C48.1783 22.75 49.0685 22.3813 49.7249 21.7249C50.3812 21.0685 50.75 20.1783 50.75 19.25V10.5C50.75 9.57174 50.3812 8.6815 49.7249 8.02513C49.0685 7.36875 48.1783 7 47.25 7ZM21 43.75H10.5V29.75H21V26.25H10.5C9.57174 26.25 8.6815 26.6187 8.02513 27.2751C7.36875 27.9315 7 28.8217 7 29.75V43.75C7 44.6783 7.36875 45.5685 8.02513 46.2249C8.6815 46.8812 9.57174 47.25 10.5 47.25H21V43.75ZM52.5 35H29.449L33.9745 30.4745L31.5 28L22.75 36.75L31.5 45.5L33.9745 43.0255L29.449 38.5H52.5V35ZM19.25 10.5V19.25H10.5V10.5H19.25ZM19.25 7H10.5C9.57174 7 8.6815 7.36875 8.02513 8.02513C7.36875 8.6815 7 9.57174 7 10.5V19.25C7 20.1783 7.36875 21.0685 8.02513 21.7249C8.6815 22.3813 9.57174 22.75 10.5 22.75H19.25C20.1783 22.75 21.0685 22.3813 21.7249 21.7249C22.3813 21.0685 22.75 20.1783 22.75 19.25V10.5C22.75 9.57174 22.3813 8.6815 21.7249 8.02513C21.0685 7.36875 20.1783 7 19.25 7Z'
 							fill='#59DC8E'
@@ -172,31 +116,14 @@ const Sluzby = () => {
 					</svg>
 					<h3>Import a synchronizace dat v reálném čase</h3>
 					<div className={styles.texts}>
-						<p>
-							E-shop už máte, ale zatím nevíte, jak využít jeho
-							maximální potenciál.
-						</p>
+						<p>E-shop už máte, ale zatím nevíte, jak využít jeho maximální potenciál.</p>
 					</div>
 				</div>
 				<div className={`${styles.item} ${styles.image}`}>
-					<Image
-						src='/img/sluzby2.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-					></Image>
+					<Image src='/img/sluzby2.jpg' width={360} height={360} alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='57'
-						height='56'
-						viewBox='0 0 57 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
+					<svg width='57' height='56' viewBox='0 0 57 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<g clipPath='url(#clip0_1785_7157)'>
 							<path
 								d='M21.033 25.258C21.033 24.1948 20.1715 23.3333 19.1084 23.3333H16.8925C15.8278 23.3333 14.9663 24.1948 14.9663 25.258C14.9663 26.1346 14.3657 26.8869 13.5483 27.2084C13.4193 27.26 13.2904 27.3146 13.1645 27.3692C12.3592 27.718 11.4022 27.6119 10.7803 26.9915C10.4194 26.6309 9.9301 26.4283 9.41989 26.4283C8.90968 26.4283 8.42034 26.6309 8.05944 26.9915L6.49121 28.5598C6.13056 28.9207 5.92797 29.41 5.92797 29.9202C5.92797 30.4304 6.13056 30.9198 6.49121 31.2807C7.11304 31.9025 7.21921 32.858 6.86734 33.6649C6.81206 33.7918 6.75897 33.9198 6.70809 34.0486C6.38656 34.8661 5.63429 35.4667 4.75766 35.4667C3.69447 35.4667 2.83301 36.3281 2.83301 37.3913V39.6087C2.83301 40.6719 3.69447 41.5333 4.75766 41.5333C5.63429 41.5333 6.38656 42.1339 6.70809 42.9514C6.75966 43.0803 6.81426 43.2093 6.86734 43.3351C7.21769 44.1405 7.11152 45.0975 6.49121 45.7193C6.13056 46.0802 5.92797 46.5696 5.92797 47.0798C5.92797 47.59 6.13056 48.0793 6.49121 48.4402L8.05944 50.0085C8.42034 50.3691 8.90968 50.5717 9.41989 50.5717C9.9301 50.5717 10.4194 50.3691 10.7803 50.0085C11.4022 49.3866 12.3577 49.2805 13.1645 49.6308C13.2904 49.6869 13.4193 49.74 13.5483 49.7916C14.3657 50.1131 14.9663 50.8654 14.9663 51.742C14.9663 52.8052 15.8278 53.6667 16.891 53.6667H19.1084C20.1715 53.6667 21.033 52.8052 21.033 51.742C21.033 50.8654 21.6336 50.1131 22.4511 49.7901C22.58 49.74 22.7089 49.6869 22.8348 49.6323C23.6402 49.2805 24.5972 49.3881 25.2175 50.0085C25.3962 50.1873 25.6084 50.3291 25.842 50.4259C26.0755 50.5226 26.3259 50.5725 26.5787 50.5725C26.8315 50.5725 27.0819 50.5226 27.3154 50.4259C27.549 50.3291 27.7612 50.1873 27.9399 50.0085L29.5081 48.4402C29.8688 48.0793 30.0714 47.59 30.0714 47.0798C30.0714 46.5696 29.8688 46.0802 29.5081 45.7193C28.8863 45.0975 28.7801 44.142 29.1305 43.3351C29.1866 43.2093 29.2397 43.0803 29.2913 42.9514C29.6128 42.1339 30.3651 41.5333 31.2417 41.5333C32.3049 41.5333 33.1663 40.6719 33.1663 39.6087V37.3928C33.1663 36.3297 32.3049 35.4682 31.2417 35.4682C30.3651 35.4682 29.6128 34.8676 29.2897 34.0501C29.2389 33.9213 29.1858 33.7933 29.1305 33.6664C28.7817 32.861 28.8878 31.904 29.5081 31.2822C29.8688 30.9213 30.0714 30.4319 30.0714 29.9217C30.0714 29.4115 29.8688 28.9222 29.5081 28.5613L27.9399 26.9931C27.579 26.6324 27.0897 26.4298 26.5795 26.4298C26.0692 26.4298 25.5799 26.6324 25.219 26.9931C24.5972 27.6149 23.6417 27.7211 22.8348 27.3707C22.7078 27.3149 22.5799 27.2613 22.4511 27.2099C21.6336 26.8869 21.033 26.1346 21.033 25.2595V25.258Z'
@@ -221,52 +148,23 @@ const Sluzby = () => {
 						</g>
 						<defs>
 							<clipPath id='clip0_1785_7157'>
-								<rect
-									width='56'
-									height='56'
-									fill='white'
-									transform='translate(0.5)'
-								/>
+								<rect width='56' height='56' fill='white' transform='translate(0.5)' />
 							</clipPath>
 						</defs>
 					</svg>
 					<h3>Pravidelná správa Shoptetu</h3>
 					<div className={styles.texts}>
-						<p>
-							Jde vám hlava kolem z řady popisků a prodejních
-							textů.. a že jich je.
-						</p>
+						<p>Jde vám hlava kolem z řady popisků a prodejních textů.. a že jich je.</p>
 					</div>
 				</div>
 				<div className={styles.item}>
-					<svg
-						width='57'
-						height='56'
-						viewBox='0 0 57 56'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-					>
-						<path
-							d='M37.833 42L51.833 28L37.833 14'
-							stroke='#59DC8E'
-							strokeWidth='3'
-							strokeLinecap='round'
-							strokeLinejoin='round'
-						/>
-						<path
-							d='M19.167 14L5.16699 28L19.167 42'
-							stroke='#59DC8E'
-							strokeWidth='3'
-							strokeLinecap='round'
-							strokeLinejoin='round'
-						/>
+					<svg width='57' height='56' viewBox='0 0 57 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
+						<path d='M37.833 42L51.833 28L37.833 14' stroke='#59DC8E' strokeWidth='3' strokeLinecap='round' strokeLinejoin='round' />
+						<path d='M19.167 14L5.16699 28L19.167 42' stroke='#59DC8E' strokeWidth='3' strokeLinecap='round' strokeLinejoin='round' />
 					</svg>
 					<h3>Programování a kódování</h3>
 					<div className={styles.texts}>
-						<p>
-							Potřebujete realizovat své nápady nad rámec běžných
-							řešení?
-						</p>
+						<p>Potřebujete realizovat své nápady nad rámec běžných řešení?</p>
 					</div>
 				</div>
 			</div>

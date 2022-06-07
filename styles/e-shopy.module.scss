@@ -25,7 +25,7 @@
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 70px 50px;
 	margin: 40px 0 80px;
 	.number {
@@ -65,7 +65,8 @@
 .systemy {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 20px;
 	margin: 40px 0;
 	img {
 		filter: grayscale(1);
@@ -81,6 +82,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		gap: 20px;
 	}
 	a {
 		padding: em(10) em(20);
@@ -95,11 +97,11 @@
 .banner {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 100px 70px 100px 100px;
+	justify-content: center;
+	padding: 40px 100px;
 	cursor: pointer;
 	.image {
-		margin: -130px 0px -130px -100px;
+		margin: -30px 0px -30px -100px;
 		img {
 			transition: all 0.3s ease-in;
 		}
@@ -125,6 +127,43 @@
 	&:focus {
 		.image img {
 			transform: scale(1.05);
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.banner {
+		padding: 40px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.banner {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(1px, 1fr));
+		text-align: center;
+		.image {
+			margin: 0;
+		}
+		.logo {
+			margin: 0;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.grid {
+		margin: 20px 0 45px;
+		gap: 20px;
+	}
+}
+@media screen and (max-width: 660px) {
+	.banner {
+		display: flex;
+		flex-direction: column;
+		padding: 40px 20px;
+	}
+	.systemy {
+		gap: 20px;
+		& > span {
+			flex: 0 1 100px;
 		}
 	}
 }

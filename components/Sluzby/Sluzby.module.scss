@@ -1,7 +1,7 @@
 .sluzbyGrid {
 	display: grid;
 	gap: 15px;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(4, minmax(1px, 1fr));
 	grid-template-rows: repeat(3, minmax(345px, 1fr));
 }
 .item {
@@ -124,7 +124,7 @@
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.sluzbyGrid {
 		grid-template-columns: repeat(3, minmax(1px, 1fr));
 		grid-template-rows: repeat(4, minmax(1px, 1fr));
