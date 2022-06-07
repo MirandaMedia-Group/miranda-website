@@ -21,7 +21,9 @@ const PravaMiranda = () => {
 	const [displayRefMob, setDisplayRefMob] = useState(null)
 	const displayMobileContent = (ref) => {
 		setDisplayRefMob(ref)
-		ref.current.scrollIntoView()
+		setTimeout(() => {
+			ref.current.scrollIntoView()
+		}, 150)
 	}
 
 	const data = {
