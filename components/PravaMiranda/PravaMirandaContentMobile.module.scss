@@ -3,13 +3,17 @@
 	flex-wrap: wrap;
 	gap: 10px;
 	.hashtag {
-		padding: em(10) em(20);
+		font-size: rem(12);
+		padding: em(8) em(12);
 		border: 1px solid $color-font;
 	}
 }
+.texts p {
+	margin-top: 0;
+}
 .imageWrapper {
 	padding: 20px;
-	background-color: $color-primary;
+	background-color: rgba($color-font, 0.1);
 }
 
 @media screen and (min-width: 1049px) {

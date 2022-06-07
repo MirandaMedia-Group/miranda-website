@@ -1,16 +1,13 @@
-import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim';
-import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji';
-import Reference from '../components/Reference/Reference';
-import { fetchAPI } from '../lib/api';
+import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim'
+import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
+import Reference from '../components/Reference/Reference'
+import { fetchAPI } from '../lib/api'
 
 export default function Home({ reference, coONas }) {
 	return (
 		<>
 			<section>
-				<HeroStaticSlim
-					title='Reference'
-					image='/img/reference-hero.jpg'
-				/>
+				<HeroStaticSlim title='Reference' image='/img/reference-hero.jpg' />
 			</section>
 			<section className='container'>
 				<Reference data={reference} />
@@ -19,15 +16,15 @@ export default function Home({ reference, coONas }) {
 				<CoONasRikaji data={coONas} />
 			</section>
 		</>
-	);
+	)
 }
 
 export async function getStaticProps() {
 	const referenceRes = await fetchAPI('/references', {
 		populate: '*',
 		sort: 'priorita',
-	});
-	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' });
+	})
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 
 	return {
 		props: {
@@ -35,5 +32,5 @@ export async function getStaticProps() {
 			coONas: coONasRes.data,
 		},
 		revalidate: 1,
-	};
+	}
 }
