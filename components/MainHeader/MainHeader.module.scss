@@ -96,7 +96,15 @@
 		transition: all 0.3s ease-in;
 	}
 }
-.submenuVisible {
+.mainHeader.submenuVisible {
+	position: fixed;
+	top: 0;
+	.logo {
+		z-index: 2;
+		svg {
+			fill: $color-primary;
+		}
+	}
 	.contacts {
 		color: $color-font;
 	}
@@ -133,18 +141,10 @@
 	animation: glow 4s ease-in infinite;
 	transition: all 0.3s ease-in;
 	&.online {
-		background: radial-gradient(
-			50% 50% at 50% 50%,
-			#a5ff96 0%,
-			#59dc8e 100%
-		);
+		background: radial-gradient(50% 50% at 50% 50%, #a5ff96 0%, #59dc8e 100%);
 	}
 	&.offline {
-		background: radial-gradient(
-			50% 50% at 50% 50%,
-			#ffc896 0%,
-			#d73f3f 100%
-		);
+		background: radial-gradient(50% 50% at 50% 50%, #ffc896 0%, #d73f3f 100%);
 	}
 }
 .mobileNavigation {
@@ -205,13 +205,13 @@
 			}
 		}
 		nav {
-			position: absolute;
+			position: fixed;
 			background-color: $color-white;
 			color: $color-font;
 			top: 0;
-			right: -5px;
+			right: 0px;
 			max-width: 0;
-			width: calc(100% - 80px);
+			width: 100%;
 			height: 100vh;
 			padding: 2rem 0;
 			font-size: 1rem;
@@ -224,6 +224,7 @@
 				margin: 0;
 			}
 			a {
+				width: 100%;
 				padding: em(20);
 				display: inline-block;
 			}
@@ -238,7 +239,7 @@
 			transition: all 0.3s ease-in;
 			a {
 				width: 100%;
-				background-color: $color-primary;
+				background-color: rgba($color-font, 0.1);
 			}
 		}
 		.hasChildren {
@@ -280,6 +281,10 @@
 @media screen and (max-width: 767px) {
 	.mainHeader {
 		padding: 20px;
+	}
+	.mobileNavigation nav.visible {
+		padding-top: 80px;
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 680px) {

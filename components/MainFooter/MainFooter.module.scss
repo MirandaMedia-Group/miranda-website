@@ -98,6 +98,7 @@
 	& > div {
 		flex: 0 1 350px;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
