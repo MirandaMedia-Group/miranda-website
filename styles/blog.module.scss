@@ -1,95 +1,95 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 20px;
-    article {
-        cursor: pointer;
-        h1 {
-            font-size: rem(24);
-            line-height: em(36,24);
-            margin-bottom: 20px;
-            transition: all .3s ease-in;
-        }
-        .cat {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: rem(16);
-            line-height: em(42);
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            span {
-                display: inline-block;
-                background-color: $color-primary;
-                padding: em(10) em(20);
-            }
-        }
-        .image {
-            position: relative;
-            margin-bottom: 20px;
-        }
-        .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            .reading, .date, .author {
-                display: flex;
-                align-items: center;
-                &::before {
-                    display: inline-block;
-                    margin-right: .3em;
-                    line-height: 0;
-                }
-            }
-            .reading {
-                &::before {
-                    content: url(/img/icon/reading.svg);
-                }
-            }
-            .date {
-                &::before {
-                    content: url(/img/icon/date.svg);
-                }
-            }
-            .author {
-                &::before {
-                    content: url(/img/icon/author.svg);
-                }
-            }
-        }
-        &:hover, &:focus {
-            h1 {
-                color: $color-primary;
-            }
-        }
-    }
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 20px;
+	article {
+		cursor: pointer;
+		h1 {
+			font-size: rem(24);
+			line-height: em(36, 24);
+			margin-bottom: 20px;
+			transition: all 0.3s ease-in;
+		}
+		.cat {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: rem(16);
+			line-height: em(42);
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			span {
+				display: inline-block;
+				background-color: $color-primary;
+				padding: em(10) em(20);
+			}
+		}
+		.image {
+			position: relative;
+			margin-bottom: 20px;
+		}
+		.meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			.reading,
+			.date,
+			.author {
+				display: flex;
+				align-items: center;
+				&::before {
+					display: inline-block;
+					margin-right: 0.3em;
+					line-height: 0;
+				}
+			}
+			.reading {
+				&::before {
+					content: url(/img/icon/reading.svg);
+				}
+			}
+			.date {
+				&::before {
+					content: url(/img/icon/date.svg);
+				}
+			}
+			.author {
+				&::before {
+					content: url(/img/icon/author.svg);
+				}
+			}
+		}
+		&:hover,
+		&:focus {
+			h1 {
+				color: $color-primary;
+			}
+		}
+	}
 }
 .readMore {
-    svg {
-        transition: all .3s ease-in;
-        fill: rgba($color-font, .3);
-    }
-    &:hover, &:focus {
-        svg {
-            fill: $color-primary;
-        }
-    }
-}
-@media screen and (max-width: 992px) {
-    .heroArticle {
-        min-height: 600px;
-    }
+	svg {
+		transition: all 0.3s ease-in;
+		fill: rgba($color-font, 0.3);
+	}
+	&:hover,
+	&:focus {
+		svg {
+			fill: $color-primary;
+		}
+	}
 }
 @media screen and (max-width: 767px) {
-    .heroTexts {
-        bottom: 20px;
-        top: unset;
-        transform: none;
-    }
-    .grid {
-        gap: 30px;
-    }
+	.grid {
+		gap: 30px;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		article {
+			h1 {
+				font-size: rem(20);
+			}
+		}
+	}
 }
