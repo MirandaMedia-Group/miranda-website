@@ -10,9 +10,6 @@ const HeroCarousel = () => {
 	const videoRef2 = useRef(null)
 
 	const handleLoop = () => {
-		// videoRef.current.setAttribute('poster', '/intro-loop-poster.png')
-		// videoRef.current.src = '/intro-hp-loop.mp4'
-		// videoRef.current.setAttribute('loop', true)
 		setVideoPlayed(true)
 		videoRef2.current.play()
 	}
@@ -40,43 +37,32 @@ const HeroCarousel = () => {
 
 	return (
 		<div className={styles.carousel}>
-			{isDesktop && (
-				<video
-					poster='/intro-loop-poster.png'
-					playsInline
-					muted
-					preload='auto'
-					loop
-					ref={videoRef2}
-				>
-					<source src='/intro-hp-loop.mp4' type='video/mp4' />
-				</video>
-			)}
-			{isDesktop && !videoPlayed && (
-				<video
-					poster='/img/blank-black.jpg'
-					autoPlay
-					playsInline
-					muted
-					preload='auto'
-					ref={videoRef}
-				>
-					<source src='/intro-hp-nove.mp4' type='video/mp4' />
-				</video>
-			)}
-			{!isDesktop && (
-				<video
-					poster='/img/hp-video-poster-mobile.png'
-					autoPlay
-					playsInline
-					muted
-					preload='auto'
-				>
-					<source src='/hp-video-mobile.mp4' type='video/mp4' />
-				</video>
+			<video
+				poster='/intro-loop-poster.png'
+				playsInline
+				muted
+				preload='auto'
+				loop
+				ref={videoRef2}
+			>
+				<source src='/intro-hp-loop.mp4' type='video/mp4' />
+			</video>
+			{!videoPlayed && (
+				<div className={styles.videoAbsolute}>
+					<video
+						poster='/img/blank-black.jpg'
+						autoPlay
+						playsInline
+						muted
+						preload='auto'
+						ref={videoRef}
+					>
+						<source src='/intro-hp-nove.mp4' type='video/mp4' />
+					</video>
+				</div>
 			)}
 			<div className={`container ${styles.itemTexts}`}>
-				<div className={styles.subheading}>Miranda Media</div>
+				<div className={styles.subheading}>MirandaMedia</div>
 				<div className={styles.headingWrapper}>
 					{/* <TypeWriter 
                         content='E-shopy a weby na klíč, výkononstní marketing a design'

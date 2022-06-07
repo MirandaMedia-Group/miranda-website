@@ -663,6 +663,13 @@ button {
 		transform: translateY(-50%);
 	}
 }
+@media (max-width: 767px) {
+	.btn.btn-primary {
+		span {
+			padding: em(10) em(20);
+		}
+	}
+}
 
 .text-center {
 	text-align: center;
@@ -1348,4 +1355,9 @@ p.large {
 .btn-margin {
 	text-align: center;
 	margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+	.btn-margin {
+		margin-top: 20px;
+	}
 }

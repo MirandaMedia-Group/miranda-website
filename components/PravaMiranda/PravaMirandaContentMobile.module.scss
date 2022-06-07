@@ -1,0 +1,19 @@
+.hashtags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	.hashtag {
+		padding: em(10) em(20);
+		border: 1px solid $color-font;
+	}
+}
+.imageWrapper {
+	padding: 20px;
+	background-color: $color-primary;
+}
+
+@media screen and (min-width: 1049px) {
+	.imageWrapper {
+		display: none !important;
+	}
+}

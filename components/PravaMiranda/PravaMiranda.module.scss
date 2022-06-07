@@ -1,138 +1,148 @@
 .title {
-    text-align: center;
+	text-align: center;
 }
 
 .sluzba {
-    position: relative;
-    background-color: #f4f4f4;
-    background-repeat: no-repeat;
-    background-position: right center;
-    cursor: pointer;
-    transition: all .3s ease-in;
-    min-height: 250px;
-    &.vertical {
-        background-position: top center;
-        grid-row-end: span 2;
-    }
-    &:not(.vertical) {
-        grid-column-end: span 2;
-    }
-    &:first-child {
-        cursor: initial;
-        background-color: transparent;
-        min-height: unset !important;
-    }
+	position: relative;
+	background-color: #f4f4f4;
+	background-repeat: no-repeat;
+	background-position: right center;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	min-height: 250px;
+	&.vertical {
+		background-position: top center;
+		grid-row-end: span 2;
+	}
+	&:not(.vertical) {
+		grid-column-end: span 2;
+	}
+	&:first-child {
+		cursor: initial;
+		background-color: transparent;
+		min-height: unset !important;
+	}
 }
 
 .sluzby {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(1px,1fr));
-    gap: 20px;
-    margin-bottom: 60px;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(1px, 1fr));
+	gap: 20px;
+	margin-bottom: 60px;
 }
 
 .text {
-    padding: 40px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    h2 {
-       margin-bottom: 20px;
-    }
-    h3 {
-        margin-bottom: 0;
-        max-width: 70%;
-        font-size: rem(32);
-        span {
-            display: block;
-            font-size: 16px;
-            font-weight: 400;
-        }
-    }
+	padding: 40px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	h2 {
+		margin-bottom: 20px;
+	}
+	h3 {
+		margin-bottom: 0;
+		max-width: 70%;
+		font-size: rem(32);
+		span {
+			display: block;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
 }
 .miranda {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: initial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: initial;
 }
 
 .sluzbyWrapper {
-    gap: 50px !important;
-    margin-bottom: 60px;
+	gap: 50px !important;
+	margin-bottom: 60px;
 }
 .sluzbyList {
-    li:not(:last-of-type) {
-        border-bottom: 1px solid #B7B7B7;
-    }
+	margin: 0;
+	li:not(:last-of-type) {
+		border-bottom: 1px solid #b7b7b7;
+	}
 }
 
 @media screen and (max-width: 1260px) {
-    .text {
-        padding: 30px;
-    }
+	.text {
+		padding: 30px;
+	}
 }
 @media screen and (max-width: 1200px) {
-    .sluzby {
-        grid-template-columns: repeat(3, minmax(1px,1fr));
-        grid-auto-flow: column;
-        .sluzba:not(.vertical) {
-            grid-column-start: 1;
-        }
-    }
+	.sluzby {
+		grid-template-columns: repeat(3, minmax(1px, 1fr));
+		grid-auto-flow: column;
+		.sluzba:not(.vertical) {
+			grid-column-start: 1;
+		}
+	}
+}
+@media screen and (max-width: 1048px) {
+	.sluzbyWrapper {
+		gap: 0 !important;
+		flex-direction: column;
+		.columnImage {
+			display: none;
+		}
+	}
 }
 @media screen and (max-width: 992px) {
-    .sluzby {
-        grid-template-columns: repeat(2, minmax(1px,1fr));
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-auto-flow: unset;
-        .sluzba {
-            &:not(.vertical) {
-                grid-column-start: unset;
-            }
-        }
-    }
+	.sluzby {
+		grid-template-columns: repeat(2, minmax(1px, 1fr));
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-auto-flow: unset;
+		.sluzba {
+			&:not(.vertical) {
+				grid-column-start: unset;
+			}
+		}
+	}
 }
 @media screen and (max-width: 767px) {
-    .sluzby {
-        gap: 15px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        margin-bottom: 20px;
-        .sluzba {
-            grid-column-end: unset;
-            min-height: 170px;
-            background-size: contain;
-            .btn {
-                display: none;
-            }
-        }
-        .sluzba.vertical {
-            grid-row-end: unset;
-            background-position: right center;
-            background-size: contain;
-        }
-    }
-    .text {
-        padding: 20px;
-        h3 {
-            font-size: rem(22);
-        }
-    }
-    .miranda {
-        padding: 0;
-        p {
-            display: none;
-        }
-        h2 {
-            margin: 0;
-        }
-    }
+	.sluzby {
+		gap: 15px;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		margin-bottom: 20px;
+		.sluzba {
+			grid-column-end: unset;
+			min-height: 170px;
+			background-size: contain;
+			.btn {
+				display: none;
+			}
+		}
+		.sluzba.vertical {
+			grid-row-end: unset;
+			background-position: right center;
+			background-size: contain;
+		}
+	}
+	.text {
+		padding: 20px;
+		h3 {
+			font-size: rem(22);
+		}
+	}
+	.miranda {
+		padding: 0;
+		p {
+			display: none;
+		}
+		h2 {
+			margin: 0;
+		}
+	}
 }
