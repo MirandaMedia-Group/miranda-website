@@ -36,7 +36,11 @@
 		border: 1px solid $color-white;
 	}
 }
-
+@media screen and (max-width: 1300px) {
+	.texts {
+		padding: 40px;
+	}
+}
 @media screen and (max-width: 1048px) {
 	.imageWrapper {
 		display: none !important;
