@@ -1,6 +1,7 @@
 import axios from 'axios'
 import styles from './ContactForm.module.scss'
 import { useRef, useState } from 'react'
+import { getStrapiURL } from '../../lib/api'
 
 const ContactForm = () => {
 	let form = {
@@ -25,7 +26,7 @@ const ContactForm = () => {
 
 		try {
 			setFormSending(true)
-			const resolve = await axios.post('http://164.92.206.112:1337/api/ezforms/submit', {
+			const resolve = await axios.post(getStrapiURL('/api/ezforms/submit'), {
 				token,
 				formData: JSON.stringify(data),
 			})
