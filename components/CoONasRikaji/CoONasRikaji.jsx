@@ -5,6 +5,8 @@ import FetchedImage from '../FetchedImage/FetchedImage'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
 
+import 'swiper/css'
+
 const CoONasRikaji = (props) => {
 	const tiles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 

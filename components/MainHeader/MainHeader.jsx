@@ -40,8 +40,8 @@ const Navbar = () => {
 							<a>Reference</a>
 						</Link>
 					</li>
-					<li className={`${router.pathname == '/e-shopy' ? styles.active : ''}`}>
-						<Link href='/e-shopy'>
+					<li className={`${router.pathname == '/shoptetnamiru' ? styles.active : ''}`}>
+						<Link href='/shoptetnamiru'>
 							<a>Shoptet na míru</a>
 						</Link>
 						{/* <ul className={styles.menuLevel2}>
@@ -52,11 +52,11 @@ const Navbar = () => {
                 </li>
               </ul> */}
 					</li>
-					<li className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''} ${styles.hasChildren}`}>
+					<li className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''}`}>
 						<Link href='/sluzby'>
 							<a>Služby</a>
 						</Link>
-						<ul className={styles.menuLevel2}>
+						{/* <ul className={styles.menuLevel2}>
 							<li>
 								<Link href='/sluzby/ppc-vyhledavace'>
 									<a>PPC &amp; zbožové vyhledávače</a>
@@ -82,7 +82,7 @@ const Navbar = () => {
 									<a>Influencer</a>
 								</Link>
 							</li>
-						</ul>
+						</ul> */}
 					</li>
 					<li>
 						<Link href='/blog'>
@@ -119,8 +119,8 @@ const Navbar = () => {
 								<a>Reference</a>
 							</Link>
 						</li>
-						<li className={`${router.pathname == '/e-shopy' ? styles.active : ''}`}>
-							<Link href='/e-shopy'>
+						<li className={`${router.pathname == '/shoptetnamiru' ? styles.active : ''}`}>
+							<Link href='/shoptetnamiru'>
 								<a>Shoptet na míru</a>
 							</Link>
 							{/* <span>
@@ -136,23 +136,19 @@ const Navbar = () => {
                   </li>
                 </ul> */}
 						</li>
-						<li
-							className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''} ${styles.hasChildren} ${
-								sluzbyVisible && styles.lvl2Visible
-							}`}
-						>
+						<li className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''} ${sluzbyVisible && styles.lvl2Visible}`}>
 							<span>
 								<Link href='/sluzby'>
 									<a>Služby</a>
 								</Link>
-								<span
+								{/* <span
 									className={styles.lvl2Toggle}
 									onClick={() => {
 										sluzbyVisible ? setSluzbyVisible(false) : setSluzbyVisible(true)
 									}}
-								></span>
+								></span> */}
 							</span>
-							<ul className={styles.menuLevel2}>
+							{/* <ul className={styles.menuLevel2}>
 								<li>
 									<Link href='/sluzby/ppc-vyhledavace'>
 										<a>PPC &amp; zbožové vyhledávače</a>
@@ -178,7 +174,7 @@ const Navbar = () => {
 										<a>Influencer</a>
 									</Link>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li>
 							<Link href='/blog'>

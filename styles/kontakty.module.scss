@@ -236,6 +236,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.scrollDown {
+		display: none;
+	}
 	.contactButton {
 		font-size: rem(16);
 	}
