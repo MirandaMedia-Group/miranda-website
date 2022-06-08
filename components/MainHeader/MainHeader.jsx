@@ -15,9 +15,11 @@ const Navbar = () => {
 	}
 	useEffect(() => {
 		setActualHour(new Date().getHours())
-		const submenuHide = () => setSubmenuVisible(false)
-		router.events.on('routeChangeStart', submenuHide)
-	}, [])
+		setInterval(() => {
+			setActualHour(new Date().getHours())
+		}, 60000)
+		router.events.on('routeChangeStart', () => setSubmenuVisible(false))
+	}, [router.events])
 
 	return (
 		<header className={`${styles.mainHeader} ${submenuVisible ? styles.submenuVisible : ''}`}>

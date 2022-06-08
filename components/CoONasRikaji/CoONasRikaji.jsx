@@ -39,17 +39,18 @@ const CoONasRikaji = (props) => {
 	}
 
 	useEffect(() => {
+		let mobileImageEl = mobileImage.current
 		setDesktop(window.innerWidth > 830)
-		if (mobileImage.current) setPaginationOffset(mobileImage.current.offsetHeight + 20)
+		if (mobileImageEl) setPaginationOffset(mobileImageEl.offsetHeight + 20)
 		window.addEventListener('resize', () => {
 			setDesktop(window.innerWidth > 830)
-			if (mobileImage.current) setPaginationOffset(mobileImage.current.offsetHeight + 20)
+			if (mobileImageEl) setPaginationOffset(mobileImageEl.offsetHeight + 20)
 		})
 
 		return () => {
 			window.removeEventListener('resize', () => {
 				setDesktop(window.innerWidth > 830)
-				if (mobileImage.current) setPaginationOffset(mobileImage.current.offsetHeight + 20)
+				if (mobileImageEl) setPaginationOffset(mobileImageEl.offsetHeight + 20)
 			})
 		}
 	}, [])

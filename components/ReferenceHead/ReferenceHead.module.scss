@@ -1,91 +1,91 @@
 .referenceHead {
-    position: relative;
-    height: 100vh;
+	position: relative;
+	height: 100vh;
+	background-image: url(/img/reference-hero-bg.jpg), radial-gradient(90.46% 206.42% at 80.21% 78.33%, #005930 0%, rgba(0, 89, 48, 0) 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $color-white;
 }
 
 .image {
-    max-width: 1000px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+	max-width: 1000px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
 
-    &>span {
-        margin-bottom: -10px !important;
-    }
+	& > span {
+		margin-bottom: -10px !important;
+	}
 }
 
 .itemText {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 1;
 
-    h1 {
-        color: #222E27;
-        font-size: 56px;
-        line-height: 68px;
-        max-width: 500px;
-    }
+	h1 {
+		font-size: 56px;
+		line-height: 68px;
+		max-width: 500px;
+	}
 }
 
 .url {
-    color: #4E5852;
-    text-decoration: underline;
-    display: inline-flex;
+	text-decoration: underline;
+	display: inline-flex;
 
-    &::before {
-        content: url(/img/icon/url.svg);
-        margin-right: 10px;
-    }
+	&::before {
+		content: url(/img/icon/url.svg);
+		margin-right: 10px;
+	}
 }
 
-
-
 @media (max-width: 1600px) {
-    .image {
-        max-width: 800px;
-    }
+	.image {
+		max-width: 800px;
+	}
 }
 
 @media (max-width: 1200px) {
-    .image {
-        max-width: 750px;
-    }
+	.image {
+		max-width: 750px;
+	}
 }
 
 @media (max-width: 992px) {
-    .image {
-        max-width: 500px;
-    }
+	.image {
+		max-width: 500px;
+	}
 }
 
 @media (max-width: 767px) {
-    .itemText {
-        align-items: flex-start;
-        margin-top: 135px;
-        
-        h1 {
-            font-size: 38px;
-            line-height: 57px;
-            margin-bottom: 5px;
-            max-width: 100%;
-        }
-    }
+	.itemText {
+		align-items: flex-start;
+		margin-top: 135px;
 
-    .referenceHead {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
+		h1 {
+			font-size: 38px;
+			line-height: 57px;
+			margin-bottom: 5px;
+			max-width: 100%;
+		}
+	}
 
-    .image {
-        position: initial;
-        max-width: 100%;
-    }
+	.referenceHead {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+	}
 
+	.image {
+		position: initial;
+		max-width: 100%;
+	}
 }

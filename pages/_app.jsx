@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
 			router.events.off('routeChangeError', handleRouteDone)
 			window.removeEventListener('load', handleRouteDone)
 		}
-	}, [])
+	}, [router.events])
 
 	return (
 		<>

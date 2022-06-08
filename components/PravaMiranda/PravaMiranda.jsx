@@ -33,33 +33,23 @@ const PravaMiranda = () => {
 	const data = {
 		ppc: {
 			imageSrc: '/img/ppc-bg.jpg',
-			text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+			text: 'Mirandina partička nápadama vyzbrojenejch markeťáků poskytuje komplexní služby internetového marketingu. Onlinový PPC kampaně, co podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook & Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.',
+			hashtags: ['Webová analytika', 'Copywriting', 'PPC', 'Zbožové vyhledávače'],
 		},
 		weby: {
 			imageSrc: '/img/weby-bg.jpg',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-			hashtags: [
-				'Shoptet & Shoptet PREMIUM',
-				'Software na míru',
-				'Copywriting',
-				'Webová analytika',
-				'Projektové řízení',
-				'UX/UI',
-				'Datové služby',
-				'Školení',
-			],
+			text: 'Vytuněný webovky a nabušenej e-shop je naše specializace a opus magnum. Vaši onlajnovou výkladní skříň podnikání si vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.',
+			hashtags: ['Shoptet & Shoptet PREMIUM', 'Copywriting', 'SEO & analytika', 'Projektové řízení', 'UX/UI', 'Datové služby', 'Školení'],
 		},
 		soc: {
 			imageSrc: '/img/soc-bg.jpg',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			text: 'Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tíhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.',
 			hashtags: ['Firemní identita', 'Copywriting'],
 		},
 		design: {
 			imageSrc: '/img/design-bg.jpg',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-			hashtags: ['Produktové fotografie', 'Návrh značek'],
+			text: 'Vyladěná grafika od Mirandy, co má hlavu plnou nápadů a hýří kreativitou, to je pane kumšt. Obzvlášť, když přijde na takovou korporátní identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery, tiskoviny, letáky a loga.',
+			hashtags: ['Produktové fotografie', 'Webdesign', 'Návrh značek', 'Tiskoviny', 'Korporátní design a identita', 'Reklamní bannery'],
 		},
 		influence: {
 			imageSrc: '/img/influence-bg.jpg',
@@ -79,7 +69,7 @@ const PravaMiranda = () => {
 				<div className={`column ${styles.columnImage}`} style={{ position: 'relative' }}>
 					{displayRef == ppc && (
 						<>
-							<PravaMirandaImage imageSrc={data.ppc.imageSrc} text={data.ppc.text} />
+							<PravaMirandaImage imageSrc={data.ppc.imageSrc} text={data.ppc.text} hashtags={data.ppc.hashtags} />
 						</>
 					)}
 					{displayRef == weby && (
