@@ -19,21 +19,63 @@
 		max-width: 780px;
 		color: $color-primary;
 		margin-bottom: 0;
-		font-size: clamp(rem(64), 9vw, rem(64));
+		font-size: clamp(rem(36), 9vw, rem(64));
 		line-height: em(160, 64);
 	}
 }
-.tiles {
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.column {
+		flex: 1 1 400px;
+	}
+}
+.tilesDesktop {
 	position: relative;
 	color: $color-font;
 	align-self: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.mail,
+	.phone,
+	.address {
+		position: absolute;
+	}
+	.mail {
+		top: 0;
+		left: 50%;
+		transform: translateX(-35%) translateY(-20%);
+	}
+	.phone,
+	.address {
+		transform: translateY(20%);
+	}
+	.phone {
+		right: 50%;
+		bottom: 0;
+	}
+	.address {
+		left: calc(50% - 2px);
+		bottom: -40px;
+	}
+}
+.mail {
+	background-color: #7ae3a5;
+}
+.phone {
+	background-color: #59dc8e;
+}
+.address {
+	background-color: #9beabb;
 }
 .mail,
 .phone,
 .address {
 	width: 300px;
 	height: 300px;
-	position: absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -42,26 +84,6 @@
 	padding: 20px;
 	border: 2px solid $color-font;
 	font-weight: 700;
-}
-.mail {
-	top: 0;
-	left: 50%;
-	transform: translateX(-35%) translateY(-20%);
-	background-color: #7ae3a5;
-}
-.phone,
-.address {
-	transform: translateY(20%);
-}
-.phone {
-	right: 50%;
-	bottom: 0;
-	background-color: #59dc8e;
-}
-.address {
-	left: calc(50% - 2px);
-	bottom: -40px;
-	background-color: #9beabb;
 }
 .maxWidth {
 	max-width: 1200px;
@@ -137,6 +159,9 @@
 		}
 	}
 }
+.tilesMobile {
+	display: none;
+}
 @keyframes bounce {
 	0% {
 		transform: none;
@@ -163,32 +188,67 @@
 	background: url(/img/mapa.jpg) center center no-repeat;
 	background-size: cover;
 }
-.sidloMobile {
-	display: none;
-	margin: 20px 0;
-	h2 {
-		font-size: rem(32);
+@media screen and (max-width: 1200px) {
+	.mail,
+	.phone,
+	.address {
+		width: 250px;
+		height: 250px;
+	}
+	.tilesDesktop {
+		.mail {
+			left: unset;
+			right: 0;
+			top: 50%;
+			transform: translate(-35%, -80%);
+		}
+		.address {
+			left: unset;
+			right: 0;
+			bottom: unset;
+			top: 45%;
+		}
 	}
 }
 @media screen and (max-width: 1018px) {
-	.itemTexts {
-		.sidlo {
-			display: none;
-		}
+	.tilesDesktop {
+		display: none;
 	}
-	.sidloMobile {
+	.tilesMobile {
 		display: block;
+	}
+	.mail,
+	.address,
+	.phone {
+		position: initial;
+		transform: none;
+		width: auto;
+	}
+	.tiles {
+		gap: 20px;
+		flex-basis: auto;
+	}
+	.tilesGrid {
+		margin-top: 100px;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	}
 }
 @media screen and (max-width: 767px) {
 	.contactButton {
 		font-size: rem(16);
 	}
-	.itemTexts {
-		padding-bottom: 20px;
-		align-items: flex-end;
-		p {
-			font-size: rem(16);
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 20px;
+	}
+	.item .texts {
+		h3 {
+			font-size: rem(24);
 		}
+	}
+	.tilesGrid {
+		margin-top: 50px;
 	}
 }
