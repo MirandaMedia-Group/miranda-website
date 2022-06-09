@@ -3,6 +3,8 @@
 	background: url(/img/contact-form-bg.jpg) center center no-repeat;
 	background-size: cover;
 	padding: 190px 0 100px;
+
+	position: relative;
 	.columns {
 		display: flex;
 		justify-content: space-between;
@@ -60,21 +62,20 @@
 			line-height: 0;
 		}
 	}
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color-font, 0.4);
+	}
 }
 @media screen and (max-width: 1200px) {
 	.formWrapper {
-		position: relative;
 		padding: 50px 0;
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba($color-font, 0.4);
-		}
 	}
 }
 

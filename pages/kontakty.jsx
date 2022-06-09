@@ -15,7 +15,7 @@ export default function Home() {
 		<>
 			<section className='no-margin'>
 				<div className={styles.hero}>
-					<Image src='/img/kontakty-hero.jpg' width='1920' height='1080' alt='' layout='fill' objectFit='cover' priority={true} />
+					<Image src='/img/kontakty-hero.jpg' alt='' layout='fill' objectFit='cover' priority={true} />
 					<div className={styles.itemTexts}>
 						<div className={`container ${styles.columns} ${styles.maxWidth}`}>
 							<div className={styles.column}>

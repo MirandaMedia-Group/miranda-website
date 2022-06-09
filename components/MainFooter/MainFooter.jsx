@@ -14,7 +14,7 @@ function Footer() {
 
 	return (
 		<>
-			{router.pathname != '/e-shopy' && router.pathname != '/kontakty' && !router.pathname.includes('/kariera/') && (
+			{router.pathname != '/shoptetnamiru' && router.pathname != '/kontakty' && !router.pathname.includes('/kariera/') && (
 				<section className='visible no-margin'>
 					<ProjektBanner></ProjektBanner>
 				</section>

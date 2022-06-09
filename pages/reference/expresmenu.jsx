@@ -56,16 +56,7 @@ const ReferenceExpresmenu = ({ reference }) => {
 					</p>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/expresmenuVysledky.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/expresmenuVysledky.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
 					<p>

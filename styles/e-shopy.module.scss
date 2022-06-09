@@ -78,6 +78,10 @@
 	}
 }
 .anchors {
+	position: sticky;
+	top: 0;
+	background-color: $color-white;
+	z-index: 4;
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -87,6 +91,7 @@
 	a {
 		padding: em(10) em(20);
 		transition: all 0.3s ease-in;
+		display: inline-block;
 		&:hover,
 		&:focus {
 			background-color: $color-font;

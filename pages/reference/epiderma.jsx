@@ -38,28 +38,10 @@ const ReferenceEpiderma = ({ reference }) => {
 					</p>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/epidermaVysledky.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/epidermaVysledky.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/epidermaVysledky2.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/epidermaVysledky2.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
 					<p>
@@ -67,16 +49,7 @@ const ReferenceEpiderma = ({ reference }) => {
 					</p>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/epidermaVysledky3.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/epidermaVysledky3.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
 					<p>

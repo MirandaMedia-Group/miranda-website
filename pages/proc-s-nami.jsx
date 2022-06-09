@@ -30,28 +30,10 @@ export default function Home() {
 						</p>
 					</div>
 					<div className={`${styles.itemWide} ${styles.itemBuchta}`}>
-						<Image
-							src='/img/buchta.jpg'
-							width={700}
-							height={710}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/buchta.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/epiderma-casopis.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/epiderma-casopis.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.textItem} ${styles.mobileWide}`}>
 						<p>
@@ -64,16 +46,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src='/img/miranda-lounge.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/miranda-lounge.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.textItem} text-center`}>
 						<p>
@@ -83,28 +56,10 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src='/img/grid2.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid2.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/grid4.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid4.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.itemWider} ${styles.textItem}`}>
 						<p>
@@ -117,64 +72,19 @@ export default function Home() {
 						</Link>
 					</div>
 					<div>
-						<Image
-							src='/img/grid5.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid5.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/grid6.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid6.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/grid8.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid8.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/grid9.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid9.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={styles.itemWider}>
-						<Image
-							src='/img/grid10.jpg'
-							width={953}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid10.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.mobileWide} ${styles.textItem}`}>
 						<p>
@@ -188,16 +98,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src='/img/grid11.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid11.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.mobileWide} ${styles.textItem}`}>
 						<p>
@@ -212,16 +113,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src='/img/grid12.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid12.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div className={`${styles.textItem} text-center`}>
 						<p>
@@ -231,28 +123,10 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src='/img/grid13.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid13.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
-						<Image
-							src='/img/grid14.jpg'
-							width={466}
-							height={466}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							objectPosition='center'
-							priority={true}
-						></Image>
+						<Image src='/img/grid14.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 				</div>
 			</section>

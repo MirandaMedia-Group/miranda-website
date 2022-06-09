@@ -37,19 +37,10 @@ const ReferenceEpa = ({ reference }) => {
 					</p>
 				</div>
 				<div className={styles.item}>
-					<Image src='/img/epaVysledky.jpg' width={360} height={360} alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
+					<Image src='/img/epaVysledky.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/epaVysledky2.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/epaVysledky2.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
 					<p>
@@ -57,16 +48,7 @@ const ReferenceEpa = ({ reference }) => {
 					</p>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src='/img/epaVysledky3.jpg'
-						width={360}
-						height={360}
-						alt=''
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
+					<Image src='/img/epaVysledky3.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true} />
 				</div>
 				<div className={styles.item}>
 					<p>

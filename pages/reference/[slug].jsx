@@ -1,11 +1,15 @@
 import ReferenceHead from '../../components/ReferenceHead/ReferenceHead'
+import CaseStudy from '../../components/CaseStudy/CaseStudy'
 import { fetchAPI } from '../../lib/api'
 
-const Post = () => {
+const Post = ({ reference }) => {
 	return (
 		<>
 			<section>
 				<ReferenceHead title='Litujeme, k této referenci zatím nemáme více informací' image='' />
+			</section>
+			<section className='hidden container'>
+				<CaseStudy reference={reference}></CaseStudy>
 			</section>
 		</>
 	)
@@ -36,3 +40,13 @@ const Post = () => {
 // 	}
 // }
 export default Post
+
+export async function getServerSideProps() {
+	const referenceRes = await fetchAPI('/references', { populate: '*', pagination: { page: 1, pageSize: 6 } })
+
+	return {
+		props: {
+			reference: referenceRes.data,
+		},
+	}
+}

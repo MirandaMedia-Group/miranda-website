@@ -19,8 +19,6 @@ export default function EShopy({ reference, coONas }) {
 	const swiperNext2 = useRef(true)
 	const swiperPrev2 = useRef(true)
 
-	console.log(reference)
-
 	return (
 		<>
 			<section>
@@ -31,11 +29,11 @@ export default function EShopy({ reference, coONas }) {
 					// video='/shoptetnamiru.mp4'
 					buttons
 					maxWidth
-					logo='/img/shoptetpremium.png'
+					// logo='/img/shoptetpremium.png'
 				></HeroStatic>
 			</section>
-			<section className='container'>
-				<nav className={styles.anchors}>
+			<section className={`container ${styles.anchors}`}>
+				<nav>
 					<ul>
 						<li>
 							<a href='#sluzby'>Služby</a>

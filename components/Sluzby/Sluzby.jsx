@@ -90,7 +90,7 @@ const Sluzby = () => {
 					</div>
 				</div>
 				<div className={`${styles.item} ${styles.image}`}>
-					<Image src='/img/sluzby1.jpg' width={360} height={360} alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
+					<Image src='/img/sluzby1.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
 				</div>
 				<div className={styles.item}>
 					<svg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -120,7 +120,7 @@ const Sluzby = () => {
 					</div>
 				</div>
 				<div className={`${styles.item} ${styles.image}`}>
-					<Image src='/img/sluzby2.jpg' width={360} height={360} alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
+					<Image src='/img/sluzby2.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
 				</div>
 				<div className={styles.item}>
 					<svg width='57' height='56' viewBox='0 0 57 56' fill='none' xmlns='http://www.w3.org/2000/svg'>

@@ -28,7 +28,7 @@ const ContactForm = () => {
 			setFormSending(true)
 			const resolve = await axios.post(getStrapiURL('/api/ezforms/submit'), {
 				token,
-				formData: JSON.stringify(data),
+				formData: data,
 			})
 			setFormSending(false)
 			setFormSent(true)

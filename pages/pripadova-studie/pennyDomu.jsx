@@ -39,7 +39,7 @@ const pennyDomu = ({ reference, props }) => {
 			</section>
 			<div className='container'>
 				<section className={styles.row} id='oPenny'>
-					<Image src='/img/pennyImg.jpg' width={710} height={710} alt='' />
+					<Image src='/img/pennyImg.jpg' width={710} height={710} alt='' priority={true} />
 					<div className={styles.text}>
 						<div>
 							<h2>Kdo by neznal Penny Market</h2>
@@ -79,7 +79,7 @@ const pennyDomu = ({ reference, props }) => {
 							<img src='/img/icon/coRikaMobil.svg' alt=''></img>
 						</div>
 						<div className={styles.quotes}>
-							<Image src='/img/michal.jpg' width={992} height={992} alt='' />
+							<Image src='/img/michal.jpg' width={992} height={992} alt='' priority={true} />
 							<div className={styles.coRika}>
 								<img src='/img/icon/coRika.svg' alt=''></img>
 							</div>
@@ -125,46 +125,46 @@ const pennyDomu = ({ reference, props }) => {
 						</a>
 					</div>
 					<div className={styles.img}>
-						<Image src='/img/pennyRuka.png' width={1010} height={877} alt='' />
+						<Image src='/img/pennyRuka.png' width={1010} height={877} alt='' priority={true} />
 					</div>
 				</div>
 			</section>
 			<section className={styles.images}>
 				<div>
-					<Image src='/img/penny1.jpg' width={950} height={535} alt='' />
+					<Image src='/img/penny1.jpg' width={950} height={535} alt='' priority={true} />
 				</div>
 				<div>
-					<Image src='/img/penny2.jpg' width={950} height={535} alt='' />
+					<Image src='/img/penny2.jpg' width={950} height={535} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilHide}>
-					<Image src='/img/penny3.jpg' width={464} height={535} alt='' />
+					<Image src='/img/penny3.jpg' width={464} height={535} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilHide}>
-					<Image src='/img/penny4.jpg' width={950} height={535} alt='' />
+					<Image src='/img/penny4.jpg' width={950} height={535} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilHide}>
-					<Image src='/img/penny5.jpg' width={464} height={535} alt='' />
+					<Image src='/img/penny5.jpg' width={464} height={535} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg1.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg1.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg2.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg2.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg3.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg3.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg4.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg4.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg5.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg5.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 				<div className={styles.mobilShow}>
-					<Image src='/img/pennyImg6.jpg' width={160} height={160} alt='' />
+					<Image src='/img/pennyImg6.jpg' width={160} height={160} alt='' priority={true} />
 				</div>
 			</section>
-			<section className='hidden'>
+			<section className='hidden container'>
 				<CaseStudy reference={reference}></CaseStudy>
 			</section>
 		</>
