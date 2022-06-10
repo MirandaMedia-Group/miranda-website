@@ -40,7 +40,7 @@ const ContactForm = () => {
 
 	return (
 		<>
-			<div className={`${styles.formWrapper}`}>
+			<div className={`${styles.formWrapper}`} id='kontakt'>
 				<div className='container'>
 					<div className={styles.columns}>
 						<div className={styles.column}>

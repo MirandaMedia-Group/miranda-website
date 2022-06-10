@@ -13,7 +13,7 @@ const Spoluprace = () => {
 						ležet kdejakou pořádnou výzvu bokem.
 					</p>
 					<div className={styles.mobileHidden}>
-						<Link href='/proc-s-nami'>
+						<Link href='/o-nas'>
 							<a className='btn btn-secondary'>Více o nás</a>
 						</Link>
 					</div>
@@ -23,7 +23,7 @@ const Spoluprace = () => {
 				</div>
 			</div>
 			<div className={`buttons-wrapper ${styles.desktopHidden}`}>
-				<Link href='/proc-s-nami'>
+				<Link href='/o-nas'>
 					<a className='btn btn-secondary'>Více o nás</a>
 				</Link>
 			</div>
