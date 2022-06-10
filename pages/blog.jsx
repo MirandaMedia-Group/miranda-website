@@ -5,7 +5,6 @@ import Link from 'next/link'
 import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim'
 
 const Blog = ({ clanky }) => {
-	console.log(clanky)
 	return (
 		<>
 			<section>

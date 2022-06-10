@@ -79,9 +79,9 @@ const ReferenceExpresmenu = ({ reference }) => {
 					</p>
 				</div>
 			</section>
-			<section className='hidden container'>
+			{/* <section className='hidden container'>
 				<CaseStudy reference={reference}></CaseStudy>
-			</section>
+			</section> */}
 		</>
 	)
 }
