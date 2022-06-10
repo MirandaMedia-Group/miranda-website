@@ -13,11 +13,11 @@ const ReferenceEpiderma = ({ reference }) => {
 			<section className={`container columns col-1-4 wider align-center ${styles.section}`}>
 				<div className='column'>
 					<h2>Nový začátek</h2>
-					<p>
+					{/* <p>
 						Pro Epiderma lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 						magna aliqua. Ut enim ad minim veniam.
-					</p>
+					</p> */}
 				</div>
 				<div className={`column row ${styles.images} `}>
 					<Image src={'/img/epiderma-grid.png'} width={808} height={636} alt='' priority={true} />
