@@ -85,6 +85,30 @@
 		margin: 1.5em 0 1em;
 	}
 }
+.author {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	.info {
+		display: flex;
+		flex-direction: column;
+		span:first-of-type {
+			font-size: rem(26);
+			font-weight: 700;
+		}
+	}
+}
+.readTime {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	&::before {
+		content: url(/img/icon/reading.svg);
+		line-height: 0;
+		margin-right: 0.5em;
+	}
+}
 @media screen and (max-width: 992px) {
 	.contentWrapper {
 		flex-direction: column-reverse;

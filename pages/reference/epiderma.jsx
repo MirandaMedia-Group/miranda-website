@@ -20,7 +20,7 @@ const ReferenceEpiderma = ({ reference }) => {
 					</p>
 				</div>
 				<div className={`column row ${styles.images} `}>
-					<Image src={'/img/expresmenu-grid.png'} width={808} height={636} alt='' priority={true} />
+					<Image src={'/img/epiderma-grid.png'} width={808} height={636} alt='' priority={true} />
 				</div>
 			</section>
 			<section className={`${styles.spolupraceGrid} container`}>

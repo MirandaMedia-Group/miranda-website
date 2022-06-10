@@ -1,10 +1,11 @@
-import { fetchAPI } from '../../lib/api';
-import FetchedImage from '../../components/FetchedImage/FetchedImage';
-import ReactMarkdown from 'react-markdown';
-import styles from './clanek.module.scss';
-import HeroStaticSlim from '../../components/HeroStaticSlim/HeroStaticSlim';
+import { fetchAPI } from '../../lib/api'
+import FetchedImage from '../../components/FetchedImage/FetchedImage'
+import ReactMarkdown from 'react-markdown'
+import styles from './clanek.module.scss'
+import HeroStaticSlim from '../../components/HeroStaticSlim/HeroStaticSlim'
 
-const Clanek = ({ clanek }) => {
+const Clanek = ({ clanek, autor }) => {
+	console.log(clanek)
 	return (
 		<article>
 			<section className='no-margin'>
@@ -18,22 +19,28 @@ const Clanek = ({ clanek }) => {
 					<div className={styles.contentWrapper}>
 						<main>
 							<div className={styles.kategorie}>
-								{clanek.attributes.kategorie_clankus.data.map(
-									(cat, index) => {
-										return (
-											<span key={index}>
-												{cat.attributes.nazev}
-											</span>
-										);
-									}
-								)}
+								{clanek.attributes.kategorie_clankus.data.map((cat, index) => {
+									return <span key={index}>{cat.attributes.nazev}</span>
+								})}
 							</div>
 							<h1>{clanek.attributes.nazev}</h1>
-							<ReactMarkdown>
-								{clanek.attributes.content}
-							</ReactMarkdown>
+							<ReactMarkdown>{clanek.attributes.content}</ReactMarkdown>
 						</main>
-						<aside>Autor bude zde</aside>
+						<aside>
+							<div>
+								<span className={styles.readTime}>Doba čtení článku {clanek.attributes.read_duration}</span>
+							</div>
+							<strong>Autor</strong>
+							<div className={styles.author}>
+								<div className={styles.image}>
+									<FetchedImage image={autor.attributes.avatar} />
+								</div>
+								<div className={styles.info}>
+									<span>{autor.attributes.jmeno}</span>
+									<span>{autor.attributes.pozice}</span>
+								</div>
+							</div>
+						</aside>
 					</div>
 				</div>
 			</section>
@@ -46,11 +53,11 @@ const Clanek = ({ clanek }) => {
 			</section>
 			<section></section>
 		</article>
-	);
-};
+	)
+}
 
 export async function getStaticPaths() {
-	const clankyRes = await fetchAPI('/clanky', { fields: ['slug'] });
+	const clankyRes = await fetchAPI('/clanky', { fields: ['slug'] })
 
 	return {
 		paths: clankyRes.data.map((clanek) => ({
@@ -59,7 +66,7 @@ export async function getStaticPaths() {
 			},
 		})),
 		fallback: false,
-	};
+	}
 }
 
 export async function getStaticProps({ params }) {
@@ -68,12 +75,15 @@ export async function getStaticProps({ params }) {
 			slug: params.slug,
 		},
 		populate: '*',
-	});
+	})
+	const authorRes = await fetchAPI(`/autors/${clanekRes.data[0].attributes.autor.data.id}`, {
+		populate: '*',
+	})
 
 	return {
-		props: { clanek: clanekRes.data[0] },
+		props: { clanek: clanekRes.data[0], autor: authorRes.data },
 		revalidate: 1,
-	};
+	}
 }
 
-export default Clanek;
+export default Clanek
