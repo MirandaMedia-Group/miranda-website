@@ -6,7 +6,7 @@ const Post = ({ reference }) => {
 	return (
 		<>
 			<section>
-				<ReferenceHead title='Litujeme, k této referenci zatím nemáme více informací' image='' />
+				<ReferenceHead title='' image='' />
 			</section>
 			<section className='hidden container'>
 				<CaseStudy reference={reference}></CaseStudy>

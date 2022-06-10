@@ -43,6 +43,7 @@
 	.phone,
 	.address {
 		position: absolute;
+		border: 10px solid $color-font;
 	}
 	.mail {
 		top: 0;
@@ -58,7 +59,7 @@
 		bottom: 0;
 	}
 	.address {
-		left: calc(50% - 2px);
+		left: calc(50% - 10px);
 		bottom: -40px;
 	}
 }
@@ -82,7 +83,6 @@
 	justify-content: center;
 	text-align: center;
 	padding: 20px;
-	border: 2px solid $color-font;
 	font-weight: 700;
 }
 .maxWidth {
@@ -223,6 +223,17 @@
 		position: initial;
 		transform: none;
 		width: auto;
+		height: auto;
+		padding: 50px;
+	}
+	.mail {
+		background-color: rgba($color-font, 0.05);
+	}
+	.phone {
+		background-color: rgba($color-font, 0.2);
+	}
+	.address {
+		background-color: rgba($color-font, 0.1);
 	}
 	.tiles {
 		gap: 20px;

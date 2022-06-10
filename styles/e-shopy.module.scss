@@ -107,6 +107,7 @@
 	cursor: pointer;
 	.image {
 		margin: -30px 0px -30px -100px;
+		background: radial-gradient(at center, rgba($color-white, 1) 0%, transparent 80%);
 		img {
 			transition: all 0.3s ease-in;
 		}

@@ -32,8 +32,8 @@ const Navbar = () => {
 			</div>
 			<nav className={styles.navigation}>
 				<ul>
-					<li className={router.pathname == '/proc-s-nami' ? `${styles.active}` : ''}>
-						<Link href='/proc-s-nami' passHref>
+					<li className={router.pathname == '/o-nas' ? `${styles.active}` : ''}>
+						<Link href='/o-nas' passHref>
 							<a>O nás</a>
 						</Link>
 					</li>
@@ -111,8 +111,8 @@ const Navbar = () => {
 				</div>
 				<nav className={submenuVisible ? styles.visible : ''}>
 					<ul>
-						<li className={router.pathname == '/proc-s-nami' ? `${styles.active}` : ''}>
-							<Link href='/proc-s-nami' passHref>
+						<li className={router.pathname == '/o-nas' ? `${styles.active}` : ''}>
+							<Link href='/o-nas' passHref>
 								<a>O nás</a>
 							</Link>
 						</li>

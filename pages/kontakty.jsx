@@ -172,7 +172,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className={`text-center`}>
+			<section className={`text-center no-margin`}>
 				<Wrapper apiKey={'AIzaSyAu8MzTDuTbDCe9Jvwy10SqJtDxy-W9Uc0'}>
 					<GoogleMap>
 						<GoogleMapMarker position={{ lat: 50.1080258, lng: 14.4544731 }} title='MirandaMedia Group' icon={'/img/icon/marker.png'} />
@@ -181,7 +181,7 @@ export default function Home() {
 				{/* <div className={`${styles.mapSection}`}>
         </div> */}
 			</section>
-			<section>
+			{/* <section>
 				<div className='container text-center'>
 					<h2>Naše marketingové oddělení</h2>
 					<div className={styles.grid}>
@@ -220,7 +220,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<section className='no-margin'>
 				<ContactForm />
 			</section>

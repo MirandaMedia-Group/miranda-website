@@ -17,7 +17,7 @@ const Sluzby = () => {
 						<li>Neomezený počet produktů, uživatelů, e-mailů</li>
 						<li>Bez nutnosti vlastních programátorů</li>
 					</ul>
-					<div className='text-center' style={{ marginTop: '20px' }}>
+					<div style={{ marginTop: '20px' }}>
 						<a href='#kontakt' className='btn btn-secondary'>
 							Poptat služby
 						</a>
@@ -154,7 +154,7 @@ const Sluzby = () => {
 					</svg>
 					<h3>Pravidelná správa Shoptetu</h3>
 					<div className={styles.texts}>
-						<p>Jde vám hlava kolem z řady popisků a prodejních textů.. a že jich je.</p>
+						<p>Jde vám hlava kolem z množství práce nad správou? Tak si oddechněte a nechte to na nás.</p>
 					</div>
 				</div>
 				<div className={styles.item}>

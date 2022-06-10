@@ -74,7 +74,7 @@ export default function EShopy({ reference, coONas }) {
 							</p>
 						</div>
 						<div className={styles.image}>
-							<Image src={'/img/em-mockup.png'} alt='' width={559} height={350} />
+							<Image src={'/img/expresmenu-mockup.png'} alt='' width={559} height={350} />
 						</div>
 						<div className={styles.arrow}>
 							<svg width='52' height='24' viewBox='0 0 52 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -314,18 +314,18 @@ export default function EShopy({ reference, coONas }) {
 				</div>
 			</section>
 			<section className='container'>
-				<Link href='/reference/dolce' passHref>
+				<Link href='/reference/epiderma' passHref>
 					<div className={styles.banner} style={{ backgroundColor: '#F4EBE4' }}>
 						<div className={styles.logo}>
-							<Image src='/img/dolce-black.png' width={209} height={65} alt='Café Imperial Dolce' priority={true}></Image>
+							<Image src='/img/epiderma-logo-black.png' width={175} height={160} alt='Café Imperial Dolce' priority={true}></Image>
 						</div>
 						<div className={styles.text}>
 							<p>
-								<strong>450%</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								<strong>305%</strong> nárůst obratu po redesignu
 							</p>
 						</div>
 						<div className={styles.image}>
-							<Image src={'/img/dolce-mockup.png'} alt='' width={559} height={350} />
+							<Image src={'/img/epiderma-mockup.png'} alt='' width={559} height={350} />
 						</div>
 						<div className={styles.arrow}>
 							<svg width='52' height='24' viewBox='0 0 52 24' fill='none' xmlns='http://www.w3.org/2000/svg'>

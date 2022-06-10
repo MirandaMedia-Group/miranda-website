@@ -17,7 +17,7 @@ export default function Home({ reference, coONas }) {
 			<section>
 				<HeroCarousel></HeroCarousel>
 			</section>
-			<section className='container'>
+			<section className='container' id='scroll'>
 				<div className='narrow text-center'>
 					<h2>Na co jsme hrdí</h2>
 					<p>

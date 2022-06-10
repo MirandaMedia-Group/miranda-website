@@ -27,7 +27,6 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		transform: translateX(-100%);
 		transition: all 0.2s ease-in;
 		opacity: 0;
 		z-index: 1;
@@ -42,7 +41,7 @@
 		}
 		.arrow {
 			padding: 0;
-			transform: translateX(50%);
+			transform: translateX(-100%);
 			transition: all 0.2s ease-in;
 		}
 	}
@@ -69,7 +68,7 @@
 			opacity: 0;
 		}
 		.link {
-			transform: none;
+			// transform: none;
 			opacity: 1;
 			.arrow {
 				transform: none;

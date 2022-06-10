@@ -1,116 +1,130 @@
 .logo {
-    display: inline-flex;
-    &::before {
-        content: url('/img/icon/miranda-icon.svg');
-        display: inline-block;
-    }
+	display: inline-flex;
+	&::before {
+		content: url('/img/icon/miranda-icon.svg');
+		display: inline-block;
+	}
 }
 
 .head {
-    h2 {
-        margin-bottom: 20px;
-    }
-    a {
-        display: block;
-        width: fit-content;
-        margin: 60px auto;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	h2 {
+		margin-bottom: 20px;
+	}
+	a {
+		display: block;
+		width: fit-content;
+		margin: 60px auto;
+	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .biggerFont {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 60px;
+	font-size: 24px;
+	line-height: 40px;
+	margin-bottom: 60px;
 }
 
 .list {
-    text-align: left;
-    margin-bottom: 60px;
-    li::before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        background-color: $color-primary;
-        display: inline-block;
-        margin-right: 10px;
-    }
+	text-align: left;
+	margin-bottom: 60px;
+	li {
+		padding-left: 1rem;
+		position: relative;
+	}
+	li::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		background-color: $color-primary;
+		display: inline-block;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		top: 0.4em;
+	}
 }
 
 .part {
-    margin-top: 60px;
+	margin-top: 60px;
 
-    h3 {
-        margin: 0 auto 25px;
-        max-width: 415px;
-    }
+	h3 {
+		margin: 0 auto 25px;
+		max-width: 415px;
+	}
 
-    &>p {
-        margin-bottom: 30px;
-    }
+	& > p {
+		margin-bottom: 30px;
+	}
 }
 
 .marginTop {
-    margin-top: 60px;
+	margin-top: 60px;
 }
 
 .btnArrow {
-    display: inline-flex !important;
-    justify-content: center;
-    align-items: center;
-    
-    &::after {
-        content: url('/img/icon/arrow-small.svg');
-        margin-left: 10px;
-    }
+	display: inline-flex !important;
+	justify-content: center;
+	align-items: center;
+
+	&::after {
+		content: url('/img/icon/arrow-small.svg');
+		margin-left: 10px;
+	}
 }
 
 .visible {
-    display: none;
+	display: none;
 }
 .overallWrapper {
-    & > div {
-        background-color: $color-white;
-    }
+	margin-top: -100px;
+	position: relative;
+	background: linear-gradient(180deg, #f3f3f3 0%, rgba(217, 217, 217, 0) 100%);
+	background-size: 100% 707px;
+	background-repeat: no-repeat;
+	background-position-y: 100px;
+	& > div {
+		background-color: $color-white;
+	}
 }
 
 @media (max-width: 767px) {
-    .head {
-       a {
-            margin: 40px 0;
-       }
-    }
+	.head {
+		a {
+			margin: 40px 0;
+		}
+	}
 
-    .biggerFont {
-        font-size: 20px;
-        line-height: 30px;
-        text-align: left;
-        margin-top: 0;
-        margin-bottom: 40px;
-    }
+	.biggerFont {
+		font-size: 20px;
+		line-height: 30px;
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
 
-    .marginTop, .part {
-        margin-top: 40px;
-    }
+	.marginTop,
+	.part {
+		margin-top: 40px;
+	}
 
-    .list {
-        margin-bottom: 40px;
-    }
+	.list {
+		margin-bottom: 40px;
+	}
 
-    .hideMobil {
-        display: none;
-    }
+	.hideMobil {
+		display: none;
+	}
 
-    .overallWrapper {
-        h2, h3 {
-            text-align: center;
-        }
-    }
+	.overallWrapper {
+		h2,
+		h3 {
+			text-align: center;
+		}
+	}
 
-    .part h3 {
-        margin-bottom: 15px;
-    }
-    
+	.part h3 {
+		margin-bottom: 15px;
+	}
 }

@@ -62,7 +62,7 @@ function Footer() {
 							</h4>
 							<ul>
 								<li>
-									<Link href='/#'>
+									<Link href='/'>
 										<a>Homepage</a>
 									</Link>
 								</li>
@@ -98,7 +98,7 @@ function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className={`${styles.acordeon} ${sluzbyVisible && styles.visible}`}>
+						{/* <div className={`${styles.acordeon} ${sluzbyVisible && styles.visible}`}>
 							<h4
 								onClick={(e) => {
 									sluzbyVisible ? setSluzbyVisible(false) : setSluzbyVisible(true)
@@ -138,17 +138,17 @@ function Footer() {
 									</Link>
 								</li>
 							</ul>
-						</div>
+						</div> */}
 						<div className={`col-4 ${styles.sluzby}`}>
-							<div className={`${styles.partneri} ${styles.acordeon} ${partneriVisible && styles.visible}`}>
-								<h4
+							<div className={`${styles.partneri} ${partneriVisible && styles.visible}`}>
+								{/* <h4
 									onClick={(e) => {
 										partneriVisible ? setPartneriVisible(false) : setPartneriVisible(true)
 									}}
 								>
 									Partneři
-								</h4>
-								<div>
+								</h4> */}
+								<div style={{ marginTop: 0 }}>
 									<div>
 										<Image src='/img/icon/google-partner.svg' width={60} height={44} alt='Google Partner'></Image>
 									</div>

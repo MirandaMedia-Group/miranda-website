@@ -34,17 +34,28 @@ const PravaMiranda = () => {
 		ppc: {
 			imageSrc: '/img/ppc-bg.jpg',
 			text: 'Mirandina partička nápadama vyzbrojenejch markeťáků poskytuje komplexní služby internetového marketingu. Onlinový PPC kampaně, co podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook & Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.',
-			hashtags: ['Webová analytika', 'Copywriting', 'PPC', 'Zbožové vyhledávače'],
+			hashtags: ['Google Ads', 'Sklik', 'Sociální sítě', 'Zbožové vyhledávače', 'Webová analytika', 'PPC', 'Google Analytics'],
 		},
 		weby: {
 			imageSrc: '/img/weby-bg.jpg',
 			text: 'Vytuněný webovky a nabušenej e-shop je naše specializace a opus magnum. Vaši onlajnovou výkladní skříň podnikání si vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.',
-			hashtags: ['Shoptet & Shoptet PREMIUM', 'Copywriting', 'SEO & analytika', 'Projektové řízení', 'UX/UI', 'Datové služby', 'Školení'],
+			hashtags: [
+				'Shoptet',
+				'Shoptet PREMIUM',
+				'API napojení',
+				'SEO',
+				'Analytika',
+				'Projektové řízení',
+				'UX/UI',
+				'Datové služby',
+				'Školení',
+				'Copywriting',
+			],
 		},
 		soc: {
 			imageSrc: '/img/soc-bg.jpg',
-			text: 'Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tíhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.',
-			hashtags: ['Firemní identita', 'Copywriting'],
+			text: 'Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tímhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.',
+			hashtags: ['Facebook', 'Instagram', 'LinkedIn', 'TikTok', 'YouTube', 'Strategie', 'Firemní identita', 'Copywriting'],
 		},
 		design: {
 			imageSrc: '/img/design-bg.jpg',
@@ -53,7 +64,8 @@ const PravaMiranda = () => {
 		},
 		influence: {
 			imageSrc: '/img/influence-bg.jpg',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			text: 'Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků, co pozvednou tvůj brand na úplně jinej level.',
+			hashtags: ['Influencer marketing', 'Microinfluencing'],
 		},
 	}
 	return (
@@ -89,7 +101,7 @@ const PravaMiranda = () => {
 					)}
 					{displayRef == influence && (
 						<>
-							<PravaMirandaImage imageSrc={data.influence.imageSrc} text={data.influence.text} />
+							<PravaMirandaImage imageSrc={data.influence.imageSrc} text={data.influence.text} hashtags={data.influence.hashtags} />
 						</>
 					)}
 				</div>
