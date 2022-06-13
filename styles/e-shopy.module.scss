@@ -160,6 +160,17 @@
 		gap: 20px;
 	}
 }
+@media screen and (max-width: 680px) {
+	.anchors nav {
+		white-space: nowrap;
+		overflow-x: auto;
+
+		ul {
+			flex-wrap: nowrap;
+			margin: 0;
+		}
+	}
+}
 @media screen and (max-width: 660px) {
 	.banner {
 		display: flex;

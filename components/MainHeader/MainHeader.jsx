@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import styles from './MainHeader.module.scss'
 
 const Navbar = () => {
@@ -9,9 +9,38 @@ const Navbar = () => {
 	const [actualHour, setActualHour] = useState(null)
 	const [shopyVisible, setShopyVisible] = useState(false)
 	const [sluzbyVisible, setSluzbyVisible] = useState(false)
+	const [scrollY, setScrollY] = useState(0)
+	const [scrolledTop, setScrolledTop] = useState(false)
+	const [fadeOut, setFadeOut] = useState(false)
 
 	const toggleNav = () => {
 		submenuVisible ? setSubmenuVisible(false) : setSubmenuVisible(true)
+	}
+
+	const handleScroll = () => {
+		const position = window.scrollY
+		if (position > 300) {
+			if (position < scrollY) {
+				if (!scrolledTop) setScrolledTop(true)
+			} else {
+				if (scrolledTop) {
+					setFadeOut(true)
+					setTimeout(() => {
+						setScrolledTop(false)
+						setFadeOut(false)
+					}, 300)
+				}
+			}
+		} else {
+			if (scrolledTop) {
+				setFadeOut(true)
+				setTimeout(() => {
+					setScrolledTop(false)
+					setFadeOut(false)
+				}, 300)
+			}
+		}
+		setScrollY(position)
 	}
 	useEffect(() => {
 		setActualHour(new Date().getHours())
@@ -21,8 +50,19 @@ const Navbar = () => {
 		router.events.on('routeChangeStart', () => setSubmenuVisible(false))
 	}, [router.events])
 
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true })
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	})
+
 	return (
-		<header className={`${styles.mainHeader} ${submenuVisible ? styles.submenuVisible : ''}`}>
+		<header
+			className={`${styles.mainHeader} ${submenuVisible ? styles.submenuVisible : ''} ${scrolledTop ? styles.scrolledTop : ''} ${
+				fadeOut ? styles.fadeOut : ''
+			}`}
+		>
 			<div className={`${styles.logo}`}>
 				<Link href='/' passHref>
 					<svg width='67' height='55' viewBox='0 0 67 55' xmlns='http://www.w3.org/2000/svg'>

@@ -11,6 +11,33 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
+	&.scrolledTop {
+		position: fixed;
+		top: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: rgba($color-font, 0.9);
+		animation: fade-in 0.3s ease-in-out forwards;
+		&.fadeOut {
+			animation: fade-out 0.3s ease-in-out forwards;
+		}
+	}
+}
+@keyframes fade-in {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: none;
+	}
+}
+@keyframes fade-out {
+	100% {
+		transform: translateY(-100%);
+	}
+	0% {
+		transform: none;
+	}
 }
 .navigation {
 	flex: 0 1;
