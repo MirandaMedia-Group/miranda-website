@@ -11,6 +11,13 @@ export default function Home() {
 			link: '/kariera/sales-manager',
 			image: '/img/kariera1.jpg',
 		},
+		{
+			id: 2,
+			nazev: 'Zkušený/á PPC specialista/ka',
+			text: '',
+			link: '/kariera/ppc-specialista',
+			image: '/img/kariera3.jpg',
+		},
 		// {
 		// 	id: 2,
 		// 	nazev: 'Obchodní manažer',
