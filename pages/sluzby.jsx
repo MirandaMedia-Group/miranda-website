@@ -1,176 +1,103 @@
-import { useState } from 'react';
-import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim';
-import PravaMiranda from '../components/PravaMiranda/PravaMiranda';
-import Link from 'next/link';
-import styles from '../styles/sluzby.module.scss';
+import HeroStaticSlim from '../components/HeroStaticSlim/HeroStaticSlim'
+// import PravaMiranda from '../components/PravaMiranda/PravaMiranda'
+import Image from 'next/image'
+import ContactForm from '../components/ContactForm/ContactForm'
+
+import styles from '../styles/sluzby.module.scss'
 
 export default function Home() {
-	// const [style, setStyle] = useState('true')
-
-	// const handleText = () => {
-	//   console.log('working')
-	// }
+	const data = {
+		ppc: {
+			imageSrc: '/img/ppc-bg.jpg',
+			text: 'Mirandina partička nápadama vyzbrojenejch markeťáků poskytuje komplexní služby internetového marketingu. Onlinový PPC kampaně, co podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook & Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.',
+			hashtags: ['Google Ads', 'Sklik', 'Sociální sítě', 'Zbožové vyhledávače', 'Webová analytika', 'PPC', 'Google Analytics'],
+			title: 'PPC kampaně',
+		},
+		weby: {
+			imageSrc: '/img/weby-bg.jpg',
+			text: 'Vytuněný webovky a nabušenej e-shop je naše specializace a opus magnum. Vaši onlajnovou výkladní skříň podnikání si vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.',
+			hashtags: [
+				'Shoptet',
+				'Shoptet PREMIUM',
+				'API napojení',
+				'SEO',
+				'Analytika',
+				'Projektové řízení',
+				'UX/UI',
+				'Datové služby',
+				'Školení',
+				'Copywriting',
+			],
+			title: 'Weby & e-shopy',
+		},
+		soc: {
+			imageSrc: '/img/soc-bg.jpg',
+			text: 'Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tímhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.',
+			hashtags: ['Facebook', 'Instagram', 'LinkedIn', 'TikTok', 'YouTube', 'Strategie', 'Firemní identita', 'Copywriting'],
+			title: 'Sociální sítě',
+		},
+		design: {
+			imageSrc: '/img/design-bg.jpg',
+			text: 'Vyladěná grafika od Mirandy, co má hlavu plnou nápadů a hýří kreativitou, to je pane kumšt. Obzvlášť, když přijde na takovou korporátní identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery, tiskoviny, letáky a loga.',
+			hashtags: ['Produktové fotografie', 'Webdesign', 'Návrh značek', 'Tiskoviny', 'Korporátní design a identita', 'Reklamní bannery'],
+			title: 'Kreativa',
+		},
+		influence: {
+			imageSrc: '/img/influence-bg.jpg',
+			text: 'Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků, co pozvednou tvůj brand na úplně jinej level.',
+			hashtags: ['Influencer marketing', 'Microinfluencing'],
+			title: 'Influencing',
+		},
+	}
 
 	return (
 		<>
-			{/* <HeroStatic
-        title="Vše pro digital na jednom místě"
-        subtitle="Miranda plnohodnotně působí jako full servis digitální - marketingová & kreativní agentura. Jeden by řekl, že toho je na samotnou agenturu poměrně hodně, ale už od počátku bylo naším cílem poskytovat služby, které spolu úzce souvisí tzv. pod jednou střechou. Tento komplexní přístup šetří našim klientům ve výsledku čas i peníze. Na své potřeby v digitální světě si snadno vystačí s jedním, silným partnerem."
-        image="/img/heroBanner-min.png" 
-        bigFont
-      /> */}
 			<section>
-				<HeroStaticSlim
-					title='Naše služby'
-					image='/img/sluzby-hero.jpg'
-				/>
+				<HeroStaticSlim title='Naše služby' image='/img/sluzby-hero.jpg' />
 			</section>
-			<section>
+			{/* <section>
 				<div className='container sluzby'>
 					<PravaMiranda className={styles.pravaMiranda} />
 				</div>
+			</section> */}
+			<section className='container'>
+				{data &&
+					Object.keys(data).map((item, index) => {
+						let itemData = data[item]
+						return (
+							<div key={index} id={item} className={`columns col-2 align-center ${styles.item}`}>
+								<div className={`column ${styles.image}`}>
+									<Image src={itemData.imageSrc} width={806} height={806} alt='' priority={true} layout='responsive' />
+									<div className={styles.hashtags}>
+										{itemData.hashtags &&
+											itemData.hashtags.map((hash, index) => {
+												return (
+													<span key={index} className={styles.hashtag}>
+														# {hash}
+													</span>
+												)
+											})}
+									</div>
+								</div>
+								<div className={`column ${styles.texts}`}>
+									<div className={styles.title}>
+										<span>Miranda</span>
+										<h2>{itemData.title}</h2>
+									</div>
+									<div>
+										<p>{itemData.text}</p>
+										<a href='#kontakt' className='btn btn-secondary'>
+											Spojit se s Mirandou
+										</a>
+									</div>
+								</div>
+							</div>
+						)
+					})}
 			</section>
-			{/* <section>
-        <div className='container'>
-          <div className={styles.sluzby}>
-            <div className={styles.sluzbyLeft}>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>01</span>Shoptet &amp; Shoptet Premium</h4><Link href="/e-shopy">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  <p>Když potřebuješ Shoptet na míru nebo rovnou na klíč , nenajdeš zkušenějšího parťáka nebo vlastně parťačku než právě Mirandu. Na téhle krabici jsme navrhli a postavili už hromadu e-shopů včetně Penny Marketu, Autosalonu Klokočka nebo taky on-line obchůdek pro ten zatraceně dobrej Svijanskej Pivovar.</p>
-                  <p>Tenhle vymakanej systém si za víc jak 13 let svého působení dokázal přitáhnout přes 30.000 e-shopů v Český a Slovenský republice. A Miranda, tak ta je nejenom Zlatým a Prémiovým parťákem týhle super platformy, ale především místem, kde se on-lajn výkladní skříň tvýho podnikání posouvá na zcela jinej level! Pakliže hledáš pořádně vymazlenou grafiku, abys nebyl tuctovej, co je třeba naroubovat na Shoptetí střeva, naprogramovat vlastní vychytaný funkcionality, napojit jakejkoli externí systém přes apíčko nebo snad zajistit dohled nad e-shopem v režimu 24/7 přes komunikační platformu provozovanou v plně redundantním režimu s 2 databázovými servery s master-master replikou, k tomu 2x aplikační server a navrch 2x balancer zajišťující logiku automatického zapojení slave větvě při výpadku některého serveru, tak ačkoli možná nemáš šajna, co to všechno znamená, pak si tu rozhodně na tom správným místě!</p>
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>02</span>Software na míru</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>03</span>Produktové fotografie</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>04</span>Mobilní aplikace</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>05</span>Návrh značek</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>06</span>Firemní identita</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>07</span>Copywriting</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-            </div>
-            <div className={styles.sluzbyRight}>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>08</span>Webová analytika</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>09</span>Projektové řízení</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>10</span>UX/UI</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>11</span>Datové služby</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>12</span>Školení</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-              <div className={styles.sluzba}>
-                <div>
-                  <h4><span>13</span>Podcast</h4><Link href="/#">
-                    <a className='btn-sm'></a>
-                  </Link>
-                </div>
-                <div className={styles.text}>
-                  #
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+			<section className='no-margin'>
+				<ContactForm />
+			</section>
 		</>
-	);
+	)
 }

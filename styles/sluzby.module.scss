@@ -1,51 +1,102 @@
-.sluzby {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    & > div {
-        flex: 1 1 520px;
-    }
-    .sluzba {
-        border: 1px solid $color-primary;
-        padding: 50px;
-        margin-bottom: 20px;
-        display: inline-block;
-        width: 100%;
-        &>div:first-child {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h4 {
-                margin-bottom: 0;
-                span {
-                    color: $color-primary;
-                    margin-right: 15px;
-                }
-            }
-        }
-        .text {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height .3s ease-in;
-        }
-        &:hover, &:focus {
-            .text {
-                max-height: 600px;
-            }
-        }
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-}
+// .sluzby {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 20px;
+//     & > div {
+//         flex: 1 1 520px;
+//     }
+//     .sluzba {
+//         border: 1px solid $color-primary;
+//         padding: 50px;
+//         margin-bottom: 20px;
+//         display: inline-block;
+//         width: 100%;
+//         &>div:first-child {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             h4 {
+//                 margin-bottom: 0;
+//                 span {
+//                     color: $color-primary;
+//                     margin-right: 15px;
+//                 }
+//             }
+//         }
+//         .text {
+//             max-height: 0;
+//             overflow: hidden;
+//             transition: max-height .3s ease-in;
+//         }
+//         &:hover, &:focus {
+//             .text {
+//                 max-height: 600px;
+//             }
+//         }
+//         &:last-of-type {
+//             margin-bottom: 0;
+//         }
+//     }
+// }
 
-@media screen and (max-width: 767px) {
-    .sluzby {
-        .sluzba {
-            padding: 20px;
-            h4 {
-                font-size: rem(22);
-            }
-        }
-    }
+// @media screen and (max-width: 767px) {
+//     .sluzby {
+//         .sluzba {
+//             padding: 20px;
+//             h4 {
+//                 font-size: rem(22);
+//             }
+//         }
+//     }
+// }
+
+.item {
+	gap: 0 !important;
+	background-color: rgba($color-font, 0.05);
+	&:nth-of-type(even) {
+		flex-direction: row-reverse;
+		background-color: rgba($color-font, 0.15);
+	}
+	.texts {
+		padding: 100px;
+	}
+	.image {
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(#000, 0.4);
+		}
+	}
+	.hashtags {
+		position: absolute;
+		top: 50%;
+		left: 50px;
+		right: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		color: $color-white;
+		transform: translateY(-50%);
+		z-index: 1;
+		.hashtag {
+			padding: em(10) em(20);
+			border: 1px solid $color-white;
+		}
+	}
+	.title {
+		border-bottom: 1px solid $color-font;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		h2 {
+			margin-bottom: 0;
+		}
+	}
 }
