@@ -133,7 +133,7 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link href='/kariera'>
-							<a className={router.pathname == '/kariera' ? `${styles.active}` : ''}>Kariera</a>
+							<a className={router.pathname == '/kariera' ? `${styles.active}` : ''}>Kariéra</a>
 						</Link>
 					</li>
 					<li>
@@ -225,7 +225,7 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link href='/kariera'>
-								<a className={router.pathname == '/kariera' ? `${styles.active}` : ''}>Kariera</a>
+								<a className={router.pathname == '/kariera' ? `${styles.active}` : ''}>Kariéra</a>
 							</Link>
 						</li>
 						<li>
