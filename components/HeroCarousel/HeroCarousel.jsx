@@ -48,16 +48,13 @@ const HeroCarousel = () => {
 				</div>
 			)}
 			<div className={`container ${styles.itemTexts}`}>
-				<div className={styles.subheading}>MirandaMedia</div>
+				{/* <div className={styles.subheading}>MirandaMedia</div> */}
 				<div className={styles.headingWrapper}>
 					{/* <TypeWriter 
                         content='E-shopy a weby na klíč, výkononstní marketing a design'
                     /> */}
-					<h1>
-						<span>E-shopy a weby na klíč</span>
-						<span>Výkonnostní marketing</span>
-						<span>Kreativa</span>
-					</h1>
+					<h1>Marketingová a digitální agentura</h1>
+					<span>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní</span>
 					{/* <a href='#' className='btn btn-primary'>
 						<span data-hover='Přehrát showreal'>Přehrát showreal</span>
 					</a> */}

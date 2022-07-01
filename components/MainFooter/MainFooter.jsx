@@ -36,7 +36,7 @@ function Footer() {
 										<strong className={styles.green}>MirandaMedia Group, s.r.o.</strong>
 									</h4>
 								</li>
-								<li>Jankovcova 1595/14, 170 00</li>
+								<li>Jankovcova 1596/14b, 170 00</li>
 								<li>Praha 7 - Holešovice</li>
 								<li>Vchod B</li>
 							</ul>
@@ -78,12 +78,12 @@ function Footer() {
 								</li>
 								<li>
 									<Link href='/sluzby'>
-										<a>Sluzby</a>
+										<a>Služby</a>
 									</Link>
 								</li>
 								<li>
 									<Link href='/kariera'>
-										<a>Kariera</a>
+										<a>Kariéra</a>
 									</Link>
 								</li>
 								<li>
@@ -178,13 +178,6 @@ function Footer() {
 									</a>
 								</div>
 								<div>
-									<Link href='https://www.twitter.com'>
-										<a target='_blank'>
-											<svg width='30' height='24' viewBox='0 0 30 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-												<path d='M29.8203 2.80659C28.7088 3.2759 27.5355 3.59701 26.3375 3.76991C27.6096 3.01655 28.5482 1.81857 28.9805 0.410645C27.7949 1.11461 26.4981 1.63332 25.1395 1.91738C22.8424 -0.527974 19.0015 -0.651477 16.5561 1.64567C15.3334 2.79424 14.6418 4.38743 14.6418 6.05471C14.6418 6.52402 14.7036 6.98098 14.8271 7.43794C9.93639 7.20328 5.37914 4.90614 2.27923 1.12696C1.77287 2.04088 1.50116 3.0783 1.50116 4.12807C1.50116 6.15351 2.51389 8.0431 4.20587 9.16697C3.2302 9.12992 2.27923 8.85822 1.43941 8.38891V8.45066C1.43941 11.3406 3.46485 13.823 6.29306 14.3911C5.762 14.5393 5.21859 14.6134 4.67518 14.6258C4.29232 14.6134 3.90946 14.5764 3.53896 14.5023C4.34172 16.96 6.60182 18.6396 9.18302 18.7014C7.02173 20.381 4.36642 21.2949 1.62467 21.2826C1.14301 21.2949 0.661347 21.2826 0.179688 21.2332C2.95849 23.0487 6.21896 24.012 9.54118 23.9996C19.0262 24.0614 26.7574 16.4289 26.8192 6.94393C26.8192 6.86983 26.8192 6.79573 26.8192 6.70927V5.93121C27.9925 5.06669 29.0052 4.01692 29.8203 2.80659Z' />
-											</svg>
-										</a>
-									</Link>
 									<Link href='https://www.instagram.com/mirandamediagroup/'>
 										<a target='_blank'>
 											<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -220,7 +213,7 @@ function Footer() {
 									</a>
 								</div>
 							</div>
-							<p className={styles.signature}>© MirandaMedia Group s.r.o. 2022 | Zpracování osobních údajů</p>
+							<p className={styles.signature}>© MirandaMedia Group s.r.o. 2022 | <Link href='/zpracovani-osobnich-udaju'><a>Zpracování osobních údajů</a></Link></p>
 						</div>
 					</div>
 				</div>

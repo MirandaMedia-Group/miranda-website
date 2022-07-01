@@ -30,7 +30,10 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
-			<Head></Head>
+			<Head>
+				<link rel="shortcut icon" sizes="16x16" href="/favicon.ico" />
+				<link rel="shortcut icon" sizes="32x32" href="/favicon-32x32.ico" />
+			</Head>
 			<Script id='gtm' strategy='afterInteractive'>
 				{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

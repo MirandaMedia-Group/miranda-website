@@ -13,7 +13,6 @@ import { fetchAPI } from '../lib/api'
 export default function Home({ reference, coONas }) {
 	return (
 		<>
-			<Head></Head>
 			<section>
 				<HeroCarousel></HeroCarousel>
 			</section>
@@ -21,9 +20,9 @@ export default function Home({ reference, coONas }) {
 				<div className='narrow text-center'>
 					<h2>Na co jsme hrdí</h2>
 					<p>
-						Našim skvělým partnerům pomáháme{' '}
-						<strong>s návrhem a tvorbou úspěšných e-shopů a webů, správou marketingových aktivit se zaměřením na výkonnostní PPC kampaně.</strong>{' '}
-						Tvoříme značky a nové produkty, spravujeme sociální sítě a nejen to.
+						Tvoříme ziskové e-shopy a weby pro ty, kteří požadují jen to nejlepší.
+						Spravujeme výkonnostní kampaně a přinášíme dosah sociálním sítím.
+						Stojíme za vznikem nových značek a produktů., které hýbou trhem.
 					</p>
 				</div>
 				<Reference data={reference}></Reference>
@@ -70,7 +69,7 @@ export default function Home({ reference, coONas }) {
 								Pokud tě zajímá svět digitálních a marketingových agentur, autentické a inspirativní příběhy napříč všemi oblastmi podnikání
 								nebo chceš jednoduše vyplnit volný čas, tak pouštej!
 							</p>
-							<a className='btn btn-tertiary disabled'>Poptat podcast</a>
+							{/* <a className='btn btn-tertiary disabled'>Poptat podcast</a> */}
 						</div>
 						<div className='column'></div>
 					</div>
@@ -89,7 +88,7 @@ export async function getStaticProps() {
 		sort: 'priorita',
 		pagination: { page: 1, pageSize: 6 },
 	})
-	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*', sort: 'id' })
 
 	return {
 		props: {

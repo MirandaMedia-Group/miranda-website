@@ -6,7 +6,7 @@ function ProjektBanner() {
 	return (
 		<div className={`${styles.projektBanner}`}>
 			<div className={styles.container}>
-				<h2>Nastartujte váš projekt</h2>
+				<h2>Tady začínají skvělé projekty</h2>
 				<p>
 					Miranda od počátku tvrdí, že je to hlavně o lidech, co umí
 					vzít za práci a do každýho projektu přinesou pořádnej zápal

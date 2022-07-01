@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
 			<Head>
 				<title>MirandaMedia Group s.r.o.</title>
 				<meta name='description' content='MirandaMedia Group s.r.o.' />
-				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<noscript
 				dangerouslySetInnerHTML={{

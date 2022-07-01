@@ -42,23 +42,23 @@
 	}
 	.headingWrapper {
 		// min-height: 280px;
+		max-width: 680px;
 		h1 {
 			text-transform: uppercase;
-			font-size: rem(42);
 			margin-bottom: 20px;
-			span {
-				display: flex;
-				align-items: center;
-				&::before {
-					content: '';
-					display: inline-block;
-					width: 7px;
-					height: 7px;
-					background-color: $color-primary;
-					border-radius: 50%;
-					margin-right: 0.3em;
-				}
-			}
+		}
+		span {
+			font-size: clamp(rem(16), 2vw, rem(24));
+			line-height: em(40, 24);
+			// &::before {
+			// 	content: '';
+			// 	display: inline-block;
+			// 	width: 7px;
+			// 	height: 7px;
+			// 	background-color: $color-primary;
+			// 	border-radius: 50%;
+			// 	margin-right: 0.3em;
+			// }
 		}
 	}
 	.subheading {

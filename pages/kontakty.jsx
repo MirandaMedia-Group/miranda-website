@@ -21,7 +21,7 @@ export default function Home() {
 							<div className={styles.column}>
 								<h1>Kontakty</h1>
 								<p>
-									<strong>Fakturační údaje</strong>
+									<strong>Sídlo společnosti</strong>
 								</p>
 								<p>
 									MirandaMedia Group, s.r.o.
