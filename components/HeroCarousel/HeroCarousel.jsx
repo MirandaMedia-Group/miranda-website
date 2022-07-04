@@ -53,7 +53,7 @@ const HeroCarousel = () => {
 					{/* <TypeWriter 
                         content='E-shopy a weby na klíč, výkononstní marketing a design'
                     /> */}
-					<h1>Marketingová a digitální agentura</h1>
+					<h1>Marketingová digitální agentura</h1>
 					<span>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní</span>
 					{/* <a href='#' className='btn btn-primary'>
 						<span data-hover='Přehrát showreal'>Přehrát showreal</span>

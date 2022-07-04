@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import axios from 'axios'
 import styles from './ContactForm.module.scss'
 import { useRef, useState } from 'react'
@@ -71,7 +72,7 @@ const ContactForm = () => {
 									<textarea name='zprava' id='zprava' rows='5' placeholder='Váš vzkaz' ref={form.zprava}></textarea>
 									<div className={styles.formRow}>
 										<input type='checkbox' name='consent' id='consent' readOnly />
-										<label htmlFor='consent'>Odesláním souhlasíte s Podmínkami zpracovaní osobních údajů</label>
+										<label htmlFor='consent'>Odesláním souhlasíte s <Link href='/zpracovani-osobnich-udaju'><a>Podmínkami zpracovaní osobních údajů</a></Link></label>
 									</div>
 									<button type='submit' className='btn btn-primary'>
 										<span data-hover='Odeslat poptávku'>Odeslat poptávku</span>

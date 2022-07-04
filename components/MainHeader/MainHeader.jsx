@@ -43,10 +43,23 @@ const Navbar = () => {
 		setScrollY(position)
 	}
 	useEffect(() => {
-		setActualHour(new Date().getHours())
-		setInterval(() => {
+
+		const day = new Date().getDay()
+
+		if (day === 0 && day === 6) {
+			setActualHour(18)
+		} else {
 			setActualHour(new Date().getHours())
+		}
+
+		setInterval(() => {
+			if (day === 0 && day === 6) {
+				setActualHour(18)
+			} else {
+				setActualHour(new Date().getHours())
+			}
 		}, 60000)
+
 		router.events.on('routeChangeStart', () => setSubmenuVisible(false))
 	}, [router.events])
 

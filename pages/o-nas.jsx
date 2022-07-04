@@ -12,22 +12,13 @@ export default function Home() {
 			<section className='text-center'>
 				<div className='container narrow'>
 					<h2>Miranda</h2>
-					<p>
-						Tahle partička kolem Mirandiny rodiny má pěkně zvostra našlápnuto a tuní si to ladně podle svejch vlastních pravidel. Onlinový PPC
-						kampaně, co podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook &amp; Instagram pro
-						hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný
-						onlajnový flow.
-					</p>
+					<p>Digitální & marketingová agentura se smyslem pro design a fair play.</p>
 				</div>
 				<div className={`container ${styles.grid}`}>
 					<div className={`${styles.itemWide} ${styles.textItem}`}>
 						<h3>Jak to všechno začalo</h3>
 
-						<p>
-							Michal stojí za úspěšnou digitální agenturou s řadou známých klientů a značek. Za svou více jak 10letou praxi získal bohaté
-							zkušenosti z on-line marketingu a v oblasti Business Development. Založil několik úspěšných e-shopů a pěknou řádku let působil v
-							oblasti mediálního plánování.
-						</p>
+						<p>Když se potkal Tomáš s Michalem, měli oba svou vlastní agenturu. Každý se věnoval trochu něčemu jinému. Všechno do sebe začalo zapadat až ve chvíli, kdy získali svého prvního společného klienta a pochopili, že dohromady jim to spolu šlape jak hodinky. A tak se začal psát příběh Mirandy.</p>
 					</div>
 					<div className={`${styles.itemWide} ${styles.itemBuchta}`}>
 						<Image src='/img/buchta.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
@@ -37,11 +28,8 @@ export default function Home() {
 					</div>
 					<div className={`${styles.textItem} ${styles.mobileWide}`}>
 						<p>
-							Tomáš je v obchodu a marketingu jak ryba ve vodě. 5 let působil v pozici Head of Sales pro investiční skupinu Banky ochrany
-							životního prostředí. V průběhu práce si odskočil zastudovat na Business Institut v oboru Marketing, media &amp; sofskills. Založil
-							obsahovou agenturu a podílel se na řadě marketingových aktivit pro české i mezinárodní společnosti.{' '}
+							Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s vřelostí jí vlastní, a když si padnete do oka, už nikdy nebudete chtít jinou;)
 						</p>
-						<p>Když se potkal s Tomášem, slovo dalo slovo a vznikla Miranda. </p>
 					</div>
 					<div>
 						<Image src='/img/miranda-lounge.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
@@ -61,8 +49,7 @@ export default function Home() {
 					</div>
 					<div className={`${styles.itemWider} ${styles.textItem}`}>
 						<p>
-							Na vymýšlení všemožných strategií, postupů a nápadů posbíralo Mirandino holešovický crew už nějaký ty body zkušeností. Dneska jsme
-							nabušenej tým profíků ze všech oborů napříč digitálem a odbavujem hustý projekty, který nás baví.
+							Na vymýšlení všemožných strategií, projektů a nápadů posbírala Miranda už nějaký ty body zkušeností. Možná i proto jí naslouchají klienti jako Philips, Zdeněk Pohlreich, Pivovar Svijany, PetCenter a mnozí další...sami se jich zeptejte, co na Mirandu říkají.
 						</p>
 						{/* <Link href='/jak-to-funguje'>
 							<a className='btn btn-secondary'>Zjisti jak to u nás funguje</a>
