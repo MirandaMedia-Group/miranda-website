@@ -21,7 +21,7 @@ export default function Home() {
 						<p>Když se potkal Tomáš s Michalem, měli oba svou vlastní agenturu. Každý se věnoval trochu něčemu jinému. Všechno do sebe začalo zapadat až ve chvíli, kdy získali svého prvního společného klienta a pochopili, že dohromady jim to spolu šlape jak hodinky. A tak se začal psát příběh Mirandy.</p>
 					</div>
 					<div className={`${styles.itemWide} ${styles.itemBuchta}`}>
-						<Image src='/img/buchta.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
+						<Image src='/img/buchta.png' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
 					</div>
 					<div>
 						<Image src='/img/epiderma-casopis.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>

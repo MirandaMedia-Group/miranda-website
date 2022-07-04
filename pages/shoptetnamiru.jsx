@@ -70,7 +70,7 @@ export default function EShopy({ reference, coONas }) {
 						</div>
 						<div className={styles.text}>
 							<p>
-								<strong>o 3278 %</strong> Jsme navýšili návštěvnost webu.
+								<strong>o 3278 %</strong> nárůst tržeb.
 							</p>
 						</div>
 						<div className={styles.image}>
