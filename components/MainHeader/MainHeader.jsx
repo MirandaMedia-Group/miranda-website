@@ -1,3 +1,4 @@
+import axios from 'axios'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState, useEffect, useCallback } from 'react'
@@ -42,18 +43,18 @@ const Navbar = () => {
 		}
 		setScrollY(position)
 	}
-	useEffect(() => {
-
+	useEffect(async () => {
 		const day = new Date().getDay()
+		const isHoliday = await fetchIsHoliday()
 
-		if (day === 0 && day === 6) {
+		if (day === 0 || day === 6 || isHoliday == true) {
 			setActualHour(18)
 		} else {
 			setActualHour(new Date().getHours())
 		}
 
 		setInterval(() => {
-			if (day === 0 && day === 6) {
+			if (day === 0 || day === 6 || isHoliday == true) {
 				setActualHour(18)
 			} else {
 				setActualHour(new Date().getHours())
@@ -69,6 +70,11 @@ const Navbar = () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
 	})
+
+	const fetchIsHoliday = async () => {
+		const res = await axios.get('https://svatkyapi.cz/api/day/2022-07-04')
+		return res.data.isHoliday
+	}
 
 	return (
 		<header
