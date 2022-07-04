@@ -72,7 +72,7 @@ const Navbar = () => {
 	})
 
 	const fetchIsHoliday = async () => {
-		const res = await axios.get('https://svatkyapi.cz/api/day/2022-07-04')
+		const res = await axios.get('https://svatkyapi.cz/api/day/')
 		return res.data.isHoliday
 	}
 
