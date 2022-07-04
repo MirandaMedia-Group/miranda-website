@@ -10,7 +10,7 @@ function ProjektBanner() {
 				<p>
 					Miranda od počátku tvrdí, že je to hlavně o lidech, co umí
 					vzít za práci a do každýho projektu přinesou pořádnej zápal
-					a nadšení! Tahle energie se pak šíří napříč celým týmem.
+					a nadšení! Tahle energie se šíří napříč celým týmem.
 					Není pak divu, že vznikaj projekty, na který můžete být
 					právem pyšní!
 				</p>

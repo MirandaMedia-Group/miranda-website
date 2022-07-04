@@ -22,7 +22,7 @@ export default function Home({ reference, coONas }) {
 					<p>
 						Tvoříme ziskové e-shopy a weby pro ty, kteří požadují jen to nejlepší.
 						Spravujeme výkonnostní kampaně a přinášíme dosah sociálním sítím.
-						Stojíme za vznikem nových značek a produktů., které hýbou trhem.
+						Stojíme za vznikem nových značek a produktů, které hýbou trhem.
 					</p>
 				</div>
 				<Reference data={reference}></Reference>
