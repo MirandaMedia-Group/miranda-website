@@ -1,3 +1,7 @@
+# Deployment status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38e5eb74-47cf-4bf1-8a1b-f6e3fdc27e06/deploy-status)](https://app.netlify.com/sites/effervescent-mermaid-2ab2ee/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
