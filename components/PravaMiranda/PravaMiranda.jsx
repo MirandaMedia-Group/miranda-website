@@ -20,13 +20,15 @@ const PravaMiranda = () => {
 	const [displayRef, setDisplayRef] = useState(ppc)
 	const [displayRefMob, setDisplayRefMob] = useState(null)
 	const displayMobileContent = (ref) => {
-		if (ref != displayRefMob) {
-			setDisplayRefMob(ref)
-			setTimeout(() => {
-				ref.current.scrollIntoView()
-			}, 150)
-		} else {
-			setDisplayRefMob(null)
+		if (window.innerWidth < 1048) {
+			if (ref != displayRefMob) {
+				setDisplayRefMob(ref)
+				setTimeout(() => {
+					ref.current.scrollIntoView()
+				}, 150)
+			} else {
+				setDisplayRefMob(null)
+			}
 		}
 	}
 

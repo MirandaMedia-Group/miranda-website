@@ -6,7 +6,7 @@ import CoONasRikaji from '../components/CoONasRikaji/CoONasRikaji'
 import ContactForm from '../components/ContactForm/ContactForm'
 import styles from '../styles/e-shopy.module.scss'
 import { fetchAPI } from '../lib/api'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Reference from '../components/Reference/Reference'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -18,6 +18,14 @@ export default function EShopy({ reference, coONas }) {
 	const swiperPrev = useRef(true)
 	const swiperNext2 = useRef(true)
 	const swiperPrev2 = useRef(true)
+	const [windowWidth, setWindowWidth] = useState(0)
+
+	useEffect(() => {
+		setWindowWidth(window.innerWidth)
+		window.addEventListener('resize', () => {
+			setWindowWidth(window.innerWidth)
+		})
+	}, [])
 
 	return (
 		<>
@@ -27,6 +35,7 @@ export default function EShopy({ reference, coONas }) {
 					subtitle='Kompletní e-shopové řešení za nejkratší možnou dobu'
 					image='/img/shoptetnamiru-hero.jpg'
 					// video='/shoptetnamiru.mp4'
+					imageMobile='/img/shoptetnamiru-hero-mobile.jpg'
 					buttons
 					maxWidth
 					// logo='/img/shoptetpremium.png'
@@ -59,6 +68,12 @@ export default function EShopy({ reference, coONas }) {
 					</ul>
 				</nav>
 			</section>
+			<section id='reference' className='hidden'>
+				<div className='container text-center'>
+					<h2>Naše e-shopy na Shoptetu na míru</h2>
+					<Reference data={reference} />
+				</div>
+			</section>
 			<section id='sluzby' className='container'>
 				<Sluzby></Sluzby>
 			</section>
@@ -84,184 +99,19 @@ export default function EShopy({ reference, coONas }) {
 					</div>
 				</Link>
 			</section>
-			<section id='reference' className='hidden'>
-				<div className='container text-center'>
-					<h2>Naše hotové e-shopy na míru na Shoptetu</h2>
-					<Reference data={reference} />
-					{/* <div className='custom-swiper-wrapper'>
-						<Swiper
-							modules={[Navigation, Pagination]}
-							spaceBetween={20}
-							slidesPerView={1}
-							navigation={{
-								prevEl: swiperPrev2.current,
-								nextEl: swiperNext2.current,
-							}}
-							onBeforeInit={(swiper) => {
-								swiper.params.navigation.prevEl =
-									swiperPrev2.current;
-								swiper.params.navigation.nextEl =
-									swiperNext2.current;
-							}}
-							pagination={{
-								clickable: true,
-							}}
-							breakpoints={{
-								992: {
-									slidesPerView: 3,
-								},
-								600: {
-									slidesPerView: 2,
-								},
-							}}
-						>
-							<SwiperSlide>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-											priority={true}
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-											priority={true}
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-								<Link href='#' passHref>
-									<div className={styles.slideItem}>
-										<Image
-											src='/img/rebelbean.jpg'
-											width={466}
-											height={466}
-											alt='Rebel-bean.cz'
-											layout='responsive'
-										></Image>
-										<a
-											href='www.rebelbean.cz'
-											target='_blank'
-											className={styles.anchor}
-										>
-											www.rebelbean.cz
-										</a>
-									</div>
-								</Link>
-							</SwiperSlide>
-						</Swiper>
-						<div
-							className='swiper-button-prev'
-							ref={swiperPrev2}
-						></div>
-						<div
-							className='swiper-button-next'
-							ref={swiperNext2}
-						></div>
-					</div> */}
-					{/* <div className={styles.buttonsWrap}>
-						<Link href='/reference'>
-							<a className='btn btn-tertiary'>
-								<span data-hover='Zobrazit všechny reference'>
-									Zobrazit všechny reference
-								</span>
-							</a>
-						</Link>
-					</div> */}
-				</div>
-			</section>
 			<section id='proc-shoptet' className={`container ${styles.procShoptet}`}>
 				<div className='columns col-1-2'>
 					<div className='column' style={{ position: 'relative', overflow: 'visible' }}>
-						<Image src={'/img/mobil-mockup.png'} width={629} height={816} alt='' layout='responsive' priority={true}></Image>
+						{windowWidth > 767 && <Image src={'/img/mobil-mockup.png'} width={629} height={816} alt='' layout='responsive' priority={true}></Image>}
 					</div>
 					<div className='column'>
 						<h2>Proč zvolit Shoptet?</h2>
 						<p className='large'>
 							Jednička mezi e-commerce platformami v Česku a na na Slovensku s obrovskou podporou a minimálními náklady na provoz.
 						</p>
+						{windowWidth <= 767 && (
+							<Image src={'/img/mobil-mockup-mobile.jpg'} width={335} height={250} alt='' layout='responsive' priority={true}></Image>
+						)}
 						<div className={styles.grid}>
 							<div className={styles.item}>
 								<span className={styles.number}>01</span>
@@ -291,6 +141,17 @@ export default function EShopy({ reference, coONas }) {
 								</p>
 							</div>
 						</div>
+						{windowWidth <= 767 && (
+							<div className={styles.systemy}>
+								<Image src={'/img/eso9.png'} width={150} height={150} alt='Eso9' />
+								<Image src={'/img/moneys5.png'} width={150} height={150} alt='Money S5' />
+								<Image src={'/img/helios.png'} width={150} height={150} alt='Helios' />
+								{/* <Image src={'/img/abra.png'} width={150} height={150} alt='Abra' /> */}
+								<Image src={'/img/pohoda.png'} width={150} height={150} alt='Pohoda' />
+								<Image src={'/img/k2.png'} width={150} height={150} alt='K2' />
+								<Image src={'/img/nevim.png'} width={150} height={150} alt='Nevim' />
+							</div>
+						)}
 						<h3>Napojíme váš Shoptet na pokladní, informační, účetní a podnikové systémy ERP a CRM</h3>
 						<ul>
 							<li>Synchronizace dat v reálném čase</li>
@@ -298,16 +159,18 @@ export default function EShopy({ reference, coONas }) {
 						</ul>
 					</div>
 				</div>
-				<div className={styles.systemy}>
-					<Image src={'/img/eso9.png'} width={150} height={150} alt='Eso9' />
-					<Image src={'/img/moneys5.png'} width={150} height={150} alt='Money S5' />
-					<Image src={'/img/helios.png'} width={150} height={150} alt='Helios' />
-					<Image src={'/img/abra.png'} width={150} height={150} alt='Abra' />
-					<Image src={'/img/pohoda.png'} width={150} height={150} alt='Pohoda' />
-					<Image src={'/img/k2.png'} width={150} height={150} alt='K2' />
-					<Image src={'/img/nevim.png'} width={150} height={150} alt='Nevim' />
-				</div>
-				<div className='button-wrapper text-center'>
+				{windowWidth > 767 && (
+					<div className={styles.systemy}>
+						<Image src={'/img/eso9.png'} width={150} height={150} alt='Eso9' />
+						<Image src={'/img/moneys5.png'} width={150} height={150} alt='Money S5' />
+						<Image src={'/img/helios.png'} width={150} height={150} alt='Helios' />
+						<Image src={'/img/abra.png'} width={150} height={150} alt='Abra' />
+						<Image src={'/img/pohoda.png'} width={150} height={150} alt='Pohoda' />
+						<Image src={'/img/k2.png'} width={150} height={150} alt='K2' />
+						<Image src={'/img/nevim.png'} width={150} height={150} alt='Nevim' />
+					</div>
+				)}
+				<div className='buttons-wrapper text-center'>
 					<Link href='#kontakty'>
 						<a className='btn btn-secondary'>Pojďme se dohodnout</a>
 					</Link>
@@ -509,9 +372,11 @@ export default function EShopy({ reference, coONas }) {
 						></div>
 					</div>
 			</section> */}
-			<section id='reakce' className='hidden'>
-				<CoONasRikaji data={coONas}></CoONasRikaji>
-			</section>
+			{windowWidth > 767 && (
+				<section id='reakce' className='hidden'>
+					<CoONasRikaji data={coONas}></CoONasRikaji>
+				</section>
+			)}
 			<section id='konfigurator' className='container visible'>
 				<div className='konfigurator'>
 					<div className='pripravujeme'>

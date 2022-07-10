@@ -105,45 +105,11 @@ const Navbar = () => {
 						<Link href='/shoptetnamiru'>
 							<a>Shoptet na míru</a>
 						</Link>
-						{/* <ul className={styles.menuLevel2}>
-                <li>
-                  <Link href="/jak-to-funguje">
-                    <a>Jak to u nás funguje</a>
-                  </Link>
-                </li>
-              </ul> */}
 					</li>
 					<li className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''}`}>
 						<Link href='/sluzby'>
 							<a>Služby</a>
 						</Link>
-						{/* <ul className={styles.menuLevel2}>
-							<li>
-								<Link href='/sluzby/ppc-vyhledavace'>
-									<a>PPC &amp; zbožové vyhledávače</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='/sluzby/design'>
-									<a>Produktový design &amp; grafika</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='/sluzby/socialni-site'>
-									<a>Sociální sítě</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='/sluzby/weby'>
-									<a>Weby &amp; e-shopy na klíč</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='/sluzby/influencer'>
-									<a>Influencer</a>
-								</Link>
-							</li>
-						</ul> */}
 					</li>
 					<li>
 						<Link href='/blog'>
@@ -184,30 +150,12 @@ const Navbar = () => {
 							<Link href='/shoptetnamiru'>
 								<a>Shoptet na míru</a>
 							</Link>
-							{/* <span>
-                  <span className={styles.lvl2Toggle} onClick={() => {
-                    shopyVisible ? setShopyVisible(false) : setShopyVisible(true)
-                  }}></span>
-                </span> */}
-							{/* <ul className={styles.menuLevel2}>
-                  <li>
-                    <Link href="/jak-to-funguje">
-                      <a>Jak to u nás funguje</a>
-                    </Link>
-                  </li>
-                </ul> */}
 						</li>
 						<li className={`${router.pathname.includes('/sluzby') ? `${styles.active}` : ''} ${sluzbyVisible && styles.lvl2Visible}`}>
 							<span>
 								<Link href='/sluzby'>
 									<a>Služby</a>
 								</Link>
-								{/* <span
-									className={styles.lvl2Toggle}
-									onClick={() => {
-										sluzbyVisible ? setSluzbyVisible(false) : setSluzbyVisible(true)
-									}}
-								></span> */}
 							</span>
 							{/* <ul className={styles.menuLevel2}>
 								<li>

@@ -1,6 +1,7 @@
 .hero {
 	position: relative;
 	height: 100vh;
+	color: $color-white;
 	&.overlay {
 		&::after {
 			content: '';
@@ -30,6 +31,26 @@
 		height: 100%;
 		object-fit: cover;
 	}
+	.scrollDown {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		.arrow {
+			display: inline-block;
+			position: relative;
+			span {
+				display: inline-block;
+				transform: rotate(-90deg);
+				position: absolute;
+				top: 16px;
+				left: 0;
+			}
+			svg {
+				animation: bounce 2s infinite ease-out;
+			}
+		}
+	}
 }
 
 .itemTexts {
@@ -41,7 +62,7 @@
 	display: flex;
 	align-items: center;
 	z-index: 1;
-	color: $color-white;
+
 	h1 {
 		text-align: left;
 		// max-width: 780px;
@@ -69,13 +90,38 @@
 		margin-right: 10px;
 	}
 }
+@keyframes bounce {
+	0% {
+		transform: none;
+	}
+	50% {
+		transform: translateY(10%);
+	}
+	100% {
+		transform: none;
+	}
+}
 
 @media screen and (max-width: 767px) {
 	.itemTexts {
-		padding: 60px 0;
-		align-items: flex-end;
+		padding: 0;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		height: calc(50vh - 30px);
+		background: linear-gradient(to bottom, transparent 0%, #000 50px);
+		margin-top: -50px;
+		h1 {
+			text-align: center;
+		}
+	}
+	.heroImage {
+		height: 50vh;
+		position: relative;
 	}
 	.hero {
+		background-color: #000;
 		video {
 			display: none;
 			& + .heroImage {
@@ -85,6 +131,19 @@
 		&.overlay {
 			&::after {
 				display: none;
+			}
+		}
+		.scrollDown {
+			position: initial;
+			transform: none;
+			text-align: center;
+			.arrow {
+				span {
+					display: none;
+				}
+				svg {
+					height: 50px;
+				}
 			}
 		}
 	}

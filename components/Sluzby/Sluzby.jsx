@@ -89,7 +89,7 @@ const Sluzby = () => {
 						<p>Starý e-shop vám už nevyhovuje a je na čase nutně modernizovat.</p>
 					</div>
 				</div>
-				<div className={`${styles.item} ${styles.image}`}>
+				<div className={`${styles.item} ${styles.image} ${styles.first}`}>
 					<Image src='/img/sluzby1.jpg' alt='' layout='fill' objectFit='cover' objectPosition='center'></Image>
 				</div>
 				<div className={styles.item}>

@@ -66,41 +66,20 @@ export default function EShopy({ reference, coONas }) {
 			</section>
 			<section className='container'>
 				<Link href='/reference/expresmenu' passHref>
-					<div
-						className={styles.banner}
-						style={{ backgroundColor: '#F7F4D5' }}
-					>
+					<div className={styles.banner} style={{ backgroundColor: '#F7F4D5' }}>
 						<div className={styles.logo}>
-							<Image
-								src='/img/expremenu-black.png'
-								width={200}
-								height={80}
-								alt='ExpresMenu'
-								priority={true}
-							></Image>
+							<Image src='/img/expremenu-black.png' width={200} height={80} alt='ExpresMenu' priority={true}></Image>
 						</div>
 						<div className={styles.text}>
 							<p>
-								<strong>o 125%</strong> Jsme navýšili
-								návštěvnost webu.
+								<strong>o 125%</strong> Jsme navýšili návštěvnost webu.
 							</p>
 						</div>
 						<div className={styles.image}>
-							<Image
-								src={'/img/em-mockup.png'}
-								alt=''
-								width={559}
-								height={350}
-							/>
+							<Image src={'/img/em-mockup.png'} alt='' width={559} height={350} />
 						</div>
 						<div className={styles.arrow}>
-							<svg
-								width='52'
-								height='24'
-								viewBox='0 0 52 24'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'
-							>
+							<svg width='52' height='24' viewBox='0 0 52 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path d='M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807615 39.9792 0.807615 39.3934 1.3934C38.8076 1.97919 38.8076 2.92894 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM-1.31134e-07 13.5L50 13.5L50 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z' />
 							</svg>
 						</div>
@@ -275,79 +254,46 @@ export default function EShopy({ reference, coONas }) {
 					</div> */}
 				</div>
 			</section>
-			<section
-				id='proc-shoptet'
-				className={`container ${styles.procShoptet}`}
-			>
+			<section id='proc-shoptet' className={`container ${styles.procShoptet}`}>
 				<div className='columns col-1-2'>
-					<div
-						className='column'
-						style={{ position: 'relative', overflow: 'visible' }}
-					>
-						<Image
-							src={'/img/mobil-mockup.png'}
-							width={629}
-							height={816}
-							alt=''
-							layout='fill'
-							objectFit='cover'
-							priority={true}
-						></Image>
+					<div className='column' style={{ position: 'relative', overflow: 'visible' }}>
+						<Image src={'/img/mobil-mockup.png'} width={629} height={816} alt='' layout='fill' objectFit='cover' priority={true}></Image>
 					</div>
 					<div className='column'>
 						<h2>Proč zvolit Shoptet?</h2>
 						<p className='large'>
-							Jednička mezi e-commerce platformami v Česku a na na
-							Slovensku s obrovskou podporou a minimálními náklady
-							na provoz.
+							Jednička mezi e-commerce platformami v Česku a na na Slovensku s obrovskou podporou a minimálními náklady na provoz.
 						</p>
 						<div className={styles.grid}>
 							<div className={styles.item}>
 								<span className={styles.number}>01</span>
 								<p>
-									Shoptet je na českém trhu{' '}
-									<strong>TOP on-line platforma</strong>{' '}
-									určená pro provozování e-shopu.{' '}
-									<strong>S Mirandou dokážete</strong>{' '}
-									krabicové řešení posunout na úroveň{' '}
-									<strong>řešení na míru!</strong>
+									Shoptet je na českém trhu <strong>TOP on-line platforma</strong> určená pro provozování e-shopu.{' '}
+									<strong>S Mirandou dokážete</strong> krabicové řešení posunout na úroveň <strong>řešení na míru!</strong>
 								</p>
 							</div>
 							<div className={styles.item}>
 								<span className={styles.number}>02</span>
 								<p>
-									<strong>
-										Shoptet na míru znamená vlastní e-shop
-									</strong>{' '}
-									s možností individuálních a téměř
-									neomezených úprav grafiky, struktury a
-									funkcionalit.
+									<strong>Shoptet na míru znamená vlastní e-shop</strong> s možností individuálních a téměř neomezených úprav grafiky,
+									struktury a funkcionalit.
 								</p>
 							</div>
 							<div className={styles.item}>
 								<span className={styles.number}>03</span>
 								<p>
-									<strong>Řešení na míru od Mirandy</strong>{' '}
-									vám pomůže vystoupit z davu a odlišit se od
-									konkurence.
+									<strong>Řešení na míru od Mirandy</strong> vám pomůže vystoupit z davu a odlišit se od konkurence.
 								</p>
 							</div>
 							<div className={styles.item}>
 								<span className={styles.number}>04</span>
 								<p>
-									<strong>
-										Intuitivní a jednoduchá obsluha
-									</strong>
-									, kterou zvládne každý a hlavně vám vše
-									vysvětlíme a do administrace{' '}
+									<strong>Intuitivní a jednoduchá obsluha</strong>, kterou zvládne každý a hlavně vám vše vysvětlíme a do administrace{' '}
 									<strong>zaškolíme</strong>.
 								</p>
 							</div>
 						</div>
-						<h3>
-							Napojíme váš Shoptet na pokladní, informační, účetní
-							a podnikové systémy ERP a CRM
-						</h3>
+						<h3>Napojíme váš Shoptet na pokladní, informační, účetní a podnikové systémy ERP a CRM</h3>
 						<ul>
 							<li>Synchronizace dat v reálném čase</li>
 							<li>Možnost doprogramovat vlastní funkcionality</li>
@@ -355,48 +301,13 @@ export default function EShopy({ reference, coONas }) {
 					</div>
 				</div>
 				<div className={styles.systemy}>
-					<Image
-						src={'/img/eso9.png'}
-						width={150}
-						height={150}
-						alt='Eso9'
-					/>
-					<Image
-						src={'/img/moneys5.png'}
-						width={150}
-						height={150}
-						alt='Money S5'
-					/>
-					<Image
-						src={'/img/helios.png'}
-						width={150}
-						height={150}
-						alt='Helios'
-					/>
-					<Image
-						src={'/img/abra.png'}
-						width={150}
-						height={150}
-						alt='Abra'
-					/>
-					<Image
-						src={'/img/pohoda.png'}
-						width={150}
-						height={150}
-						alt='Pohoda'
-					/>
-					<Image
-						src={'/img/k2.png'}
-						width={150}
-						height={150}
-						alt='K2'
-					/>
-					<Image
-						src={'/img/nevim.png'}
-						width={150}
-						height={150}
-						alt='Nevim'
-					/>
+					<Image src={'/img/eso9.png'} width={150} height={150} alt='Eso9' />
+					<Image src={'/img/moneys5.png'} width={150} height={150} alt='Money S5' />
+					<Image src={'/img/helios.png'} width={150} height={150} alt='Helios' />
+					<Image src={'/img/abra.png'} width={150} height={150} alt='Abra' />
+					<Image src={'/img/pohoda.png'} width={150} height={150} alt='Pohoda' />
+					<Image src={'/img/k2.png'} width={150} height={150} alt='K2' />
+					<Image src={'/img/nevim.png'} width={150} height={150} alt='Nevim' />
 				</div>
 				<div className='button-wrapper text-center'>
 					<Link href='#kontakty'>
@@ -406,41 +317,20 @@ export default function EShopy({ reference, coONas }) {
 			</section>
 			<section className='container'>
 				<Link href='/reference/dolce' passHref>
-					<div
-						className={styles.banner}
-						style={{ backgroundColor: '#F4EBE4' }}
-					>
+					<div className={styles.banner} style={{ backgroundColor: '#F4EBE4' }}>
 						<div className={styles.logo}>
-							<Image
-								src='/img/dolce-black.png'
-								width={209}
-								height={65}
-								alt='Café Imperial Dolce'
-								priority={true}
-							></Image>
+							<Image src='/img/dolce-black.png' width={209} height={65} alt='Café Imperial Dolce' priority={true}></Image>
 						</div>
 						<div className={styles.text}>
 							<p>
-								<strong>450%</strong> Lorem ipsum dolor sit amet
-								consectetur adipisicing elit.
+								<strong>450%</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 						</div>
 						<div className={styles.image}>
-							<Image
-								src={'/img/dolce-mockup.png'}
-								alt=''
-								width={559}
-								height={350}
-							/>
+							<Image src={'/img/dolce-mockup.png'} alt='' width={559} height={350} />
 						</div>
 						<div className={styles.arrow}>
-							<svg
-								width='52'
-								height='24'
-								viewBox='0 0 52 24'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'
-							>
+							<svg width='52' height='24' viewBox='0 0 52 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path d='M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807615 39.9792 0.807615 39.3934 1.3934C38.8076 1.97919 38.8076 2.92894 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM-1.31134e-07 13.5L50 13.5L50 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z' />
 							</svg>
 						</div>
@@ -627,34 +517,18 @@ export default function EShopy({ reference, coONas }) {
 			<section id='konfigurator' className='container visible'>
 				<div className='konfigurator'>
 					<div className='pripravujeme'>
-						<Image
-							src='/img/pripravujeme.svg'
-							width={210}
-							height={214}
-							alt=''
-							priority={true}
-						></Image>
+						<Image src='/img/pripravujeme.svg' width={210} height={214} alt='' priority={true}></Image>
 					</div>
 					<div className='columns col-2'>
 						<div className='column'>
-							<h2>
-								Zkuste si nakonfigurovat váš Shoptet na míru
-							</h2>
+							<h2>Zkuste si nakonfigurovat váš Shoptet na míru</h2>
 							<p>
-								<strong>Zaberete jo jen chvílku</strong> (pár
-								drag&amp;drop),{' '}
-								<strong>
-									dáte nám váš email a my vám obratem pošleme
-									orientační nabídku.
-								</strong>{' '}
-								Kromě toho máte jedinečnou příležitost poznat,
-								na čem závisí a z jakých kroků se skládá tvorba
-								skutečně úspěšného e-shopu na Shoptetu.
+								<strong>Zaberete jo jen chvílku</strong> (pár drag&amp;drop),{' '}
+								<strong>dáte nám váš email a my vám obratem pošleme orientační nabídku.</strong> Kromě toho máte jedinečnou příležitost poznat,
+								na čem závisí a z jakých kroků se skládá tvorba skutečně úspěšného e-shopu na Shoptetu.
 							</p>
 
-							<a className='btn btn-secondary disabled'>
-								Přejít na konfigurátor
-							</a>
+							<a className='btn btn-secondary disabled'>Přejít na konfigurátor</a>
 						</div>
 						<div className='column'></div>
 					</div>

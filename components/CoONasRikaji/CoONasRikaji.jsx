@@ -20,6 +20,7 @@ const CoONasRikaji = (props) => {
 	const mobileImage = useRef(null)
 
 	const prevRef = () => {
+		setTextToggled(false)
 		if (activeData > 0) {
 			setActiveData(activeData - 1)
 		} else {
@@ -27,6 +28,7 @@ const CoONasRikaji = (props) => {
 		}
 	}
 	const nextRef = () => {
+		setTextToggled(false)
 		if (activeData < maxRefIndex) {
 			setActiveData(activeData + 1)
 		} else {

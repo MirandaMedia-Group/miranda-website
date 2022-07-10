@@ -96,12 +96,19 @@
 			height: 50vh;
 		}
 		.itemTexts {
-			position: initial;
+			position: relative;
 			transform: none;
 			justify-content: center;
 			text-align: center;
 			padding: 30px 20px;
-			height: calc(50vh - 80px);
+			margin-top: -50px;
+			background: linear-gradient(to bottom, transparent 0%, #000 50px);
+			height: calc(50vh - 30px);
+			transform: none;
+			left: unset;
+			top: unset;
+			right: unset;
+			bottom: unset;
 		}
 		.headingWrapper {
 			h1 {

@@ -7,7 +7,12 @@ export default function Home() {
 	return (
 		<>
 			<section>
-				<HeroStatic title='' subtitle='' image='/img/proc-s-nami.jpg' />
+				<HeroStatic
+					title='Miranda'
+					subtitle='Digitální &amp; marketingová agentura se smyslem pro design a fair play.'
+					image='/img/proc-s-nami.jpg'
+					imageMobile='/img/proc-s-nami.jpg'
+				/>
 			</section>
 			<section className='text-center'>
 				<div className='container narrow'>
@@ -17,8 +22,11 @@ export default function Home() {
 				<div className={`container ${styles.grid}`}>
 					<div className={`${styles.itemWide} ${styles.textItem}`}>
 						<h3>Jak to všechno začalo</h3>
-
-						<p>Když se potkal Tomáš s Michalem, měli oba svou vlastní agenturu. Každý se věnoval trochu něčemu jinému. Všechno do sebe začalo zapadat až ve chvíli, kdy získali svého prvního společného klienta a pochopili, že dohromady jim to spolu šlape jak hodinky. A tak se začal psát příběh Mirandy.</p>
+						<p>
+							Když se potkal Tomáš s Michalem, měli oba svou vlastní agenturu. Každý se věnoval trochu něčemu jinému. Všechno do sebe začalo
+							zapadat až ve chvíli, kdy získali svého prvního společného klienta a pochopili, že dohromady jim to spolu šlape jak hodinky. A tak
+							se začal psát příběh Mirandy.
+						</p>
 					</div>
 					<div className={`${styles.itemWide} ${styles.itemBuchta}`}>
 						<Image src='/img/buchta.png' alt='' layout='fill' objectFit='cover' objectPosition='center' priority={true}></Image>
@@ -28,7 +36,8 @@ export default function Home() {
 					</div>
 					<div className={`${styles.textItem} ${styles.mobileWide}`}>
 						<p>
-							Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s vřelostí jí vlastní, a když si padnete do oka, už nikdy nebudete chtít jinou;)
+							Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s vřelostí jí
+							vlastní, a když si padnete do oka, už nikdy nebudete chtít jinou;)
 						</p>
 					</div>
 					<div>
@@ -49,7 +58,8 @@ export default function Home() {
 					</div>
 					<div className={`${styles.itemWider} ${styles.textItem}`}>
 						<p>
-							Na vymýšlení všemožných strategií, projektů a nápadů posbírala Miranda už nějaký ty body zkušeností. Možná i proto jí naslouchají klienti jako Philips, Zdeněk Pohlreich, Pivovar Svijany, PetCenter a mnozí další...sami se jich zeptejte, co na Mirandu říkají.
+							Na vymýšlení všemožných strategií, projektů a nápadů posbírala Miranda už nějaký ty body zkušeností. Možná i proto jí naslouchají
+							klienti jako Philips, Zdeněk Pohlreich, Pivovar Svijany, PetCenter a mnozí další...sami se jich zeptejte, co na Mirandu říkají.
 						</p>
 						{/* <Link href='/jak-to-funguje'>
 							<a className='btn btn-secondary'>Zjisti jak to u nás funguje</a>
@@ -82,12 +92,12 @@ export default function Home() {
 					</div>
 					<div className={`${styles.mobileWide} ${styles.textItem}`}>
 						<p>
-							<strong>
+							<strong className={styles.small}>
 								Tomáš Cina <span>Zakladatel společnosti</span>
 							</strong>
 						</p>
 						<p>
-							<strong>
+							<strong className={styles.small}>
 								Michal Baloun <span>Zakladatel společnosti</span>
 							</strong>
 						</p>

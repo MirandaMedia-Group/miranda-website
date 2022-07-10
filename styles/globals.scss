@@ -681,6 +681,10 @@ button {
 	.narrow {
 		margin-bottom: 20px;
 	}
+	.buttons-wrapper {
+		justify-content: center;
+		margin-top: 20px;
+	}
 }
 .green {
 	color: $color-primary;
@@ -947,30 +951,24 @@ main#content {
 @media screen and (max-width: 767px) {
 	.konfigurator {
 		padding: 0;
-		margin-left: -20px;
-		margin-right: -20px;
 		background-image: url(/img/konfigurator-bg-mobile.jpg);
 		background-position: bottom right;
 		padding-bottom: 350px;
-		margin-bottom: -45px;
+		text-align: center;
 		.columns {
 			padding: 20px;
 		}
 		.pripravujeme {
-			display: none;
+			width: 130px;
+			top: -8px;
+			left: -8px;
 		}
-		&::before {
-			content: 'Připravujeme';
-			display: block;
-			background-color: $color-primary;
-			color: $color-font;
-			text-transform: uppercase;
-			text-align: center;
-			font-size: rem(16);
-			line-height: em(36, 16);
-			letter-spacing: 0.2em;
-			font-weight: 700;
-			padding: 10px 20px;
+		.column:first-of-type {
+			padding: 0;
+		}
+		h2 {
+			font-size: rem(22);
+			padding: 0 26px;
 		}
 	}
 }
