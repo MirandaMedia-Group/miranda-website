@@ -17,7 +17,7 @@ const Sluzby = () => {
 						<li>Neomezený počet produktů, uživatelů, e-mailů</li>
 						<li>Bez nutnosti vlastních programátorů</li>
 					</ul>
-					<div style={{ marginTop: '20px' }}>
+					<div className='buttons-wrapper' style={{ marginTop: '20px' }}>
 						<a href='#kontakt' className='btn btn-secondary'>
 							Poptat služby
 						</a>
