@@ -124,7 +124,7 @@ export default function Home() {
 					</a>
 				</div>
 			</section>
-			<section className={`${styles.tilesMobile} container`}>
+			{/* <section className={`${styles.tilesMobile} container`}>
 				<div className={`${styles.tilesGrid}`}>
 					<a href='mailto:info@mirandamedia.cz'>
 						<div className={styles.mail}>
@@ -173,7 +173,7 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<section className={`text-center no-margin`} id='scroll'>
 				<Wrapper apiKey={'AIzaSyAu8MzTDuTbDCe9Jvwy10SqJtDxy-W9Uc0'}>
 					<GoogleMap>

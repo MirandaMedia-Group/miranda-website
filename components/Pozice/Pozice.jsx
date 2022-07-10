@@ -4,24 +4,18 @@ import styles from './Pozice.module.scss'
 
 const Pozice = (props) => {
 	return (
-		<div className={styles.position}>
-			<div className={styles.image}>
-				<Image
-					src={props.image}
-					width={500}
-					height={500}
-					alt={props.nazev}
-					priority={true}
-				/>
-			</div>
-			<div className={styles.info}>
-				<h3>{props.nazev}</h3>
-				<p>{props.text}</p>
-				<Link href={props.link}>
+		<Link href={props.link} passHref>
+			<div className={styles.position}>
+				<div className={styles.image}>
+					<Image src={props.image} width={500} height={500} alt={props.nazev} priority={true} />
+				</div>
+				<div className={styles.info}>
+					<h3>{props.nazev}</h3>
+					<p>{props.text}</p>
 					<a className='btn btn-secondary'>Zobrazit pozici</a>
-				</Link>
+				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }
 

@@ -9,9 +9,14 @@ import { useEffect, useState } from 'react'
 
 const Clanek = ({ clanek, autor }) => {
 	const [fullUrl, setFullUrl] = useState(null)
+	const [windowWidth, setWindowWidth] = useState(0)
 
 	useEffect(() => {
 		setFullUrl(window.location.href)
+		setWindowWidth(window.innerWidth)
+		window.addEventListener('resize', () => {
+			setWindowWidth(window.innerWidth)
+		})
 	}, [fullUrl])
 
 	return (
@@ -26,18 +31,28 @@ const Clanek = ({ clanek, autor }) => {
 					</div>
 					<div className={styles.contentWrapper}>
 						<main>
-							<div className={styles.kategorie}>
-								{clanek.attributes.kategorie_clankus.data.map((cat, index) => {
-									return <span key={index}>{cat.attributes.nazev}</span>
-								})}
+							<div className={styles.perexWrapper}>
+								<div className={styles.kategorie}>
+									{clanek.attributes.kategorie_clankus.data.map((cat, index) => {
+										return <span key={index}>{cat.attributes.nazev}</span>
+									})}
+								</div>
+								<h1>{clanek.attributes.nazev}</h1>
+								{windowWidth <= 992 && (
+									<div>
+										<span className={styles.readTime}>Doba čtení článku {clanek.attributes.read_duration}</span>
+									</div>
+								)}
+								<p className={styles.perex}>{clanek.attributes.description}</p>
 							</div>
-							<h1>{clanek.attributes.nazev}</h1>
 							<ReactMarkdown>{clanek.attributes.content}</ReactMarkdown>
 						</main>
 						<aside>
-							<div>
-								<span className={styles.readTime}>Doba čtení článku {clanek.attributes.read_duration}</span>
-							</div>
+							{windowWidth > 992 && (
+								<div>
+									<span className={styles.readTime}>Doba čtení článku {clanek.attributes.read_duration}</span>
+								</div>
+							)}
 							<strong>Autor</strong>
 							<div className={styles.author}>
 								<div className={styles.image}>

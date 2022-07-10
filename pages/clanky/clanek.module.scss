@@ -49,6 +49,10 @@
 		flex: 0 1 390px;
 		padding: 40px;
 	}
+	.perex {
+		font-size: rem(24);
+		margin-bottom: em(50, 24);
+	}
 	.kategorie {
 		position: absolute;
 		top: 0;
@@ -132,14 +136,14 @@
 }
 @media screen and (max-width: 992px) {
 	.contentWrapper {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		aside {
 			flex-basis: auto;
 			padding: 20px 20px 0;
 		}
 		main {
 			margin-top: 0;
-			padding: 40px 20px;
+			padding: 0 20px 40px;
 		}
 		.kategorie {
 			position: initial;
@@ -149,6 +153,16 @@
 	}
 	.heroImage {
 		margin-top: -260px;
+	}
+	.perexWrapper {
+		background-color: rgba($color-font, 0.05);
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-top: -10px;
+		padding: 30px 20px;
+		.perex {
+			margin-bottom: 0;
+		}
 	}
 }
 @media screen and (max-width: 767px) {
@@ -165,5 +179,8 @@
 	}
 	.heroImage {
 		margin-top: -100px;
+	}
+	.perexWrapper .perex {
+		font-size: rem(18);
 	}
 }

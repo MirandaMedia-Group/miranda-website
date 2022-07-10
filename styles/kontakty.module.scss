@@ -17,7 +17,7 @@
 	h1 {
 		text-align: left;
 		max-width: 780px;
-		color: $color-primary;
+		// color: $color-primary;
 		margin-bottom: 0;
 		font-size: clamp(rem(36), 9vw, rem(64));
 		line-height: em(160, 64);
@@ -212,30 +212,6 @@
 	}
 }
 @media screen and (max-width: 1018px) {
-	.tilesDesktop {
-		display: none;
-	}
-	.tilesMobile {
-		display: block;
-	}
-	.mail,
-	.address,
-	.phone {
-		position: initial;
-		transform: none;
-		width: auto;
-		height: auto;
-		padding: 50px;
-	}
-	.mail {
-		background-color: rgba($color-font, 0.05);
-	}
-	.phone {
-		background-color: rgba($color-font, 0.2);
-	}
-	.address {
-		background-color: rgba($color-font, 0.1);
-	}
 	.tiles {
 		gap: 20px;
 		flex-basis: auto;
@@ -245,6 +221,43 @@
 		display: grid;
 		gap: 20px;
 		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	.columns {
+		flex-direction: column;
+		align-items: flex-start;
+		.column {
+			flex-basis: auto;
+		}
+	}
+	.tilesDesktop {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 20px;
+		.mail,
+		.phone {
+			position: initial;
+			transform: none;
+			width: auto;
+			height: auto;
+			padding: 10px 50px;
+			align-items: center;
+			flex-direction: row;
+			border: 0;
+			gap: 10px;
+			svg {
+				max-width: 26px;
+				max-height: 22px;
+			}
+		}
+		.address {
+			display: none;
+		}
+	}
+	.itemTexts {
+		align-items: flex-end;
+		padding-bottom: 30px;
+		background: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 50%);
 	}
 }
 @media screen and (max-width: 767px) {

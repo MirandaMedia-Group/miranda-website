@@ -9,7 +9,7 @@ export default function Home() {
 			nazev: 'Sales manager',
 			text: '',
 			link: '/kariera/sales-manager',
-			image: '/img/kariera1.jpg',
+			image: '/img/sales-manager.jpg',
 		},
 		{
 			id: 2,
@@ -18,27 +18,6 @@ export default function Home() {
 			link: '/kariera/ppc-specialista',
 			image: '/img/kariera3.jpg',
 		},
-		// {
-		// 	id: 2,
-		// 	nazev: 'Obchodní manažer',
-		// 	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
-		// 	link: '/obchodni-manazer',
-		// 	image: '/img/kariera2.jpg',
-		// },
-		// {
-		// 	id: 3,
-		// 	nazev: 'Seniorní grafik/grafička',
-		// 	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
-		// 	link: 'seniorni-grafik',
-		// 	image: '/img/kariera3.jpg',
-		// },
-		// {
-		// 	id: 4,
-		// 	nazev: 'Full-stack developer',
-		// 	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
-		// 	link: '/fullstack-developer',
-		// 	image: '/img/kariera4.jpg',
-		// },
 	]
 
 	const poziceItems = pozice.map((pozic) => <Pozice key={pozic.id} nazev={pozic.nazev} text={pozic.text} link={pozic.link} image={pozic.image} />)
