@@ -364,11 +364,9 @@ export default function EShopy({ reference, coONas }) {
 						></div>
 					</div>
 			</section> */}
-			{windowWidth > 767 && (
-				<section id='reakce' className='hidden'>
-					<CoONasRikaji data={coONas}></CoONasRikaji>
-				</section>
-			)}
+			<section id='reakce' className='hidden'>
+				<CoONasRikaji data={coONas}></CoONasRikaji>
+			</section>
 			<section id='konfigurator' className='container visible'>
 				<div className='konfigurator'>
 					<div className='pripravujeme'>

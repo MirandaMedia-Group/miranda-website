@@ -46,7 +46,7 @@ export default function Home() {
 	return (
 		<>
 			<section>
-				<HeroStaticSlim title='Kariéra v Mirandě' image='/img/kariera-hero.jpg' />
+				<HeroStaticSlim title='Kariéra v Mirandě' image='/img/kariera-hero.jpg' imageMobile='/img/kariera-hero-mobile.jpg' />
 			</section>
 			<section className={`container`}>{poziceItems}</section>
 		</>

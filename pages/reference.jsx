@@ -7,7 +7,7 @@ export default function Home({ reference, coONas }) {
 	return (
 		<>
 			<section>
-				<HeroStaticSlim title='Reference' image='/img/reference-hero.jpg' />
+				<HeroStaticSlim title='Reference' image='/img/reference-hero.jpg' imageMobile='/img/reference-hero-mobile.jpg' />
 			</section>
 			<section className='container'>
 				<Reference data={reference} />

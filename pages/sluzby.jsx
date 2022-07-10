@@ -53,7 +53,7 @@ export default function Home() {
 	return (
 		<>
 			<section>
-				<HeroStaticSlim title='Naše služby' image='/img/sluzby-hero.jpg' />
+				<HeroStaticSlim title='Naše služby' image='/img/sluzby-hero.jpg' imageMobile='/img/sluzby-hero-mobile.jpg' />
 			</section>
 			{/* <section>
 				<div className='container sluzby'>

@@ -8,7 +8,7 @@ const Blog = ({ clanky }) => {
 	return (
 		<>
 			<section>
-				<HeroStaticSlim title='Blog &amp; podcasty' image='/img/blog-hero.jpg' />
+				<HeroStaticSlim title='Blog &amp; podcasty' image='/img/blog-hero.jpg' imageMobile='/img/blog-hero-mobile.jpg' />
 			</section>
 			<section>
 				<div className={`container ${styles.grid}`}>
