@@ -109,64 +109,69 @@ const PravaMiranda = () => {
 				</div>
 				<div className='column'>
 					<ul className={styles.sluzbyList}>
-						<li
-							ref={ppcMob}
-							onMouseEnter={() => {
-								setDisplayRef(ppc)
-							}}
-							onClick={() => {
-								displayMobileContent(ppcMob)
-							}}
-						>
-							<PravaMirandaLink title='PPC kampaně' url='/sluzby/ppc-vyhledavace' />
+						<li ref={ppcMob}>
+							<div
+								onMouseEnter={() => {
+									setDisplayRef(ppc)
+								}}
+								onClick={() => {
+									displayMobileContent(ppcMob)
+								}}
+							>
+								<PravaMirandaLink title='PPC kampaně' url='/sluzby/ppc-vyhledavace' />
+							</div>
 							{displayRefMob == ppcMob && <PravaMirandaContentMobile text={data.ppc.text} hashtags={data.ppc.hashtags} />}
 						</li>
-						<li
-							ref={webyMob}
-							onMouseEnter={() => {
-								setDisplayRef(weby)
-							}}
-							onClick={() => {
-								displayMobileContent(webyMob)
-							}}
-						>
-							<PravaMirandaLink title='Weby &amp; e-shopy' url='/sluzby/weby' />
+						<li ref={webyMob}>
+							<div
+								onMouseEnter={() => {
+									setDisplayRef(weby)
+								}}
+								onClick={() => {
+									displayMobileContent(webyMob)
+								}}
+							>
+								<PravaMirandaLink title='Weby &amp; e-shopy' url='/sluzby/weby' />
+							</div>
 							{displayRefMob == webyMob && <PravaMirandaContentMobile text={data.weby.text} hashtags={data.weby.hashtags} />}
 						</li>
-						<li
-							ref={socMob}
-							onMouseEnter={() => {
-								setDisplayRef(soc)
-							}}
-							onClick={() => {
-								displayMobileContent(socMob)
-							}}
-						>
-							<PravaMirandaLink title='Sociální sítě' url='/sluzby/socialni-site' />
+						<li ref={socMob}>
+							<div
+								onMouseEnter={() => {
+									setDisplayRef(soc)
+								}}
+								onClick={() => {
+									displayMobileContent(socMob)
+								}}
+							>
+								<PravaMirandaLink title='Sociální sítě' url='/sluzby/socialni-site' />
+							</div>
 							{displayRefMob == socMob && <PravaMirandaContentMobile text={data.soc.text} hashtags={data.soc.hashtags} />}
 						</li>
-						<li
-							ref={designMob}
-							onMouseEnter={() => {
-								setDisplayRef(design)
-							}}
-							onClick={() => {
-								displayMobileContent(designMob)
-							}}
-						>
-							<PravaMirandaLink title='Kreativa' url='/sluzby/design' />
+						<li ref={designMob}>
+							<div
+								onMouseEnter={() => {
+									setDisplayRef(design)
+								}}
+								onClick={() => {
+									displayMobileContent(designMob)
+								}}
+							>
+								<PravaMirandaLink title='Kreativa' url='/sluzby/design' />
+							</div>
 							{displayRefMob == designMob && <PravaMirandaContentMobile text={data.design.text} hashtags={data.design.hashtags} />}
 						</li>
-						<li
-							ref={influenceMob}
-							onMouseEnter={() => {
-								setDisplayRef(influence)
-							}}
-							onClick={() => {
-								displayMobileContent(influenceMob)
-							}}
-						>
-							<PravaMirandaLink title='Influencing' url='/sluzby/influencer' />
+						<li ref={influenceMob}>
+							<div
+								onMouseEnter={() => {
+									setDisplayRef(influence)
+								}}
+								onClick={() => {
+									displayMobileContent(influenceMob)
+								}}
+							>
+								<PravaMirandaLink title='Influencing' url='/sluzby/influencer' />
+							</div>
 							{displayRefMob == influenceMob && <PravaMirandaContentMobile text={data.influence.text} hashtags={data.influence.hashtags} />}
 						</li>
 					</ul>
