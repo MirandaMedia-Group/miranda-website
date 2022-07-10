@@ -9,15 +9,7 @@ import { fetchAPI } from '../lib/api'
 import { useEffect, useRef, useState } from 'react'
 import Reference from '../components/Reference/Reference'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper'
-import 'swiper/css'
-
 export default function EShopy({ reference, coONas }) {
-	const swiperNext = useRef(true)
-	const swiperPrev = useRef(true)
-	const swiperNext2 = useRef(true)
-	const swiperPrev2 = useRef(true)
 	const [windowWidth, setWindowWidth] = useState(0)
 
 	useEffect(() => {
@@ -170,8 +162,8 @@ export default function EShopy({ reference, coONas }) {
 						<Image src={'/img/nevim.png'} width={150} height={150} alt='Nevim' />
 					</div>
 				)}
-				<div className='buttons-wrapper text-center'>
-					<Link href='#kontakty'>
+				<div className='buttons-wrapper text-center justify-center'>
+					<Link href='#kontakt'>
 						<a className='btn btn-secondary'>Pojďme se dohodnout</a>
 					</Link>
 				</div>
@@ -493,18 +485,21 @@ export default function EShopy({ reference, coONas }) {
 }
 
 export async function getStaticProps() {
-	const referenceRes = await fetchAPI('/references', {
-		populate: '*',
-		sort: 'priorita',
-		pagination: { page: 1, pageSize: 7 },
-	})
+	const referenceRes = await fetchAPI(
+		'/references',
+		{
+			populate: '*',
+			sort: 'priorita',
+			// pagination: { page: 1, pageSize: 7 },
+		},
+		{},
+		'&filters[kategorie][nazev]=E-shop'
+	)
 	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 	return {
 		props: {
 			reference: referenceRes.data,
-			// reference: referenceRes,
 			coONas: coONasRes.data,
-			// coONas: coONasRes,
 		},
 		revalidate: 1,
 	}
