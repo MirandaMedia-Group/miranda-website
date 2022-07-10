@@ -9,15 +9,15 @@ export default function Home() {
 			<section>
 				<HeroStatic
 					title='Miranda'
-					subtitle='Digitální marketingová agentura se smyslem pro design a perspektivu'
+					subtitle='Digitální marketingová agentura se citem pro design a perspektivu'
 					image='/img/proc-s-nami.jpg'
 					imageMobile='/img/proc-s-nami.jpg'
 				/>
 			</section>
-			<section className='text-center'>
+			<section id='scroll' className='text-center'>
 				<div className='container narrow'>
 					{/* <h2>Miranda</h2> */}
-					{/* <p>Digitální marketingová agentura se smyslem pro design a fair play.</p> */}
+					{/* <p>Digitální marketingová agentura se citem pro design a fair play.</p> */}
 				</div>
 				<div className={`container ${styles.grid}`}>
 					<div className={`${styles.itemWide} ${styles.textItem}`}>

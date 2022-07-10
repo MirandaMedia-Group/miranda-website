@@ -238,6 +238,10 @@
 		.phone {
 			position: initial;
 			transform: none;
+			top: unset;
+			left: unset;
+			right: unset;
+			bottom: unset;
 			width: auto;
 			height: auto;
 			padding: 10px 50px;
@@ -259,11 +263,11 @@
 		padding-bottom: 30px;
 		background: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 50%);
 	}
-}
-@media screen and (max-width: 767px) {
 	.scrollDown {
 		display: none;
 	}
+}
+@media screen and (max-width: 767px) {
 	.contactButton {
 		font-size: rem(16);
 	}

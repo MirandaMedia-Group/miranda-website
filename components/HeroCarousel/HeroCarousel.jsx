@@ -1,5 +1,6 @@
 import styles from './HeroCarousel.module.scss'
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 // import TypeAnimation from 'react-type-animation'
 // import TypeWriter from '../TypeWriter/TypeWriter'
 
@@ -50,7 +51,7 @@ const HeroCarousel = () => {
 				</div>
 			)}
 			<div className={styles.mobileVideoWrapper}>
-				{!isDesktop && (
+				{/* {!isDesktop && (
 					<video poster='/intro-loop-poster.png' playsInline muted preload='auto' loop ref={videoRef2}>
 						<source src='/intro-hp-mobile.mp4' type='video/mp4' />
 					</video>
@@ -61,7 +62,8 @@ const HeroCarousel = () => {
 							<source src='/intro-hp-mobile.mp4' type='video/mp4' />
 						</video>
 					</div>
-				)}
+				)} */}
+				<Image src='/img/hp-hero-mobile.jpg' width={1125} height={1125} alt=''></Image>
 			</div>
 			<div className={`container ${styles.itemTexts}`}>
 				{/* <div className={styles.subheading}>MirandaMedia</div> */}
