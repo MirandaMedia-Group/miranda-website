@@ -72,7 +72,12 @@ const ContactForm = () => {
 									<textarea name='zprava' id='zprava' rows='5' placeholder='Váš vzkaz' ref={form.zprava}></textarea>
 									<div className={styles.formRow}>
 										<input type='checkbox' name='consent' id='consent' readOnly />
-										<label htmlFor='consent'>Odesláním souhlasíte s <Link href='/zpracovani-osobnich-udaju'><a>Podmínkami zpracovaní osobních údajů</a></Link></label>
+										<label htmlFor='consent'>
+											<strong>Odesláním</strong> souhlasíte s{' '}
+											<Link href='/zpracovani-osobnich-udaju'>
+												<a>Podmínkami zpracovaní osobních údajů</a>
+											</Link>
+										</label>
 									</div>
 									<button type='submit' className='btn btn-primary'>
 										<span data-hover='Odeslat poptávku'>Odeslat poptávku</span>

@@ -78,6 +78,9 @@ const CoONasRikaji = (props) => {
 							el: paginationMobile.current,
 							type: 'bullets',
 						}}
+						onSlideChange={() => {
+							setTextToggled(false)
+						}}
 					>
 						<div
 							className='swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'

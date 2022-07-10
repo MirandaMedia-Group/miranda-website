@@ -9,15 +9,15 @@ export default function Home() {
 			<section>
 				<HeroStatic
 					title='Miranda'
-					subtitle='Digitální &amp; marketingová agentura se smyslem pro design a fair play.'
+					subtitle='Digitální marketingová agentura se smyslem pro design a perspektivu'
 					image='/img/proc-s-nami.jpg'
 					imageMobile='/img/proc-s-nami.jpg'
 				/>
 			</section>
 			<section className='text-center'>
 				<div className='container narrow'>
-					<h2>Miranda</h2>
-					<p>Digitální & marketingová agentura se smyslem pro design a fair play.</p>
+					{/* <h2>Miranda</h2> */}
+					{/* <p>Digitální marketingová agentura se smyslem pro design a fair play.</p> */}
 				</div>
 				<div className={`container ${styles.grid}`}>
 					<div className={`${styles.itemWide} ${styles.textItem}`}>
@@ -36,8 +36,8 @@ export default function Home() {
 					</div>
 					<div className={`${styles.textItem} ${styles.mobileWide}`}>
 						<p>
-							Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s vřelostí jí
-							vlastní, a když si padnete do oka, už nikdy nebudete chtít jinou;)
+							Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s vřelostí sobě
+							vlastní, a až si padnete do oka, už nikdy nebudete chtít jinou.
 						</p>
 					</div>
 					<div>
@@ -46,7 +46,7 @@ export default function Home() {
 					<div className={`${styles.textItem} text-center`}>
 						<p>
 							<strong>
-								25 <span>profesionálů</span>
+								+25 <span>profesionálů</span>
 							</strong>
 						</p>
 					</div>
@@ -58,7 +58,7 @@ export default function Home() {
 					</div>
 					<div className={`${styles.itemWider} ${styles.textItem}`}>
 						<p>
-							Na vymýšlení všemožných strategií, projektů a nápadů posbírala Miranda už nějaký ty body zkušeností. Možná i proto jí naslouchají
+							Na vymýšlení všemožných strategií, projektů a nápadů posbírala Miranda už nějaké ty zkušenostní body. Možná i proto jí naslouchají
 							klienti jako Philips, Zdeněk Pohlreich, Pivovar Svijany, PetCenter a mnozí další...sami se jich zeptejte, co na Mirandu říkají.
 						</p>
 						{/* <Link href='/jak-to-funguje'>
@@ -83,7 +83,7 @@ export default function Home() {
 					<div className={`text-center ${styles.mobileWide} ${styles.textItem}`}>
 						<p>
 							<strong>
-								15 let <span>zkušeností</span>
+								15+ let <span>cenných zkušeností</span>
 							</strong>
 						</p>
 					</div>
@@ -113,7 +113,7 @@ export default function Home() {
 					<div className={`${styles.textItem} text-center`}>
 						<p>
 							<strong>
-								247+ <span>projektů</span>
+								247+ <span>úžasných projektů</span>
 							</strong>
 						</p>
 					</div>

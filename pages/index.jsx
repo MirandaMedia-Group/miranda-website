@@ -20,8 +20,7 @@ export default function Home({ reference, coONas }) {
 				<div className='narrow text-center'>
 					<h2>Na co jsme hrdí</h2>
 					<p>
-						Tvoříme ziskové e-shopy a weby pro ty, kteří požadují jen to nejlepší.
-						Spravujeme výkonnostní kampaně a přinášíme dosah sociálním sítím.
+						Tvoříme ziskové e-shopy a weby pro ty, kteří požadují jen to nejlepší. Spravujeme výkonnostní kampaně a přinášíme dosah sociálním sítím.
 						Stojíme za vznikem nových značek a produktů, které hýbou trhem.
 					</p>
 				</div>

@@ -140,14 +140,14 @@ function Footer() {
 							</ul>
 						</div> */}
 						<div className={`col-4 ${styles.sluzby}`}>
-							<div className={`${styles.partneri} ${partneriVisible && styles.visible}`}>
-								{/* <h4
+							<div className={`${styles.acordeon} ${styles.partneri} ${partneriVisible && styles.visible}`}>
+								<h4
 									onClick={(e) => {
 										partneriVisible ? setPartneriVisible(false) : setPartneriVisible(true)
 									}}
 								>
 									Partneři
-								</h4> */}
+								</h4>
 								<div style={{ marginTop: 0 }}>
 									<div>
 										<Image src='/img/icon/google-partner.svg' width={60} height={44} alt='Google Partner'></Image>
@@ -213,7 +213,12 @@ function Footer() {
 									</a>
 								</div>
 							</div>
-							<p className={styles.signature}>© MirandaMedia Group s.r.o. 2022 | <Link href='/zpracovani-osobnich-udaju'><a>Zpracování osobních údajů</a></Link></p>
+							<p className={styles.signature}>
+								© MirandaMedia Group s.r.o. 2022 |{' '}
+								<Link href='/zpracovani-osobnich-udaju'>
+									<a>Zpracování osobních údajů</a>
+								</Link>
+							</p>
 						</div>
 					</div>
 				</div>
