@@ -15,13 +15,13 @@ const HeroCarousel = () => {
 	}
 
 	useEffect(() => {
-		setDesktop(window.innerWidth > 830)
+		setDesktop(window.innerWidth > 767)
 		window.addEventListener('resize', () => {
-			setDesktop(window.innerWidth > 830)
+			setDesktop(window.innerWidth > 767)
 		})
 		return () => {
 			window.removeEventListener('resize', () => {
-				setDesktop(window.innerWidth > 830)
+				setDesktop(window.innerWidth > 767)
 			})
 		}
 	}, [])
@@ -37,16 +37,32 @@ const HeroCarousel = () => {
 
 	return (
 		<div className={styles.carousel}>
-			<video poster='/intro-loop-poster.png' playsInline muted preload='auto' loop ref={videoRef2}>
-				<source src='/intro-hp-loop.mp4' type='video/mp4' />
-			</video>
-			{!videoPlayed && (
+			{isDesktop && (
+				<video poster='/intro-loop-poster.png' playsInline muted preload='auto' loop ref={videoRef2}>
+					<source src='/intro-hp-loop.mp4' type='video/mp4' />
+				</video>
+			)}
+			{!videoPlayed && isDesktop && (
 				<div className={styles.videoAbsolute}>
 					<video poster='/img/blank-black.jpg' autoPlay playsInline muted preload='auto' ref={videoRef}>
 						<source src='/intro-hp-nove.mp4' type='video/mp4' />
 					</video>
 				</div>
 			)}
+			<div className={styles.mobileVideoWrapper}>
+				{!isDesktop && (
+					<video poster='/intro-loop-poster.png' playsInline muted preload='auto' loop ref={videoRef2}>
+						<source src='/intro-hp-mobile.mp4' type='video/mp4' />
+					</video>
+				)}
+				{!isDesktop && !videoPlayed && (
+					<div className={styles.videoAbsolute}>
+						<video poster='/img/blank-black.jpg' autoPlay playsInline muted preload='auto' ref={videoRef}>
+							<source src='/intro-hp-mobile.mp4' type='video/mp4' />
+						</video>
+					</div>
+				)}
+			</div>
 			<div className={`container ${styles.itemTexts}`}>
 				{/* <div className={styles.subheading}>MirandaMedia</div> */}
 				<div className={styles.headingWrapper}>

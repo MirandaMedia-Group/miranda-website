@@ -1,7 +1,7 @@
 .carousel {
 	color: $color-white;
 	height: 100vh;
-	background-color: $color-font;
+	background-color: #000;
 	.itemTexts {
 		position: absolute;
 		top: 0;
@@ -81,8 +81,6 @@
 
 @media screen and (max-width: 767px) {
 	.carousel {
-		height: auto;
-		// color: $color-font;
 		video {
 			position: initial;
 		}
@@ -90,25 +88,42 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		.mobileVideoWrapper {
+			position: relative;
+			height: 50vh;
 		}
 		.itemTexts {
 			position: initial;
 			transform: none;
-			justify-content: flex-end;
+			justify-content: center;
+			text-align: center;
 			padding: 30px 20px;
+			height: calc(50vh - 80px);
 		}
 		.headingWrapper {
 			h1 {
-				font-size: rem(20);
+				font-size: rem(32);
+				text-transform: initial;
 			}
 		}
 		.subheading {
 			font-size: 1rem;
 		}
-	}
-}
-@media screen and (max-width: 680px) {
-	.scrollDown {
-		display: none;
+		.scrollDown {
+			position: initial;
+			transform: none;
+			text-align: center;
+			.arrow {
+				span {
+					display: none;
+				}
+				svg {
+					height: 50px;
+				}
+			}
+		}
 	}
 }
