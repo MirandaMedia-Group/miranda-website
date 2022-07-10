@@ -92,9 +92,9 @@
 		}
 	}
 	.title {
-		border-bottom: 1px solid $color-font;
-		margin-bottom: 30px;
-		padding-bottom: 30px;
+		// border-bottom: 1px solid $color-font;
+		// margin-bottom: 30px;
+		// padding-bottom: 30px;
 		h2 {
 			margin-bottom: 0;
 		}
@@ -109,6 +109,7 @@
 }
 @media (max-width: 767px) {
 	.item {
+		margin-bottom: 20px;
 		.texts {
 			padding: 20px;
 		}

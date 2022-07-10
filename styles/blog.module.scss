@@ -35,6 +35,8 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 10px;
+			color: rgba($color-font, 0.5);
+			font-size: rem(12);
 			.reading,
 			.date,
 			.author {
@@ -44,6 +46,7 @@
 					display: inline-block;
 					margin-right: 0.3em;
 					line-height: 0;
+					opacity: 0.5;
 				}
 			}
 			.reading {
