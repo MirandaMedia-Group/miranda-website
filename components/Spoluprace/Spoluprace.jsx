@@ -19,7 +19,7 @@ const Spoluprace = () => {
 					</div>
 				</div>
 				<div className={`column ${styles.images}`}>
-					<Image src={'/img/spoluprace-grid-imgs3.png'} width={808} height={636} alt='' priority={true} />
+					<Image src={'/img/spoluprace-grid-imgs3.jpg'} width={808} height={636} alt='' priority={true} />
 				</div>
 			</div>
 			<div className={`buttons-wrapper ${styles.desktopHidden}`}>

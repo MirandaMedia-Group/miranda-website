@@ -9,7 +9,7 @@ export default function Home() {
 			nazev: 'Sales manager',
 			text: '',
 			link: '/kariera/sales-manager',
-			image: '/img/sales-manager.jpg',
+			image: '/img/sales-manazer.jpg',
 		},
 		{
 			id: 2,
@@ -17,6 +17,27 @@ export default function Home() {
 			text: '',
 			link: '/kariera/ppc-specialista',
 			image: '/img/kariera3.jpg',
+		},
+		{
+			id: 3,
+			nazev: 'Front-end Developer',
+			text: '',
+			link: '/kariera/frontend-developer',
+			image: '/img/kariera3.jpg',
+		},
+		{
+			id: 4,
+			nazev: 'Seniorní grafik/designér',
+			text: '',
+			link: '/kariera/grafik',
+			image: '/img/grafik.jpg',
+		},
+		{
+			id: 5,
+			nazev: 'Office manažerka - asistentka vedení',
+			text: '',
+			link: '/kariera/office',
+			image: '/img/office-manazerka.jpg',
 		},
 	]
 

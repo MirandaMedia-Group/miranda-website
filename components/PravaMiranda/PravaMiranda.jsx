@@ -172,6 +172,11 @@ const PravaMiranda = () => {
 					</ul>
 				</div>
 			</div>
+			<div className='buttons-wrapper text-center justify-center'>
+				<Link href='/kontakty#kontakt'>
+					<a className='btn btn-secondary'>Poptat službu</a>
+				</Link>
+			</div>
 		</>
 	)
 }
