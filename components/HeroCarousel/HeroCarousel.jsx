@@ -63,7 +63,7 @@ const HeroCarousel = () => {
 						</video>
 					</div>
 				)} */}
-				<Image src='/img/hp-hero-mobile.jpg' width={1125} height={1125} alt=''></Image>
+				{!isDesktop && <Image src='/img/hp-hero-mobile.jpg' width={1125} height={1125} alt=''></Image>}
 			</div>
 			<div className={`container ${styles.itemTexts}`}>
 				{/* <div className={styles.subheading}>MirandaMedia</div> */}
