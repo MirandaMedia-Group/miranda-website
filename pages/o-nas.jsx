@@ -9,7 +9,7 @@ export default function Home() {
 			<section>
 				<HeroStatic
 					title='Miranda'
-					subtitle='Digitální marketingová agentura se citem pro design a perspektivu'
+					subtitle='Digitální marketingová agentura s citem pro design a perspektivu'
 					image='/img/proc-s-nami.jpg'
 					imageMobile='/img/proc-s-nami.jpg'
 				/>

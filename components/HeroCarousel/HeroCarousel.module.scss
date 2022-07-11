@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 767px) {
 	.carousel {
-		video {
+		& > video {
 			position: initial;
 		}
 		.videoAbsolute {
