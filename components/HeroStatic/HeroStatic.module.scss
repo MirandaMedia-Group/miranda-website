@@ -110,7 +110,7 @@
 		justify-content: center;
 		text-align: center;
 		position: relative;
-		height: calc(50vh - 30px);
+		height: calc(50% - 30px);
 		background: linear-gradient(to bottom, transparent 0%, #000 50px);
 		margin-top: -50px;
 		h1 {
@@ -118,7 +118,7 @@
 		}
 	}
 	.heroImage {
-		height: 50vh;
+		height: 50%;
 		position: relative;
 	}
 	.hero {
