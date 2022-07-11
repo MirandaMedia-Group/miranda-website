@@ -7,12 +7,19 @@ import Image from 'next/image'
 const HeroCarousel = () => {
 	const [isDesktop, setDesktop] = useState()
 	const [videoPlayed, setVideoPlayed] = useState(false)
+	const [videoPlayedMobile, setVideoPlayedMobile] = useState(false)
 	const videoRef = useRef(null)
 	const videoRef2 = useRef(null)
+	const videoRefMobile = useRef(null)
+	const videoRef2Mobile = useRef(null)
 
 	const handleLoop = () => {
 		setVideoPlayed(true)
 		videoRef2.current.play()
+	}
+	const handleLoopMobile = () => {
+		setVideoPlayedMobile(true)
+		videoRef2Mobile.current.play()
 	}
 
 	useEffect(() => {
@@ -28,12 +35,19 @@ const HeroCarousel = () => {
 	}, [])
 
 	useEffect(() => {
-		let element = videoRef.current
-		if (element) element.addEventListener('ended', handleLoop, false)
+		setTimeout(() => {
+			let element = videoRef.current
+			let elementMobile = videoRefMobile.current
+			console.log(elementMobile)
 
-		return () => {
-			if (element) element.removeEventListener('ended', handleLoop, false)
-		}
+			if (element) element.addEventListener('ended', handleLoop, false)
+			if (elementMobile) elementMobile.addEventListener('ended', handleLoopMobile, false)
+
+			return () => {
+				if (element) element.removeEventListener('ended', handleLoop, false)
+				if (elementMobile) elementMobile.addEventListener('ended', handleLoopMobile, false)
+			}
+		}, 100)
 	}, [])
 
 	return (
@@ -51,19 +65,19 @@ const HeroCarousel = () => {
 				</div>
 			)}
 			<div className={styles.mobileVideoWrapper}>
-				{/* {!isDesktop && (
-					<video poster='/intro-loop-poster.png' playsInline muted preload='auto' loop ref={videoRef2}>
-						<source src='/intro-hp-mobile.mp4' type='video/mp4' />
+				{!isDesktop && (
+					<video poster='/intro-loop-poster-mobile.jpg' playsInline muted preload='auto' loop ref={videoRef2Mobile}>
+						<source src='/intro-loop-mobile.mp4' type='video/mp4' />
 					</video>
 				)}
 				{!isDesktop && !videoPlayed && (
 					<div className={styles.videoAbsolute}>
-						<video poster='/img/blank-black.jpg' autoPlay playsInline muted preload='auto' ref={videoRef}>
+						<video poster='/img/intro-hp-poster-mobile.jpg' autoPlay playsInline muted preload='auto' ref={videoRefMobile}>
 							<source src='/intro-hp-mobile.mp4' type='video/mp4' />
 						</video>
 					</div>
-				)} */}
-				{!isDesktop && <Image src='/img/hp-hero-mobile.jpg' width={1125} height={1125} alt=''></Image>}
+				)}
+				{/* {!isDesktop && <Image src='/img/hp-hero-mobile.jpg' width={1125} height={1125} alt=''></Image>} */}
 			</div>
 			<div className={`container ${styles.itemTexts}`}>
 				{/* <div className={styles.subheading}>MirandaMedia</div> */}
