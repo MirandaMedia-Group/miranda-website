@@ -38,7 +38,6 @@ const HeroCarousel = () => {
 		setTimeout(() => {
 			let element = videoRef.current
 			let elementMobile = videoRefMobile.current
-			console.log(elementMobile)
 
 			if (element) element.addEventListener('ended', handleLoop, false)
 			if (elementMobile) elementMobile.addEventListener('ended', handleLoopMobile, false)
@@ -70,9 +69,9 @@ const HeroCarousel = () => {
 						<source src='/intro-loop-mobile.mp4' type='video/mp4' />
 					</video>
 				)}
-				{!isDesktop && !videoPlayed && (
+				{!videoPlayedMobile && !isDesktop && (
 					<div className={styles.videoAbsolute}>
-						<video poster='/img/intro-hp-poster-mobile.jpg' autoPlay playsInline muted preload='auto' ref={videoRefMobile}>
+						<video poster='/intro-hp-loop-mobile.jpg' autoPlay playsInline muted preload='auto' ref={videoRefMobile}>
 							<source src='/intro-hp-mobile.mp4' type='video/mp4' />
 						</video>
 					</div>
