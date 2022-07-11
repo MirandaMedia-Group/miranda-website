@@ -1339,4 +1339,8 @@ p.large {
 	.btn-margin {
 		margin-top: 20px;
 	}
+	p.large {
+		font-size: rem(20);
+		color: $color-font;
+	}
 }

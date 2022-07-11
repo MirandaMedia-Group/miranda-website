@@ -21,7 +21,7 @@ const detailKariera = () => {
 						výkonnostních kampaní, hledá do svých řad nové kolegy a kolegyně na pozici Sales Manager.
 					</p>
 					<div className={styles.part}>
-						<h3>Co od Tebe očekávám?</h3>
+						<h3>Co od tebe očekávám?</h3>
 						<ul className={styles.list}>
 							<li>
 								<strong>Základní znalost v oblasti e-shopů (Shoptet výhodou - jsem Premium partner) a výkonnostních - PPC kampaní</strong>

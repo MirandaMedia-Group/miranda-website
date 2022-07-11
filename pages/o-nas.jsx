@@ -16,8 +16,8 @@ export default function Home() {
 			</section>
 			<section id='scroll' className='text-center'>
 				<div className='container narrow'>
-					{/* <h2>Miranda</h2> */}
-					{/* <p>Digitální marketingová agentura se citem pro design a fair play.</p> */}
+					<h2>Poznejte Mirandu</h2>
+					<p>Spojujeme společnosti se zákazníky na základě podrobných dat, příběhů a hodnot.</p>
 				</div>
 				<div className={`container ${styles.grid}`}>
 					<div className={`${styles.itemWide} ${styles.textItem}`}>

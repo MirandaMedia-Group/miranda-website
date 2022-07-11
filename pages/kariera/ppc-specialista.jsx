@@ -25,7 +25,7 @@ const detailKariera = () => {
 						<strong>NEHLEDÁME &quot;KLIKAŘE&quot;</strong>.
 					</p>
 					<div className={styles.part}>
-						<h3>Co Tě u nás čeká?</h3>
+						<h3>Co tě u nás čeká?</h3>
 						<ul className={styles.list}>
 							<li>Tvorba reklamních kampaní</li>
 							<li>Nastavování, správa a optimalizace PPC kampaní</li>
