@@ -1,6 +1,7 @@
 .carousel {
 	color: $color-white;
 	height: 100vh;
+	max-height: -webkit-fill-available;
 	background-color: #000;
 	.itemTexts {
 		position: absolute;

@@ -1,6 +1,7 @@
 .hero {
 	position: relative;
 	height: 100vh;
+	max-height: -webkit-fill-available;
 	color: $color-white;
 	&.overlay {
 		&::after {
