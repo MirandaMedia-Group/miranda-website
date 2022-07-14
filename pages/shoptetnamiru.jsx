@@ -37,10 +37,10 @@ export default function EShopy({ reference, coONas }) {
 				<nav>
 					<ul>
 						<li>
-							<a href='#sluzby'>Služby</a>
+							<a href='#reference'>Reference</a>
 						</li>
 						<li>
-							<a href='#reference'>Reference</a>
+							<a href='#sluzby'>Služby</a>
 						</li>
 						<li>
 							<a href='#proc-shoptet'>Proč Shoptet</a>
@@ -50,9 +50,6 @@ export default function EShopy({ reference, coONas }) {
 						</li>
 						<li>
 							<a href='#konfigurator'>Konfigurátor Shoptet</a>
-						</li>
-						<li>
-							<a href='#sprava'>Správa e-shopu</a>
 						</li>
 						<li>
 							<a href='#kontakt'>Kontakty</a>
