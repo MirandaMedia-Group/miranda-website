@@ -34,6 +34,17 @@ function MyApp({ Component, pageProps }) {
 				<link rel='shortcut icon' sizes='16x16' href='/favicon.ico' />
 				<link rel='shortcut icon' sizes='32x32' href='/favicon-32x32.ico' />
 			</Head>
+			<Script id='hotjar' strategy='afterInteractive'>
+				{`
+				(function(h,o,t,j,a,r){
+					h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+					h._hjSettings={hjid:3093150,hjsv:6};
+					a=o.getElementsByTagName('head')[0];
+					r=o.createElement('script');r.async=1;
+					r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+					a.appendChild(r);
+				})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
+			</Script>
 			<Script id='gtm' strategy='afterInteractive'>
 				{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
