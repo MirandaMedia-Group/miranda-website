@@ -44,6 +44,13 @@
 		margin-top: -100px;
 		position: relative;
 		padding: 75px;
+		a {
+			text-decoration: underline;
+			&:hover,
+			&:focus {
+				color: $color-primary;
+			}
+		}
 	}
 	aside {
 		flex: 0 1 390px;
