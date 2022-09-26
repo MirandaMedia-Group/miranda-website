@@ -26,9 +26,7 @@ const Clanek = ({ clanek, autor }) => {
 			</section>
 			<section className={styles.mainSection}>
 				<div className={styles.container}>
-					<div className={styles.heroImage}>
-						<FetchedImage image={clanek.attributes.obrazek} />
-					</div>
+					<div className={styles.heroImage}>{clanek.attributes.obrazek && <FetchedImage image={clanek.attributes.obrazek} />}</div>
 					<div className={styles.contentWrapper}>
 						<main>
 							<div className={styles.perexWrapper}>
@@ -55,9 +53,7 @@ const Clanek = ({ clanek, autor }) => {
 							)}
 							<strong>Autor</strong>
 							<div className={styles.author}>
-								<div className={styles.image}>
-									<FetchedImage image={autor.attributes.avatar} />
-								</div>
+								<div className={styles.image}>{autor.attributes.avatar && <FetchedImage image={autor.attributes.avatar} />}</div>
 								<div className={styles.info}>
 									<span>{autor.attributes.jmeno}</span>
 									<span>{autor.attributes.pozice}</span>

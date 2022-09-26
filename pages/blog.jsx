@@ -49,7 +49,7 @@ const Blog = ({ clanky }) => {
 }
 
 export async function getStaticProps() {
-	const clankyRes = await fetchAPI('/clanky', { populate: '*' })
+	const clankyRes = await fetchAPI('/clanky', { populate: '*', sort: 'publishedAt:desc' })
 
 	return {
 		props: {
