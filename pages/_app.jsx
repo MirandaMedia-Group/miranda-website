@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 				<link rel='shortcut icon' sizes='16x16' href='/favicon.ico' />
 				<link rel='shortcut icon' sizes='32x32' href='/favicon-32x32.ico' />
 			</Head>
-			<Script id='hotjar' strategy='afterInteractive'>
+			{/* <Script id='hotjar' strategy='afterInteractive'>
 				{`
 				(function(h,o,t,j,a,r){
 					h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }) {
 						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 						})(window,document,'script','dataLayer','GTM-MDK728Q');`}
-			</Script>
+			</Script> */}
 			{pageLoading && <LoadingScreen />}
 			<Layout>
 				<Component {...pageProps} />
