@@ -60,7 +60,7 @@ export default function EShopy({ reference, coONas }) {
 			<section id='reference' className='hidden'>
 				<div className='container text-center'>
 					<h2>Naše e-shopy na Shoptetu na míru</h2>
-					{/* <Reference data={reference} /> */}
+					<Reference data={reference} />
 				</div>
 			</section>
 			<section id='sluzby' className='container'>
@@ -481,7 +481,7 @@ export default function EShopy({ reference, coONas }) {
 
 export async function getStaticProps() {
 	// '&filters[kategorie][nazev]=E-shop'
-	// const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
+	const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
 	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 	return {
 		props: {
