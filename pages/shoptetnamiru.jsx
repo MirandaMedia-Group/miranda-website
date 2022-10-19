@@ -362,7 +362,7 @@ export default function EShopy({ reference, coONas }) {
 					</div>
 			</section> */}
 			<section id='reakce' className='hidden'>
-				{/* <CoONasRikaji data={coONas}></CoONasRikaji> */}
+				<CoONasRikaji data={coONas}></CoONasRikaji>
 			</section>
 			<section id='konfigurator' className='container visible'>
 				<div className='konfigurator'>
@@ -479,15 +479,15 @@ export default function EShopy({ reference, coONas }) {
 	)
 }
 
-// export async function getStaticProps() {
-// 	// '&filters[kategorie][nazev]=E-shop'
-// 	const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
-// 	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
-// 	return {
-// 		props: {
-// 			reference: referenceRes.data,
-// 			coONas: coONasRes.data,
-// 		},
-// 		revalidate: 1,
-// 	}
-// }
+export async function getStaticProps() {
+	// '&filters[kategorie][nazev]=E-shop'
+	// const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
+	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
+	return {
+		props: {
+			// reference: referenceRes.data,
+			coONas: coONasRes.data,
+		},
+		revalidate: 1,
+	}
+}
