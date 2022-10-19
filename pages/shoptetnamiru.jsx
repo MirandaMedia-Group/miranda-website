@@ -485,7 +485,7 @@ export async function getStaticProps() {
 	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 	return {
 		props: {
-			// reference: referenceRes.data,
+			reference: referenceRes.data,
 			coONas: coONasRes.data,
 		},
 		revalidate: 1,
