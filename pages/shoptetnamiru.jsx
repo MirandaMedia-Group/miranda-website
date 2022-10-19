@@ -480,16 +480,8 @@ export default function EShopy({ reference, coONas }) {
 }
 
 export async function getStaticProps() {
-	const referenceRes = await fetchAPI(
-		'/references',
-		{
-			populate: '*',
-			sort: 'priorita',
-			// pagination: { page: 1, pageSize: 7 },
-		},
-		{},
-		'&filters[kategorie][nazev]=E-shop'
-	)
+	// '&filters[kategorie][nazev]=E-shop'
+	const referenceRes = await fetchAPI('/references', { populate: '*', sort: 'priorita' })
 	const coONasRes = await fetchAPI('/co-o-nas-rikajis', { populate: '*' })
 	return {
 		props: {
